@@ -1,0 +1,237 @@
+{
+  "uid" : "f55196e8c789b7f3",
+  "name" : "Verify accuracy of the attribute 'href' in the Jetbrains link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_08_verify_href_in_jetbrains_link",
+  "historyId" : "fdcfb101c178d8ac82bc161ad3e31147",
+  "time" : {
+    "start" : 1705260796707,
+    "stop" : 1705260796725,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705260791922,
+      "stop" : 1705260792690,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705260625486,
+      "stop" : 1705260625486,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705260792690,
+      "stop" : 1705260796706,
+      "duration" : 4016
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705260792691,
+        "stop" : 1705260796706,
+        "duration" : 4015
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"c848e55ad1889e029dd46dd18449087b\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get attribute 'href' of the Jetbrains link",
+      "time" : {
+        "start" : 1705260796707,
+        "stop" : 1705260796725,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of link",
+        "time" : {
+          "start" : 1705260796707,
+          "stop" : 1705260796725,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705260796725,
+      "stop" : 1705260796953,
+      "duration" : 228
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e19bfdf34e3ddf3",
+      "name" : "Screenshot 2024-01-14 19:33:16.894944",
+      "source" : "5e19bfdf34e3ddf3.png",
+      "type" : "image/png",
+      "size" : 203517
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1535-804"
+  }, {
+    "name" : "thread",
+    "value" : "1898-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "b6cc50c3e3e2165a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705247453188,
+          "stop" : 1705247453206,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "4bacb7afe61be970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705236114767,
+          "stop" : 1705236114785,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "fbf607747a9f6deb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705142582640,
+          "stop" : 1705142582657,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "73bf2d8cb23e5bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705138771436,
+          "stop" : 1705138771453,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "3c47da0589cdff0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705136904712,
+          "stop" : 1705136904729,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f55196e8c789b7f3.json",
+  "parameterValues" : [ ]
+}
