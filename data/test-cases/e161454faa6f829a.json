@@ -1,0 +1,253 @@
+{
+  "uid" : "e161454faa6f829a",
+  "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_01_verify_presence_and_visibility_of_footer_elements_on_pages",
+  "historyId" : "b0d25bc7aa1a86f9bef64a145cdec4b8",
+  "time" : {
+    "start" : 1705447252447,
+    "stop" : 1705447255295,
+    "duration" : 2848
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705447251677,
+      "stop" : 1705447252446,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705447178020,
+      "stop" : 1705447178020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site",
+      "time" : {
+        "start" : 1705447252447,
+        "stop" : 1705447255265,
+        "duration" : 2818
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible: ('xpath', '(//footer//li)[3]')",
+      "time" : {
+        "start" : 1705447255265,
+        "stop" : 1705447255295,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[3]')",
+        "time" : {
+          "start" : 1705447255265,
+          "stop" : 1705447255273,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"547ce8ffd06db4aa0964bc68e3c9a61a\", element=\"8EF19AF323EF97C70514841BA2DC300F_element_12\")>",
+        "time" : {
+          "start" : 1705447255273,
+          "stop" : 1705447255277,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705447255296,
+      "stop" : 1705447255610,
+      "duration" : 314
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "95b0ddf1250b32df",
+      "name" : "Screenshot 2024-01-16 23:20:55.550450",
+      "source" : "95b0ddf1250b32df.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1210-462"
+  }, {
+    "name" : "thread",
+    "value" : "1803-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "element_locator",
+    "value" : "('xpath', '(//footer//li)[3]')"
+  }, {
+    "name" : "url",
+    "value" : "'https://brainup.site'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "57a3ac7b39914dfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705363535796,
+          "stop" : 1705363539609,
+          "duration" : 3813
+        }
+      }, {
+        "uid" : "120c461daee46051",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705260722762,
+          "stop" : 1705260726658,
+          "duration" : 3896
+        }
+      }, {
+        "uid" : "1ad69b39f15d117e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705247396193,
+          "stop" : 1705247398789,
+          "duration" : 2596
+        }
+      }, {
+        "uid" : "3641526215d08acb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705236060224,
+          "stop" : 1705236062768,
+          "duration" : 2544
+        }
+      }, {
+        "uid" : "6c8c433e90a2b398",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705142509006,
+          "stop" : 1705142512713,
+          "duration" : 3707
+        }
+      }, {
+        "uid" : "7c2d00cd2d2e367",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705138699575,
+          "stop" : 1705138703515,
+          "duration" : 3940
+        }
+      }, {
+        "uid" : "a82b47f2637b7720",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705136833879,
+          "stop" : 1705136837616,
+          "duration" : 3737
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e161454faa6f829a.json",
+  "parameterValues" : [ "('xpath', '(//footer//li)[3]')", "'https://brainup.site'" ]
+}
