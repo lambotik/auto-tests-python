@@ -1,0 +1,833 @@
+{
+  "uid" : "3a629960d00853f0",
+  "name" : "Check registration with new email",
+  "fullName" : "tests.registration_page_test.TestRegistrationPage#test_registration_with_new_email",
+  "historyId" : "4edba687d923f9def916eed021709ae3",
+  "time" : {
+    "start" : 1705765790033,
+    "stop" : 1705765810733,
+    "duration" : 20700
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+  "statusTrace" : "self = <tests.registration_page_test.TestRegistrationPage object at 0x7f2ef4625a30>\nmain_page_open = None\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\")>\n\n    @allure.title('Check registration with new email')\n    def test_registration_with_new_email(self, main_page_open, driver):\n        page = RegistrationPage(driver)\n        page.open_registration_page()\n        page.fill_first_name(Registration.FIRST_NAME)\n        page.fill_birthday(Registration.BIRTHDAY)\n        page.choose_gender()\n        with allure.step(\"Fill email\"):\n            page.fill_email(Registration.EMAIL)\n        with allure.step(\"Fill password\"):\n            page.fill_password(os.environ[\"CHANGE_PASSWORD\"])\n        with allure.step(\"Fill repeat password\"):\n            page.fill_repeat_password(os.environ[\"CHANGE_PASSWORD\"])\n        page.choose_agreement()\n        page.click_registration_button()\n>       page.check_change_url()\n\ntests/registration_page_test.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/registration_page.py:53: in check_change_url\n    return self.wait_changed_url(self.links.URL_REGISTRATION_PAGE)\npages/base_page.py:77: in wait_changed_url\n    return Wait(self.driver, self.timeout).until(ec.url_changes(url),\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\")>\nmethod = <function url_changes.<locals>._predicate at 0x7f2ef4388860>\nmessage = 'Url: https://brainup.site/registration has not been changed!!!'\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!\n\n/opt/hostedtoolcache/Python/3.12.1/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705765475839,
+      "stop" : 1705765475839,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705765785738,
+      "stop" : 1705765786506,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705765786507,
+      "stop" : 1705765790033,
+      "duration" : 3526
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705765786507,
+        "stop" : 1705765790033,
+        "duration" : 3526
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\")>"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+    "statusTrace" : "self = <tests.registration_page_test.TestRegistrationPage object at 0x7f2ef4625a30>\nmain_page_open = None\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\")>\n\n    @allure.title('Check registration with new email')\n    def test_registration_with_new_email(self, main_page_open, driver):\n        page = RegistrationPage(driver)\n        page.open_registration_page()\n        page.fill_first_name(Registration.FIRST_NAME)\n        page.fill_birthday(Registration.BIRTHDAY)\n        page.choose_gender()\n        with allure.step(\"Fill email\"):\n            page.fill_email(Registration.EMAIL)\n        with allure.step(\"Fill password\"):\n            page.fill_password(os.environ[\"CHANGE_PASSWORD\"])\n        with allure.step(\"Fill repeat password\"):\n            page.fill_repeat_password(os.environ[\"CHANGE_PASSWORD\"])\n        page.choose_agreement()\n        page.click_registration_button()\n>       page.check_change_url()\n\ntests/registration_page_test.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/registration_page.py:53: in check_change_url\n    return self.wait_changed_url(self.links.URL_REGISTRATION_PAGE)\npages/base_page.py:77: in wait_changed_url\n    return Wait(self.driver, self.timeout).until(ec.url_changes(url),\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\")>\nmethod = <function url_changes.<locals>._predicate at 0x7f2ef4388860>\nmessage = 'Url: https://brainup.site/registration has not been changed!!!'\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!\n\n/opt/hostedtoolcache/Python/3.12.1/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ {
+      "name" : "Open registration page",
+      "time" : {
+        "start" : 1705765790033,
+        "stop" : 1705765790122,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@href=\"/registration\"]')",
+        "time" : {
+          "start" : 1705765790033,
+          "stop" : 1705765790069,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1705765790050,
+            "stop" : 1705765790069,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@href=\"/registration\"]')",
+            "time" : {
+              "start" : 1705765790050,
+              "stop" : 1705765790069,
+              "duration" : 19
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@href=\"/registration\"]')"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill first name",
+      "time" : {
+        "start" : 1705765790122,
+        "stop" : 1705765790214,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'firstName')",
+        "time" : {
+          "start" : 1705765790122,
+          "stop" : 1705765790148,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'firstName')",
+          "time" : {
+            "start" : 1705765790123,
+            "stop" : 1705765790133,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_27\")>",
+          "time" : {
+            "start" : 1705765790133,
+            "stop" : 1705765790137,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstname",
+        "value" : "'Auto Test'"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill birthday",
+      "time" : {
+        "start" : 1705765790214,
+        "stop" : 1705765790274,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'birthday')",
+        "time" : {
+          "start" : 1705765790214,
+          "stop" : 1705765790236,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'birthday')",
+          "time" : {
+            "start" : 1705765790214,
+            "stop" : 1705765790222,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_29\")>",
+          "time" : {
+            "start" : 1705765790222,
+            "stop" : 1705765790225,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "birthday",
+        "value" : "1929"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Choose gender",
+      "time" : {
+        "start" : 1705765790274,
+        "stop" : 1705765790323,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1705765790275,
+          "stop" : 1705765790293,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'male')",
+          "time" : {
+            "start" : 1705765790275,
+            "stop" : 1705765790293,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'male')"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill email",
+      "time" : {
+        "start" : 1705765790323,
+        "stop" : 1705765790395,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'email')",
+        "time" : {
+          "start" : 1705765790323,
+          "stop" : 1705765790344,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'email')",
+          "time" : {
+            "start" : 1705765790323,
+            "stop" : 1705765790331,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_32\")>",
+          "time" : {
+            "start" : 1705765790331,
+            "stop" : 1705765790334,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill password",
+      "time" : {
+        "start" : 1705765790395,
+        "stop" : 1705765790452,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'password')",
+        "time" : {
+          "start" : 1705765790395,
+          "stop" : 1705765790417,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'password')",
+          "time" : {
+            "start" : 1705765790395,
+            "stop" : 1705765790403,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_34\")>",
+          "time" : {
+            "start" : 1705765790403,
+            "stop" : 1705765790406,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill repeat password",
+      "time" : {
+        "start" : 1705765790452,
+        "stop" : 1705765790515,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'repeatPassword')",
+        "time" : {
+          "start" : 1705765790452,
+          "stop" : 1705765790473,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'repeatPassword')",
+          "time" : {
+            "start" : 1705765790452,
+            "stop" : 1705765790460,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_36\")>",
+          "time" : {
+            "start" : 1705765790460,
+            "stop" : 1705765790462,
+            "duration" : 2
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Choose agreement",
+      "time" : {
+        "start" : 1705765790515,
+        "stop" : 1705765790563,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1705765790516,
+          "stop" : 1705765790534,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'agreement')",
+          "time" : {
+            "start" : 1705765790516,
+            "stop" : 1705765790534,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'agreement')"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click REGISTRATION button",
+      "time" : {
+        "start" : 1705765790564,
+        "stop" : 1705765790607,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//button[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1705765790564,
+          "stop" : 1705765790586,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//button[@type=\"submit\"]')",
+          "time" : {
+            "start" : 1705765790564,
+            "stop" : 1705765790572,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5822a3f043b35a9ab3cf5ac7f626bcbf\", element=\"94905E85FF36AE8972ABDAC0CFC37A64_element_46\")>",
+          "time" : {
+            "start" : 1705765790572,
+            "stop" : 1705765790575,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Wait changing url",
+      "time" : {
+        "start" : 1705765790607,
+        "stop" : 1705765810733,
+        "duration" : 20126
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.1/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/registration_page.py\", line 53, in check_change_url\n    return self.wait_changed_url(self.links.URL_REGISTRATION_PAGE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 77, in wait_changed_url\n    return Wait(self.driver, self.timeout).until(ec.url_changes(url),\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.1/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Wait until url: https://brainup.site/registration will be changed.",
+        "time" : {
+          "start" : 1705765790607,
+          "stop" : 1705765810732,
+          "duration" : 20125
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!\n\n",
+        "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 77, in wait_changed_url\n    return Wait(self.driver, self.timeout).until(ec.url_changes(url),\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.1/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "21b6e490173148cc",
+      "name" : "Screenshot",
+      "source" : "21b6e490173148cc.png",
+      "type" : "image/png",
+      "size" : 75208
+    }, {
+      "uid" : "31c57153caf89954",
+      "name" : "HTML source",
+      "source" : "31c57153caf89954.html",
+      "type" : "text/html",
+      "size" : 30251
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 36,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705765810879,
+      "stop" : 1705765811056,
+      "duration" : 177
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1bd1e45c3369ea74",
+      "name" : "Screenshot 2024-01-20 15:50:10.997251",
+      "source" : "1bd1e45c3369ea74.png",
+      "type" : "image/png",
+      "size" : 75208
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Registration Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "registration_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1456-822"
+  }, {
+    "name" : "thread",
+    "value" : "1960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.registration_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 11,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "ff82a3f271a5a42e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705764369733,
+          "stop" : 1705764390428,
+          "duration" : 20695
+        }
+      }, {
+        "uid" : "7029ee487ae25b17",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705757386583,
+          "stop" : 1705757407304,
+          "duration" : 20721
+        }
+      }, {
+        "uid" : "66099bbd3b402ced",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705447451334,
+          "stop" : 1705447472034,
+          "duration" : 20700
+        }
+      }, {
+        "uid" : "f9347cd3ad831255",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705363767080,
+          "stop" : 1705363787804,
+          "duration" : 20724
+        }
+      }, {
+        "uid" : "da76f2fc4289860e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705260933360,
+          "stop" : 1705260954063,
+          "duration" : 20703
+        }
+      }, {
+        "uid" : "abb626914c043126",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705247575111,
+          "stop" : 1705247595821,
+          "duration" : 20710
+        }
+      }, {
+        "uid" : "f77dba08b7f76645",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705236257718,
+          "stop" : 1705236278425,
+          "duration" : 20707
+        }
+      }, {
+        "uid" : "f70ac091d074113c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705142761556,
+          "stop" : 1705142782258,
+          "duration" : 20702
+        }
+      }, {
+        "uid" : "d74f884561c97c4e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705138932633,
+          "stop" : 1705138953333,
+          "duration" : 20700
+        }
+      }, {
+        "uid" : "de9260571e6021ca",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Url: https://brainup.site/registration has not been changed!!!",
+        "time" : {
+          "start" : 1705137096491,
+          "stop" : 1705137117192,
+          "duration" : 20701
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3a629960d00853f0.json",
+  "parameterValues" : [ ]
+}

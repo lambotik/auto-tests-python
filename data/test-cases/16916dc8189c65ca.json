@@ -1,0 +1,799 @@
+{
+  "uid" : "16916dc8189c65ca",
+  "name" : "Check registration with an existing email",
+  "fullName" : "tests.registration_page_test.TestRegistrationPage#test_registration_negative",
+  "historyId" : "7a368c9c8955496635743ec013326ed3",
+  "time" : {
+    "start" : 1705765815524,
+    "stop" : 1705765816119,
+    "duration" : 595
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The user has registered with an existing email\nassert 'Please enter your login and password' in 'The email address is already in use by another account.'",
+  "statusTrace" : "self = <tests.registration_page_test.TestRegistrationPage object at 0x7f2ef46262a0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ef1cd3082afb67d6b7d19d956d149c72\")>\nmain_page_open = None, title = 'an existing email', first_name = 'Auto Test'\nbirthday = 1929, email = '', password = 'password'\nconfirm_password = 'password'\nerror_message = 'The email address is already in use by another account.'\n\n    @pytest.mark.parametrize(Registration.test_data, Registration.DATA_REGISTRATION)\n    def test_registration_negative(self, driver, main_page_open, title, first_name, birthday, email, password,\n                                   confirm_password, error_message):\n        allure.dynamic.title(f'Check registration with {title}')\n        page = RegistrationPage(driver)\n        page.open_registration_page()\n        page.fill_first_name(first_name)\n        page.fill_birthday(birthday)\n        page.choose_gender()\n        with allure.step(\"Fill email\"):\n            page.fill_email(email)\n        with allure.step(\"Fill password\"):\n            page.fill_password(password)\n        with allure.step(\"Fill repeat password\"):\n            page.fill_repeat_password(confirm_password)\n        page.choose_agreement()\n        page.click_registration_button()\n        text = page.check_error_message()\n>       assert text in error_message, f'The user has registered with {title}'\nE       AssertionError: The user has registered with an existing email\nE       assert 'Please enter your login and password' in 'The email address is already in use by another account.'\n\ntests/registration_page_test.py:56: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705765811826,
+      "stop" : 1705765815523,
+      "duration" : 3697
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705765811826,
+        "stop" : 1705765815523,
+        "duration" : 3697
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ef1cd3082afb67d6b7d19d956d149c72\")>"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705765475839,
+      "stop" : 1705765475839,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705765811058,
+      "stop" : 1705765811826,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The user has registered with an existing email\nassert 'Please enter your login and password' in 'The email address is already in use by another account.'",
+    "statusTrace" : "self = <tests.registration_page_test.TestRegistrationPage object at 0x7f2ef46262a0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ef1cd3082afb67d6b7d19d956d149c72\")>\nmain_page_open = None, title = 'an existing email', first_name = 'Auto Test'\nbirthday = 1929, email = '', password = 'password'\nconfirm_password = 'password'\nerror_message = 'The email address is already in use by another account.'\n\n    @pytest.mark.parametrize(Registration.test_data, Registration.DATA_REGISTRATION)\n    def test_registration_negative(self, driver, main_page_open, title, first_name, birthday, email, password,\n                                   confirm_password, error_message):\n        allure.dynamic.title(f'Check registration with {title}')\n        page = RegistrationPage(driver)\n        page.open_registration_page()\n        page.fill_first_name(first_name)\n        page.fill_birthday(birthday)\n        page.choose_gender()\n        with allure.step(\"Fill email\"):\n            page.fill_email(email)\n        with allure.step(\"Fill password\"):\n            page.fill_password(password)\n        with allure.step(\"Fill repeat password\"):\n            page.fill_repeat_password(confirm_password)\n        page.choose_agreement()\n        page.click_registration_button()\n        text = page.check_error_message()\n>       assert text in error_message, f'The user has registered with {title}'\nE       AssertionError: The user has registered with an existing email\nE       assert 'Please enter your login and password' in 'The email address is already in use by another account.'\n\ntests/registration_page_test.py:56: AssertionError",
+    "steps" : [ {
+      "name" : "Open registration page",
+      "time" : {
+        "start" : 1705765815525,
+        "stop" : 1705765815611,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@href=\"/registration\"]')",
+        "time" : {
+          "start" : 1705765815525,
+          "stop" : 1705765815560,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1705765815542,
+            "stop" : 1705765815560,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@href=\"/registration\"]')",
+            "time" : {
+              "start" : 1705765815542,
+              "stop" : 1705765815560,
+              "duration" : 18
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@href=\"/registration\"]')"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill first name",
+      "time" : {
+        "start" : 1705765815611,
+        "stop" : 1705765815682,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'firstName')",
+        "time" : {
+          "start" : 1705765815611,
+          "stop" : 1705765815639,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'firstName')",
+          "time" : {
+            "start" : 1705765815611,
+            "stop" : 1705765815623,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_27\")>",
+          "time" : {
+            "start" : 1705765815623,
+            "stop" : 1705765815627,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstname",
+        "value" : "'Auto Test'"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill birthday",
+      "time" : {
+        "start" : 1705765815682,
+        "stop" : 1705765815742,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'birthday')",
+        "time" : {
+          "start" : 1705765815682,
+          "stop" : 1705765815704,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'birthday')",
+          "time" : {
+            "start" : 1705765815682,
+            "stop" : 1705765815690,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_29\")>",
+          "time" : {
+            "start" : 1705765815690,
+            "stop" : 1705765815694,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "birthday",
+        "value" : "1929"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Choose gender",
+      "time" : {
+        "start" : 1705765815742,
+        "stop" : 1705765815789,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1705765815742,
+          "stop" : 1705765815761,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'male')",
+          "time" : {
+            "start" : 1705765815742,
+            "stop" : 1705765815761,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'male')"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill email",
+      "time" : {
+        "start" : 1705765815789,
+        "stop" : 1705765815836,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'email')",
+        "time" : {
+          "start" : 1705765815789,
+          "stop" : 1705765815813,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'email')",
+          "time" : {
+            "start" : 1705765815789,
+            "stop" : 1705765815797,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_34\")>",
+          "time" : {
+            "start" : 1705765815797,
+            "stop" : 1705765815800,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill password",
+      "time" : {
+        "start" : 1705765815836,
+        "stop" : 1705765815893,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'password')",
+        "time" : {
+          "start" : 1705765815836,
+          "stop" : 1705765815858,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'password')",
+          "time" : {
+            "start" : 1705765815836,
+            "stop" : 1705765815844,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_36\")>",
+          "time" : {
+            "start" : 1705765815844,
+            "stop" : 1705765815847,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill repeat password",
+      "time" : {
+        "start" : 1705765815893,
+        "stop" : 1705765815983,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'repeatPassword')",
+        "time" : {
+          "start" : 1705765815893,
+          "stop" : 1705765815925,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'repeatPassword')",
+          "time" : {
+            "start" : 1705765815893,
+            "stop" : 1705765815901,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_38\")>",
+          "time" : {
+            "start" : 1705765815901,
+            "stop" : 1705765815904,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Choose agreement",
+      "time" : {
+        "start" : 1705765815984,
+        "stop" : 1705765816034,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1705765815984,
+          "stop" : 1705765816005,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'agreement')",
+          "time" : {
+            "start" : 1705765815984,
+            "stop" : 1705765816005,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'agreement')"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click REGISTRATION button",
+      "time" : {
+        "start" : 1705765816034,
+        "stop" : 1705765816083,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//button[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1705765816034,
+          "stop" : 1705765816057,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//button[@type=\"submit\"]')",
+          "time" : {
+            "start" : 1705765816034,
+            "stop" : 1705765816042,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_45\")>",
+          "time" : {
+            "start" : 1705765816042,
+            "stop" : 1705765816045,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check error message",
+      "time" : {
+        "start" : 1705765816083,
+        "stop" : 1705765816119,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+        "time" : {
+          "start" : 1705765816083,
+          "stop" : 1705765816109,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+          "time" : {
+            "start" : 1705765816083,
+            "stop" : 1705765816093,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ef1cd3082afb67d6b7d19d956d149c72\", element=\"08FCC8947B040F2E97FE064E54D1AA6F_element_47\")>",
+          "time" : {
+            "start" : 1705765816093,
+            "stop" : 1705765816096,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "205186fda5664467",
+      "name" : "Screenshot",
+      "source" : "205186fda5664467.png",
+      "type" : "image/png",
+      "size" : 79123
+    }, {
+      "uid" : "fb77f372126949c2",
+      "name" : "HTML source",
+      "source" : "fb77f372126949c2.html",
+      "type" : "text/html",
+      "size" : 30147
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 38,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705765816287,
+      "stop" : 1705765816502,
+      "duration" : 215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9419a9a674fedc0a",
+      "name" : "Screenshot 2024-01-20 15:50:16.443802",
+      "source" : "9419a9a674fedc0a.png",
+      "type" : "image/png",
+      "size" : 80686
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Registration Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "registration_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1456-822"
+  }, {
+    "name" : "thread",
+    "value" : "1960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.registration_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "birthday",
+    "value" : "1929"
+  }, {
+    "name" : "confirm_password",
+    "value" : "'password'"
+  }, {
+    "name" : "email",
+    "value" : "''"
+  }, {
+    "name" : "error_message",
+    "value" : "'The email address is already in use by another account.'"
+  }, {
+    "name" : "first_name",
+    "value" : "'Auto Test'"
+  }, {
+    "name" : "password",
+    "value" : "'password'"
+  }, {
+    "name" : "title",
+    "value" : "'an existing email'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "15bf648e50032294",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user has registered with an existing email\nassert 'Please enter your login and password' in 'The email address is already in use by another account.'",
+        "time" : {
+          "start" : 1705138958530,
+          "stop" : 1705138959122,
+          "duration" : 592
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "16916dc8189c65ca.json",
+  "parameterValues" : [ "1929", "'password'", "''", "'The email address is already in use by another account.'", "'Auto Test'", "'password'", "'an existing email'" ]
+}
