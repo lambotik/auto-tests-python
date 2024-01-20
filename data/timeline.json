@@ -1,702 +1,702 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fv-az1456-822",
+    "name" : "fv-az702-707",
     "children" : [ {
-      "name" : "1960-MainThread",
+      "name" : "1813-MainThread",
       "children" : [ {
-        "name" : "Verify redirection to telegram page not authorized user.",
-        "uid" : "ed6647502c67d096",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "name" : "Check registration with new email and empty confirm password",
+        "uid" : "cc76cb6a6444c34c",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765694955,
-          "stop" : 1705765696747,
-          "duration" : 1792
+          "start" : 1705766575117,
+          "stop" : 1705766575725,
+          "duration" : 608
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
-        "uid" : "5c7ec25e1d98b338",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765597155,
-          "stop" : 1705765600691,
-          "duration" : 3536
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '//footer//a[@title]')", "['Обратная связь', 'Contact us']", "'https://brainup.site'" ]
-      }, {
-        "name" : "Check registration with new email and empty birthday",
-        "uid" : "a4484b49f46ec067",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765836509,
-          "stop" : 1705765837115,
-          "duration" : 606
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "''", "'password'", "'autotest_N@1705765475.4953635.com'", "['Invalid date', 'Некорректная дата']", "'Auto Test'", "'password'", "'new email and empty birthday'" ]
+        "parameters" : [ "1960", "''", "'autotest_N@1705766278.045309.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "'password'", "'new email and empty confirm password'" ]
       }, {
         "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "b23adce3b2084c4b",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "uid" : "b79e7585066cecea",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765559466,
-          "stop" : 1705765563015,
-          "duration" : 3549
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//div)[1]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Verify redirection to contacts page not authorized user.",
-        "uid" : "677d6bb2321688d7",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765707610,
-          "stop" : 1705765707745,
-          "duration" : 135
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration with new email and empty email",
-        "uid" : "235509f60d9107be",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765841673,
-          "stop" : 1705765842263,
-          "duration" : 590
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1929", "'password'", "''", "['Please enter your login and password', 'Пожалуйста, введите логин и пароль.']", "'Auto Test'", "'password'", "'new email and empty email'" ]
-      }, {
-        "name" : "Test for authorization customer.",
-        "uid" : "d404ce874f1633d4",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765660494,
-          "stop" : 1705765660494,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Checking the possibility of authorization with incorrect data",
-        "uid" : "2ac631f86cc6f48b",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "failed",
-        "time" : {
-          "start" : 1705765507658,
-          "stop" : 1705765507957,
-          "duration" : 299
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to telegram page not authorized user.",
-        "uid" : "a42f9d0e01b36a0e",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765518274,
-          "stop" : 1705765520472,
-          "duration" : 2198
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Select random card from word group and compare UI vs BACKEND data",
-        "uid" : "771fe187c9d16ea",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765947613,
-          "stop" : 1705765947613,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Checking the clickability of the Start button.",
-        "uid" : "2833473e72ab5f2c",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765734692,
-          "stop" : 1705765734770,
-          "duration" : 78
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to donate page not authorized user.",
-        "uid" : "405b620c22722057",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765701445,
-          "stop" : 1705765703038,
-          "duration" : 1593
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify accuracy of the attribute 'href' in the REG.RU link in Footer",
-        "uid" : "ccb29a954ad60384",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765635363,
-          "stop" : 1705765635380,
-          "duration" : 17
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Return the password by receiving an email link",
-        "uid" : "e8765a705d61f116",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765764725,
-          "stop" : 1705765785367,
-          "duration" : 20642
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to contacts page not authorized user.",
-        "uid" : "e220f2085a129a1b",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765531684,
-          "stop" : 1705765531826,
-          "duration" : 142
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_progress_bar_is_present_en",
-        "uid" : "42aadce32803402e",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765897549,
-          "stop" : 1705765897549,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to used resources page not authorized user.",
-        "uid" : "7f27f12bc7a361ab",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765553529,
-          "stop" : 1705765553667,
-          "duration" : 138
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "71d62c7a3ca2a2a8",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765583099,
-          "stop" : 1705765586608,
-          "duration" : 3509
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//li)[2]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Select a random card from \"Similar phrases\" group and compare UI vs BACKEND data",
-        "uid" : "4ff171a2dcee5090",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765922710,
-          "stop" : 1705765922710,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration with an existing email",
-        "uid" : "16916dc8189c65ca",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "failed",
-        "time" : {
-          "start" : 1705765815524,
-          "stop" : 1705765816119,
-          "duration" : 595
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1929", "'password'", "''", "'The email address is already in use by another account.'", "'Auto Test'", "'password'", "'an existing email'" ]
-      }, {
-        "name" : "Verify redirection to donate page not authorized user.",
-        "uid" : "bec7ee6c5a99d498",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765525537,
-          "stop" : 1705765527232,
-          "duration" : 1695
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "29dd719eca0cb034",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765564099,
-          "stop" : 1705765567720,
-          "duration" : 3621
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//li)[3]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Verify redirection to contributors page not authorized user.",
-        "uid" : "dabf525627a595af",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765724569,
-          "stop" : 1705765725204,
-          "duration" : 635
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration with new email and empty first name",
-        "uid" : "237764fbf7bfc839",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765831057,
-          "stop" : 1705765831667,
-          "duration" : 610
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1929", "'password'", "'autotest_N@1705765475.4953635.com'", "['Empty LastName', 'Фамилия не Указана']", "''", "'password'", "'new email and empty first name'" ]
-      }, {
-        "name" : "Change the password by receiving an email link",
-        "uid" : "888c97dbebbc6e3e",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765739435,
-          "stop" : 1705765760085,
-          "duration" : 20650
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to github not authorized user.",
-        "uid" : "bdb963e851185067",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765542081,
-          "stop" : 1705765543612,
-          "duration" : 1531
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
-        "uid" : "ad978a33416de1f2",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765601798,
-          "stop" : 1705765605537,
-          "duration" : 3739
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '//span[@data-test-support-message]')", "['При поддержке', 'With the support']", "'https://brainup.site'" ]
-      }, {
-        "name" : "Select random card from word group and compare UI vs BACKEND data",
-        "uid" : "7ad658fdbe47e8ee",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765872640,
-          "stop" : 1705765872640,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence, visibility and accuracy of the image in the Selectel link in Footer",
-        "uid" : "45018aac9dc7fa6a",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765625616,
-          "stop" : 1705765625678,
-          "duration" : 62
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration with new email and empty password",
-        "uid" : "a330b0a9a6432b9",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765825840,
-          "stop" : 1705765826452,
-          "duration" : 612
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "1929", "'password'", "'autotest_N@1705765475.4953635.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "''", "'new email and empty password'" ]
-      }, {
-        "name" : "Verify presence, visibility and accuracy of the ARASAAC link and link's image in Footer",
-        "uid" : "ce2c4ea2e427f750",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765610469,
-          "stop" : 1705765611511,
-          "duration" : 1042
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "709485d2ca7d8e60",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765554638,
-          "stop" : 1705765558379,
-          "duration" : 3741
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('tag name', 'footer')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Checking the possibility of authorization with the correct data",
-        "uid" : "d5663df09144831d",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765481980,
-          "stop" : 1705765502905,
-          "duration" : 20925
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "d0def755f34e6bb",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765592531,
-          "stop" : 1705765596065,
-          "duration" : 3534
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//div)[4]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Verify presence, visibility and accuracy of the image in the EPAM link in Footer",
-        "uid" : "bdf4d145bcb5916d",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765630501,
-          "stop" : 1705765630559,
-          "duration" : 58
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify Footer invisibility through the modal window with the exercise",
-        "uid" : "92645b38ba3668c3",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765635607,
-          "stop" : 1705765635607,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "5f604b05ec958deb",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765578486,
-          "stop" : 1705765582007,
-          "duration" : 3521
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//li)[1]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "98370005213dc49d",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765587711,
-          "stop" : 1705765591446,
-          "duration" : 3735
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "('xpath', '(//footer//li)[4]')", "'https://brainup.site'" ]
-      }, {
-        "name" : "Verify return main page from description page.",
-        "uid" : "47969c1a96393d9b",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765513122,
-          "stop" : 1705765513239,
-          "duration" : 117
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration without choosing agreement",
-        "uid" : "f3479e8e9e335578",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765851813,
-          "stop" : 1705765872456,
-          "duration" : 20643
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration without choosing gender",
-        "uid" : "5db850348f78f287",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765846724,
-          "stop" : 1705765847269,
-          "duration" : 545
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to specialists page not authorized user.",
-        "uid" : "d0ccbd2943a50cfb",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765536482,
-          "stop" : 1705765537623,
-          "duration" : 1141
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to description page not authorized user.",
-        "uid" : "644483fcdaa81aa1",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765690364,
-          "stop" : 1705765690473,
-          "duration" : 109
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to github not authorized user.",
-        "uid" : "cb03cf7b3a35f6f5",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765717630,
-          "stop" : 1705765719819,
-          "duration" : 2189
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify redirection to specialists page not authorized user.",
-        "uid" : "d2f93ad1e123a01f",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765712491,
-          "stop" : 1705765713124,
-          "duration" : 633
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check registration with new email",
-        "uid" : "3a629960d00853f0",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1705765790033,
-          "stop" : 1705765810733,
-          "duration" : 20700
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "608ee1077cc7757e",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1705765573634,
-          "stop" : 1705765577395,
-          "duration" : 3761
+          "start" : 1705766359163,
+          "stop" : 1705766361802,
+          "duration" : 2639
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "('xpath', '(//footer//li)[5]')", "'https://brainup.site'" ]
       }, {
         "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-        "uid" : "d714007748db12a8",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "uid" : "58463269b6bd7258",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765568816,
-          "stop" : 1705765572549,
-          "duration" : 3733
+          "start" : 1705766355363,
+          "stop" : 1705766358082,
+          "duration" : 2719
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "('xpath', '(//footer//div)[2]')", "'https://brainup.site'" ]
       }, {
-        "name" : "Check registration with new email and empty confirm password",
-        "uid" : "f1f53e7cc65c68a1",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
+        "name" : "test_progress_bar_is_present_en",
+        "uid" : "2e000f3b17846f5f",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
         "time" : {
-          "start" : 1705765820796,
-          "stop" : 1705765821394,
-          "duration" : 598
+          "start" : 1705766645313,
+          "stop" : 1705766645313,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "1929", "''", "'autotest_N@1705765475.4953635.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "'password'", "'new email and empty confirm password'" ]
+        "parameters" : [ ]
       }, {
-        "name" : "Verify redirection to used resources page not authorized user.",
-        "uid" : "9a18071b9a1977cf",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "name" : "Verify redirection to contacts page not authorized user.",
+        "uid" : "28b5bc0f9e528ba9",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765729820,
-          "stop" : 1705765729957,
+          "start" : 1705766473129,
+          "stop" : 1705766473269,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "33bc70ac097f7502",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766351467,
+          "stop" : 1705766354270,
+          "duration" : 2803
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//li)[3]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Select random card from word group and compare UI vs BACKEND data",
+        "uid" : "b6b679884b73714",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766693207,
+          "stop" : 1705766693207,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration with new email and empty email",
+        "uid" : "9fad7e05946422ab",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766592451,
+          "stop" : 1705766593039,
+          "duration" : 588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1960", "'password'", "''", "['Please enter your login and password', 'Пожалуйста, введите логин и пароль.']", "'Auto Test'", "'password'", "'new email and empty email'" ]
+      }, {
+        "name" : "Checking the possibility of authorization with incorrect data",
+        "uid" : "a2b4245718c7b501",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "failed",
+        "time" : {
+          "start" : 1705766307472,
+          "stop" : 1705766307767,
+          "duration" : 295
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Return the password by receiving an email link",
+        "uid" : "3701a03dc97cbaa5",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766522024,
+          "stop" : 1705766542673,
+          "duration" : 20649
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to github not authorized user.",
+        "uid" : "9ba9d7b733323b8a",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766333589,
+          "stop" : 1705766334953,
+          "duration" : 1364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to used resources page not authorized user.",
+        "uid" : "a0cd1040c364c96d",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766490167,
+          "stop" : 1705766490304,
           "duration" : 137
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Verify redirection to contributors page not authorized user.",
-        "uid" : "e3d13d0afeab1b95",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
-        "status" : "passed",
+        "name" : "Checking the possibility of authorization with the correct data",
+        "uid" : "9ea8c75c1022b8a9",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
         "time" : {
-          "start" : 1705765548122,
-          "stop" : 1705765548755,
-          "duration" : 633
+          "start" : 1705766282870,
+          "stop" : 1705766303547,
+          "duration" : 20677
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Verify presence, visibility and accuracy of the image in the REG.RU link in Footer",
-        "uid" : "ea7282777eee76b8",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "name" : "Verify redirection to telegram page not authorized user.",
+        "uid" : "18806a9ec072a5d7",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765620953,
-          "stop" : 1705765621009,
-          "duration" : 56
+          "start" : 1705766463667,
+          "stop" : 1705766464779,
+          "duration" : 1112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to donate page not authorized user.",
+        "uid" : "bf6ff504e55cebf8",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766321208,
+          "stop" : 1705766322181,
+          "duration" : 973
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration without choosing gender",
+        "uid" : "5b6d9257e2c96d61",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766596540,
+          "stop" : 1705766597080,
+          "duration" : 540
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Verify presence, visibility and accuracy of the JETBRAINS link and link's image in Footer",
-        "uid" : "5918554b9682b62b",
-        "parentUid" : "5d31a79303e5fc1730fef972cad875ed",
+        "uid" : "c3b7456c8d6a5b56",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
         "status" : "passed",
         "time" : {
-          "start" : 1705765616139,
-          "stop" : 1705765616392,
-          "duration" : 253
+          "start" : 1705766392368,
+          "stop" : 1705766392561,
+          "duration" : 193
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility and accuracy of the image in the REG.RU link in Footer",
+        "uid" : "97e4e98524f65dca",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766396335,
+          "stop" : 1705766396390,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility and accuracy of the image in the Selectel link in Footer",
+        "uid" : "f00f521c1d83eed",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766400166,
+          "stop" : 1705766400222,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "54a4134cbdff29ed",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766366587,
+          "stop" : 1705766369331,
+          "duration" : 2744
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//li)[2]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "13ee027328418b4d",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766374164,
+          "stop" : 1705766376741,
+          "duration" : 2577
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//div)[4]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
+        "uid" : "51df2a203ceef1ed",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766377833,
+          "stop" : 1705766380512,
+          "duration" : 2679
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '//footer//a[@title]')", "['Обратная связь', 'Contact us']", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "c0dd2568b6c54d4d",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766370418,
+          "stop" : 1705766373076,
+          "duration" : 2658
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//li)[4]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify redirection to used resources page not authorized user.",
+        "uid" : "f289d04f6060c4f8",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766342667,
+          "stop" : 1705766342803,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Select a random card from \"Similar phrases\" group and compare UI vs BACKEND data",
+        "uid" : "d9aa1cfc00c3aedc",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766669230,
+          "stop" : 1705766669230,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to contacts page not authorized user.",
+        "uid" : "9145c4f933acf03e",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766325784,
+          "stop" : 1705766325922,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration without choosing agreement",
+        "uid" : "70d3ef7e4240b806",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766600569,
+          "stop" : 1705766621231,
+          "duration" : 20662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "c802788f9bd75291",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766347630,
+          "stop" : 1705766350374,
+          "duration" : 2744
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//div)[1]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify presence, visibility and accuracy of the image in the EPAM link in Footer",
+        "uid" : "29f9ee0670564",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766403973,
+          "stop" : 1705766404033,
+          "duration" : 60
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test for authorization customer.",
+        "uid" : "e712be25a65b272d",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766432475,
+          "stop" : 1705766432475,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to donate page not authorized user.",
+        "uid" : "7133ae8e1a6eaa8",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766468504,
+          "stop" : 1705766469551,
+          "duration" : 1047
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to github not authorized user.",
+        "uid" : "1d2740abbde81fc6",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766481051,
+          "stop" : 1705766482335,
+          "duration" : 1284
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to specialists page not authorized user.",
+        "uid" : "83e1fbd8b3b11798",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766329396,
+          "stop" : 1705766330029,
+          "duration" : 633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration with an existing email",
+        "uid" : "57eee2c7fab801dc",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "failed",
+        "time" : {
+          "start" : 1705766570687,
+          "stop" : 1705766571286,
+          "duration" : 599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1960", "'password'", "''", "'The email address is already in use by another account.'", "'Auto Test'", "'password'", "'an existing email'" ]
+      }, {
+        "name" : "Check registration with new email",
+        "uid" : "b1e7d274ee9efee2",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766546388,
+          "stop" : 1705766567097,
+          "duration" : 20709
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration with new email and empty first name",
+        "uid" : "c7ae900e1be28700",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766583813,
+          "stop" : 1705766584446,
+          "duration" : 633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1960", "'password'", "'autotest_N@1705766278.045309.com'", "['Empty LastName', 'Фамилия не Указана']", "''", "'password'", "'new email and empty first name'" ]
+      }, {
+        "name" : "Select random card from word group and compare UI vs BACKEND data",
+        "uid" : "be9bd629fd7b227e",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766621423,
+          "stop" : 1705766621423,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration with new email and empty password",
+        "uid" : "81a459d44e62ca08",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766579396,
+          "stop" : 1705766580024,
+          "duration" : 628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1960", "'password'", "'autotest_N@1705766278.045309.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "''", "'new email and empty password'" ]
+      }, {
+        "name" : "Verify redirection to contributors page not authorized user.",
+        "uid" : "b383a7381f0477e7",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766485824,
+          "stop" : 1705766486463,
+          "duration" : 639
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
+        "uid" : "e481a3757075fff4",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766381595,
+          "stop" : 1705766384274,
+          "duration" : 2679
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '//span[@data-test-support-message]')", "['При поддержке', 'With the support']", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify redirection to contributors page not authorized user.",
+        "uid" : "d38c71383406a065",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766338457,
+          "stop" : 1705766339098,
+          "duration" : 641
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility and accuracy of the ARASAAC link and link's image in Footer",
+        "uid" : "955425042979b963",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766388052,
+          "stop" : 1705766388744,
+          "duration" : 692
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "9a530b1d1b85004a",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766362900,
+          "stop" : 1705766365491,
+          "duration" : 2591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('xpath', '(//footer//li)[1]')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify redirection to description page not authorized user.",
+        "uid" : "ffce7764a4134250",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766459989,
+          "stop" : 1705766460101,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify accuracy of the attribute 'href' in the REG.RU link in Footer",
+        "uid" : "5a4edb466aaea8cb",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766408126,
+          "stop" : 1705766408143,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to specialists page not authorized user.",
+        "uid" : "d138f7c6f47b79fd",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766476802,
+          "stop" : 1705766477436,
+          "duration" : 634
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Change the password by receiving an email link",
+        "uid" : "100a00140902c236",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766497561,
+          "stop" : 1705766518214,
+          "duration" : 20653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to telegram page not authorized user.",
+        "uid" : "426c616a50267d54",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766315997,
+          "stop" : 1705766317302,
+          "duration" : 1305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Checking the clickability of the Start button.",
+        "uid" : "e689a5c59a8c36ec",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766493912,
+          "stop" : 1705766493990,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Footer invisibility through the modal window with the exercise",
+        "uid" : "97e5a4c5a17a6286",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705766408371,
+          "stop" : 1705766408371,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of Footer on each page specified in the kit",
+        "uid" : "d9942797f777a52e",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766343772,
+          "stop" : 1705766346535,
+          "duration" : 2763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('tag name', 'footer')", "'https://brainup.site'" ]
+      }, {
+        "name" : "Verify return main page from description page.",
+        "uid" : "778c33f32ee9e49",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766311905,
+          "stop" : 1705766312022,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check registration with new email and empty birthday",
+        "uid" : "c661c32a28785877",
+        "parentUid" : "ae0d4367a0f55bfc21bd1482be4c2602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766588088,
+          "stop" : 1705766588707,
+          "duration" : 619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'password'", "'autotest_N@1705766278.045309.com'", "['Invalid date', 'Некорректная дата']", "'Auto Test'", "'password'", "'new email and empty birthday'" ]
       } ],
-      "uid" : "5d31a79303e5fc1730fef972cad875ed"
+      "uid" : "ae0d4367a0f55bfc21bd1482be4c2602"
     } ],
-    "uid" : "d99575cae5dfbe0e6f75aafa185b80df"
+    "uid" : "441555b6439b949fc0df22ff92252771"
   } ],
   "name" : "timeline"
 }

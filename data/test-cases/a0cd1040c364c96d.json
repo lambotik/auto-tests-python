@@ -1,0 +1,386 @@
+{
+  "uid" : "a0cd1040c364c96d",
+  "name" : "Verify redirection to used resources page not authorized user.",
+  "fullName" : "tests.main_page_test.TestMainPage#test_mp_08_verify_redirection_to_used_resources_page",
+  "historyId" : "43df35c0ef3ab6719310f8b9b9ee7530",
+  "time" : {
+    "start" : 1705766490167,
+    "stop" : 1705766490304,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705766486763,
+      "stop" : 1705766487532,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705766487532,
+      "stop" : 1705766490167,
+      "duration" : 2635
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705766487532,
+        "stop" : 1705766490167,
+        "duration" : 2635
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"12ce3cb4bdcc98c8fb4a0ac4e47b688a\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705766278287,
+      "stop" : 1705766278288,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open used resources page",
+      "time" : {
+        "start" : 1705766490168,
+        "stop" : 1705766490304,
+        "duration" : 136
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('css selector', '#other-menu')",
+        "time" : {
+          "start" : 1705766490168,
+          "stop" : 1705766490205,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1705766490187,
+            "stop" : 1705766490205,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('css selector', '#other-menu')",
+            "time" : {
+              "start" : 1705766490187,
+              "stop" : 1705766490205,
+              "duration" : 18
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('css selector', '#other-menu')"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      }, {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@id=\"ember9\"]')",
+        "time" : {
+          "start" : 1705766490233,
+          "stop" : 1705766490263,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1705766490248,
+            "stop" : 1705766490263,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@id=\"ember9\"]')",
+            "time" : {
+              "start" : 1705766490248,
+              "stop" : 1705766490263,
+              "duration" : 15
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@id=\"ember9\"]')"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      }, {
+        "name" : "Check url is present: https://brainup.site/used-resources",
+        "time" : {
+          "start" : 1705766490296,
+          "stop" : 1705766490301,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 7,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705766490305,
+      "stop" : 1705766490507,
+      "duration" : 202
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "96fdbbc47e8654af",
+      "name" : "Screenshot 2024-01-20 16:01:30.448965",
+      "source" : "96fdbbc47e8654af.png",
+      "type" : "image/png",
+      "size" : 59500
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Main Page."
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "main_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az702-707"
+  }, {
+    "name" : "thread",
+    "value" : "1813-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.main_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "9a18071b9a1977cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705765729820,
+          "stop" : 1705765729957,
+          "duration" : 137
+        }
+      }, {
+        "uid" : "b0f353aa60ce69ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705764307559,
+          "stop" : 1705764307691,
+          "duration" : 132
+        }
+      }, {
+        "uid" : "4b74f82b627c9dd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705757328429,
+          "stop" : 1705757328564,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "60a89c1a4901bc91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705447394837,
+          "stop" : 1705447394971,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "6880995c86b6245e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705363706576,
+          "stop" : 1705363706714,
+          "duration" : 138
+        }
+      }, {
+        "uid" : "294f525692e93dde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705260872019,
+          "stop" : 1705260872155,
+          "duration" : 136
+        }
+      }, {
+        "uid" : "fb05f27698bf09fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705247517355,
+          "stop" : 1705247517491,
+          "duration" : 136
+        }
+      }, {
+        "uid" : "cdade52b8ed8b2a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705236201559,
+          "stop" : 1705236201695,
+          "duration" : 136
+        }
+      }, {
+        "uid" : "dd16e07ac45ee48f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705142701076,
+          "stop" : 1705142701213,
+          "duration" : 137
+        }
+      }, {
+        "uid" : "41f5febbda1857c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705138871739,
+          "stop" : 1705138871874,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "482fe386b1e96fd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705137035994,
+          "stop" : 1705137036129,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "f5bf7b5a57b4ce8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704390666936,
+          "stop" : 1704390667073,
+          "duration" : 137
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a0cd1040c364c96d.json",
+  "parameterValues" : [ ]
+}
