@@ -1,0 +1,495 @@
+{
+  "uid" : "2914c47fb7b3cc47",
+  "name" : "Verify presence, visibility and accuracy of the ARASAAC link and link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_03_verify_arasaac_link",
+  "historyId" : "e5c52ddf3998c7ec64d507c6346828a5",
+  "time" : {
+    "start" : 1705868265116,
+    "stop" : 1705868265822,
+    "duration" : 706
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705868144400,
+      "stop" : 1705868144400,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705868261570,
+      "stop" : 1705868262339,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705868262339,
+      "stop" : 1705868265116,
+      "duration" : 2777
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705868262339,
+        "stop" : 1705868265116,
+        "duration" : 2777
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"07b4e2ce5cbb0efb0d37d690ed2b3a1b\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check ARASAAC link is present and visible in Footer",
+      "time" : {
+        "start" : 1705868265116,
+        "stop" : 1705868265145,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[3]/a')",
+        "time" : {
+          "start" : 1705868265116,
+          "stop" : 1705868265145,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1705868265116,
+            "stop" : 1705868265125,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"07b4e2ce5cbb0efb0d37d690ed2b3a1b\", element=\"9A982E1B4E13310A7826731B941C6A4C_element_12\")>",
+          "time" : {
+            "start" : 1705868265125,
+            "stop" : 1705868265129,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Check ARASAAC link is clickable in Footer",
+      "time" : {
+        "start" : 1705868265146,
+        "stop" : 1705868265164,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1705868265146,
+          "stop" : 1705868265164,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1705868265146,
+            "stop" : 1705868265164,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the ARASAAC link",
+      "time" : {
+        "start" : 1705868265165,
+        "stop" : 1705868265178,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of link",
+        "time" : {
+          "start" : 1705868265165,
+          "stop" : 1705868265178,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Check ARASAAC image is present and visible in Footer",
+      "time" : {
+        "start" : 1705868265775,
+        "stop" : 1705868265798,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[3]//img')",
+        "time" : {
+          "start" : 1705868265775,
+          "stop" : 1705868265798,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[3]//img')",
+          "time" : {
+            "start" : 1705868265775,
+            "stop" : 1705868265784,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"07b4e2ce5cbb0efb0d37d690ed2b3a1b\", element=\"9A982E1B4E13310A7826731B941C6A4C_element_14\")>",
+          "time" : {
+            "start" : 1705868265784,
+            "stop" : 1705868265787,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"src\" of ARASAAC image in Footer",
+      "time" : {
+        "start" : 1705868265798,
+        "stop" : 1705868265811,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1705868265798,
+          "stop" : 1705868265811,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"alt\" of ARASAAC image in Footer",
+      "time" : {
+        "start" : 1705868265811,
+        "stop" : 1705868265822,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1705868265811,
+          "stop" : 1705868265822,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 17,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705868265823,
+      "stop" : 1705868266130,
+      "duration" : 307
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "43ca827ea0ee3b75",
+      "name" : "Screenshot 2024-01-21 20:17:46.071614",
+      "source" : "43ca827ea0ee3b75.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az573-697"
+  }, {
+    "name" : "thread",
+    "value" : "1817-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "fdf1f4ddc36fba28",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705840582325,
+          "stop" : 1705840583353,
+          "duration" : 1028
+        }
+      }, {
+        "uid" : "fac93a336dc3231a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705830403581,
+          "stop" : 1705830404593,
+          "duration" : 1012
+        }
+      }, {
+        "uid" : "8b608305ce405230",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705829701023,
+          "stop" : 1705829701711,
+          "duration" : 688
+        }
+      }, {
+        "uid" : "ba0b2ac12eed75b4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705767160811,
+          "stop" : 1705767161601,
+          "duration" : 790
+        }
+      }, {
+        "uid" : "955425042979b963",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766388052,
+          "stop" : 1705766388744,
+          "duration" : 692
+        }
+      }, {
+        "uid" : "ce2c4ea2e427f750",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705765610469,
+          "stop" : 1705765611511,
+          "duration" : 1042
+        }
+      }, {
+        "uid" : "bc5c004a09426633",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705764186000,
+          "stop" : 1705764186928,
+          "duration" : 928
+        }
+      }, {
+        "uid" : "b574e4861d8d8f10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705757218752,
+          "stop" : 1705757219899,
+          "duration" : 1147
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2914c47fb7b3cc47.json",
+  "parameterValues" : [ ]
+}

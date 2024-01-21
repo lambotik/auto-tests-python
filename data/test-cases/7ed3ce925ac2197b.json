@@ -1,0 +1,410 @@
+{
+  "uid" : "7ed3ce925ac2197b",
+  "name" : "Verify presence, visibility and accuracy of the image in the Selectel link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_06_verify_image_in_selectel_link",
+  "historyId" : "e65dec4b6ca9a656ac41b62b8964263c",
+  "time" : {
+    "start" : 1705868277336,
+    "stop" : 1705868277393,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705868144400,
+      "stop" : 1705868144400,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705868273848,
+      "stop" : 1705868274618,
+      "duration" : 770
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705868274618,
+      "stop" : 1705868277336,
+      "duration" : 2718
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705868274619,
+        "stop" : 1705868277336,
+        "duration" : 2717
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"e060a027b781f827a4dbabc605d64a63\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check Selectel image is present and visible in Footer",
+      "time" : {
+        "start" : 1705868277336,
+        "stop" : 1705868277366,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[4]//img')",
+        "time" : {
+          "start" : 1705868277336,
+          "stop" : 1705868277366,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[4]//img')",
+          "time" : {
+            "start" : 1705868277336,
+            "stop" : 1705868277345,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"e060a027b781f827a4dbabc605d64a63\", element=\"5378ECC01581A96D41A555B74F14142D_element_12\")>",
+          "time" : {
+            "start" : 1705868277345,
+            "stop" : 1705868277349,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"src\" of Selectel image in Footer",
+      "time" : {
+        "start" : 1705868277366,
+        "stop" : 1705868277379,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1705868277366,
+          "stop" : 1705868277379,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[4]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"alt\" of Selectel image in Footer",
+      "time" : {
+        "start" : 1705868277379,
+        "stop" : 1705868277392,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1705868277380,
+          "stop" : 1705868277392,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[4]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705868277393,
+      "stop" : 1705868277712,
+      "duration" : 319
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dbecd598426fc44d",
+      "name" : "Screenshot 2024-01-21 20:17:57.653650",
+      "source" : "dbecd598426fc44d.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az573-697"
+  }, {
+    "name" : "thread",
+    "value" : "1817-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 16,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "1f7f8c03be6fc25e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705830419531,
+          "stop" : 1705830419586,
+          "duration" : 55
+        }
+      }, {
+        "uid" : "ebab4f97448bf83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705829714572,
+          "stop" : 1705829714628,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "659acb85ef4fffcc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705767174497,
+          "stop" : 1705767174552,
+          "duration" : 55
+        }
+      }, {
+        "uid" : "f00f521c1d83eed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766400166,
+          "stop" : 1705766400222,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "45018aac9dc7fa6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705765625616,
+          "stop" : 1705765625678,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "e4769848392fedf5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705764202430,
+          "stop" : 1705764202485,
+          "duration" : 55
+        }
+      }, {
+        "uid" : "5a0b3e5a435e15b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705757232667,
+          "stop" : 1705757232723,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "2a98a2e884672b46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705447301480,
+          "stop" : 1705447301536,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "a4c266bf5e82fafe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705363597439,
+          "stop" : 1705363597497,
+          "duration" : 58
+        }
+      }, {
+        "uid" : "a95880107b62eb9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705260786568,
+          "stop" : 1705260786625,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "d8b43a616ea029ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705247444196,
+          "stop" : 1705247444253,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "11cfd2b93bce8d08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705236107349,
+          "stop" : 1705236107407,
+          "duration" : 58
+        }
+      }, {
+        "uid" : "409992b346dc3f1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705142572688,
+          "stop" : 1705142572745,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "886d614aa3b0fd63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705138761472,
+          "stop" : 1705138761529,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "7d12723db252da98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705136895119,
+          "stop" : 1705136895177,
+          "duration" : 58
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7ed3ce925ac2197b.json",
+  "parameterValues" : [ ]
+}
