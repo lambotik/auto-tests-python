@@ -1,0 +1,309 @@
+{
+  "uid" : "d589ad10cf92f1f0",
+  "name" : "Verify accuracy of the attribute 'href' in the REG.RU link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_09_verify_href_in_reg_link",
+  "historyId" : "9f12552a97b6f127b4ee1aca9346dd73",
+  "time" : {
+    "start" : 1705830429661,
+    "stop" : 1705830429678,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1705830425867,
+      "stop" : 1705830429661,
+      "duration" : 3794
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1705830425867,
+        "stop" : 1705830429661,
+        "duration" : 3794
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"7406e23430715b2c195f4d142fe4ca71\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1705830425098,
+      "stop" : 1705830425867,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1705830255874,
+      "stop" : 1705830255874,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get attribute 'href' of the REG.RU link",
+      "time" : {
+        "start" : 1705830429661,
+        "stop" : 1705830429678,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of link",
+        "time" : {
+          "start" : 1705830429662,
+          "stop" : 1705830429678,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1705830429679,
+      "stop" : 1705830429916,
+      "duration" : 237
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "80bde05e804541e8",
+      "name" : "Screenshot 2024-01-21 09:47:09.858209",
+      "source" : "80bde05e804541e8.png",
+      "type" : "image/png",
+      "size" : 203517
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az658-774"
+  }, {
+    "name" : "thread",
+    "value" : "1824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "7aa877ac771407c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705829722954,
+          "stop" : 1705829722971,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "a9de0d5c489d1698",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705767182824,
+          "stop" : 1705767182841,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "5a4edb466aaea8cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705766408126,
+          "stop" : 1705766408143,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "ccb29a954ad60384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705765635363,
+          "stop" : 1705765635380,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "a8ed013937734c81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705764212547,
+          "stop" : 1705764212564,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "af82ba23248cf2f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705757241314,
+          "stop" : 1705757241332,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "c9e469b51e97f2ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705447309278,
+          "stop" : 1705447309296,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "a9f9816eb8b1ab13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705363607105,
+          "stop" : 1705363607123,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "2ad484026c0087ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705260801530,
+          "stop" : 1705260801547,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "3f3feae55bd44720",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705247457785,
+          "stop" : 1705247457802,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "f86650d3728480ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705236118432,
+          "stop" : 1705236118449,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "6373f60488ae36b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705142587549,
+          "stop" : 1705142587566,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "95ff23073a35f479",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705138776091,
+          "stop" : 1705138776108,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "19b7bfa50cdb192d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705136909659,
+          "stop" : 1705136909676,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d589ad10cf92f1f0.json",
+  "parameterValues" : [ ]
+}
