@@ -1,0 +1,759 @@
+{
+  "uid" : "8f97da50be2c0712",
+  "name" : "Check registration with new email and empty password",
+  "fullName" : "tests.registration_page_test.TestRegistrationPage#test_registration_negative",
+  "historyId" : "36a49edfcf8ac311f1949b793288c00a",
+  "time" : {
+    "start" : 1707859665897,
+    "stop" : 1707859666554,
+    "duration" : 657
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707859661318,
+      "stop" : 1707859662090,
+      "duration" : 772
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1707859662090,
+      "stop" : 1707859665896,
+      "duration" : 3806
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1707859662090,
+        "stop" : 1707859665896,
+        "duration" : 3806
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"87f0be09cec38c53cc80698cdd74b3a4\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1707859283812,
+      "stop" : 1707859283812,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open registration page",
+      "time" : {
+        "start" : 1707859665897,
+        "stop" : 1707859665992,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@href=\"/registration\"]')",
+        "time" : {
+          "start" : 1707859665897,
+          "stop" : 1707859665936,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1707859665916,
+            "stop" : 1707859665936,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@href=\"/registration\"]')",
+            "time" : {
+              "start" : 1707859665916,
+              "stop" : 1707859665936,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@href=\"/registration\"]')"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Fill first name",
+      "time" : {
+        "start" : 1707859665992,
+        "stop" : 1707859666065,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'firstName')",
+        "time" : {
+          "start" : 1707859665992,
+          "stop" : 1707859666020,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'firstName')",
+          "time" : {
+            "start" : 1707859665992,
+            "stop" : 1707859666003,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_26\")>",
+          "time" : {
+            "start" : 1707859666003,
+            "stop" : 1707859666008,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstname",
+        "value" : "'Auto Test'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Fill birthday",
+      "time" : {
+        "start" : 1707859666065,
+        "stop" : 1707859666128,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'birthday')",
+        "time" : {
+          "start" : 1707859666066,
+          "stop" : 1707859666088,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'birthday')",
+          "time" : {
+            "start" : 1707859666066,
+            "stop" : 1707859666074,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_28\")>",
+          "time" : {
+            "start" : 1707859666074,
+            "stop" : 1707859666077,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "birthday",
+        "value" : "1936"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Choose gender",
+      "time" : {
+        "start" : 1707859666128,
+        "stop" : 1707859666178,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1707859666128,
+          "stop" : 1707859666148,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'female')",
+          "time" : {
+            "start" : 1707859666128,
+            "stop" : 1707859666148,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'female')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Fill email",
+      "time" : {
+        "start" : 1707859666178,
+        "stop" : 1707859666254,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'email')",
+        "time" : {
+          "start" : 1707859666178,
+          "stop" : 1707859666201,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'email')",
+          "time" : {
+            "start" : 1707859666178,
+            "stop" : 1707859666187,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_31\")>",
+          "time" : {
+            "start" : 1707859666187,
+            "stop" : 1707859666190,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Fill password",
+      "time" : {
+        "start" : 1707859666254,
+        "stop" : 1707859666321,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'password')",
+        "time" : {
+          "start" : 1707859666254,
+          "stop" : 1707859666277,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'password')",
+          "time" : {
+            "start" : 1707859666254,
+            "stop" : 1707859666262,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_33\")>",
+          "time" : {
+            "start" : 1707859666262,
+            "stop" : 1707859666266,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Fill repeat password",
+      "time" : {
+        "start" : 1707859666321,
+        "stop" : 1707859666408,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('id', 'repeatPassword')",
+        "time" : {
+          "start" : 1707859666321,
+          "stop" : 1707859666344,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('id', 'repeatPassword')",
+          "time" : {
+            "start" : 1707859666321,
+            "stop" : 1707859666329,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_35\")>",
+          "time" : {
+            "start" : 1707859666330,
+            "stop" : 1707859666333,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Choose agreement",
+      "time" : {
+        "start" : 1707859666409,
+        "stop" : 1707859666462,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1707859666409,
+          "stop" : 1707859666432,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('id', 'agreement')",
+          "time" : {
+            "start" : 1707859666409,
+            "stop" : 1707859666432,
+            "duration" : 23
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('id', 'agreement')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Click REGISTRATION button",
+      "time" : {
+        "start" : 1707859666462,
+        "stop" : 1707859666514,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//button[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1707859666462,
+          "stop" : 1707859666485,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//button[@type=\"submit\"]')",
+          "time" : {
+            "start" : 1707859666462,
+            "stop" : 1707859666471,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_45\")>",
+          "time" : {
+            "start" : 1707859666471,
+            "stop" : 1707859666474,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Check error message",
+      "time" : {
+        "start" : 1707859666514,
+        "stop" : 1707859666554,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+        "time" : {
+          "start" : 1707859666514,
+          "stop" : 1707859666542,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+          "time" : {
+            "start" : 1707859666515,
+            "stop" : 1707859666524,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"87f0be09cec38c53cc80698cdd74b3a4\", element=\"AFDA03B59DEC6DA5E68EDFA7254F028D_element_48\")>",
+          "time" : {
+            "start" : 1707859666524,
+            "stop" : 1707859666528,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 38
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1707859666556,
+      "stop" : 1707859666778,
+      "duration" : 222
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ad1ae6fbd61360f",
+      "name" : "Screenshot 2024-02-13 21:27:46.719771",
+      "source" : "ad1ae6fbd61360f.png",
+      "type" : "image/png",
+      "size" : 85405
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Registration Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "registration_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1247-62"
+  }, {
+    "name" : "thread",
+    "value" : "1791-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.registration_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "birthday",
+    "value" : "1936"
+  }, {
+    "name" : "confirm_password",
+    "value" : "'password'"
+  }, {
+    "name" : "email",
+    "value" : "'autotest_N@1707859283.325087.com'"
+  }, {
+    "name" : "error_message",
+    "value" : "['Passwords should match', 'Пароли должны совпадать']"
+  }, {
+    "name" : "first_name",
+    "value" : "'Auto Test'"
+  }, {
+    "name" : "password",
+    "value" : "''"
+  }, {
+    "name" : "title",
+    "value" : "'new email and empty password'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f97da50be2c0712.json",
+  "parameterValues" : [ "1936", "'password'", "'autotest_N@1707859283.325087.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "''", "'new email and empty password'" ]
+}
