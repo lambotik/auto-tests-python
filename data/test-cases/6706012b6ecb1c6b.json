@@ -1,0 +1,640 @@
+{
+  "uid" : "6706012b6ecb1c6b",
+  "name" : "Checking the possibility of authorization with incorrect data",
+  "fullName" : "tests.authorisation_page_test.TestAuthorizedUserPage#test_auth_user_with_wrong_password",
+  "historyId" : "4b03ea5faa5e83a4d2234cc1422bdcfd",
+  "time" : {
+    "start" : 1707857236735,
+    "stop" : 1707857237041,
+    "duration" : 306
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+  "statusTrace" : "self = <tests.authorisation_page_test.TestAuthorizedUserPage object at 0x7fee522ae720>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0a1e55528a1929c0e7bca0cecd895f62\")>\nmain_page_open = None\n\n    @allure.title('Checking the possibility of authorization with incorrect data')\n    def test_auth_user_with_wrong_password(self, driver, main_page_open):\n        page = ProfilePage(driver)\n        page.open_login_page()\n        page.user_has_authorised_with_new_password()\n        text = page.get_error_message()\n>       assert text == self.msg.WRONG_PASSWORD, 'The user authorized with incorrect data'\nE       AssertionError: The user authorized with incorrect data\nE       assert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\nE         - Error: The password is invalid or the user does not have a password.\nE         + Please enter your login and password\n\ntests/authorisation_page_test.py:25: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1707857204803,
+      "stop" : 1707857204803,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707857231857,
+      "stop" : 1707857232624,
+      "duration" : 767
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1707857232624,
+      "stop" : 1707857236734,
+      "duration" : 4110
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1707857232625,
+        "stop" : 1707857236734,
+        "duration" : 4109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"0a1e55528a1929c0e7bca0cecd895f62\")>"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+    "statusTrace" : "self = <tests.authorisation_page_test.TestAuthorizedUserPage object at 0x7fee522ae720>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0a1e55528a1929c0e7bca0cecd895f62\")>\nmain_page_open = None\n\n    @allure.title('Checking the possibility of authorization with incorrect data')\n    def test_auth_user_with_wrong_password(self, driver, main_page_open):\n        page = ProfilePage(driver)\n        page.open_login_page()\n        page.user_has_authorised_with_new_password()\n        text = page.get_error_message()\n>       assert text == self.msg.WRONG_PASSWORD, 'The user authorized with incorrect data'\nE       AssertionError: The user authorized with incorrect data\nE       assert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\nE         - Error: The password is invalid or the user does not have a password.\nE         + Please enter your login and password\n\ntests/authorisation_page_test.py:25: AssertionError",
+    "steps" : [ {
+      "name" : "Open login page",
+      "time" : {
+        "start" : 1707857236735,
+        "stop" : 1707857236817,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@id=\"ember11\"]')",
+        "time" : {
+          "start" : 1707857236735,
+          "stop" : 1707857236770,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1707857236752,
+            "stop" : 1707857236770,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@id=\"ember11\"]')",
+            "time" : {
+              "start" : 1707857236752,
+              "stop" : 1707857236770,
+              "duration" : 18
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@id=\"ember11\"]')"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "The user has authorised with new password",
+      "time" : {
+        "start" : 1707857236817,
+        "stop" : 1707857237004,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"login\"]')",
+        "time" : {
+          "start" : 1707857236817,
+          "stop" : 1707857236843,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"login\"]')",
+          "time" : {
+            "start" : 1707857236817,
+            "stop" : 1707857236828,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"0a1e55528a1929c0e7bca0cecd895f62\", element=\"EAB65C57732D922B4245265226C20B14_element_26\")>",
+          "time" : {
+            "start" : 1707857236828,
+            "stop" : 1707857236832,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"password\"]')",
+        "time" : {
+          "start" : 1707857236875,
+          "stop" : 1707857236897,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"password\"]')",
+          "time" : {
+            "start" : 1707857236875,
+            "stop" : 1707857236883,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"0a1e55528a1929c0e7bca0cecd895f62\", element=\"EAB65C57732D922B4245265226C20B14_element_29\")>",
+          "time" : {
+            "start" : 1707857236883,
+            "stop" : 1707857236886,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Check element is visible and clickable: ('xpath', '//*[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1707857236938,
+          "stop" : 1707857236971,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1707857236955,
+            "stop" : 1707857236971,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//*[@type=\"submit\"]')",
+            "time" : {
+              "start" : 1707857236955,
+              "stop" : 1707857236971,
+              "duration" : 16
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//*[@type=\"submit\"]')"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get error message",
+      "time" : {
+        "start" : 1707857237004,
+        "stop" : 1707857237041,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+        "time" : {
+          "start" : 1707857237004,
+          "stop" : 1707857237031,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//p[contains(@class, \"text-red-500\")]')",
+          "time" : {
+            "start" : 1707857237004,
+            "stop" : 1707857237013,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"0a1e55528a1929c0e7bca0cecd895f62\", element=\"EAB65C57732D922B4245265226C20B14_element_35\")>",
+          "time" : {
+            "start" : 1707857237013,
+            "stop" : 1707857237018,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a806127cf167b24f",
+      "name" : "Screenshot",
+      "source" : "a806127cf167b24f.png",
+      "type" : "image/png",
+      "size" : 58169
+    }, {
+      "uid" : "7c9e8ea63be87727",
+      "name" : "HTML source",
+      "source" : "7c9e8ea63be87727.html",
+      "type" : "text/html",
+      "size" : 28010
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 18,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1707857237206,
+      "stop" : 1707857237421,
+      "duration" : 215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6bab10d6a77fda6e",
+      "name" : "Screenshot 2024-02-13 20:47:17.360302",
+      "source" : "6bab10d6a77fda6e.png",
+      "type" : "image/png",
+      "size" : 60021
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Authorized User Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "authorisation_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuthorizedUserPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az568-770"
+  }, {
+    "name" : "thread",
+    "value" : "1837-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.authorisation_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 37,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 37
+      },
+      "items" : [ {
+        "uid" : "29fdd481f23f6e1a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707856172917,
+          "stop" : 1707856173267,
+          "duration" : 350
+        }
+      }, {
+        "uid" : "789358cd36490b14",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707855999454,
+          "stop" : 1707855999785,
+          "duration" : 331
+        }
+      }, {
+        "uid" : "e20b8db09c0a149b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707854584373,
+          "stop" : 1707854584703,
+          "duration" : 330
+        }
+      }, {
+        "uid" : "aeb57ce163141282",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707834125054,
+          "stop" : 1707834125479,
+          "duration" : 425
+        }
+      }, {
+        "uid" : "bcbcbb1d00cbdab0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707757688380,
+          "stop" : 1707757688780,
+          "duration" : 400
+        }
+      }, {
+        "uid" : "4e6e8522c9e73a05",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707755765428,
+          "stop" : 1707755765826,
+          "duration" : 398
+        }
+      }, {
+        "uid" : "ff38626a13de0180",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707748450725,
+          "stop" : 1707748451071,
+          "duration" : 346
+        }
+      }, {
+        "uid" : "cb0e28b5a23f4909",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707491647997,
+          "stop" : 1707491648314,
+          "duration" : 317
+        }
+      }, {
+        "uid" : "9a0830b63290f98a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1707394774933,
+          "stop" : 1707394775296,
+          "duration" : 363
+        }
+      }, {
+        "uid" : "134dde51216668d7",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706483377195,
+          "stop" : 1706483377545,
+          "duration" : 350
+        }
+      }, {
+        "uid" : "abeeffc9ffdf9f58",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706460166641,
+          "stop" : 1706460166977,
+          "duration" : 336
+        }
+      }, {
+        "uid" : "c618423c19d0dcd9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706452739388,
+          "stop" : 1706452739704,
+          "duration" : 316
+        }
+      }, {
+        "uid" : "6a25f59b8f7fb8b4",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706359305230,
+          "stop" : 1706359305588,
+          "duration" : 358
+        }
+      }, {
+        "uid" : "ef42425591412d6b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706353836535,
+          "stop" : 1706353836851,
+          "duration" : 316
+        }
+      }, {
+        "uid" : "1786d383040897f5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706300805407,
+          "stop" : 1706300805722,
+          "duration" : 315
+        }
+      }, {
+        "uid" : "7a7d40991d46e235",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706213146733,
+          "stop" : 1706213147091,
+          "duration" : 358
+        }
+      }, {
+        "uid" : "78fbb1d74e3703b5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706212985462,
+          "stop" : 1706212985769,
+          "duration" : 307
+        }
+      }, {
+        "uid" : "5393694681185d54",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1706212800192,
+          "stop" : 1706212800519,
+          "duration" : 327
+        }
+      }, {
+        "uid" : "6c1b4bbfe95616a6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1705868263781,
+          "stop" : 1705868264149,
+          "duration" : 368
+        }
+      }, {
+        "uid" : "12e70e26860c916a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The user authorized with incorrect data\nassert 'Please enter your login and password' == 'Error: The password is invalid or the user does not have a password.'\n  - Error: The password is invalid or the user does not have a password.\n  + Please enter your login and password",
+        "time" : {
+          "start" : 1705868183420,
+          "stop" : 1705868183789,
+          "duration" : 369
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6706012b6ecb1c6b.json",
+  "parameterValues" : [ ]
+}
