@@ -1,0 +1,376 @@
+{
+  "uid" : "265cf37c409c97d7",
+  "name" : "Verify presence, visibility and accuracy of the ARASAAC link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_01_verify_arasaac_link_image",
+  "historyId" : "776468fdf96ec3279d418335f20507b0",
+  "time" : {
+    "start" : 1707856376461,
+    "stop" : 1707856376521,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1707856373892,
+      "stop" : 1707856376460,
+      "duration" : 2568
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1707856373892,
+        "stop" : 1707856376460,
+        "duration" : 2568
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"8845fff8d47501a3c0d77dbf1a74ac10\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707856373124,
+      "stop" : 1707856373892,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1707856136782,
+      "stop" : 1707856136782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the ARASAAC image is present in Footer",
+      "time" : {
+        "start" : 1707856376461,
+        "stop" : 1707856376469,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[3]//img')",
+        "time" : {
+          "start" : 1707856376461,
+          "stop" : 1707856376469,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Check the ARASAAC image is visible in Footer",
+      "time" : {
+        "start" : 1707856376469,
+        "stop" : 1707856376494,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[3]//img')",
+        "time" : {
+          "start" : 1707856376469,
+          "stop" : 1707856376494,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[3]//img')",
+          "time" : {
+            "start" : 1707856376469,
+            "stop" : 1707856376474,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"8845fff8d47501a3c0d77dbf1a74ac10\", element=\"1E9D093D240B0E7F136B3DD2ACDDBBB7_element_12\")>",
+          "time" : {
+            "start" : 1707856376474,
+            "stop" : 1707856376479,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"src\" of the ARASAAC image in Footer",
+      "time" : {
+        "start" : 1707856376495,
+        "stop" : 1707856376508,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1707856376495,
+          "stop" : 1707856376508,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"alt\" of the ARASAAC image in Footer",
+      "time" : {
+        "start" : 1707856376508,
+        "stop" : 1707856376521,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1707856376508,
+          "stop" : 1707856376521,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1707856376522,
+      "stop" : 1707856376828,
+      "duration" : 306
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6fca1e9906fd4c0b",
+      "name" : "Screenshot 2024-02-13 20:32:56.770537",
+      "source" : "6fca1e9906fd4c0b.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az774-391"
+  }, {
+    "name" : "thread",
+    "value" : "1784-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "6da19b5ac9d2f310",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856218942,
+          "stop" : 1707856219004,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "9132a0f844c0a5ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707854779452,
+          "stop" : 1707854779513,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "291ce7c6df00de3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707834329767,
+          "stop" : 1707834329828,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "792dec2cd35f2124",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707757886321,
+          "stop" : 1707757886382,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "94fca9f19f28f727",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755977207,
+          "stop" : 1707755977270,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "7298bd708ce68802",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707748693622,
+          "stop" : 1707748693686,
+          "duration" : 64
+        }
+      }, {
+        "uid" : "760247dd04dd5562",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707491848326,
+          "stop" : 1707491848388,
+          "duration" : 62
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "265cf37c409c97d7.json",
+  "parameterValues" : [ ]
+}
