@@ -1,0 +1,387 @@
+{
+  "uid" : "12688a73f7baa338",
+  "name" : "Verify redirection to telegram page not authorized user.",
+  "fullName" : "tests.description_page_test.TestDescriptionPage#test_dp_02_verify_redirection_to_telegram_page",
+  "historyId" : "815fbc448cb350014cc259b99d8c0dea",
+  "time" : {
+    "start" : 1707921208923,
+    "stop" : 1707921211030,
+    "duration" : 2107
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1707921178951,
+      "stop" : 1707921178951,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707921204003,
+      "stop" : 1707921204772,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "description_page_open",
+    "time" : {
+      "start" : 1707921204772,
+      "stop" : 1707921208923,
+      "duration" : 4151
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/description",
+      "time" : {
+        "start" : 1707921204772,
+        "stop" : 1707921208923,
+        "duration" : 4151
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ed98802952a45575fd47826ebdc96ffd\")>"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open telegram page",
+      "time" : {
+        "start" : 1707921208924,
+        "stop" : 1707921211030,
+        "duration" : 2106
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1707921208924,
+          "stop" : 1707921208957,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', \"//*[contains(text(),'Telegram')]\")",
+          "time" : {
+            "start" : 1707921208924,
+            "stop" : 1707921208957,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', \"//*[contains(text(),'Telegram')]\")"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Check url is present: https://t.me/BrainUpUsers",
+        "time" : {
+          "start" : 1707921209713,
+          "stop" : 1707921211027,
+          "duration" : 1314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1707921211031,
+      "stop" : 1707921211213,
+      "duration" : 182
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a01a9d48bbc43b75",
+      "name" : "Screenshot 2024-02-14 14:33:31.152790",
+      "source" : "a01a9d48bbc43b75.png",
+      "type" : "image/png",
+      "size" : 254269
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Description Page."
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "description_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDescriptionPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1456-458"
+  }, {
+    "name" : "thread",
+    "value" : "1825-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.description_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 37,
+        "unknown" : 0,
+        "total" : 37
+      },
+      "items" : [ {
+        "uid" : "292045e935635bfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707859307930,
+          "stop" : 1707859310001,
+          "duration" : 2071
+        }
+      }, {
+        "uid" : "b1b83fe60efa48d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707858301896,
+          "stop" : 1707858305991,
+          "duration" : 4095
+        }
+      }, {
+        "uid" : "5c2627cd7dc7c3c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707857248382,
+          "stop" : 1707857250743,
+          "duration" : 2361
+        }
+      }, {
+        "uid" : "d2e3b39afdbe35b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856181453,
+          "stop" : 1707856182604,
+          "duration" : 1151
+        }
+      }, {
+        "uid" : "736e84a8d7276939",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856009267,
+          "stop" : 1707856010716,
+          "duration" : 1449
+        }
+      }, {
+        "uid" : "6cf91b87bb6cb77b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707854592988,
+          "stop" : 1707854594281,
+          "duration" : 1293
+        }
+      }, {
+        "uid" : "d060388f073aaea6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707834133923,
+          "stop" : 1707834135147,
+          "duration" : 1224
+        }
+      }, {
+        "uid" : "d2059e99ed7a8a85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707757697108,
+          "stop" : 1707757698472,
+          "duration" : 1364
+        }
+      }, {
+        "uid" : "df86bf7bfefe567c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755803707,
+          "stop" : 1707755805046,
+          "duration" : 1339
+        }
+      }, {
+        "uid" : "6e63edcdb8fb7f45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707748462670,
+          "stop" : 1707748464833,
+          "duration" : 2163
+        }
+      }, {
+        "uid" : "ac45f3f80e33bf21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707491656592,
+          "stop" : 1707491657668,
+          "duration" : 1076
+        }
+      }, {
+        "uid" : "6a7770a14669c948",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707394786661,
+          "stop" : 1707394788759,
+          "duration" : 2098
+        }
+      }, {
+        "uid" : "f89d691259ccd0eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706483385844,
+          "stop" : 1706483387136,
+          "duration" : 1292
+        }
+      }, {
+        "uid" : "99d13f7e475b36b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706460176081,
+          "stop" : 1706460177528,
+          "duration" : 1447
+        }
+      }, {
+        "uid" : "9b74ecad9f68fb74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706452750467,
+          "stop" : 1706452752366,
+          "duration" : 1899
+        }
+      }, {
+        "uid" : "d173da5c0c1d0047",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706359313595,
+          "stop" : 1706359323291,
+          "duration" : 9696
+        }
+      }, {
+        "uid" : "8c756f1f474b2cdd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706353847357,
+          "stop" : 1706353849195,
+          "duration" : 1838
+        }
+      }, {
+        "uid" : "895d311c2c2903d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706300813913,
+          "stop" : 1706300815421,
+          "duration" : 1508
+        }
+      }, {
+        "uid" : "86895ec899bc0c6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706213155492,
+          "stop" : 1706213156708,
+          "duration" : 1216
+        }
+      }, {
+        "uid" : "876558a572e5d93d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706212994742,
+          "stop" : 1706212996213,
+          "duration" : 1471
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "12688a73f7baa338.json",
+  "parameterValues" : [ ]
+}
