@@ -1,0 +1,573 @@
+{
+  "uid" : "c2549ab0a2025679",
+  "name" : "Verify presence, visibility and accuracy of the REG.RU link and link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_06_verify_reg_link",
+  "historyId" : "575aadc5349f048026ddf4381ff04723",
+  "time" : {
+    "start" : 1708024904495,
+    "stop" : 1708024905266,
+    "duration" : 771
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1708024900979,
+      "stop" : 1708024901748,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1708024794240,
+      "stop" : 1708024794240,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1708024901748,
+      "stop" : 1708024904495,
+      "duration" : 2747
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1708024901748,
+        "stop" : 1708024904495,
+        "duration" : 2747
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"5f92b8c61df8170173a0e5935313d1b1\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the REG.RU link is present and visible in Footer",
+      "time" : {
+        "start" : 1708024904495,
+        "stop" : 1708024904523,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[2]/a')",
+        "time" : {
+          "start" : 1708024904495,
+          "stop" : 1708024904523,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1708024904495,
+            "stop" : 1708024904504,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5f92b8c61df8170173a0e5935313d1b1\", element=\"DC8F84EE385F2CCC85FE9F14D53DE20C_element_12\")>",
+          "time" : {
+            "start" : 1708024904504,
+            "stop" : 1708024904507,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Check the REG.RU link is clickable in Footer",
+      "time" : {
+        "start" : 1708024904523,
+        "stop" : 1708024904543,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1708024904523,
+          "stop" : 1708024904543,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1708024904523,
+            "stop" : 1708024904543,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the REG.RU link",
+      "time" : {
+        "start" : 1708024904543,
+        "stop" : 1708024904556,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check the REG.RU image is present and visible in Footer",
+      "time" : {
+        "start" : 1708024905219,
+        "stop" : 1708024905242,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[2]//img')",
+        "time" : {
+          "start" : 1708024905219,
+          "stop" : 1708024905242,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[2]//img')",
+          "time" : {
+            "start" : 1708024905219,
+            "stop" : 1708024905227,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5f92b8c61df8170173a0e5935313d1b1\", element=\"DC8F84EE385F2CCC85FE9F14D53DE20C_element_13\")>",
+          "time" : {
+            "start" : 1708024905227,
+            "stop" : 1708024905231,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"src\" of the REG.RU image in Footer",
+      "time" : {
+        "start" : 1708024905242,
+        "stop" : 1708024905255,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1708024905242,
+          "stop" : 1708024905255,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"alt\" of the REG.RU image in Footer",
+      "time" : {
+        "start" : 1708024905255,
+        "stop" : 1708024905266,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1708024905255,
+          "stop" : 1708024905266,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1708024905266,
+      "stop" : 1708024905572,
+      "duration" : 306
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "efa65401d2b418fa",
+      "name" : "Screenshot 2024-02-15 19:21:45.513372",
+      "source" : "efa65401d2b418fa.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1040-836"
+  }, {
+    "name" : "thread",
+    "value" : "1784-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 31,
+        "unknown" : 0,
+        "total" : 31
+      },
+      "items" : [ {
+        "uid" : "9c329a2d9f4b41cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708019266678,
+          "stop" : 1708019267826,
+          "duration" : 1148
+        }
+      }, {
+        "uid" : "f6850465eca6597b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708013927438,
+          "stop" : 1708013928402,
+          "duration" : 964
+        }
+      }, {
+        "uid" : "ba09f0159e99c6c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708012291486,
+          "stop" : 1708012292242,
+          "duration" : 756
+        }
+      }, {
+        "uid" : "d3abd627638e218e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708010959634,
+          "stop" : 1708010960848,
+          "duration" : 1214
+        }
+      }, {
+        "uid" : "d23ebbc39b81a4d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708010783607,
+          "stop" : 1708010784878,
+          "duration" : 1271
+        }
+      }, {
+        "uid" : "9da1a7e2118e63d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707944946702,
+          "stop" : 1707944947957,
+          "duration" : 1255
+        }
+      }, {
+        "uid" : "858b9d1b85d2f309",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707942031663,
+          "stop" : 1707942032464,
+          "duration" : 801
+        }
+      }, {
+        "uid" : "58fc846e0e567544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707921321594,
+          "stop" : 1707921322577,
+          "duration" : 983
+        }
+      }, {
+        "uid" : "a550231f7d09c07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707859424129,
+          "stop" : 1707859425152,
+          "duration" : 1023
+        }
+      }, {
+        "uid" : "50253d340044ab2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707858394639,
+          "stop" : 1707858395352,
+          "duration" : 713
+        }
+      }, {
+        "uid" : "46a0eda7332c78d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707857360862,
+          "stop" : 1707857361925,
+          "duration" : 1063
+        }
+      }, {
+        "uid" : "7aa2e84be9ec5bb4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856271422,
+          "stop" : 1707856272185,
+          "duration" : 763
+        }
+      }, {
+        "uid" : "140e8c45a611e69f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856107565,
+          "stop" : 1707856108593,
+          "duration" : 1028
+        }
+      }, {
+        "uid" : "ce11a880425c0544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707854678481,
+          "stop" : 1707854679254,
+          "duration" : 773
+        }
+      }, {
+        "uid" : "a424de7d0be46a72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707834229351,
+          "stop" : 1707834230150,
+          "duration" : 799
+        }
+      }, {
+        "uid" : "780eb4d4717a3429",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707757784372,
+          "stop" : 1707757785174,
+          "duration" : 802
+        }
+      }, {
+        "uid" : "355b3a31b263fec4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755889248,
+          "stop" : 1707755890186,
+          "duration" : 938
+        }
+      }, {
+        "uid" : "42b112f28f124e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707748578418,
+          "stop" : 1707748579630,
+          "duration" : 1212
+        }
+      }, {
+        "uid" : "478ad2269a16efb3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707491746050,
+          "stop" : 1707491746820,
+          "duration" : 770
+        }
+      }, {
+        "uid" : "bd54c7ca9bf0ad84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707394902008,
+          "stop" : 1707394903058,
+          "duration" : 1050
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c2549ab0a2025679.json",
+  "parameterValues" : [ ]
+}
