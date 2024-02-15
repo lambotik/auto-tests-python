@@ -1,0 +1,573 @@
+{
+  "uid" : "513614f469222cae",
+  "name" : "Verify presence, visibility and accuracy of the JETBRAINS link and link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_05_verify_jetbrains_link",
+  "historyId" : "947d0d5ece3eb1f5c6bf82a0372e8c4a",
+  "time" : {
+    "start" : 1708031016520,
+    "stop" : 1708031016702,
+    "duration" : 182
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1708031011333,
+      "stop" : 1708031012102,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1708030881463,
+      "stop" : 1708030881463,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1708031012102,
+      "stop" : 1708031016520,
+      "duration" : 4418
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1708031012102,
+        "stop" : 1708031016519,
+        "duration" : 4417
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"4c098240c842b3a29b41489ca1a004b6\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the Jetbrains link is present and visible in Footer",
+      "time" : {
+        "start" : 1708031016520,
+        "stop" : 1708031016550,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[1]/a')",
+        "time" : {
+          "start" : 1708031016520,
+          "stop" : 1708031016550,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[1]/a')",
+          "time" : {
+            "start" : 1708031016520,
+            "stop" : 1708031016528,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"4c098240c842b3a29b41489ca1a004b6\", element=\"0DEEB77A30FC6E5AC20B8BB0F2BCFA62_element_12\")>",
+          "time" : {
+            "start" : 1708031016528,
+            "stop" : 1708031016533,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Check the Jetbrains link is clickable in Footer",
+      "time" : {
+        "start" : 1708031016550,
+        "stop" : 1708031016569,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1708031016550,
+          "stop" : 1708031016569,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[1]/a')",
+          "time" : {
+            "start" : 1708031016550,
+            "stop" : 1708031016569,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the Jetbrains link",
+      "time" : {
+        "start" : 1708031016569,
+        "stop" : 1708031016586,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check the Jetbrains image is present and visible in Footer",
+      "time" : {
+        "start" : 1708031016655,
+        "stop" : 1708031016677,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[1]//img')",
+        "time" : {
+          "start" : 1708031016655,
+          "stop" : 1708031016677,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[1]//img')",
+          "time" : {
+            "start" : 1708031016655,
+            "stop" : 1708031016663,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"4c098240c842b3a29b41489ca1a004b6\", element=\"0DEEB77A30FC6E5AC20B8BB0F2BCFA62_element_13\")>",
+          "time" : {
+            "start" : 1708031016663,
+            "stop" : 1708031016666,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"src\" of the Jetbrains image in Footer",
+      "time" : {
+        "start" : 1708031016677,
+        "stop" : 1708031016691,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1708031016678,
+          "stop" : 1708031016691,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute \"alt\" of the Jetbrains image in Footer",
+      "time" : {
+        "start" : 1708031016691,
+        "stop" : 1708031016702,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1708031016691,
+          "stop" : 1708031016702,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]//img')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1708031016703,
+      "stop" : 1708031017016,
+      "duration" : 313
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "97e2ccaf8ba2caec",
+      "name" : "Screenshot 2024-02-15 21:03:36.957424",
+      "source" : "97e2ccaf8ba2caec.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1385-71"
+  }, {
+    "name" : "thread",
+    "value" : "1800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 33,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "d61933c6ed94a351",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708024900496,
+          "stop" : 1708024900665,
+          "duration" : 169
+        }
+      }, {
+        "uid" : "e251e50a73dd0ce3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708019259609,
+          "stop" : 1708019259794,
+          "duration" : 185
+        }
+      }, {
+        "uid" : "64a1b2c456fcbed6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708013923320,
+          "stop" : 1708013923501,
+          "duration" : 181
+        }
+      }, {
+        "uid" : "cb01c6a2f5cf9055",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708012287481,
+          "stop" : 1708012287660,
+          "duration" : 179
+        }
+      }, {
+        "uid" : "78c5b1fc8ea8c43f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708010954380,
+          "stop" : 1708010954547,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "e5a1aff15046817d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708010779247,
+          "stop" : 1708010779482,
+          "duration" : 235
+        }
+      }, {
+        "uid" : "2e33cc26f721ff71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707944942363,
+          "stop" : 1707944942542,
+          "duration" : 179
+        }
+      }, {
+        "uid" : "154e827694f03f98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707942027343,
+          "stop" : 1707942027529,
+          "duration" : 186
+        }
+      }, {
+        "uid" : "52dd1bd6371d6c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707921315623,
+          "stop" : 1707921315899,
+          "duration" : 276
+        }
+      }, {
+        "uid" : "b1ea20dd83ecddfb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707859418978,
+          "stop" : 1707859419162,
+          "duration" : 184
+        }
+      }, {
+        "uid" : "21d41fd760e77f27",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707858390832,
+          "stop" : 1707858391016,
+          "duration" : 184
+        }
+      }, {
+        "uid" : "a4645e5068e1a7da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707857355862,
+          "stop" : 1707857356022,
+          "duration" : 160
+        }
+      }, {
+        "uid" : "aab7753ef6b67740",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856267311,
+          "stop" : 1707856267467,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "123343352b926efc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707856102662,
+          "stop" : 1707856102841,
+          "duration" : 179
+        }
+      }, {
+        "uid" : "92f1626f7c85e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707854674540,
+          "stop" : 1707854674737,
+          "duration" : 197
+        }
+      }, {
+        "uid" : "12efe22245076550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707834224967,
+          "stop" : 1707834225356,
+          "duration" : 389
+        }
+      }, {
+        "uid" : "e2b1a00cfaaab435",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707757780391,
+          "stop" : 1707757780568,
+          "duration" : 177
+        }
+      }, {
+        "uid" : "a2e1b254c8a05dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755885291,
+          "stop" : 1707755885463,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "327438b3836b4c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707748573057,
+          "stop" : 1707748573285,
+          "duration" : 228
+        }
+      }, {
+        "uid" : "afaa6ece37f56e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707491742194,
+          "stop" : 1707491742368,
+          "duration" : 174
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "513614f469222cae.json",
+  "parameterValues" : [ ]
+}
