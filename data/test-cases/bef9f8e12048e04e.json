@@ -1,22 +1,22 @@
 {
-  "uid" : "546a569954e0f9a3",
-  "name" : "Select a random card from \"Слова с частотной группировкой\" group and compare UI vs BACKEND data.",
-  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_random_cards_in_words_with_frequency_grouping_ru",
-  "historyId" : "27fd1e44aaf197b141c2f0bb01434dcd",
+  "uid" : "bef9f8e12048e04e",
+  "name" : "Select a random card from \"Предложения\" group and compare UI vs BACKEND data.",
+  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_random_cards_in_sentences_ru",
+  "historyId" : "0c7f6c8c808a1acd373a8bdcd331af43",
   "time" : {
-    "start" : 1708096654754,
-    "stop" : 1708096668997,
-    "duration" : 14243
+    "start" : 1708097027774,
+    "stop" : 1708097041249,
+    "duration" : 13475
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "clear_allure_results_folder",
+    "name" : "driver",
     "time" : {
-      "start" : 1708096497409,
-      "stop" : 1708096497410,
-      "duration" : 1
+      "start" : 1708097021511,
+      "stop" : 1708097022280,
+      "duration" : 769
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,24 +29,24 @@
   }, {
     "name" : "main_page_open",
     "time" : {
-      "start" : 1708096649702,
-      "stop" : 1708096652399,
-      "duration" : 2697
+      "start" : 1708097022280,
+      "stop" : 1708097025429,
+      "duration" : 3149
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Open page: https://brainup.site/",
       "time" : {
-        "start" : 1708096649702,
-        "stop" : 1708096652399,
-        "duration" : 2697
+        "start" : 1708097022280,
+        "stop" : 1708097025429,
+        "duration" : 3149
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "driver",
-        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"f41a6951a5082f3a1cf539e113ea7ce5\")>"
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"7413d2603c0a38a48139dc45345ab561\")>"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -60,11 +60,11 @@
     "stepsCount" : 1,
     "hasContent" : true
   }, {
-    "name" : "driver",
+    "name" : "clear_allure_results_folder",
     "time" : {
-      "start" : 1708096648927,
-      "stop" : 1708096649701,
-      "duration" : 774
+      "start" : 1708096905966,
+      "stop" : 1708096905966,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -77,41 +77,41 @@
   }, {
     "name" : "specialist_user_authorized",
     "time" : {
-      "start" : 1708096652399,
-      "stop" : 1708096654754,
-      "duration" : 2355
+      "start" : 1708097025429,
+      "stop" : 1708097027774,
+      "duration" : 2345
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "USER specialist authorized",
       "time" : {
-        "start" : 1708096652399,
-        "stop" : 1708096654754,
-        "duration" : 2355
+        "start" : 1708097025429,
+        "stop" : 1708097027774,
+        "duration" : 2345
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is visible and clickable: ('xpath', '//a[@id=\"ember11\"]')",
         "time" : {
-          "start" : 1708096652399,
-          "stop" : 1708096652435,
+          "start" : 1708097025430,
+          "stop" : 1708097025466,
           "duration" : 36
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is clickable",
           "time" : {
-            "start" : 1708096652417,
-            "stop" : 1708096652435,
-            "duration" : 18
+            "start" : 1708097025447,
+            "stop" : 1708097025466,
+            "duration" : 19
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable: ('xpath', '//a[@id=\"ember11\"]')",
             "time" : {
-              "start" : 1708096652417,
-              "stop" : 1708096652435,
-              "duration" : 18
+              "start" : 1708097025447,
+              "stop" : 1708097025466,
+              "duration" : 19
             },
             "status" : "passed",
             "steps" : [ ],
@@ -141,16 +141,16 @@
       }, {
         "name" : "Check element is visible: ('xpath', '//input[@id=\"login\"]')",
         "time" : {
-          "start" : 1708096652482,
-          "stop" : 1708096652509,
+          "start" : 1708097025512,
+          "stop" : 1708097025539,
           "duration" : 27
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is present: ('xpath', '//input[@id=\"login\"]')",
           "time" : {
-            "start" : 1708096652483,
-            "stop" : 1708096652494,
+            "start" : 1708097025512,
+            "stop" : 1708097025523,
             "duration" : 11
           },
           "status" : "passed",
@@ -162,10 +162,10 @@
           "stepsCount" : 0,
           "hasContent" : false
         }, {
-          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"f41a6951a5082f3a1cf539e113ea7ce5\", element=\"25777BEA79FC31024BFA439C090EA9BE_element_27\")>",
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"7413d2603c0a38a48139dc45345ab561\", element=\"0A77EA64A9096F4D47D30468653E86BC_element_27\")>",
           "time" : {
-            "start" : 1708096652494,
-            "stop" : 1708096652498,
+            "start" : 1708097025523,
+            "stop" : 1708097025527,
             "duration" : 4
           },
           "status" : "passed",
@@ -186,16 +186,16 @@
       }, {
         "name" : "Check element is visible: ('xpath', '//input[@id=\"password\"]')",
         "time" : {
-          "start" : 1708096652576,
-          "stop" : 1708096652604,
-          "duration" : 28
+          "start" : 1708097025605,
+          "stop" : 1708097025632,
+          "duration" : 27
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is present: ('xpath', '//input[@id=\"password\"]')",
           "time" : {
-            "start" : 1708096652576,
-            "stop" : 1708096652585,
+            "start" : 1708097025605,
+            "stop" : 1708097025614,
             "duration" : 9
           },
           "status" : "passed",
@@ -207,11 +207,11 @@
           "stepsCount" : 0,
           "hasContent" : false
         }, {
-          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"f41a6951a5082f3a1cf539e113ea7ce5\", element=\"25777BEA79FC31024BFA439C090EA9BE_element_30\")>",
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"7413d2603c0a38a48139dc45345ab561\", element=\"0A77EA64A9096F4D47D30468653E86BC_element_30\")>",
           "time" : {
-            "start" : 1708096652585,
-            "stop" : 1708096652591,
-            "duration" : 6
+            "start" : 1708097025614,
+            "stop" : 1708097025619,
+            "duration" : 5
           },
           "status" : "passed",
           "steps" : [ ],
@@ -231,25 +231,25 @@
       }, {
         "name" : "Check element is visible and clickable: ('xpath', '//*[@type=\"submit\"]')",
         "time" : {
-          "start" : 1708096652644,
-          "stop" : 1708096652682,
-          "duration" : 38
+          "start" : 1708097025673,
+          "stop" : 1708097025702,
+          "duration" : 29
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is clickable",
           "time" : {
-            "start" : 1708096652658,
-            "stop" : 1708096652682,
-            "duration" : 24
+            "start" : 1708097025687,
+            "stop" : 1708097025702,
+            "duration" : 15
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable: ('xpath', '//*[@type=\"submit\"]')",
             "time" : {
-              "start" : 1708096652658,
-              "stop" : 1708096652682,
-              "duration" : 24
+              "start" : 1708097025687,
+              "stop" : 1708097025702,
+              "duration" : 15
             },
             "status" : "passed",
             "steps" : [ ],
@@ -279,9 +279,9 @@
       }, {
         "name" : "Check url is present: https://brainup.site/groups",
         "time" : {
-          "start" : 1708096652729,
-          "stop" : 1708096654754,
-          "duration" : 2025
+          "start" : 1708097025755,
+          "stop" : 1708097027774,
+          "duration" : 2019
         },
         "status" : "passed",
         "steps" : [ ],
@@ -295,7 +295,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "driver",
-        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"f41a6951a5082f3a1cf539e113ea7ce5\")>"
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"7413d2603c0a38a48139dc45345ab561\")>"
       }, {
         "name" : "main_page_open",
         "value" : "None"
@@ -317,41 +317,41 @@
     "steps" : [ {
       "name" : "select_group",
       "time" : {
-        "start" : 1708096654754,
-        "stop" : 1708096659796,
-        "duration" : 5042
+        "start" : 1708097027774,
+        "stop" : 1708097032824,
+        "duration" : 5050
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Select Russian language. Click \"RU\" button.",
         "time" : {
-          "start" : 1708096654754,
-          "stop" : 1708096654831,
-          "duration" : 77
+          "start" : 1708097027774,
+          "stop" : 1708097027847,
+          "duration" : 73
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is visible and clickable: ('xpath', \"//*[contains(text(),'RU')]\")",
           "time" : {
-            "start" : 1708096654754,
-            "stop" : 1708096654795,
-            "duration" : 41
+            "start" : 1708097027774,
+            "stop" : 1708097027803,
+            "duration" : 29
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable",
             "time" : {
-              "start" : 1708096654768,
-              "stop" : 1708096654794,
-              "duration" : 26
+              "start" : 1708097027789,
+              "stop" : 1708097027803,
+              "duration" : 14
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Check element is clickable: ('xpath', \"//*[contains(text(),'RU')]\")",
               "time" : {
-                "start" : 1708096654768,
-                "stop" : 1708096654794,
-                "duration" : 26
+                "start" : 1708097027789,
+                "stop" : 1708097027803,
+                "duration" : 14
               },
               "status" : "passed",
               "steps" : [ ],
@@ -388,33 +388,33 @@
       }, {
         "name" : "Click button \"Речевые упражнения\".",
         "time" : {
-          "start" : 1708096654831,
-          "stop" : 1708096656047,
-          "duration" : 1216
+          "start" : 1708097027847,
+          "stop" : 1708097028927,
+          "duration" : 1080
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is visible and clickable: ('xpath', '//a[@title=\"Речевые упражнения\"]')",
           "time" : {
-            "start" : 1708096654831,
-            "stop" : 1708096656018,
-            "duration" : 1187
+            "start" : 1708097027847,
+            "stop" : 1708097028899,
+            "duration" : 1052
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable",
             "time" : {
-              "start" : 1708096656002,
-              "stop" : 1708096656018,
-              "duration" : 16
+              "start" : 1708097028884,
+              "stop" : 1708097028899,
+              "duration" : 15
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Check element is clickable: ('xpath', '//a[@title=\"Речевые упражнения\"]')",
               "time" : {
-                "start" : 1708096656002,
-                "stop" : 1708096656018,
-                "duration" : 16
+                "start" : 1708097028884,
+                "stop" : 1708097028899,
+                "duration" : 15
               },
               "status" : "passed",
               "steps" : [ ],
@@ -449,27 +449,27 @@
         "stepsCount" : 3,
         "hasContent" : true
       }, {
-        "name" : "Check element is visible and clickable: ('xpath', '//button[@title=\"Слова с частотной группировкой\"]')",
+        "name" : "Check element is visible and clickable: ('xpath', '//button[@title=\"Распознавание предложений\"]')",
         "time" : {
-          "start" : 1708096656047,
-          "stop" : 1708096659152,
-          "duration" : 3105
+          "start" : 1708097028927,
+          "stop" : 1708097031517,
+          "duration" : 2590
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is clickable",
           "time" : {
-            "start" : 1708096659133,
-            "stop" : 1708096659152,
-            "duration" : 19
+            "start" : 1708097031501,
+            "stop" : 1708097031517,
+            "duration" : 16
           },
           "status" : "passed",
           "steps" : [ {
-            "name" : "Check element is clickable: ('xpath', '//button[@title=\"Слова с частотной группировкой\"]')",
+            "name" : "Check element is clickable: ('xpath', '//button[@title=\"Распознавание предложений\"]')",
             "time" : {
-              "start" : 1708096659133,
-              "stop" : 1708096659152,
-              "duration" : 19
+              "start" : 1708097031501,
+              "stop" : 1708097031517,
+              "duration" : 16
             },
             "status" : "passed",
             "steps" : [ ],
@@ -483,7 +483,7 @@
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "locator",
-            "value" : "('xpath', '//button[@title=\"Слова с частотной группировкой\"]')"
+            "value" : "('xpath', '//button[@title=\"Распознавание предложений\"]')"
           } ],
           "attachmentsCount" : 0,
           "shouldDisplayMessage" : false,
@@ -497,35 +497,35 @@
         "stepsCount" : 2,
         "hasContent" : true
       }, {
-        "name" : "Click button \"СЛОВА С ЧАСТОТНОЙ ГРУППИРОВКОЙ\".",
+        "name" : "Click button \"ПРЕДЛОЖЕНИЯ\".",
         "time" : {
-          "start" : 1708096659207,
-          "stop" : 1708096659270,
-          "duration" : 63
+          "start" : 1708097031535,
+          "stop" : 1708097031592,
+          "duration" : 57
         },
         "status" : "passed",
         "steps" : [ {
-          "name" : "Check element is visible and clickable: ('xpath', '//button[@title=\"Слова с частотной группировкой\"]')",
+          "name" : "Check element is visible and clickable: ('xpath', '//button[@title=\"Распознавание предложений\"]')",
           "time" : {
-            "start" : 1708096659207,
-            "stop" : 1708096659235,
-            "duration" : 28
+            "start" : 1708097031535,
+            "stop" : 1708097031562,
+            "duration" : 27
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable",
             "time" : {
-              "start" : 1708096659218,
-              "stop" : 1708096659235,
-              "duration" : 17
+              "start" : 1708097031547,
+              "stop" : 1708097031562,
+              "duration" : 15
             },
             "status" : "passed",
             "steps" : [ {
-              "name" : "Check element is clickable: ('xpath', '//button[@title=\"Слова с частотной группировкой\"]')",
+              "name" : "Check element is clickable: ('xpath', '//button[@title=\"Распознавание предложений\"]')",
               "time" : {
-                "start" : 1708096659219,
-                "stop" : 1708096659235,
-                "duration" : 16
+                "start" : 1708097031547,
+                "stop" : 1708097031562,
+                "duration" : 15
               },
               "status" : "passed",
               "steps" : [ ],
@@ -539,7 +539,7 @@
             "attachments" : [ ],
             "parameters" : [ {
               "name" : "locator",
-              "value" : "('xpath', '//button[@title=\"Слова с частотной группировкой\"]')"
+              "value" : "('xpath', '//button[@title=\"Распознавание предложений\"]')"
             } ],
             "attachmentsCount" : 0,
             "shouldDisplayMessage" : false,
@@ -562,9 +562,9 @@
       }, {
         "name" : "Wait until url: https://brainup.site/groups/2/series/1 will be changed.",
         "time" : {
-          "start" : 1708096659270,
-          "stop" : 1708096659790,
-          "duration" : 520
+          "start" : 1708097031592,
+          "stop" : 1708097032822,
+          "duration" : 1230
         },
         "status" : "passed",
         "steps" : [ ],
@@ -578,7 +578,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "selector_for_sub_group",
-        "value" : "('xpath', '//button[@title=\"Слова с частотной группировкой\"]')"
+        "value" : "('xpath', '//button[@title=\"Распознавание предложений\"]')"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -587,17 +587,17 @@
     }, {
       "name" : "click_random_card",
       "time" : {
-        "start" : 1708096659796,
-        "stop" : 1708096659901,
-        "duration" : 105
+        "start" : 1708097032824,
+        "stop" : 1708097032930,
+        "duration" : 106
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check elements are present: ('xpath', '//div[contains(@class, \"series-container\")]//a/div/div')",
         "time" : {
-          "start" : 1708096659796,
-          "stop" : 1708096659810,
-          "duration" : 14
+          "start" : 1708097032824,
+          "stop" : 1708097032842,
+          "duration" : 18
         },
         "status" : "passed",
         "steps" : [ ],
@@ -608,10 +608,10 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Getting list cards: ['Низкочастотные слова', 'Среднечастотные слова', 'Высокочастотные слова']",
+        "name" : "Getting list cards: ['Из 2 слов', 'Из 3 слов', 'Из 4 слов', 'Из 5 слов', 'Из 6 слов']",
         "time" : {
-          "start" : 1708096659829,
-          "stop" : 1708096659829,
+          "start" : 1708097032873,
+          "stop" : 1708097032873,
           "duration" : 0
         },
         "status" : "passed",
@@ -623,10 +623,10 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Select random id from list of cards. \nCard ID in list is:, 1",
+        "name" : "Select random id from list of cards. \nCard ID in list is:, 4",
         "time" : {
-          "start" : 1708096659829,
-          "stop" : 1708096659829,
+          "start" : 1708097032873,
+          "stop" : 1708097032873,
           "duration" : 0
         },
         "status" : "passed",
@@ -640,9 +640,9 @@
       }, {
         "name" : "Check elements are present: ('xpath', '//div[contains(@class, \"series-container\")]//a/div/div')",
         "time" : {
-          "start" : 1708096659829,
-          "stop" : 1708096659835,
-          "duration" : 6
+          "start" : 1708097032873,
+          "stop" : 1708097032880,
+          "duration" : 7
         },
         "status" : "passed",
         "steps" : [ ],
@@ -653,19 +653,19 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Selected card is: Низкочастотные слова",
+        "name" : "Selected card is: Из 5 слов",
         "time" : {
-          "start" : 1708096659841,
-          "stop" : 1708096659894,
-          "duration" : 53
+          "start" : 1708097032886,
+          "stop" : 1708097032923,
+          "duration" : 37
         },
         "status" : "passed",
         "steps" : [ {
-          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"f41a6951a5082f3a1cf539e113ea7ce5\", element=\"25777BEA79FC31024BFA439C090EA9BE_element_98\")>",
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"7413d2603c0a38a48139dc45345ab561\", element=\"0A77EA64A9096F4D47D30468653E86BC_element_129\")>",
           "time" : {
-            "start" : 1708096659841,
-            "stop" : 1708096659851,
-            "duration" : 10
+            "start" : 1708097032886,
+            "stop" : 1708097032889,
+            "duration" : 3
           },
           "status" : "passed",
           "steps" : [ ],
@@ -690,11 +690,11 @@
       "stepsCount" : 6,
       "hasContent" : true
     }, {
-      "name" : "Wait until url: https://brainup.site/groups/2/series/6 will be changed.",
+      "name" : "Wait until url: https://brainup.site/groups/2/series/4 will be changed.",
       "time" : {
-        "start" : 1708096659904,
-        "stop" : 1708096661152,
-        "duration" : 1248
+        "start" : 1708097032933,
+        "stop" : 1708097033441,
+        "duration" : 508
       },
       "status" : "passed",
       "steps" : [ ],
@@ -707,16 +707,16 @@
     }, {
       "name" : "get_random_id_from_list_sub_group",
       "time" : {
-        "start" : 1708096661152,
-        "stop" : 1708096662734,
-        "duration" : 1582
+        "start" : 1708097033442,
+        "stop" : 1708097035314,
+        "duration" : 1872
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Send GET request with params: https://brainup.site/api/subgroups?seriesId=6 headers=\"Content-Type\": \"application/json\",\"Authorization\": \"Bearer\": \"{id_token}\"",
+        "name" : "Send GET request with params: https://brainup.site/api/subgroups?seriesId=4 headers=\"Content-Type\": \"application/json\",\"Authorization\": \"Bearer\": \"{id_token}\"",
         "time" : {
-          "start" : 1708096662733,
-          "stop" : 1708096662733,
+          "start" : 1708097035313,
+          "stop" : 1708097035313,
           "duration" : 0
         },
         "status" : "passed",
@@ -728,10 +728,10 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Getting list of cards id: {'data': [{'seriesId': 6, 'id': 68, 'level': 1, 'name': 'Низкочастотные слова', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/low_frequency.svg', 'description': 'Низкочастотные слова', 'withPictures': False, 'exercises': [943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032]}, {'seriesId': 6, 'id': 69, 'level': 2, 'name': 'Среднечастотные слова', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/medium_frequency.svg', 'description': 'Среднечастотные слова', 'withPictures': False, 'exercises': [1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048]}, {'seriesId': 6, 'id': 70, 'level': 3, 'name': 'Высокочастотные слова', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/high_frequency.svg', 'description': 'Высокочастотные слова', 'withPictures': False, 'exercises': [1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089, 1090]}], 'errors': [], 'meta': []}",
+        "name" : "Getting list of cards id: {'data': [{'seriesId': 4, 'id': 55, 'level': 1, 'name': 'Из 2 слов', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/sentence_with_2_words.svg', 'description': 'Пойми предложение из 2 слов', 'withPictures': False, 'exercises': [1624, 1625, 1626, 1627, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1636, 1637, 1638, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1649, 1650, 1651, 1652, 1653, 1654, 1655, 1656, 1657, 1658, 1659, 1660]}, {'seriesId': 4, 'id': 56, 'level': 2, 'name': 'Из 3 слов', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/sentence_with_3_words.svg', 'description': 'Пойми предложение из 3 слов', 'withPictures': False, 'exercises': [1661, 1662, 1663, 1664, 1665, 1666, 1667, 1668, 1669, 1670, 1671, 1672, 1673, 1674, 1675, 1676, 1677, 1678, 1679, 1680, 1681, 1682, 1683, 1684, 1685, 1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717, 1718, 1719, 1720, 1721, 1722, 1723, 1724, 1725, 1726, 1727, 1728, 1729, 1730, 1731, 1732, 1733, 1734, 1735, 1736, 1737, 1738, 1739, 1740, 1741, 1742, 1743, 1744, 1745, 1746, 1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755, 1756, 1757, 1758]}, {'seriesId': 4, 'id': 57, 'level': 3, 'name': 'Из 4 слов', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/sentence_with_4_words.svg', 'description': 'Пойми предложение из 4 слов', 'withPictures': False, 'exercises': [1759, 1760, 1761, 1762, 1763, 1764, 1765, 1766, 1767, 1768, 1769, 1770, 1771, 1772, 1773, 1774, 1775, 1776, 1777, 1778, 1779, 1780, 1781, 1782, 1783, 1784, 1785, 1786, 1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798, 1799, 1800, 1801, 1802]}, {'seriesId': 4, 'id': 58, 'level': 4, 'name': 'Из 5 слов', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/sentence_with_5_words.svg', 'description': 'Пойми предложение из 5 слов', 'withPictures': False, 'exercises': [1803, 1804, 1805, 1806, 1807, 1808, 1809, 1810, 1811, 1812, 1813, 1814, 1815, 1816, 1817, 1818, 1819, 1820, 1821, 1822, 1823]}, {'seriesId': 4, 'id': 59, 'level': 5, 'name': 'Из 6 слов', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/sentence_with_6_words.svg', 'description': 'Пойми предложение из 6 слов', 'withPictures': False, 'exercises': [1824, 1825, 1826, 1827, 1828, 1829, 1830, 1831, 1832, 1833]}], 'errors': [], 'meta': []}",
         "time" : {
-          "start" : 1708096662733,
-          "stop" : 1708096662733,
+          "start" : 1708097035313,
+          "stop" : 1708097035313,
           "duration" : 0
         },
         "status" : "passed",
@@ -743,10 +743,10 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Select random id from list: 1002",
+        "name" : "Select random id from list: 1806",
         "time" : {
-          "start" : 1708096662733,
-          "stop" : 1708096662733,
+          "start" : 1708097035314,
+          "stop" : 1708097035314,
           "duration" : 0
         },
         "status" : "passed",
@@ -761,21 +761,21 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "card_id",
-        "value" : "0"
+        "value" : "3"
       }, {
         "name" : "seria_id",
-        "value" : "'6'"
+        "value" : "'4'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 3,
       "hasContent" : true
     }, {
-      "name" : "Wait until url: https://brainup.site/groups/2/series/6/subgroup/68/exercise/1002 will be changed.",
+      "name" : "Wait until url: https://brainup.site/groups/2/series/4/subgroup/58/exercise/1806 will be changed.",
       "time" : {
-        "start" : 1708096663027,
-        "stop" : 1708096667125,
-        "duration" : 4098
+        "start" : 1708097035571,
+        "stop" : 1708097040126,
+        "duration" : 4555
       },
       "status" : "passed",
       "steps" : [ ],
@@ -786,43 +786,43 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "click_start_and_get_list_words_ru",
+      "name" : "click_start_and_get_list_words_for_group_words_ru",
       "time" : {
-        "start" : 1708096667129,
-        "stop" : 1708096667760,
-        "duration" : 631
+        "start" : 1708097040128,
+        "stop" : 1708097040573,
+        "duration" : 445
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Click button \"Start\".",
         "time" : {
-          "start" : 1708096667129,
-          "stop" : 1708096667355,
-          "duration" : 226
+          "start" : 1708097040128,
+          "stop" : 1708097040280,
+          "duration" : 152
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check element is visible and clickable: ('xpath', '//button[@aria-label=\"Начать выполнение упражнения\"]')",
           "time" : {
-            "start" : 1708096667129,
-            "stop" : 1708096667255,
-            "duration" : 126
+            "start" : 1708097040128,
+            "stop" : 1708097040159,
+            "duration" : 31
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "Check element is clickable",
             "time" : {
-              "start" : 1708096667174,
-              "stop" : 1708096667255,
-              "duration" : 81
+              "start" : 1708097040143,
+              "stop" : 1708097040159,
+              "duration" : 16
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "Check element is clickable: ('xpath', '//button[@aria-label=\"Начать выполнение упражнения\"]')",
               "time" : {
-                "start" : 1708096667174,
-                "stop" : 1708096667255,
-                "duration" : 81
+                "start" : 1708097040143,
+                "stop" : 1708097040159,
+                "duration" : 16
               },
               "status" : "passed",
               "steps" : [ ],
@@ -857,11 +857,11 @@
         "stepsCount" : 3,
         "hasContent" : true
       }, {
-        "name" : "Check elements are visible: ('xpath', '//li[@class=\"task-player__option flex\"]')",
+        "name" : "Check elements are visible: ('xpath', '//div[@class=\"flex justify-center flex-grow mt-4\"]//span')",
         "time" : {
-          "start" : 1708096667356,
-          "stop" : 1708096667528,
-          "duration" : 172
+          "start" : 1708097040280,
+          "stop" : 1708097040457,
+          "duration" : 177
         },
         "status" : "passed",
         "steps" : [ ],
@@ -872,11 +872,11 @@
         "stepsCount" : 0,
         "hasContent" : false
       }, {
-        "name" : "Getting a list of exercise words from the front: ['пачка', 'качка', 'дачка']",
+        "name" : "Getting a list of exercise words from the front: ['восьмая', 'девятая', 'седьмая', 'птичка', 'мошка', 'кошка', 'откусила', 'отломала', 'оторвала', 'старую', 'твёрдую', 'сладкую', 'корочку', 'розочку', 'булочку']",
         "time" : {
-          "start" : 1708096667575,
-          "stop" : 1708096667575,
-          "duration" : 0
+          "start" : 1708097040572,
+          "stop" : 1708097040573,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -886,153 +886,27 @@
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : false
-      }, {
-        "name" : "Click button \"Повторить\".",
-        "time" : {
-          "start" : 1708096667575,
-          "stop" : 1708096667669,
-          "duration" : 94
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check element is visible and clickable: ('xpath', '//*[text()=\"Повторить\"]')",
-          "time" : {
-            "start" : 1708096667575,
-            "stop" : 1708096667616,
-            "duration" : 41
-          },
-          "status" : "passed",
-          "steps" : [ {
-            "name" : "Check element is clickable",
-            "time" : {
-              "start" : 1708096667592,
-              "stop" : 1708096667616,
-              "duration" : 24
-            },
-            "status" : "passed",
-            "steps" : [ {
-              "name" : "Check element is clickable: ('xpath', '//*[text()=\"Повторить\"]')",
-              "time" : {
-                "start" : 1708096667592,
-                "stop" : 1708096667616,
-                "duration" : 24
-              },
-              "status" : "passed",
-              "steps" : [ ],
-              "attachments" : [ ],
-              "parameters" : [ ],
-              "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0,
-              "hasContent" : false
-            } ],
-            "attachments" : [ ],
-            "parameters" : [ {
-              "name" : "locator",
-              "value" : "('xpath', '//*[text()=\"Повторить\"]')"
-            } ],
-            "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1,
-            "hasContent" : true
-          } ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2,
-          "hasContent" : true
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 3,
-        "hasContent" : true
-      }, {
-        "name" : "Click button \"Решать\".",
-        "time" : {
-          "start" : 1708096667669,
-          "stop" : 1708096667760,
-          "duration" : 91
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check element is visible and clickable: ('xpath', '//*[text()=\"Решать\"]')",
-          "time" : {
-            "start" : 1708096667669,
-            "stop" : 1708096667731,
-            "duration" : 62
-          },
-          "status" : "passed",
-          "steps" : [ {
-            "name" : "Check element is clickable",
-            "time" : {
-              "start" : 1708096667686,
-              "stop" : 1708096667731,
-              "duration" : 45
-            },
-            "status" : "passed",
-            "steps" : [ {
-              "name" : "Check element is clickable: ('xpath', '//*[text()=\"Решать\"]')",
-              "time" : {
-                "start" : 1708096667686,
-                "stop" : 1708096667731,
-                "duration" : 45
-              },
-              "status" : "passed",
-              "steps" : [ ],
-              "attachments" : [ ],
-              "parameters" : [ ],
-              "attachmentsCount" : 0,
-              "shouldDisplayMessage" : false,
-              "stepsCount" : 0,
-              "hasContent" : false
-            } ],
-            "attachments" : [ ],
-            "parameters" : [ {
-              "name" : "locator",
-              "value" : "('xpath', '//*[text()=\"Решать\"]')"
-            } ],
-            "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false,
-            "stepsCount" : 1,
-            "hasContent" : true
-          } ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 2,
-          "hasContent" : true
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 3,
-        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 14,
+      "stepsCount" : 6,
       "hasContent" : true
     }, {
-      "name" : "get_list_of_words_from_card",
+      "name" : "get_list_of_words_from_card_group_words",
       "time" : {
-        "start" : 1708096667761,
-        "stop" : 1708096668997,
-        "duration" : 1236
+        "start" : 1708097040573,
+        "stop" : 1708097041249,
+        "duration" : 676
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Getting a list of exercise words from the backend: ['пачка', 'качка', 'дачка'].",
+        "name" : "Getting a list of exercise words from the backend: ['птичка', 'мошка', 'кошка', 'откусила', 'отломала', 'оторвала', 'старую', 'твёрдую', 'сладкую', 'восьмая', 'девятая', 'седьмая', 'корочку', 'розочку', 'булочку'].",
         "time" : {
-          "start" : 1708096668996,
-          "stop" : 1708096668996,
-          "duration" : 0
+          "start" : 1708097041248,
+          "stop" : 1708097041249,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1046,7 +920,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "card_id",
-        "value" : "'1002'"
+        "value" : "'1794'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -1057,24 +931,24 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 47,
+    "stepsCount" : 39,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1708096668999,
-      "stop" : 1708096669204,
-      "duration" : 205
+      "start" : 1708097041251,
+      "stop" : 1708097041476,
+      "duration" : 225
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "b240687b742d1fa4",
-      "name" : "Screenshot 2024-02-16 15:17:49.138810",
-      "source" : "b240687b742d1fa4.png",
+      "uid" : "4f035ab0d7b027b7",
+      "name" : "Screenshot 2024-02-16 15:24:01.411855",
+      "source" : "4f035ab0d7b027b7.png",
       "type" : "image/png",
-      "size" : 44029
+      "size" : 104372
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -1087,7 +961,7 @@
     "value" : "Речевые упражнения."
   }, {
     "name" : "suite",
-    "value" : "Слова с частотной группировкой"
+    "value" : "Предложения."
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -1096,10 +970,10 @@
     "value" : "TestCardsRU"
   }, {
     "name" : "host",
-    "value" : "fv-az529-494"
+    "value" : "fv-az1210-7"
   }, {
     "name" : "thread",
-    "value" : "1789-MainThread"
+    "value" : "1891-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -1126,174 +1000,174 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 26,
+        "passed" : 29,
         "unknown" : 0,
-        "total" : 26
+        "total" : 29
       },
       "items" : [ {
-        "uid" : "b505df2b847488c7",
+        "uid" : "a82a842fde1b7a4a",
         "status" : "passed",
         "time" : {
-          "start" : 1708032571043,
-          "stop" : 1708032582840,
-          "duration" : 11797
+          "start" : 1708096627985,
+          "stop" : 1708096648704,
+          "duration" : 20719
         }
       }, {
-        "uid" : "6956216169124a87",
+        "uid" : "59013c3494acf514",
         "status" : "passed",
         "time" : {
-          "start" : 1708031571387,
-          "stop" : 1708031586838,
-          "duration" : 15451
+          "start" : 1708032550075,
+          "stop" : 1708032564207,
+          "duration" : 14132
         }
       }, {
-        "uid" : "4227325f14b18c96",
+        "uid" : "a7402b94662375a2",
         "status" : "passed",
         "time" : {
-          "start" : 1708025378143,
-          "stop" : 1708025389917,
-          "duration" : 11774
+          "start" : 1708031546610,
+          "stop" : 1708031563533,
+          "duration" : 16923
         }
       }, {
-        "uid" : "5ec459888e12f3dc",
+        "uid" : "b267dc9d2cd0e29d",
         "status" : "passed",
         "time" : {
-          "start" : 1708019845889,
-          "stop" : 1708019861914,
-          "duration" : 16025
+          "start" : 1708025360772,
+          "stop" : 1708025372215,
+          "duration" : 11443
         }
       }, {
-        "uid" : "895b1ac6821eff14",
+        "uid" : "8eb9858a2cf1fc58",
         "status" : "passed",
         "time" : {
-          "start" : 1708014403775,
-          "stop" : 1708014417131,
-          "duration" : 13356
+          "start" : 1708019824982,
+          "stop" : 1708019838490,
+          "duration" : 13508
         }
       }, {
-        "uid" : "f988b5bd9a63dbda",
+        "uid" : "e0874a3448554e92",
         "status" : "passed",
         "time" : {
-          "start" : 1708012773995,
-          "stop" : 1708012788114,
-          "duration" : 14119
+          "start" : 1708014383535,
+          "stop" : 1708014397117,
+          "duration" : 13582
         }
       }, {
-        "uid" : "9473e452a18f0807",
+        "uid" : "804aa5b8781b2969",
         "status" : "passed",
         "time" : {
-          "start" : 1708011649426,
-          "stop" : 1708011668310,
-          "duration" : 18884
+          "start" : 1708012751825,
+          "stop" : 1708012770084,
+          "duration" : 18259
         }
       }, {
-        "uid" : "eaa4401f6e1fdfdb",
+        "uid" : "f3bf84b5a9bfc7ea",
         "status" : "passed",
         "time" : {
-          "start" : 1708011350052,
-          "stop" : 1708011366624,
-          "duration" : 16572
+          "start" : 1708011621420,
+          "stop" : 1708011640341,
+          "duration" : 18921
         }
       }, {
-        "uid" : "6b0f557ecd5f9d9",
+        "uid" : "3bfc47f58ff360cd",
         "status" : "passed",
         "time" : {
-          "start" : 1707945475490,
-          "stop" : 1707945491040,
-          "duration" : 15550
+          "start" : 1708011325653,
+          "stop" : 1708011342317,
+          "duration" : 16664
         }
       }, {
-        "uid" : "85b70297e6624ba0",
+        "uid" : "30b888bd16d028cc",
         "status" : "passed",
         "time" : {
-          "start" : 1707942491555,
-          "stop" : 1707942503299,
-          "duration" : 11744
+          "start" : 1707945450473,
+          "stop" : 1707945465526,
+          "duration" : 15053
         }
       }, {
-        "uid" : "2f1a0856b630c363",
+        "uid" : "fae9d2b334594fe5",
         "status" : "passed",
         "time" : {
-          "start" : 1707921892711,
-          "stop" : 1707921911687,
-          "duration" : 18976
+          "start" : 1707942474085,
+          "stop" : 1707942485489,
+          "duration" : 11404
         }
       }, {
-        "uid" : "6cffdc7081babb37",
+        "uid" : "b4a4f8b290ca4c39",
         "status" : "passed",
         "time" : {
-          "start" : 1707859949682,
-          "stop" : 1707859962407,
-          "duration" : 12725
+          "start" : 1707921868887,
+          "stop" : 1707921885700,
+          "duration" : 16813
         }
       }, {
-        "uid" : "d2d3946987bc16ad",
+        "uid" : "15511e27ae841ad8",
         "status" : "passed",
         "time" : {
-          "start" : 1707858861603,
-          "stop" : 1707858874406,
-          "duration" : 12803
+          "start" : 1707859928915,
+          "stop" : 1707859941914,
+          "duration" : 12999
         }
       }, {
-        "uid" : "d86d03f9fbb2b0f4",
+        "uid" : "e13b3bc2e6b1189f",
         "status" : "passed",
         "time" : {
-          "start" : 1707857913943,
-          "stop" : 1707857926909,
-          "duration" : 12966
+          "start" : 1707858842117,
+          "stop" : 1707858855333,
+          "duration" : 13216
         }
       }, {
-        "uid" : "200177d2ec548ad3",
+        "uid" : "164064c2e5f3ec14",
         "status" : "passed",
         "time" : {
-          "start" : 1707856802000,
-          "stop" : 1707856817403,
-          "duration" : 15403
+          "start" : 1707857892729,
+          "stop" : 1707857906204,
+          "duration" : 13475
         }
       }, {
-        "uid" : "a7bb863f36d258f6",
+        "uid" : "b1334d03bc08694b",
         "status" : "passed",
         "time" : {
-          "start" : 1707856669628,
-          "stop" : 1707856683845,
-          "duration" : 14217
+          "start" : 1707856778372,
+          "stop" : 1707856795578,
+          "duration" : 17206
         }
       }, {
-        "uid" : "e3a6cd3b710215a2",
+        "uid" : "40904530d9b4bcb1",
         "status" : "passed",
         "time" : {
-          "start" : 1707855165952,
-          "stop" : 1707855176949,
-          "duration" : 10997
+          "start" : 1707856646469,
+          "stop" : 1707856661922,
+          "duration" : 15453
         }
       }, {
-        "uid" : "2922e7d9c08d3daf",
+        "uid" : "3bfbee42fd898c97",
         "status" : "passed",
         "time" : {
-          "start" : 1707834756129,
-          "stop" : 1707834768724,
-          "duration" : 12595
+          "start" : 1707855148207,
+          "stop" : 1707855159973,
+          "duration" : 11766
         }
       }, {
-        "uid" : "ae5fa55b672c74a6",
+        "uid" : "46960dffd4efa1c3",
         "status" : "passed",
         "time" : {
-          "start" : 1707758271466,
-          "stop" : 1707758284042,
-          "duration" : 12576
+          "start" : 1707834732344,
+          "stop" : 1707834750129,
+          "duration" : 17785
         }
       }, {
-        "uid" : "2a3933bfff31a634",
+        "uid" : "f4290690df87ef78",
         "status" : "passed",
         "time" : {
-          "start" : 1707756291575,
-          "stop" : 1707756302342,
-          "duration" : 10767
+          "start" : 1707758252713,
+          "stop" : 1707758265442,
+          "duration" : 12729
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "546a569954e0f9a3.json",
+  "source" : "bef9f8e12048e04e.json",
   "parameterValues" : [ ]
 }
