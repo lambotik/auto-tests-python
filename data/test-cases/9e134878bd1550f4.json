@@ -1,0 +1,387 @@
+{
+  "uid" : "9e134878bd1550f4",
+  "name" : "Verify that the REG.RU link in Footer leads to the correct page after click",
+  "fullName" : "tests.footer_test.TestFooterNavigation#test_fp_03_04_verify_reg_link_leads_to_the_correct_page",
+  "historyId" : "7203de193ab870e8716b8291c4aff78d",
+  "time" : {
+    "start" : 1708379980987,
+    "stop" : 1708380011295,
+    "duration" : 30308
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1708379976765,
+      "stop" : 1708379977540,
+      "duration" : 775
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1708379977540,
+      "stop" : 1708379980987,
+      "duration" : 3447
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1708379977540,
+        "stop" : 1708379980987,
+        "duration" : 3447
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"17eaebd310769ff44bec343a3594d604\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1708379786020,
+      "stop" : 1708379786020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click on the REG.RU link in Footer and thereby open the corresponding web page in a new tab",
+      "time" : {
+        "start" : 1708379980987,
+        "stop" : 1708379981074,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '(//footer//li)[2]/a')",
+        "time" : {
+          "start" : 1708379980988,
+          "stop" : 1708379981029,
+          "duration" : 41
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1708379981009,
+            "stop" : 1708379981029,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '(//footer//li)[2]/a')",
+            "time" : {
+              "start" : 1708379981009,
+              "stop" : 1708379981029,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '(//footer//li)[2]/a')"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1708380011296,
+      "stop" : 1708380011409,
+      "duration" : 113
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ea1f2447dafa9420",
+      "name" : "Screenshot 2024-02-19 22:00:11.350101",
+      "source" : "ea1f2447dafa9420.png",
+      "type" : "image/png",
+      "size" : 3249
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1019-782"
+  }, {
+    "name" : "thread",
+    "value" : "1821-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 35,
+        "unknown" : 0,
+        "total" : 35
+      },
+      "items" : [ {
+        "uid" : "804bb8c1c88e3ee0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378619561,
+          "stop" : 1708378649858,
+          "duration" : 30297
+        }
+      }, {
+        "uid" : "65beec35c1feb4b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378464507,
+          "stop" : 1708378494752,
+          "duration" : 30245
+        }
+      }, {
+        "uid" : "bdd52170b94e5cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708363586920,
+          "stop" : 1708363617198,
+          "duration" : 30278
+        }
+      }, {
+        "uid" : "5b5dc21874d7adf4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708358978696,
+          "stop" : 1708359008993,
+          "duration" : 30297
+        }
+      }, {
+        "uid" : "72ab3b0e83aab1d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708358045799,
+          "stop" : 1708358076036,
+          "duration" : 30237
+        }
+      }, {
+        "uid" : "10fa06aac185880c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708353936701,
+          "stop" : 1708353966946,
+          "duration" : 30245
+        }
+      }, {
+        "uid" : "e1ed37ddea3848f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708283177987,
+          "stop" : 1708283208217,
+          "duration" : 30230
+        }
+      }, {
+        "uid" : "c7cdb8694d9f9fc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280473485,
+          "stop" : 1708280503741,
+          "duration" : 30256
+        }
+      }, {
+        "uid" : "e13a83eb7be25a18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280285255,
+          "stop" : 1708280315501,
+          "duration" : 30246
+        }
+      }, {
+        "uid" : "9d34444e3a69f370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708097693494,
+          "stop" : 1708097723744,
+          "duration" : 30250
+        }
+      }, {
+        "uid" : "ded7848086bc9cee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708095802205,
+          "stop" : 1708095832436,
+          "duration" : 30231
+        }
+      }, {
+        "uid" : "f7b417541dc1d724",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708032097978,
+          "stop" : 1708032128262,
+          "duration" : 30284
+        }
+      }, {
+        "uid" : "a44b6c67bf29200b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708031074796,
+          "stop" : 1708031105092,
+          "duration" : 30296
+        }
+      }, {
+        "uid" : "9c94f7bf171871e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708024947498,
+          "stop" : 1708024977727,
+          "duration" : 30229
+        }
+      }, {
+        "uid" : "8534daa4560e5e3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708019332659,
+          "stop" : 1708019362943,
+          "duration" : 30284
+        }
+      }, {
+        "uid" : "25d9afc50f92b30a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708013969285,
+          "stop" : 1708013999514,
+          "duration" : 30229
+        }
+      }, {
+        "uid" : "ce8d4846c5b99976",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708012334479,
+          "stop" : 1708012364708,
+          "duration" : 30229
+        }
+      }, {
+        "uid" : "21bb866a99899777",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708011018762,
+          "stop" : 1708011049058,
+          "duration" : 30296
+        }
+      }, {
+        "uid" : "d453c8a3c8173918",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708010831900,
+          "stop" : 1708010862147,
+          "duration" : 30247
+        }
+      }, {
+        "uid" : "ca430a97497bc3e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707944990495,
+          "stop" : 1707945020747,
+          "duration" : 30252
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9e134878bd1550f4.json",
+  "parameterValues" : [ ]
+}
