@@ -1,0 +1,424 @@
+{
+  "uid" : "b9d39c6f6035f5c6",
+  "name" : "Verify presence, visibility and accuracy of the EPAM link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_04_verify_epam_link_image",
+  "historyId" : "065722beb01452bfed00a851c1b80407",
+  "time" : {
+    "start" : 1708640169498,
+    "stop" : 1708640169563,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1708640166737,
+      "stop" : 1708640169498,
+      "duration" : 2761
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1708640166737,
+        "stop" : 1708640169498,
+        "duration" : 2761
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ba0c10c540fda8b0300783d117152648\")>"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1708639941481,
+      "stop" : 1708639941481,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1708640165965,
+      "stop" : 1708640166737,
+      "duration" : 772
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the EPAM image is present in Footer",
+      "time" : {
+        "start" : 1708640169498,
+        "stop" : 1708640169507,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[5]//img')",
+        "time" : {
+          "start" : 1708640169498,
+          "stop" : 1708640169507,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check the EPAM image is present and visible in Footer",
+      "time" : {
+        "start" : 1708640169507,
+        "stop" : 1708640169535,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[5]//img')",
+        "time" : {
+          "start" : 1708640169507,
+          "stop" : 1708640169535,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[5]//img')",
+          "time" : {
+            "start" : 1708640169507,
+            "stop" : 1708640169512,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ba0c10c540fda8b0300783d117152648\", element=\"8A157711729E22031E28F7B8F96ED864_element_12\")>",
+          "time" : {
+            "start" : 1708640169512,
+            "stop" : 1708640169516,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get attribute \"src\" of the EPAM image in Footer",
+      "time" : {
+        "start" : 1708640169535,
+        "stop" : 1708640169549,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1708640169535,
+          "stop" : 1708640169549,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]//img')"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get attribute \"alt\" of the EPAM image in Footer",
+      "time" : {
+        "start" : 1708640169549,
+        "stop" : 1708640169563,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1708640169549,
+          "stop" : 1708640169563,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]//img')"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1708640169563,
+      "stop" : 1708640169885,
+      "duration" : 322
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "adf1a8c6068751b",
+      "name" : "Screenshot 2024-02-22 22:16:09.824227",
+      "source" : "adf1a8c6068751b.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1382-378"
+  }, {
+    "name" : "thread",
+    "value" : "1794-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "137dcfdaed17c295",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708638298684,
+          "stop" : 1708638298745,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "2f8057c8f90ec413",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708636956046,
+          "stop" : 1708636956107,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "9fed476d6345e640",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708636792376,
+          "stop" : 1708636792441,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "7488e589e8671f07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708380049119,
+          "stop" : 1708380049182,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "31524c8d3f59e867",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378688670,
+          "stop" : 1708378688730,
+          "duration" : 60
+        }
+      }, {
+        "uid" : "4e062ea7e58621d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378527272,
+          "stop" : 1708378527332,
+          "duration" : 60
+        }
+      }, {
+        "uid" : "2cbee2ddec649a15",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708363653865,
+          "stop" : 1708363653927,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "389ee71206c5e58a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708359046961,
+          "stop" : 1708359047022,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "ad3f6568d7849439",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708358105977,
+          "stop" : 1708358106038,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "81355366d160a6e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708354000591,
+          "stop" : 1708354000651,
+          "duration" : 60
+        }
+      }, {
+        "uid" : "d8dfd2ad80b9fb60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708283242816,
+          "stop" : 1708283242877,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "2f28b82dc579adf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280537242,
+          "stop" : 1708280537304,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "91726b3403a3d803",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280351354,
+          "stop" : 1708280351416,
+          "duration" : 62
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b9d39c6f6035f5c6.json",
+  "parameterValues" : [ ]
+}
