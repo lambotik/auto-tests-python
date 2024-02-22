@@ -1,0 +1,477 @@
+{
+  "uid" : "b1af728f3250943c",
+  "name" : "Verify presence, visibility, clickability, href, status code of the EPAM link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_04_verify_epam_link",
+  "historyId" : "f800edbd00d9ba312ec707526ecbcd83",
+  "time" : {
+    "start" : 1708638188469,
+    "stop" : 1708638188626,
+    "duration" : 157
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1708638184848,
+      "stop" : 1708638185615,
+      "duration" : 767
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1708638185616,
+      "stop" : 1708638188468,
+      "duration" : 2852
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1708638185616,
+        "stop" : 1708638188468,
+        "duration" : 2852
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"7d6b092fa5baa870b0a5a40b5fafa186\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1708638086868,
+      "stop" : 1708638086868,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the EPAM link is present in Footer",
+      "time" : {
+        "start" : 1708638188469,
+        "stop" : 1708638188477,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[5]/a')",
+        "time" : {
+          "start" : 1708638188469,
+          "stop" : 1708638188477,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Check the EPAM link is visible in Footer",
+      "time" : {
+        "start" : 1708638188477,
+        "stop" : 1708638188503,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[5]/a')",
+        "time" : {
+          "start" : 1708638188477,
+          "stop" : 1708638188503,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[5]/a')",
+          "time" : {
+            "start" : 1708638188477,
+            "stop" : 1708638188482,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"7d6b092fa5baa870b0a5a40b5fafa186\", element=\"5F96C5078AB1BA9DF9C0AE47B68F942D_element_12\")>",
+          "time" : {
+            "start" : 1708638188482,
+            "stop" : 1708638188486,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Check the EPAM link is clickable in Footer",
+      "time" : {
+        "start" : 1708638188504,
+        "stop" : 1708638188522,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1708638188504,
+          "stop" : 1708638188522,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[5]/a')",
+          "time" : {
+            "start" : 1708638188504,
+            "stop" : 1708638188522,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the EPAM link",
+      "time" : {
+        "start" : 1708638188522,
+        "stop" : 1708638188536,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1708638188627,
+      "stop" : 1708638188934,
+      "duration" : 307
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "948ecdf0f43846d7",
+      "name" : "Screenshot 2024-02-22 21:43:08.875523",
+      "source" : "948ecdf0f43846d7.png",
+      "type" : "image/png",
+      "size" : 389146
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1435-176"
+  }, {
+    "name" : "thread",
+    "value" : "1787-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 49,
+        "unknown" : 0,
+        "total" : 49
+      },
+      "items" : [ {
+        "uid" : "e2a84c8c4cdd0e15",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708636840085,
+          "stop" : 1708636840304,
+          "duration" : 219
+        }
+      }, {
+        "uid" : "ced9b9f3ccba5e55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708636673540,
+          "stop" : 1708636673754,
+          "duration" : 214
+        }
+      }, {
+        "uid" : "5e0cc48769458008",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708379918624,
+          "stop" : 1708379919029,
+          "duration" : 405
+        }
+      }, {
+        "uid" : "547d5d39bbea3163",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378556640,
+          "stop" : 1708378557033,
+          "duration" : 393
+        }
+      }, {
+        "uid" : "a650bf3393ff9830",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708378406230,
+          "stop" : 1708378406441,
+          "duration" : 211
+        }
+      }, {
+        "uid" : "3b599d523d3e5452",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708363525607,
+          "stop" : 1708363525954,
+          "duration" : 347
+        }
+      }, {
+        "uid" : "85fcadf7ec076f79",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708358912876,
+          "stop" : 1708358913271,
+          "duration" : 395
+        }
+      }, {
+        "uid" : "2962f1474eb8c89d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708357979603,
+          "stop" : 1708357979765,
+          "duration" : 162
+        }
+      }, {
+        "uid" : "ed114ad7f0bbe4d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708353876928,
+          "stop" : 1708353877189,
+          "duration" : 261
+        }
+      }, {
+        "uid" : "d31e31718aa89862",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708283118275,
+          "stop" : 1708283118474,
+          "duration" : 199
+        }
+      }, {
+        "uid" : "6f5513882f6118a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280413964,
+          "stop" : 1708280414174,
+          "duration" : 210
+        }
+      }, {
+        "uid" : "9482e15f0aa4d561",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708280226455,
+          "stop" : 1708280226682,
+          "duration" : 227
+        }
+      }, {
+        "uid" : "f0bd1916f2f01b25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708097638475,
+          "stop" : 1708097638724,
+          "duration" : 249
+        }
+      }, {
+        "uid" : "5c3cf268aa40d666",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708095751811,
+          "stop" : 1708095752015,
+          "duration" : 204
+        }
+      }, {
+        "uid" : "37017836e0531cbc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708032034341,
+          "stop" : 1708032034796,
+          "duration" : 455
+        }
+      }, {
+        "uid" : "4980b23599a4b195",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708031010541,
+          "stop" : 1708031011022,
+          "duration" : 481
+        }
+      }, {
+        "uid" : "7abc204624f8b2e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708024896550,
+          "stop" : 1708024896730,
+          "duration" : 180
+        }
+      }, {
+        "uid" : "79e79a6cd1bb1b75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708019251105,
+          "stop" : 1708019251525,
+          "duration" : 420
+        }
+      }, {
+        "uid" : "c48c0eebd2573568",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708013919156,
+          "stop" : 1708013919357,
+          "duration" : 201
+        }
+      }, {
+        "uid" : "330eb895f8258866",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708012283469,
+          "stop" : 1708012283720,
+          "duration" : 251
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b1af728f3250943c.json",
+  "parameterValues" : [ ]
+}
