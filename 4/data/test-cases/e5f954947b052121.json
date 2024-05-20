@@ -1,0 +1,260 @@
+{
+  "uid" : "e5f954947b052121",
+  "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_02_verify_text_in_elements_in_footer_on_pages",
+  "historyId" : "196370cb0dd31769f0bf6bd09ffccf56",
+  "time" : {
+    "start" : 1716193328477,
+    "stop" : 1716193332369,
+    "duration" : 3892
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716193327789,
+      "stop" : 1716193328476,
+      "duration" : 687
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716193271957,
+      "stop" : 1716193271957,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site",
+      "time" : {
+        "start" : 1716193328477,
+        "stop" : 1716193332324,
+        "duration" : 3847
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get text in the element: ('xpath', '//footer//a[@title]')",
+      "time" : {
+        "start" : 1716193332324,
+        "stop" : 1716193332369,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//footer//a[@title]')",
+        "time" : {
+          "start" : 1716193332324,
+          "stop" : 1716193332360,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//footer//a[@title]')",
+          "time" : {
+            "start" : 1716193332324,
+            "stop" : 1716193332333,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"8dc0b0b67283421b631df46b730b4cb5\", element=\"f.47DFAC07CFBF4B5A59883509D18AD99A.d.FF44653B0461DF3840BCB3C4B3BBA7F4.e.12\")>",
+          "time" : {
+            "start" : 1716193332333,
+            "stop" : 1716193332341,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716193332370,
+      "stop" : 1716193332639,
+      "duration" : 269
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bf4a0060607b0018",
+      "name" : "Screenshot 2024-05-20 08:22:12.578316",
+      "source" : "bf4a0060607b0018.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1380-906"
+  }, {
+    "name" : "thread",
+    "value" : "2355-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "element_locator",
+    "value" : "('xpath', '//footer//a[@title]')"
+  }, {
+    "name" : "expected_text",
+    "value" : "['Обратная связь', 'Contact us']"
+  }, {
+    "name" : "url",
+    "value" : "'https://brainup.site'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "b2e3105344588619",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/b2e3105344588619",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716166634401,
+          "stop" : 1716166638134,
+          "duration" : 3733
+        }
+      }, {
+        "uid" : "31b565b59aa30f04",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/31b565b59aa30f04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716080417759,
+          "stop" : 1716080420661,
+          "duration" : 2902
+        }
+      }, {
+        "uid" : "fd2bd6324a305cd9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/fd2bd6324a305cd9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715993769443,
+          "stop" : 1715993773154,
+          "duration" : 3711
+        }
+      }, {
+        "uid" : "12dca50929f88bcc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/5//#testresult/12dca50929f88bcc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715907398516,
+          "stop" : 1715907401500,
+          "duration" : 2984
+        }
+      }, {
+        "uid" : "dcf1c64121283bca",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/dcf1c64121283bca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715820975028,
+          "stop" : 1715820977556,
+          "duration" : 2528
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e5f954947b052121.json",
+  "parameterValues" : [ "('xpath', '//footer//a[@title]')", "['Обратная связь', 'Contact us']", "'https://brainup.site'" ]
+}

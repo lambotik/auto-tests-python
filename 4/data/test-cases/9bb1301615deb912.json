@@ -1,0 +1,365 @@
+{
+  "uid" : "9bb1301615deb912",
+  "name" : "Verify presence, visibility and accuracy of the EPAM link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_04_verify_epam_link_image",
+  "historyId" : "065722beb01452bfed00a851c1b80407",
+  "time" : {
+    "start" : 1716193466649,
+    "stop" : 1716193466716,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716193463653,
+      "stop" : 1716193466649,
+      "duration" : 2996
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716193463654,
+        "stop" : 1716193466649,
+        "duration" : 2995
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"9ddd9b2b96d4cfd979c37d581434e776\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716193462967,
+      "stop" : 1716193463653,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716193271957,
+      "stop" : 1716193271957,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the EPAM image is present in Footer",
+      "time" : {
+        "start" : 1716193466649,
+        "stop" : 1716193466658,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[5]//img')",
+        "time" : {
+          "start" : 1716193466649,
+          "stop" : 1716193466658,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the EPAM image is present and visible in Footer",
+      "time" : {
+        "start" : 1716193466658,
+        "stop" : 1716193466689,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[5]//img')",
+        "time" : {
+          "start" : 1716193466658,
+          "stop" : 1716193466689,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[5]//img')",
+          "time" : {
+            "start" : 1716193466658,
+            "stop" : 1716193466663,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"9ddd9b2b96d4cfd979c37d581434e776\", element=\"f.B803A6C6859F2CCC97458D7156A17B26.d.E5DE48896CD4F87F9F1CA6A5F7F48F02.e.12\")>",
+          "time" : {
+            "start" : 1716193466663,
+            "stop" : 1716193466670,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'src' of the EPAM image in Footer",
+      "time" : {
+        "start" : 1716193466689,
+        "stop" : 1716193466703,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1716193466689,
+          "stop" : 1716193466703,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'alt' of the EPAM image in Footer",
+      "time" : {
+        "start" : 1716193466703,
+        "stop" : 1716193466716,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1716193466703,
+          "stop" : 1716193466716,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716193466717,
+      "stop" : 1716193466999,
+      "duration" : 282
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8b35794ce72ecc9b",
+      "name" : "Screenshot 2024-05-20 08:24:26.938522",
+      "source" : "8b35794ce72ecc9b.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1380-906"
+  }, {
+    "name" : "thread",
+    "value" : "2355-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "445022e09a3aea02",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/445022e09a3aea02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716166788590,
+          "stop" : 1716166788660,
+          "duration" : 70
+        }
+      }, {
+        "uid" : "630ae5f587fe91ab",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/630ae5f587fe91ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716080542445,
+          "stop" : 1716080542513,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "924e68658b54d52b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/924e68658b54d52b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715993923519,
+          "stop" : 1715993923588,
+          "duration" : 69
+        }
+      }, {
+        "uid" : "bb5505ce445092f2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/5//#testresult/bb5505ce445092f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715907530450,
+          "stop" : 1715907530518,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "d6f00e8f4f5607d6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/d6f00e8f4f5607d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1715821098683,
+          "stop" : 1715821098749,
+          "duration" : 66
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9bb1301615deb912.json",
+  "parameterValues" : [ ]
+}
