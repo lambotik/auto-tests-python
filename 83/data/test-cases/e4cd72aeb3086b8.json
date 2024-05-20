@@ -1,0 +1,303 @@
+{
+  "uid" : "e4cd72aeb3086b8",
+  "name" : "Verify presence, visibility and structure of content on the page",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageStructure#test_cnp_01_01_verify_page_presence_and_visibility",
+  "historyId" : "8c88035ce350231b478cea9e5f0a51bc",
+  "time" : {
+    "start" : 1716196770509,
+    "stop" : 1716196770584,
+    "duration" : 75
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716196703709,
+      "stop" : 1716196703709,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1716196767942,
+      "stop" : 1716196770509,
+      "duration" : 2567
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1716196767942,
+        "stop" : 1716196770509,
+        "duration" : 2567
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"5e15632e4dac9d37667b243e4ac5e92c\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716196767254,
+      "stop" : 1716196767942,
+      "duration" : 688
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check if some content is present in DOM",
+      "time" : {
+        "start" : 1716196770513,
+        "stop" : 1716196770521,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('tag name', 'main')",
+        "time" : {
+          "start" : 1716196770513,
+          "stop" : 1716196770521,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if page content is visible on the page",
+      "time" : {
+        "start" : 1716196770521,
+        "stop" : 1716196770549,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('tag name', 'main')",
+        "time" : {
+          "start" : 1716196770521,
+          "stop" : 1716196770549,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('tag name', 'main')",
+          "time" : {
+            "start" : 1716196770521,
+            "stop" : 1716196770526,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"5e15632e4dac9d37667b243e4ac5e92c\", element=\"f.08A0B303AE96CFCB0EF081B086C340AD.d.232561A809C03109C41634E6DAE3B2E4.e.55\")>",
+          "time" : {
+            "start" : 1716196770526,
+            "stop" : 1716196770531,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get structure of the page",
+      "time" : {
+        "start" : 1716196770549,
+        "stop" : 1716196770566,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check elements are present: ('xpath', '//main/*')",
+        "time" : {
+          "start" : 1716196770549,
+          "stop" : 1716196770562,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check if elements of the 1st level of nesting are visible on the page",
+      "time" : {
+        "start" : 1716196770566,
+        "stop" : 1716196770584,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check elements are present: ('xpath', '//main/*')",
+        "time" : {
+          "start" : 1716196770566,
+          "stop" : 1716196770573,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716196770585,
+      "stop" : 1716196770837,
+      "duration" : 252
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ed7b4dbe539ead03",
+      "name" : "Screenshot 2024-05-20 09:19:30.775164",
+      "source" : "ed7b4dbe539ead03.png",
+      "type" : "image/png",
+      "size" : 339111
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1780-476"
+  }, {
+    "name" : "thread",
+    "value" : "2315-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4cd72aeb3086b8.json",
+  "parameterValues" : [ ]
+}
