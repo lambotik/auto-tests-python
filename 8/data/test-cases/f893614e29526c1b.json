@@ -1,0 +1,632 @@
+{
+  "uid" : "f893614e29526c1b",
+  "name" : "Check statistic table.",
+  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_get_statistic_data",
+  "historyId" : "15df626f86a935fbcd917f7ea4002a26",
+  "time" : {
+    "start" : 1716167500925,
+    "stop" : 1716167503244,
+    "duration" : 2319
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x556cb4dc1eca <unknown>\n#1 0x556cb4aab45c <unknown>\n#2 0x556cb4ab0b69 <unknown>\n#3 0x556cb4ab2915 <unknown>\n#4 0x556cb4ab299c <unknown>\n#5 0x556cb4af17f2 <unknown>\n#6 0x556cb4b1a4b2 <unknown>\n#7 0x556cb4aeba79 <unknown>\n#8 0x556cb4b1a67e <unknown>\n#9 0x556cb4b392cc <unknown>\n#10 0x556cb4b1a253 <unknown>\n#11 0x556cb4aea1c7 <unknown>\n#12 0x556cb4aeab3e <unknown>\n#13 0x556cb4d8830b <unknown>\n#14 0x556cb4d8c3b7 <unknown>\n#15 0x556cb4d74e3e <unknown>\n#16 0x556cb4d8ce82 <unknown>\n#17 0x556cb4d597df <unknown>\n#18 0x556cb4db11b8 <unknown>\n#19 0x556cb4db138b <unknown>\n#20 0x556cb4dc0ffc <unknown>\n#21 0x7fba2a694ac3 <unknown>",
+  "statusTrace" : "self = <tests.test_speech_exercises_ru.TestCardsRU object at 0x7f53c4412030>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"532134f943b8e4580dad93f3ad515c6b\")>\ndefault_user_authorized = None\n\n    @pytest.mark.xfail\n    @allure.suite('Statistic.')\n    @allure.title('Check statistic table.')\n    def test_get_statistic_data(self, driver, default_user_authorized):\n        page = SpeechExercisesPageRU(driver)\n>       table = page.get_statistic_data()\n\ntests/test_speech_exercises_ru.py:192: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/speech_exercises_page_ru.py:180: in get_statistic_data\n    title = [i.text for i in titles]\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:89: in text\n    return self._execute(Command.GET_ELEMENT_TEXT)[\"value\"]\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f53c43b31a0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"stale element reference\",\"message\":\"stale element reference: stale elemen...\\\\n#19 0x556cb4db138b \\\\u003Cunknown>\\\\n#20 0x556cb4dc0ffc \\\\u003Cunknown>\\\\n#21 0x7fba2a694ac3 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\nE         (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nE       Stacktrace:\nE       #0 0x556cb4dc1eca <unknown>\nE       #1 0x556cb4aab45c <unknown>\nE       #2 0x556cb4ab0b69 <unknown>\nE       #3 0x556cb4ab2915 <unknown>\nE       #4 0x556cb4ab299c <unknown>\nE       #5 0x556cb4af17f2 <unknown>\nE       #6 0x556cb4b1a4b2 <unknown>\nE       #7 0x556cb4aeba79 <unknown>\nE       #8 0x556cb4b1a67e <unknown>\nE       #9 0x556cb4b392cc <unknown>\nE       #10 0x556cb4b1a253 <unknown>\nE       #11 0x556cb4aea1c7 <unknown>\nE       #12 0x556cb4aeab3e <unknown>\nE       #13 0x556cb4d8830b <unknown>\nE       #14 0x556cb4d8c3b7 <unknown>\nE       #15 0x556cb4d74e3e <unknown>\nE       #16 0x556cb4d8ce82 <unknown>\nE       #17 0x556cb4d597df <unknown>\nE       #18 0x556cb4db11b8 <unknown>\nE       #19 0x556cb4db138b <unknown>\nE       #20 0x556cb4dc0ffc <unknown>\nE       #21 0x7fba2a694ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: StaleElementReferenceException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716167494270,
+      "stop" : 1716167498083,
+      "duration" : 3813
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716167494270,
+        "stop" : 1716167498083,
+        "duration" : 3813
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"532134f943b8e4580dad93f3ad515c6b\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716166437861,
+      "stop" : 1716166437861,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "default_user_authorized",
+    "time" : {
+      "start" : 1716167498083,
+      "stop" : 1716167500924,
+      "duration" : 2841
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DEFAULT user authorized",
+      "time" : {
+        "start" : 1716167498083,
+        "stop" : 1716167500924,
+        "duration" : 2841
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@id=\"ember11\"]')",
+        "time" : {
+          "start" : 1716167498083,
+          "stop" : 1716167498122,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1716167498102,
+            "stop" : 1716167498122,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@id=\"ember11\"]')",
+            "time" : {
+              "start" : 1716167498102,
+              "stop" : 1716167498122,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@id=\"ember11\"]')"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"login\"]')",
+        "time" : {
+          "start" : 1716167498172,
+          "stop" : 1716167498199,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"login\"]')",
+          "time" : {
+            "start" : 1716167498172,
+            "stop" : 1716167498182,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"532134f943b8e4580dad93f3ad515c6b\", element=\"f.859961DDB0F26903F74FB861723C11D3.d.0CC2674A1258DE611FB7304D184565DB.e.27\")>",
+          "time" : {
+            "start" : 1716167498182,
+            "stop" : 1716167498187,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"password\"]')",
+        "time" : {
+          "start" : 1716167498256,
+          "stop" : 1716167498284,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"password\"]')",
+          "time" : {
+            "start" : 1716167498256,
+            "stop" : 1716167498266,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"532134f943b8e4580dad93f3ad515c6b\", element=\"f.859961DDB0F26903F74FB861723C11D3.d.0CC2674A1258DE611FB7304D184565DB.e.30\")>",
+          "time" : {
+            "start" : 1716167498266,
+            "stop" : 1716167498271,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check element is visible and clickable: ('xpath', '//*[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1716167498327,
+          "stop" : 1716167498362,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1716167498343,
+            "stop" : 1716167498362,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//*[@type=\"submit\"]')",
+            "time" : {
+              "start" : 1716167498343,
+              "stop" : 1716167498362,
+              "duration" : 19
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//*[@type=\"submit\"]')"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1716167498399,
+          "stop" : 1716167500924,
+          "duration" : 2525
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"532134f943b8e4580dad93f3ad515c6b\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "stepsCount" : 13,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716167493580,
+      "stop" : 1716167494270,
+      "duration" : 690
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x556cb4dc1eca <unknown>\n#1 0x556cb4aab45c <unknown>\n#2 0x556cb4ab0b69 <unknown>\n#3 0x556cb4ab2915 <unknown>\n#4 0x556cb4ab299c <unknown>\n#5 0x556cb4af17f2 <unknown>\n#6 0x556cb4b1a4b2 <unknown>\n#7 0x556cb4aeba79 <unknown>\n#8 0x556cb4b1a67e <unknown>\n#9 0x556cb4b392cc <unknown>\n#10 0x556cb4b1a253 <unknown>\n#11 0x556cb4aea1c7 <unknown>\n#12 0x556cb4aeab3e <unknown>\n#13 0x556cb4d8830b <unknown>\n#14 0x556cb4d8c3b7 <unknown>\n#15 0x556cb4d74e3e <unknown>\n#16 0x556cb4d8ce82 <unknown>\n#17 0x556cb4d597df <unknown>\n#18 0x556cb4db11b8 <unknown>\n#19 0x556cb4db138b <unknown>\n#20 0x556cb4dc0ffc <unknown>\n#21 0x7fba2a694ac3 <unknown>",
+    "statusTrace" : "self = <tests.test_speech_exercises_ru.TestCardsRU object at 0x7f53c4412030>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"532134f943b8e4580dad93f3ad515c6b\")>\ndefault_user_authorized = None\n\n    @pytest.mark.xfail\n    @allure.suite('Statistic.')\n    @allure.title('Check statistic table.')\n    def test_get_statistic_data(self, driver, default_user_authorized):\n        page = SpeechExercisesPageRU(driver)\n>       table = page.get_statistic_data()\n\ntests/test_speech_exercises_ru.py:192: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/speech_exercises_page_ru.py:180: in get_statistic_data\n    title = [i.text for i in titles]\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:89: in text\n    return self._execute(Command.GET_ELEMENT_TEXT)[\"value\"]\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f53c43b31a0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"stale element reference\",\"message\":\"stale element reference: stale elemen...\\\\n#19 0x556cb4db138b \\\\u003Cunknown>\\\\n#20 0x556cb4dc0ffc \\\\u003Cunknown>\\\\n#21 0x7fba2a694ac3 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\nE         (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nE       Stacktrace:\nE       #0 0x556cb4dc1eca <unknown>\nE       #1 0x556cb4aab45c <unknown>\nE       #2 0x556cb4ab0b69 <unknown>\nE       #3 0x556cb4ab2915 <unknown>\nE       #4 0x556cb4ab299c <unknown>\nE       #5 0x556cb4af17f2 <unknown>\nE       #6 0x556cb4b1a4b2 <unknown>\nE       #7 0x556cb4aeba79 <unknown>\nE       #8 0x556cb4b1a67e <unknown>\nE       #9 0x556cb4b392cc <unknown>\nE       #10 0x556cb4b1a253 <unknown>\nE       #11 0x556cb4aea1c7 <unknown>\nE       #12 0x556cb4aeab3e <unknown>\nE       #13 0x556cb4d8830b <unknown>\nE       #14 0x556cb4d8c3b7 <unknown>\nE       #15 0x556cb4d74e3e <unknown>\nE       #16 0x556cb4d8ce82 <unknown>\nE       #17 0x556cb4d597df <unknown>\nE       #18 0x556cb4db11b8 <unknown>\nE       #19 0x556cb4db138b <unknown>\nE       #20 0x556cb4dc0ffc <unknown>\nE       #21 0x7fba2a694ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: StaleElementReferenceException",
+    "steps" : [ {
+      "name" : "get_statistic_data",
+      "time" : {
+        "start" : 1716167500925,
+        "stop" : 1716167503243,
+        "duration" : 2318
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x556cb4dc1eca <unknown>\n#1 0x556cb4aab45c <unknown>\n#2 0x556cb4ab0b69 <unknown>\n#3 0x556cb4ab2915 <unknown>\n#4 0x556cb4ab299c <unknown>\n#5 0x556cb4af17f2 <unknown>\n#6 0x556cb4b1a4b2 <unknown>\n#7 0x556cb4aeba79 <unknown>\n#8 0x556cb4b1a67e <unknown>\n#9 0x556cb4b392cc <unknown>\n#10 0x556cb4b1a253 <unknown>\n#11 0x556cb4aea1c7 <unknown>\n#12 0x556cb4aeab3e <unknown>\n#13 0x556cb4d8830b <unknown>\n#14 0x556cb4d8c3b7 <unknown>\n#15 0x556cb4d74e3e <unknown>\n#16 0x556cb4d8ce82 <unknown>\n#17 0x556cb4d597df <unknown>\n#18 0x556cb4db11b8 <unknown>\n#19 0x556cb4db138b <unknown>\n#20 0x556cb4dc0ffc <unknown>\n#21 0x7fba2a694ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/speech_exercises_page_ru.py\", line 180, in get_statistic_data\n    title = [i.text for i in titles]\n             ^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 89, in text\n    return self._execute(Command.GET_ELEMENT_TEXT)[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 394, in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Click button \"Статистика\"\".",
+        "time" : {
+          "start" : 1716167500925,
+          "stop" : 1716167501012,
+          "duration" : 87
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is visible and clickable: ('xpath', '//a[@href=\"/profile/statistics\"]')",
+          "time" : {
+            "start" : 1716167500925,
+            "stop" : 1716167500958,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable",
+            "time" : {
+              "start" : 1716167500941,
+              "stop" : 1716167500958,
+              "duration" : 17
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "Check element is clickable: ('xpath', '//a[@href=\"/profile/statistics\"]')",
+              "time" : {
+                "start" : 1716167500941,
+                "stop" : 1716167500958,
+                "duration" : 17
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', '//a[@href=\"/profile/statistics\"]')"
+            } ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check statistic table is present and scroll to table",
+        "time" : {
+          "start" : 1716167501012,
+          "stop" : 1716167501551,
+          "duration" : 539
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//div[@class=\"__51e19\"]')",
+          "time" : {
+            "start" : 1716167501012,
+            "stop" : 1716167501547,
+            "duration" : 535
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"532134f943b8e4580dad93f3ad515c6b\", element=\"f.859961DDB0F26903F74FB861723C11D3.d.0CC2674A1258DE611FB7304D184565DB.e.47\")>",
+          "time" : {
+            "start" : 1716167501547,
+            "stop" : 1716167501551,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Get data from the table.",
+        "time" : {
+          "start" : 1716167501551,
+          "stop" : 1716167503242,
+          "duration" : 1691
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome-headless-shell=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x556cb4dc1eca <unknown>\n#1 0x556cb4aab45c <unknown>\n#2 0x556cb4ab0b69 <unknown>\n#3 0x556cb4ab2915 <unknown>\n#4 0x556cb4ab299c <unknown>\n#5 0x556cb4af17f2 <unknown>\n#6 0x556cb4b1a4b2 <unknown>\n#7 0x556cb4aeba79 <unknown>\n#8 0x556cb4b1a67e <unknown>\n#9 0x556cb4b392cc <unknown>\n#10 0x556cb4b1a253 <unknown>\n#11 0x556cb4aea1c7 <unknown>\n#12 0x556cb4aeab3e <unknown>\n#13 0x556cb4d8830b <unknown>\n#14 0x556cb4d8c3b7 <unknown>\n#15 0x556cb4d74e3e <unknown>\n#16 0x556cb4d8ce82 <unknown>\n#17 0x556cb4d597df <unknown>\n#18 0x556cb4db11b8 <unknown>\n#19 0x556cb4db138b <unknown>\n#20 0x556cb4dc0ffc <unknown>\n#21 0x7fba2a694ac3 <unknown>\n\n",
+        "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/speech_exercises_page_ru.py\", line 180, in get_statistic_data\n    title = [i.text for i in titles]\n             ^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 89, in text\n    return self._execute(Command.GET_ELEMENT_TEXT)[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 394, in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+        "steps" : [ {
+          "name" : "Check elements are present: ('xpath', '//tbody/tr')",
+          "time" : {
+            "start" : 1716167501551,
+            "stop" : 1716167503080,
+            "duration" : 1529
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Check elements are present: ('xpath', '//th[@class=\"px-4 py-2\"]')",
+          "time" : {
+            "start" : 1716167503080,
+            "stop" : 1716167503096,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 10,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "652071ae5c3a234d",
+      "name" : "Screenshot",
+      "source" : "652071ae5c3a234d.png",
+      "type" : "image/png",
+      "size" : 65540
+    }, {
+      "uid" : "bd0dde76e462b25e",
+      "name" : "HTML source",
+      "source" : "bd0dde76e462b25e.html",
+      "type" : "text/html",
+      "size" : 56909
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716167503436,
+      "stop" : 1716167503633,
+      "duration" : 197
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e25756790756194c",
+      "name" : "Screenshot 2024-05-20 01:11:43.571321",
+      "source" : "e25756790756194c.png",
+      "type" : "image/png",
+      "size" : 65572
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Speech exercises."
+  }, {
+    "name" : "suite",
+    "value" : "Statistic."
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCardsRU"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1771-760"
+  }, {
+    "name" : "thread",
+    "value" : "2298-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_speech_exercises_ru"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "ee40175e23e0497",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/ee40175e23e0497",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1716081227801,
+          "stop" : 1716081230094,
+          "duration" : 2293
+        }
+      }, {
+        "uid" : "630faa98562be09c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/630faa98562be09c",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1715994634436,
+          "stop" : 1715994637210,
+          "duration" : 2774
+        }
+      }, {
+        "uid" : "6890859b9e909c37",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/5//#testresult/6890859b9e909c37",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1715908247644,
+          "stop" : 1715908250173,
+          "duration" : 2529
+        }
+      }, {
+        "uid" : "fb739d484b419431",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/fb739d484b419431",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1715821705272,
+          "stop" : 1715821707635,
+          "duration" : 2363
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "f893614e29526c1b.json",
+  "parameterValues" : [ ]
+}
