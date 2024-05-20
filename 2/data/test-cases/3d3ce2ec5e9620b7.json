@@ -1,0 +1,374 @@
+{
+  "uid" : "3d3ce2ec5e9620b7",
+  "name" : "Verify presence, visibility and accuracy of the JETBRAINS link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_07_verify_jetbrains_link_image",
+  "historyId" : "fffe415938b7ff845ca43e82ac6a6777",
+  "time" : {
+    "start" : 1716203282410,
+    "stop" : 1716203282476,
+    "duration" : 66
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716203094606,
+      "stop" : 1716203094606,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716203279331,
+      "stop" : 1716203282409,
+      "duration" : 3078
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716203279331,
+        "stop" : 1716203282409,
+        "duration" : 3078
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"c20c576b98d73f2e7d2218046086bfd4\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716203278644,
+      "stop" : 1716203279331,
+      "duration" : 687
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the Jetbrains image is present in the DOM tree on the page",
+      "time" : {
+        "start" : 1716203282410,
+        "stop" : 1716203282418,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[1]//img')",
+        "time" : {
+          "start" : 1716203282410,
+          "stop" : 1716203282418,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the Jetbrains image is present and visible in Footer",
+      "time" : {
+        "start" : 1716203282419,
+        "stop" : 1716203282448,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[1]//img')",
+        "time" : {
+          "start" : 1716203282419,
+          "stop" : 1716203282448,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[1]//img')",
+          "time" : {
+            "start" : 1716203282419,
+            "stop" : 1716203282423,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"c20c576b98d73f2e7d2218046086bfd4\", element=\"f.93642A3683FCE5CCCCD94D22D6BD00BA.d.1E67C0307238FA3480F5AD31F56D7FAD.e.12\")>",
+          "time" : {
+            "start" : 1716203282423,
+            "stop" : 1716203282431,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'src' of the Jetbrains image in Footer",
+      "time" : {
+        "start" : 1716203282449,
+        "stop" : 1716203282462,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1716203282449,
+          "stop" : 1716203282462,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'alt' of the Jetbrains image in Footer",
+      "time" : {
+        "start" : 1716203282462,
+        "stop" : 1716203282476,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1716203282462,
+          "stop" : 1716203282476,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[1]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716203282477,
+      "stop" : 1716203282763,
+      "duration" : 286
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7728c173545d0272",
+      "name" : "Screenshot 2024-05-20 11:08:02.702827",
+      "source" : "7728c173545d0272.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1014-422"
+  }, {
+    "name" : "thread",
+    "value" : "2305-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "f3180b450bffb6a2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/f3180b450bffb6a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200670028,
+          "stop" : 1716200670096,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "9431af4c76fb4c57",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/9431af4c76fb4c57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199313552,
+          "stop" : 1716199313618,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "8972c80713223ead",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/8972c80713223ead",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716197015485,
+          "stop" : 1716197015550,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "77622aaf660753e8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/77622aaf660753e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196411800,
+          "stop" : 1716196411865,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "3f76913964edac0d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/3f76913964edac0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195576476,
+          "stop" : 1716195576545,
+          "duration" : 69
+        }
+      }, {
+        "uid" : "644da88c615a55ba",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/644da88c615a55ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194960790,
+          "stop" : 1716194960856,
+          "duration" : 66
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3d3ce2ec5e9620b7.json",
+  "parameterValues" : [ ]
+}
