@@ -1,0 +1,353 @@
+{
+  "uid" : "bd2c7aa938ce33f9",
+  "name" : "Verify presence, visibility, clickability, href, status code of the ARASAAC link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_03_verify_arasaac_link",
+  "historyId" : "e5c52ddf3998c7ec64d507c6346828a5",
+  "time" : {
+    "start" : 1716199164706,
+    "stop" : 1716199165557,
+    "duration" : 851
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716198925785,
+      "stop" : 1716198925785,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716199161115,
+      "stop" : 1716199164706,
+      "duration" : 3591
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716199161116,
+        "stop" : 1716199164706,
+        "duration" : 3590
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"a931ce19acfa9781c9d4ffc4ec20b69a\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716199160430,
+      "stop" : 1716199161115,
+      "duration" : 685
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the ARASAAC link is present in Footer",
+      "time" : {
+        "start" : 1716199164706,
+        "stop" : 1716199164715,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[3]/a')",
+        "time" : {
+          "start" : 1716199164706,
+          "stop" : 1716199164715,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the ARASAAC link is visible in Footer",
+      "time" : {
+        "start" : 1716199164715,
+        "stop" : 1716199164747,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[3]/a')",
+        "time" : {
+          "start" : 1716199164715,
+          "stop" : 1716199164747,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1716199164716,
+            "stop" : 1716199164720,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"a931ce19acfa9781c9d4ffc4ec20b69a\", element=\"f.2BF55090AB6DA168CEA8DEDBFDBE3A5F.d.A182AA34065480580DC9B94D67062757.e.12\")>",
+          "time" : {
+            "start" : 1716199164720,
+            "stop" : 1716199164728,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the ARASAAC link is clickable in Footer",
+      "time" : {
+        "start" : 1716199164747,
+        "stop" : 1716199164766,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716199164747,
+          "stop" : 1716199164766,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1716199164747,
+            "stop" : 1716199164766,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]/a')"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the ARASAAC link",
+      "time" : {
+        "start" : 1716199164766,
+        "stop" : 1716199164779,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716199165558,
+      "stop" : 1716199165830,
+      "duration" : 272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c2de363832945e12",
+      "name" : "Screenshot 2024-05-20 09:59:25.769147",
+      "source" : "c2de363832945e12.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1052-247"
+  }, {
+    "name" : "thread",
+    "value" : "2256-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "6499128bb2631fdf",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/6499128bb2631fdf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196887652,
+          "stop" : 1716196888268,
+          "duration" : 616
+        }
+      }, {
+        "uid" : "b96f84063e1a6cb9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/b96f84063e1a6cb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196243118,
+          "stop" : 1716196243832,
+          "duration" : 714
+        }
+      }, {
+        "uid" : "dd058da32fda5d40",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/dd058da32fda5d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195438569,
+          "stop" : 1716195439189,
+          "duration" : 620
+        }
+      }, {
+        "uid" : "2321f43754335e47",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/2321f43754335e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194831774,
+          "stop" : 1716194832376,
+          "duration" : 602
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bd2c7aa938ce33f9.json",
+  "parameterValues" : [ ]
+}
