@@ -1,0 +1,254 @@
+{
+  "uid" : "47f0ca61ba27bc2a",
+  "name" : "Verify redirection to telegram page not authorized user.",
+  "fullName" : "tests.description_page_test.TestDescriptionPage#test_dp_02_verify_redirection_to_telegram_page",
+  "historyId" : "815fbc448cb350014cc259b99d8c0dea",
+  "time" : {
+    "start" : 1716337701625,
+    "stop" : 1716337702743,
+    "duration" : 1118
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "description_page_open",
+    "time" : {
+      "start" : 1716337698792,
+      "stop" : 1716337701625,
+      "duration" : 2833
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/description",
+      "time" : {
+        "start" : 1716337698792,
+        "stop" : 1716337701625,
+        "duration" : 2833
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"cbd9521eaefe28f1acffc8547cc7ed38\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716337698105,
+      "stop" : 1716337698791,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716337595837,
+      "stop" : 1716337595837,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open telegram page",
+      "time" : {
+        "start" : 1716337701625,
+        "stop" : 1716337702742,
+        "duration" : 1117
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716337701625,
+          "stop" : 1716337701650,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', \"//*[contains(text(),'Telegram')]\")",
+          "time" : {
+            "start" : 1716337701625,
+            "stop" : 1716337701650,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', \"//*[contains(text(),'Telegram')]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      }, {
+        "name" : "Check url is present: https://t.me/BrainUpUsers",
+        "time" : {
+          "start" : 1716337701965,
+          "stop" : 1716337702740,
+          "duration" : 775
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716337702743,
+      "stop" : 1716337702933,
+      "duration" : 190
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b5368919d2c23766",
+      "name" : "Screenshot 2024-05-22 00:28:22.870366",
+      "source" : "b5368919d2c23766.png",
+      "type" : "image/png",
+      "size" : 239759
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Description Page."
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "description_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDescriptionPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1040-606"
+  }, {
+    "name" : "thread",
+    "value" : "2333-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.description_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "1f46021f53199506",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/1f46021f53199506",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251370133,
+          "stop" : 1716251371892,
+          "duration" : 1759
+        }
+      }, {
+        "uid" : "3daa78999bc51332",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/3daa78999bc51332",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199075182,
+          "stop" : 1716199076839,
+          "duration" : 1657
+        }
+      }, {
+        "uid" : "47309addcc1c72fa",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/47309addcc1c72fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196816760,
+          "stop" : 1716196817961,
+          "duration" : 1201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "47f0ca61ba27bc2a.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,359 @@
+{
+  "uid" : "b958c4c6159021ac",
+  "name" : "Verify presence, visibility, clickability, href, status code of the REG.RU link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_06_verify_reg_link",
+  "historyId" : "575aadc5349f048026ddf4381ff04723",
+  "time" : {
+    "start" : 1716337780825,
+    "stop" : 1716337781543,
+    "duration" : 718
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716337595837,
+      "stop" : 1716337595837,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716337778267,
+      "stop" : 1716337780824,
+      "duration" : 2557
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716337778267,
+        "stop" : 1716337780824,
+        "duration" : 2557
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"dc6196485324e9838dd2d8447eb3a3c3\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716337777581,
+      "stop" : 1716337778267,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the REG.RU link is present and visible in Footer",
+      "time" : {
+        "start" : 1716337780825,
+        "stop" : 1716337780858,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[2]/a')",
+        "time" : {
+          "start" : 1716337780825,
+          "stop" : 1716337780858,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1716337780825,
+            "stop" : 1716337780833,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"dc6196485324e9838dd2d8447eb3a3c3\", element=\"f.7FC20348BCDE5E5D7EFAAF313A6E7AD2.d.3C23D06879D5DF7C2B4D81D8710F22EB.e.12\")>",
+          "time" : {
+            "start" : 1716337780833,
+            "stop" : 1716337780841,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Check the REG.RU link is clickable in Footer",
+      "time" : {
+        "start" : 1716337780858,
+        "stop" : 1716337780877,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716337780858,
+          "stop" : 1716337780877,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1716337780858,
+            "stop" : 1716337780877,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]/a')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Get attribute 'href' of the REG.RU link",
+      "time" : {
+        "start" : 1716337780877,
+        "stop" : 1716337780890,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716337781544,
+      "stop" : 1716337781825,
+      "duration" : 281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5ad473c3cfd0d5c8",
+      "name" : "Screenshot 2024-05-22 00:29:41.764785",
+      "source" : "5ad473c3cfd0d5c8.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1040-606"
+  }, {
+    "name" : "thread",
+    "value" : "2333-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "a25a6ff8d35a2f78",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/a25a6ff8d35a2f78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251478576,
+          "stop" : 1716251479562,
+          "duration" : 986
+        }
+      }, {
+        "uid" : "3bded4031b60c55c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/3bded4031b60c55c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716203157694,
+          "stop" : 1716203158481,
+          "duration" : 787
+        }
+      }, {
+        "uid" : "82e25561bc83c920",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/82e25561bc83c920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200557033,
+          "stop" : 1716200557751,
+          "duration" : 718
+        }
+      }, {
+        "uid" : "93558562a0c1bbc9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/93558562a0c1bbc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199179573,
+          "stop" : 1716199180467,
+          "duration" : 894
+        }
+      }, {
+        "uid" : "73e42f07af548429",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/73e42f07af548429",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196899458,
+          "stop" : 1716196900160,
+          "duration" : 702
+        }
+      }, {
+        "uid" : "8fd9216b8a3af552",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/8fd9216b8a3af552",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196255457,
+          "stop" : 1716196256362,
+          "duration" : 905
+        }
+      }, {
+        "uid" : "afc65f1e3c3b7b0b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/afc65f1e3c3b7b0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195452186,
+          "stop" : 1716195452935,
+          "duration" : 749
+        }
+      }, {
+        "uid" : "152d7536138f32c5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/152d7536138f32c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194844523,
+          "stop" : 1716194845235,
+          "duration" : 712
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b958c4c6159021ac.json",
+  "parameterValues" : [ ]
+}
