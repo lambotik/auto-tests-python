@@ -1,0 +1,398 @@
+{
+  "uid" : "35d5b273c6a3ee8d",
+  "name" : "Verify presence, visibility, clickability, href, status code of the ARASAAC link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_03_verify_arasaac_link",
+  "historyId" : "e5c52ddf3998c7ec64d507c6346828a5",
+  "time" : {
+    "start" : 1716424168291,
+    "stop" : 1716424168868,
+    "duration" : 577
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716424164863,
+      "stop" : 1716424165549,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716423988349,
+      "stop" : 1716423988350,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716424165549,
+      "stop" : 1716424168290,
+      "duration" : 2741
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716424165549,
+        "stop" : 1716424168290,
+        "duration" : 2741
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"e024dd4a52834160fc9be2c57141df87\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the ARASAAC link is present in Footer",
+      "time" : {
+        "start" : 1716424168291,
+        "stop" : 1716424168300,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[3]/a')",
+        "time" : {
+          "start" : 1716424168291,
+          "stop" : 1716424168300,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the ARASAAC link is visible in Footer",
+      "time" : {
+        "start" : 1716424168300,
+        "stop" : 1716424168331,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[3]/a')",
+        "time" : {
+          "start" : 1716424168300,
+          "stop" : 1716424168331,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1716424168300,
+            "stop" : 1716424168304,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"e024dd4a52834160fc9be2c57141df87\", element=\"f.8870279AD35273645B448EA221198E73.d.464D7C871EF4B6AB04D146043F02E9FE.e.9\")>",
+          "time" : {
+            "start" : 1716424168304,
+            "stop" : 1716424168312,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the ARASAAC link is clickable in Footer",
+      "time" : {
+        "start" : 1716424168331,
+        "stop" : 1716424168351,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716424168331,
+          "stop" : 1716424168351,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[3]/a')",
+          "time" : {
+            "start" : 1716424168331,
+            "stop" : 1716424168350,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[3]/a')"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the ARASAAC link",
+      "time" : {
+        "start" : 1716424168351,
+        "stop" : 1716424168364,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716424168869,
+      "stop" : 1716424169141,
+      "duration" : 272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "99393bbed34dbf4e",
+      "name" : "Screenshot 2024-05-23 00:29:29.080343",
+      "source" : "99393bbed34dbf4e.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1776-295"
+  }, {
+    "name" : "thread",
+    "value" : "2305-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "f82901cad67d86b1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/f82901cad67d86b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716337769249,
+          "stop" : 1716337769852,
+          "duration" : 603
+        }
+      }, {
+        "uid" : "461fb0ed8dea44b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/461fb0ed8dea44b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251462889,
+          "stop" : 1716251463763,
+          "duration" : 874
+        }
+      }, {
+        "uid" : "ab7cd8fcc3900a8a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/ab7cd8fcc3900a8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716203144534,
+          "stop" : 1716203145198,
+          "duration" : 664
+        }
+      }, {
+        "uid" : "14429ad7ff1c43cf",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/14429ad7ff1c43cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200545315,
+          "stop" : 1716200546000,
+          "duration" : 685
+        }
+      }, {
+        "uid" : "bd2c7aa938ce33f9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/bd2c7aa938ce33f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199164706,
+          "stop" : 1716199165557,
+          "duration" : 851
+        }
+      }, {
+        "uid" : "6499128bb2631fdf",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/6499128bb2631fdf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196887652,
+          "stop" : 1716196888268,
+          "duration" : 616
+        }
+      }, {
+        "uid" : "b96f84063e1a6cb9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/b96f84063e1a6cb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196243118,
+          "stop" : 1716196243832,
+          "duration" : 714
+        }
+      }, {
+        "uid" : "dd058da32fda5d40",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/dd058da32fda5d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195438569,
+          "stop" : 1716195439189,
+          "duration" : 620
+        }
+      }, {
+        "uid" : "2321f43754335e47",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/2321f43754335e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194831774,
+          "stop" : 1716194832376,
+          "duration" : 602
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "35d5b273c6a3ee8d.json",
+  "parameterValues" : [ ]
+}
