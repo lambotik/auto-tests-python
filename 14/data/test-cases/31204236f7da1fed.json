@@ -1,0 +1,425 @@
+{
+  "uid" : "31204236f7da1fed",
+  "name" : "Verify presence, visibility and accuracy of the Contact us link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_08_verify_contact_us_link",
+  "historyId" : "96cf13f8b7fb7e85c5ccc044f8316933",
+  "time" : {
+    "start" : 1716683619459,
+    "stop" : 1716683619541,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716683615563,
+      "stop" : 1716683616250,
+      "duration" : 687
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716683616250,
+      "stop" : 1716683619459,
+      "duration" : 3209
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716683616250,
+        "stop" : 1716683619459,
+        "duration" : 3209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"a768fc091802714ef4544cd15da5860f\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716683379418,
+      "stop" : 1716683379418,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the Contact us link is present and visible in Footer",
+      "time" : {
+        "start" : 1716683619460,
+        "stop" : 1716683619495,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '//footer//a[@title]')",
+        "time" : {
+          "start" : 1716683619460,
+          "stop" : 1716683619495,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//footer//a[@title]')",
+          "time" : {
+            "start" : 1716683619460,
+            "stop" : 1716683619469,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"a768fc091802714ef4544cd15da5860f\", element=\"f.7046A78C0606DF77BBCCC4E9B89D4F2B.d.4000CCD647886B5A1DD6F5408BC58F0A.e.12\")>",
+          "time" : {
+            "start" : 1716683619469,
+            "stop" : 1716683619477,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the Contact us link is clickable in Footer",
+      "time" : {
+        "start" : 1716683619495,
+        "stop" : 1716683619514,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716683619495,
+          "stop" : 1716683619514,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '//footer//a[@title]')",
+          "time" : {
+            "start" : 1716683619495,
+            "stop" : 1716683619514,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//footer//a[@title]')"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the Contact us link",
+      "time" : {
+        "start" : 1716683619514,
+        "stop" : 1716683619528,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check the prefix and the subject in the attribute 'href' of the Contact us link",
+      "time" : {
+        "start" : 1716683619528,
+        "stop" : 1716683619541,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of the Contact us link",
+        "time" : {
+          "start" : 1716683619528,
+          "stop" : 1716683619541,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716683619542,
+      "stop" : 1716683619812,
+      "duration" : 270
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8787c3ae58631932",
+      "name" : "Screenshot 2024-05-26 00:33:39.751449",
+      "source" : "8787c3ae58631932.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az770-693"
+  }, {
+    "name" : "thread",
+    "value" : "2389-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "c74797bb2e1bb1db",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/13//#testresult/c74797bb2e1bb1db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716596974797,
+          "stop" : 1716596974878,
+          "duration" : 81
+        }
+      }, {
+        "uid" : "7050fc454ac6ebed",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/7050fc454ac6ebed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716510630903,
+          "stop" : 1716510630983,
+          "duration" : 80
+        }
+      }, {
+        "uid" : "67b42dc00ad7d31e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/67b42dc00ad7d31e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716424189655,
+          "stop" : 1716424189735,
+          "duration" : 80
+        }
+      }, {
+        "uid" : "aa9513bd1ba5f93e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/aa9513bd1ba5f93e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716337789346,
+          "stop" : 1716337789428,
+          "duration" : 82
+        }
+      }, {
+        "uid" : "1f5f42b71c45e224",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/1f5f42b71c45e224",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251491654,
+          "stop" : 1716251491735,
+          "duration" : 81
+        }
+      }, {
+        "uid" : "4f6bfb7cb3cd7ce",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/4f6bfb7cb3cd7ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716203168181,
+          "stop" : 1716203168263,
+          "duration" : 82
+        }
+      }, {
+        "uid" : "c7b3b90fd3a28da2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/c7b3b90fd3a28da2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200565648,
+          "stop" : 1716200565733,
+          "duration" : 85
+        }
+      }, {
+        "uid" : "b2ce9df53e4150c0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/b2ce9df53e4150c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199190574,
+          "stop" : 1716199190653,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "f85acbbd3d3d8b1c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/f85acbbd3d3d8b1c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196908238,
+          "stop" : 1716196908320,
+          "duration" : 82
+        }
+      }, {
+        "uid" : "16b5be9e52f4b6ab",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/16b5be9e52f4b6ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196266520,
+          "stop" : 1716196266598,
+          "duration" : 78
+        }
+      }, {
+        "uid" : "9a58e1c34e1ee2f0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/9a58e1c34e1ee2f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195462474,
+          "stop" : 1716195462555,
+          "duration" : 81
+        }
+      }, {
+        "uid" : "4c0a99971d23e654",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/4c0a99971d23e654",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194853565,
+          "stop" : 1716194853923,
+          "duration" : 358
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "31204236f7da1fed.json",
+  "parameterValues" : [ ]
+}
