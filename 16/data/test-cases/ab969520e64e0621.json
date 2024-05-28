@@ -1,0 +1,413 @@
+{
+  "uid" : "ab969520e64e0621",
+  "name" : "Verify presence, visibility, clickability, href, status code of the REG.RU link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_06_verify_reg_link",
+  "historyId" : "575aadc5349f048026ddf4381ff04723",
+  "time" : {
+    "start" : 1716856231051,
+    "stop" : 1716856231794,
+    "duration" : 743
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716856227791,
+      "stop" : 1716856228478,
+      "duration" : 687
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716856228478,
+      "stop" : 1716856231051,
+      "duration" : 2573
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716856228479,
+        "stop" : 1716856231051,
+        "duration" : 2572
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"89e7b8ec098c087780b45ade2c7287b8\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716856032896,
+      "stop" : 1716856032896,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the REG.RU link is present and visible in Footer",
+      "time" : {
+        "start" : 1716856231051,
+        "stop" : 1716856231088,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[2]/a')",
+        "time" : {
+          "start" : 1716856231051,
+          "stop" : 1716856231088,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1716856231051,
+            "stop" : 1716856231060,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"89e7b8ec098c087780b45ade2c7287b8\", element=\"f.31414591868839F77B4ABB17D8D25989.d.387C76BE59262D2E0294BFA565536289.e.12\")>",
+          "time" : {
+            "start" : 1716856231060,
+            "stop" : 1716856231069,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the REG.RU link is clickable in Footer",
+      "time" : {
+        "start" : 1716856231088,
+        "stop" : 1716856231109,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716856231088,
+          "stop" : 1716856231109,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[2]/a')",
+          "time" : {
+            "start" : 1716856231088,
+            "stop" : 1716856231109,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]/a')"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the REG.RU link",
+      "time" : {
+        "start" : 1716856231109,
+        "stop" : 1716856231122,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716856231795,
+      "stop" : 1716856232068,
+      "duration" : 273
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c91f2adf85982f91",
+      "name" : "Screenshot 2024-05-28 00:30:32.006585",
+      "source" : "c91f2adf85982f91.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az891-544"
+  }, {
+    "name" : "thread",
+    "value" : "2345-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "26f659bdbc97a076",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/15//#testresult/26f659bdbc97a076",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716768298712,
+          "stop" : 1716768299674,
+          "duration" : 962
+        }
+      }, {
+        "uid" : "45d95aa39c7dd2f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/14//#testresult/45d95aa39c7dd2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716683607597,
+          "stop" : 1716683608530,
+          "duration" : 933
+        }
+      }, {
+        "uid" : "f7ba4bf2346ec9db",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/13//#testresult/f7ba4bf2346ec9db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716596965131,
+          "stop" : 1716596965843,
+          "duration" : 712
+        }
+      }, {
+        "uid" : "8cd7a3f4a6c6e1ea",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/8cd7a3f4a6c6e1ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716510621410,
+          "stop" : 1716510622008,
+          "duration" : 598
+        }
+      }, {
+        "uid" : "557306d8d7f7120c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/557306d8d7f7120c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716424180202,
+          "stop" : 1716424181908,
+          "duration" : 1706
+        }
+      }, {
+        "uid" : "b958c4c6159021ac",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/b958c4c6159021ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716337780825,
+          "stop" : 1716337781543,
+          "duration" : 718
+        }
+      }, {
+        "uid" : "a25a6ff8d35a2f78",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/a25a6ff8d35a2f78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251478576,
+          "stop" : 1716251479562,
+          "duration" : 986
+        }
+      }, {
+        "uid" : "3bded4031b60c55c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/3bded4031b60c55c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716203157694,
+          "stop" : 1716203158481,
+          "duration" : 787
+        }
+      }, {
+        "uid" : "82e25561bc83c920",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/82e25561bc83c920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200557033,
+          "stop" : 1716200557751,
+          "duration" : 718
+        }
+      }, {
+        "uid" : "93558562a0c1bbc9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/93558562a0c1bbc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199179573,
+          "stop" : 1716199180467,
+          "duration" : 894
+        }
+      }, {
+        "uid" : "73e42f07af548429",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/73e42f07af548429",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196899458,
+          "stop" : 1716196900160,
+          "duration" : 702
+        }
+      }, {
+        "uid" : "8fd9216b8a3af552",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/8fd9216b8a3af552",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196255457,
+          "stop" : 1716196256362,
+          "duration" : 905
+        }
+      }, {
+        "uid" : "afc65f1e3c3b7b0b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/afc65f1e3c3b7b0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195452186,
+          "stop" : 1716195452935,
+          "duration" : 749
+        }
+      }, {
+        "uid" : "152d7536138f32c5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/152d7536138f32c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194844523,
+          "stop" : 1716194845235,
+          "duration" : 712
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ab969520e64e0621.json",
+  "parameterValues" : [ ]
+}

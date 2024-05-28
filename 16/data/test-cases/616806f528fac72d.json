@@ -1,0 +1,443 @@
+{
+  "uid" : "616806f528fac72d",
+  "name" : "Verify presence, visibility, clickability, href, status code of the EPAM link in Footer",
+  "fullName" : "tests.footer_test.TestFooterCommon#test_fp_01_04_verify_epam_link",
+  "historyId" : "f800edbd00d9ba312ec707526ecbcd83",
+  "time" : {
+    "start" : 1716856223494,
+    "stop" : 1716856223744,
+    "duration" : 250
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1716856220995,
+      "stop" : 1716856223493,
+      "duration" : 2498
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1716856220995,
+        "stop" : 1716856223493,
+        "duration" : 2498
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"f34d45a7e6757c0525886a7bc9243081\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1716856220306,
+      "stop" : 1716856220995,
+      "duration" : 689
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1716856032896,
+      "stop" : 1716856032896,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the EPAM link is present in Footer",
+      "time" : {
+        "start" : 1716856223494,
+        "stop" : 1716856223503,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[5]/a')",
+        "time" : {
+          "start" : 1716856223494,
+          "stop" : 1716856223503,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the EPAM link is visible in Footer",
+      "time" : {
+        "start" : 1716856223503,
+        "stop" : 1716856223536,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[5]/a')",
+        "time" : {
+          "start" : 1716856223503,
+          "stop" : 1716856223536,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[5]/a')",
+          "time" : {
+            "start" : 1716856223503,
+            "stop" : 1716856223508,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"f34d45a7e6757c0525886a7bc9243081\", element=\"f.137D26B39E4EAFD9E235AA55229A6431.d.1E50BA3F14CF30ABA6E6A951EC59746F.e.12\")>",
+          "time" : {
+            "start" : 1716856223508,
+            "stop" : 1716856223516,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the EPAM link is clickable in Footer",
+      "time" : {
+        "start" : 1716856223536,
+        "stop" : 1716856223557,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1716856223536,
+          "stop" : 1716856223556,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable: ('xpath', '(//footer//li)[5]/a')",
+          "time" : {
+            "start" : 1716856223536,
+            "stop" : 1716856223556,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[5]/a')"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of the EPAM link",
+      "time" : {
+        "start" : 1716856223557,
+        "stop" : 1716856223570,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1716856223745,
+      "stop" : 1716856224020,
+      "duration" : 275
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "50cc85068e84f430",
+      "name" : "Screenshot 2024-05-28 00:30:23.959299",
+      "source" : "50cc85068e84f430.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az891-544"
+  }, {
+    "name" : "thread",
+    "value" : "2345-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "9f75447ac5c608ea",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/15//#testresult/9f75447ac5c608ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716768288649,
+          "stop" : 1716768288796,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "5d3814494f397303",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/14//#testresult/5d3814494f397303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716683598818,
+          "stop" : 1716683599068,
+          "duration" : 250
+        }
+      }, {
+        "uid" : "51bba3377a618330",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/13//#testresult/51bba3377a618330",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716596957436,
+          "stop" : 1716596957690,
+          "duration" : 254
+        }
+      }, {
+        "uid" : "1c4eac8005b4e10e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/1c4eac8005b4e10e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716510614127,
+          "stop" : 1716510614290,
+          "duration" : 163
+        }
+      }, {
+        "uid" : "b0cae69352cb9046",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/b0cae69352cb9046",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716424172357,
+          "stop" : 1716424172648,
+          "duration" : 291
+        }
+      }, {
+        "uid" : "257d2e48c6958461",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/257d2e48c6958461",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716337773376,
+          "stop" : 1716337773615,
+          "duration" : 239
+        }
+      }, {
+        "uid" : "292177ba5a20bfa6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/292177ba5a20bfa6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716251468633,
+          "stop" : 1716251468781,
+          "duration" : 148
+        }
+      }, {
+        "uid" : "e82cd19e8cbaf884",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/e82cd19e8cbaf884",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716203149262,
+          "stop" : 1716203149483,
+          "duration" : 221
+        }
+      }, {
+        "uid" : "ef167c5bc1c27a3b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/ef167c5bc1c27a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200549501,
+          "stop" : 1716200549738,
+          "duration" : 237
+        }
+      }, {
+        "uid" : "11fae68a8c17d4fa",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/11fae68a8c17d4fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716199170083,
+          "stop" : 1716199170306,
+          "duration" : 223
+        }
+      }, {
+        "uid" : "542421b7b5962c7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/542421b7b5962c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196892022,
+          "stop" : 1716196892284,
+          "duration" : 262
+        }
+      }, {
+        "uid" : "f013d6e21efdf6d5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/f013d6e21efdf6d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716196247462,
+          "stop" : 1716196247634,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "2e6dfd6d8367fa40",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/7//#testresult/2e6dfd6d8367fa40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716195443263,
+          "stop" : 1716195443428,
+          "duration" : 165
+        }
+      }, {
+        "uid" : "fe3d829eb5acde56",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/6//#testresult/fe3d829eb5acde56",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716194836510,
+          "stop" : 1716194836732,
+          "duration" : 222
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "616806f528fac72d.json",
+  "parameterValues" : [ ]
+}
