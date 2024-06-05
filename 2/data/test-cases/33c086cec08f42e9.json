@@ -1,0 +1,738 @@
+{
+  "uid" : "33c086cec08f42e9",
+  "name" : "Verify that the 'Flora' link leads to the correct page after click",
+  "fullName" : "tests.used_resources_page_test.TestUsedResourcesPageForAuthorizedUser#test_ur_01_16_verify_flora_link_leads_to_the_correct_page",
+  "historyId" : "e50e87ea841efd3d4e23115ac8b3becb",
+  "time" : {
+    "start" : 1717606308340,
+    "stop" : 1717606464309,
+    "duration" : 155969
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>",
+  "statusTrace" : "self = <tests.used_resources_page_test.TestUsedResourcesPage.TestUsedResourcesPageForAuthorizedUser object at 0x7fa39e4cc980>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ce221dffc3196120768a369ccafaf711\")>\nauto_test_user_authorized = None\n\n    @allure.title(\"Verify that the 'Flora' link leads to the correct page after click\")\n    def test_ur_01_16_verify_flora_link_leads_to_the_correct_page(self, driver, auto_test_user_authorized):\n        page = UsedResourcesPage(driver)\n        page.open_used_resources_page()\n        page.click_flora_link()\n        page.switch_to_new_window()\n>       text_on_opened_tab = page.get_element_text_on_opened_flora_tab()\n\ntests/used_resources_page_test.py:221: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/used_resources_page.py:198: in get_element_text_on_opened_flora_tab\n    return self.get_text(self.locators1.FLORA_TEXT)\npages/base_page.py:95: in get_text\n    return self.element_is_visible(locator).text\npages/base_page.py:38: in element_is_visible\n    self.go_to_element(self.element_is_present(locator))\npages/base_page.py:55: in element_is_present\n    return Wait(self.driver, self.timeout).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"ce221dffc3196120768a369ccafaf711\")>\nmethod = <function presence_of_element_located.<locals>._predicate at 0x7fa39e3d2ac0>\nmessage = \"Can't find element by locator ('tag name', 'h2')\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nE       Stacktrace:\nE       #0 0x55c262575e8a <unknown>\nE       #1 0x55c26225f45c <unknown>\nE       #2 0x55c2622ab5b5 <unknown>\nE       #3 0x55c2622ab671 <unknown>\nE       #4 0x55c2622eff14 <unknown>\nE       #5 0x55c2622ce4dd <unknown>\nE       #6 0x55c2622ed2cc <unknown>\nE       #7 0x55c2622ce253 <unknown>\nE       #8 0x55c26229e1c7 <unknown>\nE       #9 0x55c26229eb3e <unknown>\nE       #10 0x55c26253c2cb <unknown>\nE       #11 0x55c262540377 <unknown>\nE       #12 0x55c262528dfe <unknown>\nE       #13 0x55c262540e42 <unknown>\nE       #14 0x55c26250d79f <unknown>\nE       #15 0x55c262565178 <unknown>\nE       #16 0x55c26256534b <unknown>\nE       #17 0x55c262574fbc <unknown>\nE       #18 0x7fef58894ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1717606302709,
+      "stop" : 1717606303397,
+      "duration" : 688
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "auto_test_user_authorized",
+    "time" : {
+      "start" : 1717606305980,
+      "stop" : 1717606308340,
+      "duration" : 2360
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Auto test user authorized",
+      "time" : {
+        "start" : 1717606305980,
+        "stop" : 1717606308340,
+        "duration" : 2360
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '//a[@id=\"ember11\"]')",
+        "time" : {
+          "start" : 1717606305980,
+          "stop" : 1717606306018,
+          "duration" : 38
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1717606305998,
+            "stop" : 1717606306018,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//a[@id=\"ember11\"]')",
+            "time" : {
+              "start" : 1717606305998,
+              "stop" : 1717606306018,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//a[@id=\"ember11\"]')"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      }, {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"login\"]')",
+        "time" : {
+          "start" : 1717606306066,
+          "stop" : 1717606306092,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"login\"]')",
+          "time" : {
+            "start" : 1717606306066,
+            "stop" : 1717606306076,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ce221dffc3196120768a369ccafaf711\", element=\"f.F5AD9A98A73D291861D7BDF963945BAF.d.316F03B28372900A2E864159CCFCFB10.e.27\")>",
+          "time" : {
+            "start" : 1717606306076,
+            "stop" : 1717606306081,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      }, {
+        "name" : "Check element is visible: ('xpath', '//input[@id=\"password\"]')",
+        "time" : {
+          "start" : 1717606306157,
+          "stop" : 1717606306184,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '//input[@id=\"password\"]')",
+          "time" : {
+            "start" : 1717606306157,
+            "stop" : 1717606306168,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"ce221dffc3196120768a369ccafaf711\", element=\"f.F5AD9A98A73D291861D7BDF963945BAF.d.316F03B28372900A2E864159CCFCFB10.e.30\")>",
+          "time" : {
+            "start" : 1717606306168,
+            "stop" : 1717606306172,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      }, {
+        "name" : "Check element is visible and clickable: ('xpath', '//*[@type=\"submit\"]')",
+        "time" : {
+          "start" : 1717606306225,
+          "stop" : 1717606306265,
+          "duration" : 40
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1717606306240,
+            "stop" : 1717606306265,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '//*[@type=\"submit\"]')",
+            "time" : {
+              "start" : 1717606306240,
+              "stop" : 1717606306265,
+              "duration" : 25
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//*[@type=\"submit\"]')"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      }, {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1717606306320,
+          "stop" : 1717606308340,
+          "duration" : 2020
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ce221dffc3196120768a369ccafaf711\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 13
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 14
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1717606303397,
+      "stop" : 1717606305980,
+      "duration" : 2583
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1717606303397,
+        "stop" : 1717606305980,
+        "duration" : 2583
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ce221dffc3196120768a369ccafaf711\")>"
+      } ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1717605119658,
+      "stop" : 1717605119658,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>",
+    "statusTrace" : "self = <tests.used_resources_page_test.TestUsedResourcesPage.TestUsedResourcesPageForAuthorizedUser object at 0x7fa39e4cc980>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ce221dffc3196120768a369ccafaf711\")>\nauto_test_user_authorized = None\n\n    @allure.title(\"Verify that the 'Flora' link leads to the correct page after click\")\n    def test_ur_01_16_verify_flora_link_leads_to_the_correct_page(self, driver, auto_test_user_authorized):\n        page = UsedResourcesPage(driver)\n        page.open_used_resources_page()\n        page.click_flora_link()\n        page.switch_to_new_window()\n>       text_on_opened_tab = page.get_element_text_on_opened_flora_tab()\n\ntests/used_resources_page_test.py:221: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/used_resources_page.py:198: in get_element_text_on_opened_flora_tab\n    return self.get_text(self.locators1.FLORA_TEXT)\npages/base_page.py:95: in get_text\n    return self.element_is_visible(locator).text\npages/base_page.py:38: in element_is_visible\n    self.go_to_element(self.element_is_present(locator))\npages/base_page.py:55: in element_is_present\n    return Wait(self.driver, self.timeout).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"ce221dffc3196120768a369ccafaf711\")>\nmethod = <function presence_of_element_located.<locals>._predicate at 0x7fa39e3d2ac0>\nmessage = \"Can't find element by locator ('tag name', 'h2')\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nE       Stacktrace:\nE       #0 0x55c262575e8a <unknown>\nE       #1 0x55c26225f45c <unknown>\nE       #2 0x55c2622ab5b5 <unknown>\nE       #3 0x55c2622ab671 <unknown>\nE       #4 0x55c2622eff14 <unknown>\nE       #5 0x55c2622ce4dd <unknown>\nE       #6 0x55c2622ed2cc <unknown>\nE       #7 0x55c2622ce253 <unknown>\nE       #8 0x55c26229e1c7 <unknown>\nE       #9 0x55c26229eb3e <unknown>\nE       #10 0x55c26253c2cb <unknown>\nE       #11 0x55c262540377 <unknown>\nE       #12 0x55c262528dfe <unknown>\nE       #13 0x55c262540e42 <unknown>\nE       #14 0x55c26250d79f <unknown>\nE       #15 0x55c262565178 <unknown>\nE       #16 0x55c26256534b <unknown>\nE       #17 0x55c262574fbc <unknown>\nE       #18 0x7fef58894ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ {
+      "name" : "Open the 'Used resources' page",
+      "time" : {
+        "start" : 1717606308341,
+        "stop" : 1717606308574,
+        "duration" : 233
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on the 'Flora' link and thereby open the corresponding web page in a new tab",
+      "time" : {
+        "start" : 1717606308575,
+        "stop" : 1717606309154,
+        "duration" : 579
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible and clickable: ('xpath', '(//section//li)[3]/a')",
+        "time" : {
+          "start" : 1717606308575,
+          "stop" : 1717606309120,
+          "duration" : 545
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is clickable",
+          "time" : {
+            "start" : 1717606309104,
+            "stop" : 1717606309120,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Check element is clickable: ('xpath', '(//section//li)[3]/a')",
+            "time" : {
+              "start" : 1717606309104,
+              "stop" : 1717606309120,
+              "duration" : 16
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '(//section//li)[3]/a')"
+          } ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3
+    }, {
+      "name" : "Get text of the element on the 'Flora' page",
+      "time" : {
+        "start" : 1717606443819,
+        "stop" : 1717606464309,
+        "duration" : 20490
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/used_resources_page.py\", line 198, in get_element_text_on_opened_flora_tab\n    return self.get_text(self.locators1.FLORA_TEXT)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 95, in get_text\n    return self.element_is_visible(locator).text\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 38, in element_is_visible\n    self.go_to_element(self.element_is_present(locator))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in element_is_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Get text in the element: ('tag name', 'h2')",
+        "time" : {
+          "start" : 1717606443819,
+          "stop" : 1717606464309,
+          "duration" : 20490
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>\n\n",
+        "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 95, in get_text\n    return self.element_is_visible(locator).text\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 38, in element_is_visible\n    self.go_to_element(self.element_is_present(locator))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in element_is_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+        "steps" : [ {
+          "name" : "Check element is visible: ('tag name', 'h2')",
+          "time" : {
+            "start" : 1717606443819,
+            "stop" : 1717606464308,
+            "duration" : 20489
+          },
+          "status" : "broken",
+          "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>\n\n",
+          "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 38, in element_is_visible\n    self.go_to_element(self.element_is_present(locator))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in element_is_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+          "steps" : [ {
+            "name" : "Check element is present: ('tag name', 'h2')",
+            "time" : {
+              "start" : 1717606443819,
+              "stop" : 1717606464308,
+              "duration" : 20489
+            },
+            "status" : "broken",
+            "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55c262575e8a <unknown>\n#1 0x55c26225f45c <unknown>\n#2 0x55c2622ab5b5 <unknown>\n#3 0x55c2622ab671 <unknown>\n#4 0x55c2622eff14 <unknown>\n#5 0x55c2622ce4dd <unknown>\n#6 0x55c2622ed2cc <unknown>\n#7 0x55c2622ce253 <unknown>\n#8 0x55c26229e1c7 <unknown>\n#9 0x55c26229eb3e <unknown>\n#10 0x55c26253c2cb <unknown>\n#11 0x55c262540377 <unknown>\n#12 0x55c262528dfe <unknown>\n#13 0x55c262540e42 <unknown>\n#14 0x55c26250d79f <unknown>\n#15 0x55c262565178 <unknown>\n#16 0x55c26256534b <unknown>\n#17 0x55c262574fbc <unknown>\n#18 0x7fef58894ac3 <unknown>\n\n",
+            "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in element_is_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3
+    } ],
+    "attachments" : [ {
+      "uid" : "213de1995306fa21",
+      "name" : "Screenshot",
+      "source" : "213de1995306fa21.png",
+      "type" : "image/png",
+      "size" : 2800
+    }, {
+      "uid" : "bc501fe4b00b7df7",
+      "name" : "HTML source",
+      "source" : "bc501fe4b00b7df7.html",
+      "type" : "text/html",
+      "size" : 39
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 9
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1717606464360,
+      "stop" : 1717606464452,
+      "duration" : 92
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d63e0690b671f96f",
+      "name" : "Screenshot 2024-06-05 16:54:24.389673",
+      "source" : "d63e0690b671f96f.png",
+      "type" : "image/png",
+      "size" : 2800
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Used Resources Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "used_resources_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUsedResourcesPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az700-389"
+  }, {
+    "name" : "thread",
+    "value" : "2266-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.used_resources_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 20
+      },
+      "items" : [ {
+        "uid" : "2031ae0f51d2d0d8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/3//#testresult/2031ae0f51d2d0d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717606368597,
+          "stop" : 1717606372104,
+          "duration" : 3507
+        }
+      }, {
+        "uid" : "6b8850d171d401b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/24//#testresult/6b8850d171d401b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717548515282,
+          "stop" : 1717548516339,
+          "duration" : 1057
+        }
+      }, {
+        "uid" : "43d1e9c8767348f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/23//#testresult/43d1e9c8767348f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717462155022,
+          "stop" : 1717462156324,
+          "duration" : 1302
+        }
+      }, {
+        "uid" : "e224b4e4c15e9c41",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/22//#testresult/e224b4e4c15e9c41",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717375468109,
+          "stop" : 1717375469990,
+          "duration" : 1881
+        }
+      }, {
+        "uid" : "2df8875fb9c84c62",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/21//#testresult/2df8875fb9c84c62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717289467935,
+          "stop" : 1717289469381,
+          "duration" : 1446
+        }
+      }, {
+        "uid" : "62df034a86a6e09a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/20//#testresult/62df034a86a6e09a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717202907873,
+          "stop" : 1717202909599,
+          "duration" : 1726
+        }
+      }, {
+        "uid" : "d4661a05d77ebbc0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/19//#testresult/d4661a05d77ebbc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717116225745,
+          "stop" : 1717116227811,
+          "duration" : 2066
+        }
+      }, {
+        "uid" : "8e64d4cdf41ea331",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/18//#testresult/8e64d4cdf41ea331",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717029897096,
+          "stop" : 1717029899143,
+          "duration" : 2047
+        }
+      }, {
+        "uid" : "2e2a1d3dd064100f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/17//#testresult/2e2a1d3dd064100f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716943627745,
+          "stop" : 1716943629523,
+          "duration" : 1778
+        }
+      }, {
+        "uid" : "83a8ef3db511109d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/16//#testresult/83a8ef3db511109d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716857048012,
+          "stop" : 1716857049746,
+          "duration" : 1734
+        }
+      }, {
+        "uid" : "16a7e3e038bb53d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/15//#testresult/16a7e3e038bb53d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716769373857,
+          "stop" : 1716769374995,
+          "duration" : 1138
+        }
+      }, {
+        "uid" : "b4ab7c5b4f20d3d7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/14//#testresult/b4ab7c5b4f20d3d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716684486828,
+          "stop" : 1716684488573,
+          "duration" : 1745
+        }
+      }, {
+        "uid" : "ead599f47ec74d0e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/13//#testresult/ead599f47ec74d0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716597780800,
+          "stop" : 1716597782701,
+          "duration" : 1901
+        }
+      }, {
+        "uid" : "5babec56a7c8befa",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/5babec56a7c8befa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716511442638,
+          "stop" : 1716511444436,
+          "duration" : 1798
+        }
+      }, {
+        "uid" : "f6754b57d0e341c2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/f6754b57d0e341c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716425198815,
+          "stop" : 1716425200644,
+          "duration" : 1829
+        }
+      }, {
+        "uid" : "32217d468c21513c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/32217d468c21513c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716338593991,
+          "stop" : 1716338595743,
+          "duration" : 1752
+        }
+      }, {
+        "uid" : "35e27dfca486b9de",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/35e27dfca486b9de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716252407118,
+          "stop" : 1716252408278,
+          "duration" : 1160
+        }
+      }, {
+        "uid" : "21f82e10a551ba70",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/1//#testresult/21f82e10a551ba70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716200130419,
+          "stop" : 1716200132180,
+          "duration" : 1761
+        }
+      }, {
+        "uid" : "18cee9955b00a91f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/83//#testresult/18cee9955b00a91f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716197719636,
+          "stop" : 1716197721244,
+          "duration" : 1608
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "33c086cec08f42e9.json",
+  "parameterValues" : [ ]
+}

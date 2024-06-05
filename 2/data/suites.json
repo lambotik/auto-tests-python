@@ -3,498 +3,933 @@
   "children" : [ {
     "name" : "tests",
     "children" : [ {
+      "name" : "authorisation_page_test",
+      "children" : [ {
+        "name" : "TestAuthorizedUserPage",
+        "children" : [ {
+          "name" : "Checking the possibility of authorization with the correct data",
+          "uid" : "bc0bac411c0888a4",
+          "parentUid" : "e074551d30f2b230c82427765ab67d86",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605134467,
+            "stop" : 1717605135736,
+            "duration" : 1269
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Checking the possibility of authorization with incorrect data",
+          "uid" : "c0475ab120e356e9",
+          "parentUid" : "e074551d30f2b230c82427765ab67d86",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605139367,
+            "stop" : 1717605140240,
+            "duration" : 873
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e074551d30f2b230c82427765ab67d86"
+      } ],
+      "uid" : "e821cc54c44d7e3b66b85f5ba6736f49"
+    }, {
+      "name" : "contacts_page_test",
+      "children" : [ {
+        "name" : "TestContactsPage",
+        "children" : [ {
+          "name" : "Verify presence, visibility and structure of content on the page",
+          "uid" : "f6871b6afa687ce7",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605144775,
+            "stop" : 1717605144832,
+            "duration" : 57
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify amount and visibility of sections with content on the page",
+          "uid" : "a94c64b1d2b965cf",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605149435,
+            "stop" : 1717605149455,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify the composition and visibility of elements on the 1st level of nesting in the section 1",
+          "uid" : "723d2e1a6fde99e9",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605153873,
+            "stop" : 1717605153897,
+            "duration" : 24
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify the composition and visibility of elements \n        on the 1st, 2nd, 3rd, 4th, 5th levels of nesting in the section 2",
+          "uid" : "9f9c991878a8d468",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605158492,
+            "stop" : 1717605158626,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of the dividing line on the page",
+          "uid" : "60f7843661903bda",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605163227,
+            "stop" : 1717605163258,
+            "duration" : 31
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify value of title with tag 'h1' on the page",
+          "uid" : "aa32636e19e334d",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605167785,
+            "stop" : 1717605167818,
+            "duration" : 33
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of subtitles with tag 'h2' on the page",
+          "uid" : "cc67fd5de011db9c",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605172533,
+            "stop" : 1717605172557,
+            "duration" : 24
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in sections 1, 2 on the page",
+          "uid" : "c33cd5b0b5c51248",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605177472,
+            "stop" : 1717605177501,
+            "duration" : 29
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in links in sections 1, 2 on the page",
+          "uid" : "a8da34ce52eef69e",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605182101,
+            "stop" : 1717605182130,
+            "duration" : 29
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, prefix, status code \n        of links in sections 1, 2 on the page",
+          "uid" : "84c2a36cb1cf6f39",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605186753,
+            "stop" : 1717605187523,
+            "duration" : 770
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that links in sections 1, 2 lead to the correct pages after click",
+          "uid" : "50dcf664bf4815f1",
+          "parentUid" : "32c34aa84a40e891ed13470cbc3ce026",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605192142,
+            "stop" : 1717605193350,
+            "duration" : 1208
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "32c34aa84a40e891ed13470cbc3ce026"
+      } ],
+      "uid" : "07e0faa1ee60d719ad4be512b2ffcc26"
+    }, {
+      "name" : "contributors_page_test",
+      "children" : [ {
+        "name" : "TestContributorsPage",
+        "children" : [ {
+          "name" : "Verify presence, visibility and structure of content on the page",
+          "uid" : "23d3e4e20a5bd4fa",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605196973,
+            "stop" : 1717605199652,
+            "duration" : 2679
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify amount and visibility of sections with content on the page",
+          "uid" : "d2a1957b81998d05",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605203283,
+            "stop" : 1717605203306,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify the composition and visibility of elements on the 1st, 2nd, 3rd, 4th levels of nesting in the section",
+          "uid" : "5d5b584623fd6b7c",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605207193,
+            "stop" : 1717605208557,
+            "duration" : 1364
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify amount of contributor cards with images, links and descriptions in the section grid",
+          "uid" : "e28c91354e3e92ad",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605212187,
+            "stop" : 1717605212227,
+            "duration" : 40
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify value of title with tag 'h2' on the page",
+          "uid" : "43a3d287eb78dcc6",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605216218,
+            "stop" : 1717605216254,
+            "duration" : 36
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of subtitles with tag 'h3' on the page",
+          "uid" : "64799c84acd70db4",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605219824,
+            "stop" : 1717605219852,
+            "duration" : 28
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in the slogan on the page",
+          "uid" : "f5dd928b78dd784",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605223422,
+            "stop" : 1717605223440,
+            "duration" : 18
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in card descriptions",
+          "uid" : "f572cb2ce2f7239e",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605227257,
+            "stop" : 1717605227677,
+            "duration" : 420
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify text in links in card links",
+          "uid" : "817824b7c380cd4e",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605231269,
+            "stop" : 1717605231679,
+            "duration" : 410
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href of links in the section",
+          "uid" : "b6ab9b7f5bcf4364",
+          "parentUid" : "c1373a00d2dcd357d231ac42ec42d34d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605235222,
+            "stop" : 1717605235688,
+            "duration" : 466
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c1373a00d2dcd357d231ac42ec42d34d"
+      } ],
+      "uid" : "2267b3bd7a05fb80475035532c586219"
+    }, {
+      "name" : "description_page_test",
+      "children" : [ {
+        "name" : "TestDescriptionPage",
+        "children" : [ {
+          "name" : "Verify return main page from description page.",
+          "uid" : "7c7c4a69176af94b",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605239687,
+            "stop" : 1717605239799,
+            "duration" : 112
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to telegram page not authorized user.",
+          "uid" : "ebcc8b53b82c752c",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605244107,
+            "stop" : 1717605245280,
+            "duration" : 1173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to donate page not authorized user.",
+          "uid" : "bf1272efa3c4f30c",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605248919,
+            "stop" : 1717605250122,
+            "duration" : 1203
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to contacts page not authorized user.",
+          "uid" : "a93b4596ee208e44",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605253602,
+            "stop" : 1717605253745,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to specialists page not authorized user.",
+          "uid" : "94f4986a8c614a73",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605257376,
+            "stop" : 1717605258017,
+            "duration" : 641
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to github not authorized user.",
+          "uid" : "c608d19a83663999",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605261456,
+            "stop" : 1717605262984,
+            "duration" : 1528
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to contributors page not authorized user.",
+          "uid" : "724e76ed4b93644e",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605266376,
+            "stop" : 1717605267026,
+            "duration" : 650
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to used resources page not authorized user.",
+          "uid" : "398aa7dafcd47a35",
+          "parentUid" : "7dbacc56011449d01e2af4816b1a7a7a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605270491,
+            "stop" : 1717605270634,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7dbacc56011449d01e2af4816b1a7a7a"
+      } ],
+      "uid" : "8832266c30db4a321dbbb2a0f3579f28"
+    }, {
       "name" : "footer_test",
       "children" : [ {
         "name" : "TestFooter",
         "children" : [ {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "3294480699939c20",
+          "uid" : "75fdc3c76f76582f",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203096283,
-            "stop" : 1716203100366,
-            "duration" : 4083
+            "start" : 1717605271507,
+            "stop" : 1717605274276,
+            "duration" : 2769
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('tag name', 'footer')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "e5150444bea75b61",
+          "uid" : "b90a1486ddb00059",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203101348,
-            "stop" : 1716203104755,
-            "duration" : 3407
+            "start" : 1717605275255,
+            "stop" : 1717605278155,
+            "duration" : 2900
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//div)[1]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "c7667f8c588b854c",
+          "uid" : "734a8eb83624a058",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203105723,
-            "stop" : 1716203108860,
-            "duration" : 3137
+            "start" : 1717605279123,
+            "stop" : 1717605281809,
+            "duration" : 2686
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//li)[3]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "5ff2c893098d9514",
+          "uid" : "c4494b8144ba1402",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203109841,
-            "stop" : 1716203112781,
-            "duration" : 2940
+            "start" : 1717605282791,
+            "stop" : 1717605285470,
+            "duration" : 2679
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//div)[2]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "afd2ef9831dcc5ee",
+          "uid" : "a2f77789912d2618",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203113758,
-            "stop" : 1716203116885,
-            "duration" : 3127
+            "start" : 1717605286443,
+            "stop" : 1717605289146,
+            "duration" : 2703
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//li)[5]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "f33cdd8dc7f438a2",
+          "uid" : "7f964519d150bbd8",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203117855,
-            "stop" : 1716203120896,
-            "duration" : 3041
+            "start" : 1717605290123,
+            "stop" : 1717605292746,
+            "duration" : 2623
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//li)[1]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "2bb732a8869c7d84",
+          "uid" : "5d49e9d28ef123bd",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203121872,
-            "stop" : 1716203124896,
-            "duration" : 3024
+            "start" : 1717605293723,
+            "stop" : 1717605296383,
+            "duration" : 2660
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//li)[2]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "c79ee4445ecfc823",
+          "uid" : "c893dcd1f66b0023",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203125875,
-            "stop" : 1716203128863,
-            "duration" : 2988
+            "start" : 1717605297359,
+            "stop" : 1717605300110,
+            "duration" : 2751
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//li)[4]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence and visibility of Footer on each page specified in the kit",
-          "uid" : "9be72fde23d2ca39",
+          "uid" : "a4f67d7f35d91d6f",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203129841,
-            "stop" : 1716203132748,
-            "duration" : 2907
+            "start" : 1717605301090,
+            "stop" : 1717605304161,
+            "duration" : 3071
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '(//footer//div)[4]')", "'https://brainup.site'" ]
         }, {
           "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
-          "uid" : "ff550997e6784d1",
+          "uid" : "1553290c2a220ec6",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203133722,
-            "stop" : 1716203136674,
-            "duration" : 2952
+            "start" : 1717605305138,
+            "stop" : 1717605307832,
+            "duration" : 2694
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '//footer//a[@title]')", "['Обратная связь', 'Contact us']", "'https://brainup.site'" ]
         }, {
           "name" : "Verify accuracy of texts in Footer on each page specified in the kit",
-          "uid" : "f7018cb64b81d604",
+          "uid" : "ef3bbb99302ee7de",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203137639,
-            "stop" : 1716203140565,
-            "duration" : 2926
+            "start" : 1717605308804,
+            "stop" : 1717605311497,
+            "duration" : 2693
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "('xpath', '//span[@data-test-support-message]')", "['При поддержке', 'With the support']", "'https://brainup.site'" ]
         }, {
           "name" : "Verify presence, visibility, clickability, href, status code of the ARASAAC link in Footer",
-          "uid" : "ab7cd8fcc3900a8a",
+          "uid" : "c078834257cab276",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203144534,
-            "stop" : 1716203145198,
-            "duration" : 664
+            "start" : 1717605315106,
+            "stop" : 1717605315823,
+            "duration" : 717
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify presence, visibility, clickability, href, status code of the EPAM link in Footer",
-          "uid" : "e82cd19e8cbaf884",
+          "uid" : "1ca418bf34311447",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203149262,
-            "stop" : 1716203149483,
-            "duration" : 221
+            "start" : 1717605319349,
+            "stop" : 1717605319669,
+            "duration" : 320
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify presence, visibility, clickability, href, status code of the JETBRAINS link in Footer",
-          "uid" : "6de471b81bfcbbf9",
+          "uid" : "c57177dab9bff41c",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203153624,
-            "stop" : 1716203153840,
-            "duration" : 216
+            "start" : 1717605323352,
+            "stop" : 1717605323569,
+            "duration" : 217
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify presence, visibility, clickability, href, status code of the REG.RU link in Footer",
-          "uid" : "3bded4031b60c55c",
+          "uid" : "b3b2b576f59b11d3",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203157694,
-            "stop" : 1716203158481,
-            "duration" : 787
+            "start" : 1717605327362,
+            "stop" : 1717605328091,
+            "duration" : 729
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify presence, visibility, clickability, href, status code of the Selectel link in Footer",
-          "uid" : "e95b29e794279763",
+          "uid" : "cf533ec90edff7d6",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203162537,
-            "stop" : 1716203164161,
-            "duration" : 1624
+            "start" : 1717605331588,
+            "stop" : 1717605332386,
+            "duration" : 798
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify presence, visibility and accuracy of the Contact us link in Footer",
-          "uid" : "4f6bfb7cb3cd7ce",
+          "uid" : "bf131ad34ceb97e2",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203168181,
-            "stop" : 1716203168263,
-            "duration" : 82
+            "start" : 1717605336064,
+            "stop" : 1717605336147,
+            "duration" : 83
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify Footer invisibility through the modal window with the exercise",
-          "uid" : "c402b8df9c52bebc",
+          "uid" : "ce1d0ae6c2ab5b96",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203175135,
-            "stop" : 1716203179204,
-            "duration" : 4069
+            "start" : 1717605342027,
+            "stop" : 1717605347514,
+            "duration" : 5487
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the ARASAAC link in Footer leads to the correct page after click",
-          "uid" : "30461ce3579e9df9",
+          "uid" : "7feb58b7353c4670",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203183323,
-            "stop" : 1716203186091,
-            "duration" : 2768
+            "start" : 1717605351097,
+            "stop" : 1717605353110,
+            "duration" : 2013
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the EPAM link in Footer leads to the correct page after click",
-          "uid" : "12c6032cdba4142d",
+          "uid" : "8e25f35e1115853",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203189920,
-            "stop" : 1716203195160,
-            "duration" : 5240
+            "start" : 1717605356463,
+            "stop" : 1717605361789,
+            "duration" : 5326
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the JETBRAINS link in Footer leads to the correct page after click",
-          "uid" : "546191b5e350fa05",
+          "uid" : "54abdd996e4b70a2",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203199167,
-            "stop" : 1716203204373,
-            "duration" : 5206
+            "start" : 1717605365492,
+            "stop" : 1717605370606,
+            "duration" : 5114
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the REG.RU link in Footer leads to the correct page after click",
-          "uid" : "bc932edd0a4db9f8",
+          "uid" : "63f7948f2a0026a2",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203208382,
-            "stop" : 1716203238630,
-            "duration" : 30248
+            "start" : 1717605374083,
+            "stop" : 1717605404318,
+            "duration" : 30235
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the SELECTEL link in Footer leads to the correct page after click",
-          "uid" : "a79d282fb1e3b33",
+          "uid" : "dbc36da821f74773",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203242471,
-            "stop" : 1716203249955,
-            "duration" : 7484
+            "start" : 1717605407556,
+            "stop" : 1717605412678,
+            "duration" : 5122
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify that the Contact us link in Footer calls an email client",
-          "uid" : "68ccb94d669ae16f",
+          "uid" : "1e5dffbce2a3cfa4",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203253687,
-            "stop" : 1716203253765,
-            "duration" : 78
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify presence, visibility and accuracy of the ARASAAC link's image in Footer",
-          "uid" : "f9019bc2a342e002",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203258024,
-            "stop" : 1716203258093,
-            "duration" : 69
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify visible sizes of the ARASAAC link's image in Footer",
-          "uid" : "f779827235c27fda",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203262258,
-            "stop" : 1716203262303,
-            "duration" : 45
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify changes of visible sizes of the ARASAAC link's image in Footer",
-          "uid" : "27cef6276b9c6162",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203266257,
-            "stop" : 1716203266338,
-            "duration" : 81
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify presence, visibility and accuracy of the EPAM link's image in Footer",
-          "uid" : "e29d6a44204aa17e",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203270155,
-            "stop" : 1716203270224,
-            "duration" : 69
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify visible sizes of the EPAM link's image in Footer",
-          "uid" : "49c1ab4ea8c5cd0e",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203274254,
-            "stop" : 1716203274299,
-            "duration" : 45
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Verify changes of visible sizes of the EPAM link's image in Footer",
-          "uid" : "b5eb12181b2e9b4e",
-          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1716203278477,
-            "stop" : 1716203278557,
+            "start" : 1717605416212,
+            "stop" : 1717605416292,
             "duration" : 80
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify presence, visibility and accuracy of the JETBRAINS link's image in Footer",
-          "uid" : "3d3ce2ec5e9620b7",
+          "name" : "Verify presence, visibility and accuracy of the ARASAAC link's image in Footer",
+          "uid" : "b8d5f2c107a6c616",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203282410,
-            "stop" : 1716203282476,
-            "duration" : 66
+            "start" : 1717605419992,
+            "stop" : 1717605420065,
+            "duration" : 73
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify visible sizes of the JETBRAINS link's image in Footer",
-          "uid" : "fd062c21db4a3044",
+          "name" : "Verify visible sizes of the ARASAAC link's image in Footer",
+          "uid" : "8504ac5e35b6ddbf",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203286609,
-            "stop" : 1716203286655,
+            "start" : 1717605424218,
+            "stop" : 1717605424264,
             "duration" : 46
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify changes of visible sizes of the JETBRAINS link's image in Footer",
-          "uid" : "e0a7e588677bdcba",
+          "name" : "Verify changes of visible sizes of the ARASAAC link's image in Footer",
+          "uid" : "943eaaeded0fe30",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203290657,
-            "stop" : 1716203290738,
-            "duration" : 81
+            "start" : 1717605427747,
+            "stop" : 1717605427827,
+            "duration" : 80
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify presence, visibility and accuracy of the REG.RU link's image in Footer",
-          "uid" : "744eade2ff12025d",
+          "name" : "Verify presence, visibility and accuracy of the EPAM link's image in Footer",
+          "uid" : "3d3a7092850ce2d5",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203294576,
-            "stop" : 1716203294643,
-            "duration" : 67
+            "start" : 1717605431367,
+            "stop" : 1717605431442,
+            "duration" : 75
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify visible sizes of the REG.RU link's image in Footer",
-          "uid" : "2eee4fd1918ec7",
+          "name" : "Verify visible sizes of the EPAM link's image in Footer",
+          "uid" : "44a2580e37041567",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203298670,
-            "stop" : 1716203298715,
-            "duration" : 45
+            "start" : 1717605435107,
+            "stop" : 1717605435154,
+            "duration" : 47
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify changes of visible sizes of the REG.RU link's image in Footer",
-          "uid" : "26e7f3afd82ae7f",
+          "name" : "Verify changes of visible sizes of the EPAM link's image in Footer",
+          "uid" : "8553e3b05e0f84e3",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203302553,
-            "stop" : 1716203302632,
+            "start" : 1717605438729,
+            "stop" : 1717605438808,
             "duration" : 79
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Verify presence, visibility and accuracy of the Selectel link's image in Footer",
-          "uid" : "55a11ba88180a193",
+          "name" : "Verify presence, visibility and accuracy of the JETBRAINS link's image in Footer",
+          "uid" : "96f6e3c2bccdcabe",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203306449,
-            "stop" : 1716203306518,
-            "duration" : 69
+            "start" : 1717605442338,
+            "stop" : 1717605442406,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify visible sizes of the JETBRAINS link's image in Footer",
+          "uid" : "a569db3704fa2168",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605446075,
+            "stop" : 1717605446122,
+            "duration" : 47
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify changes of visible sizes of the JETBRAINS link's image in Footer",
+          "uid" : "c064cc50d9973e00",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605449526,
+            "stop" : 1717605449608,
+            "duration" : 82
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the REG.RU link's image in Footer",
+          "uid" : "1a094852b0bd64c0",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605452964,
+            "stop" : 1717605453032,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify visible sizes of the REG.RU link's image in Footer",
+          "uid" : "479d1e0778330e7b",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605456631,
+            "stop" : 1717605456677,
+            "duration" : 46
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify changes of visible sizes of the REG.RU link's image in Footer",
+          "uid" : "fb7bce0ab18b7857",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605460295,
+            "stop" : 1717605460375,
+            "duration" : 80
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the Selectel link's image in Footer",
+          "uid" : "b72dd194b930b32f",
+          "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605463731,
+            "stop" : 1717605463803,
+            "duration" : 72
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Verify visible sizes of the Selectel link's image in Footer",
-          "uid" : "88dc2e898cb34ae4",
+          "uid" : "ed115ed8738d6186",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203310564,
-            "stop" : 1716203310609,
+            "start" : 1717605467478,
+            "stop" : 1717605467523,
             "duration" : 45
           },
           "flaky" : false,
@@ -502,13 +937,13 @@
           "parameters" : [ ]
         }, {
           "name" : "Verify changes of visible sizes of the Selectel link's image in Footer",
-          "uid" : "cede9a4316e444cc",
+          "uid" : "72af0290e9560a0c",
           "parentUid" : "3dad70b41d8cec758f17c34994c5b4e4",
           "status" : "passed",
           "time" : {
-            "start" : 1716203314547,
-            "stop" : 1716203314626,
-            "duration" : 79
+            "start" : 1717605471168,
+            "stop" : 1717605471248,
+            "duration" : 80
           },
           "flaky" : false,
           "newFailed" : false,
@@ -517,6 +952,1074 @@
         "uid" : "3dad70b41d8cec758f17c34994c5b4e4"
       } ],
       "uid" : "53e8144ed425626ff4bd46a6b76bd846"
+    }, {
+      "name" : "login_page_test",
+      "children" : [ {
+        "name" : "TestLoginPage",
+        "children" : [ {
+          "name" : "Test for authorization customer.",
+          "uid" : "bc0c7ee84cf3a13f",
+          "parentUid" : "16fba6b589ac02e5fd39b9fa97dfb73c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605477046,
+            "stop" : 1717605477049,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "16fba6b589ac02e5fd39b9fa97dfb73c"
+      } ],
+      "uid" : "0419204ff68301b9417e88511750e62c"
+    }, {
+      "name" : "main_page_test",
+      "children" : [ {
+        "name" : "TestMainPage",
+        "children" : [ {
+          "name" : "Verify redirection to description page not authorized user.",
+          "uid" : "ca1ca63d7d9c99ee",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605480494,
+            "stop" : 1717605480607,
+            "duration" : 113
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to telegram page not authorized user.",
+          "uid" : "816983d6d0e82e8d",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605484488,
+            "stop" : 1717605485816,
+            "duration" : 1328
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to donate page not authorized user.",
+          "uid" : "f4b4c1295cdf1925",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605489457,
+            "stop" : 1717605490520,
+            "duration" : 1063
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to contacts page not authorized user.",
+          "uid" : "c41da171bb1b0445",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605494035,
+            "stop" : 1717605494179,
+            "duration" : 144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to specialists page not authorized user.",
+          "uid" : "ca288e8301441b27",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605497584,
+            "stop" : 1717605498225,
+            "duration" : 641
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to github not authorized user.",
+          "uid" : "7f0ae4cbad4d8a3f",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605501648,
+            "stop" : 1717605503033,
+            "duration" : 1385
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to contributors page not authorized user.",
+          "uid" : "7e4258568a19d456",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605506418,
+            "stop" : 1717605507062,
+            "duration" : 644
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify redirection to used resources page not authorized user.",
+          "uid" : "215c520abc86e14b",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605510659,
+            "stop" : 1717605510799,
+            "duration" : 140
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Checking the clickability of the Start button.",
+          "uid" : "8cca45dfeb634135",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605514458,
+            "stop" : 1717605514539,
+            "duration" : 81
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Checking the clickability of the Registration button.",
+          "uid" : "f7ab3eb96e7ac3e9",
+          "parentUid" : "5a1456daedd10e6a9957c9bb372d8137",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605518150,
+            "stop" : 1717605518248,
+            "duration" : 98
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5a1456daedd10e6a9957c9bb372d8137"
+      } ],
+      "uid" : "630e1fa85a66b3807108f214d7df7fa0"
+    }, {
+      "name" : "profile_page_test",
+      "children" : [ {
+        "name" : "TestProfilePage",
+        "children" : [ {
+          "name" : "Change the password by receiving an email link",
+          "uid" : "dad5f92a2af33837",
+          "parentUid" : "3b6b4702a22213c78403f35bc4cca9f5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605521759,
+            "stop" : 1717605552048,
+            "duration" : 30289
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3b6b4702a22213c78403f35bc4cca9f5"
+      } ],
+      "uid" : "8e1c25e0da8e7ff551e108422ad62c2a"
+    }, {
+      "name" : "registration_page_test",
+      "children" : [ {
+        "name" : "TestRegistrationPage",
+        "children" : [ {
+          "name" : "Check registration with new email",
+          "uid" : "df12fe1b36dcdc99",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605555466,
+            "stop" : 1717605565183,
+            "duration" : 9717
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Check registration with an existing email",
+          "uid" : "add700ab65b31842",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605568466,
+            "stop" : 1717605569636,
+            "duration" : 1170
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1977", "'password'", "'test_brainup@mail.ru'", "'The email address is already in use by another account.'", "'Auto Test'", "'password'", "'an existing email'" ]
+        }, {
+          "name" : "Check registration with new email and empty confirm password",
+          "uid" : "7ac492a80bdab896",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605573209,
+            "stop" : 1717605573833,
+            "duration" : 624
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1977", "''", "'autotest_N@1717605119.13218.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "'password'", "'new email and empty confirm password'" ]
+        }, {
+          "name" : "Check registration with new email and empty password",
+          "uid" : "b7eaa144e283bbc7",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605577361,
+            "stop" : 1717605578002,
+            "duration" : 641
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1977", "'password'", "'autotest_N@1717605119.13218.com'", "['Passwords should match', 'Пароли должны совпадать']", "'Auto Test'", "''", "'new email and empty password'" ]
+        }, {
+          "name" : "Check registration with new email and empty first name",
+          "uid" : "8b0a2d2d90084314",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605581398,
+            "stop" : 1717605582043,
+            "duration" : 645
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1977", "'password'", "'autotest_N@1717605119.13218.com'", "['Empty LastName', 'Фамилия не Указана']", "''", "'password'", "'new email and empty first name'" ]
+        }, {
+          "name" : "Check registration with new email and empty birthday",
+          "uid" : "c9bb19781f76eb5a",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605585508,
+            "stop" : 1717605586150,
+            "duration" : 642
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "''", "'password'", "'autotest_N@1717605119.13218.com'", "['Invalid date', 'Некорректная дата']", "'Auto Test'", "'password'", "'new email and empty birthday'" ]
+        }, {
+          "name" : "Check registration with new email and empty email",
+          "uid" : "3a337e0eb2d32581",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605589688,
+            "stop" : 1717605590306,
+            "duration" : 618
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1977", "'password'", "''", "['Please enter your login and password', 'Пожалуйста, введите логин и пароль.']", "'Auto Test'", "'password'", "'new email and empty email'" ]
+        }, {
+          "name" : "Check registration without choosing gender",
+          "uid" : "9b4f9679287225ef",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605593573,
+            "stop" : 1717605594169,
+            "duration" : 596
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Check registration without choosing agreement",
+          "uid" : "4fcbf3fa8972370c",
+          "parentUid" : "ab161b6593e04677bcd91d381310e420",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605597827,
+            "stop" : 1717605618517,
+            "duration" : 20690
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ab161b6593e04677bcd91d381310e420"
+      } ],
+      "uid" : "5c5d0a423e86264d73cd0138bfb9f1e1"
+    }, {
+      "name" : "specialists_page_test",
+      "children" : [ {
+        "name" : "TestSpecialistsPage",
+        "children" : [ {
+          "name" : "Verify presence, visibility and text accuracy of the title on the Specialists page",
+          "uid" : "2b2072ccb840db25",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605623202,
+            "stop" : 1717605623261,
+            "duration" : 59
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and content accuracy of the text on the Specialists page",
+          "uid" : "d0ef3a3467635a66",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605627848,
+            "stop" : 1717605627906,
+            "duration" : 58
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and size of the grid on the Specialists page",
+          "uid" : "e68384118cf7cdfb",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605632624,
+            "stop" : 1717605632665,
+            "duration" : 41
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify visibility of cards in the grid on the Specialists page",
+          "uid" : "2402123eba6f37d7",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605637369,
+            "stop" : 1717605637385,
+            "duration" : 16
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of images in specialist cards in the grid",
+          "uid" : "595b683e89a8626",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605641897,
+            "stop" : 1717605642915,
+            "duration" : 1018
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify attribute values and sizes of images in specialist cards in the grid",
+          "uid" : "52dc72f85b1db338",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605647609,
+            "stop" : 1717605647821,
+            "duration" : 212
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the 1th card's image in the grid",
+          "uid" : "2f666d583b55346a",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605652395,
+            "stop" : 1717605652490,
+            "duration" : 95
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of text sections (including names and professions) \n         in specialist cards in the grid",
+          "uid" : "55f276e816121d2c",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605657374,
+            "stop" : 1717605657418,
+            "duration" : 44
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of names in specialist cards in the grid",
+          "uid" : "711bb01df180d2c8",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605662181,
+            "stop" : 1717605662238,
+            "duration" : 57
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of profession in specialist cards in the grid",
+          "uid" : "d4bc9ecc6e1848b9",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605666735,
+            "stop" : 1717605666799,
+            "duration" : 64
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, status code, text \n                         of the 'All Specialists' link on the Specialists page",
+          "uid" : "50ec353d84589c28",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605671491,
+            "stop" : 1717605672278,
+            "duration" : 787
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the 'All Specialists' link leads an unauthorized user \n                         to the correct page after clicking",
+          "uid" : "7a9b858113533a66",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605677534,
+            "stop" : 1717605682835,
+            "duration" : 5301
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the 'All Specialists' link leads an authorized user \n                         to the correct page after clicking",
+          "uid" : "a33432d249d99c76",
+          "parentUid" : "a2b88d74fca8f810faebc7822eb9977c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605689600,
+            "stop" : 1717605696009,
+            "duration" : 6409
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a2b88d74fca8f810faebc7822eb9977c"
+      } ],
+      "uid" : "57cc9d00a1df48a228a310cc44ded3b8"
+    }, {
+      "name" : "start_unauthorized_page_test",
+      "children" : [ {
+        "name" : "TestStartUnauthorizedPage",
+        "children" : [ {
+          "name" : "Verify presence and visibility of content on the page",
+          "uid" : "7f7e9cb5d4f4367b",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605699319,
+            "stop" : 1717605699350,
+            "duration" : 31
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify amount and visibility of sections with content on the page",
+          "uid" : "b87727ee33a6be20",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605702760,
+            "stop" : 1717605702782,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify the composition and visibility of elements \n        on the 1st, 2nd, 3rd levels of nesting in the section 1",
+          "uid" : "3ef0cd5621a6dbe8",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605706341,
+            "stop" : 1717605706425,
+            "duration" : 84
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify the composition and visibility of elements \n        on the 1st, 2nd, 3rd levels of nesting in the section 2",
+          "uid" : "22803f595099b690",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605709786,
+            "stop" : 1717605709884,
+            "duration" : 98
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of titles with tag 'h2' on the page",
+          "uid" : "6a6ee87a907b3d1e",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605713370,
+            "stop" : 1717605713394,
+            "duration" : 24
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of subtitles with tag 'h4' on the page",
+          "uid" : "7221a381dec38d45",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605716760,
+            "stop" : 1717605716789,
+            "duration" : 29
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in the section 1 on the page",
+          "uid" : "c594e2013d877725",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605720168,
+            "stop" : 1717605720205,
+            "duration" : 37
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify values of the text in the section 2 on the page",
+          "uid" : "4d89d9b5d812f482",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605724243,
+            "stop" : 1717605724277,
+            "duration" : 34
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify attribute values and size of the image in the section 1 on the page",
+          "uid" : "9e7e9e1cf82b5afc",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605727700,
+            "stop" : 1717605727795,
+            "duration" : 95
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, status code, text \n                         of the 'Login' link in the section 1 on the page",
+          "uid" : "b01c580b814154f8",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605731276,
+            "stop" : 1717605732041,
+            "duration" : 765
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the 'Login' link leads to the correct page after clicking",
+          "uid" : "3b2444f52f3d757",
+          "parentUid" : "01577b51a382f946309e99e134260533",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605735678,
+            "stop" : 1717605735801,
+            "duration" : 123
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "01577b51a382f946309e99e134260533"
+      } ],
+      "uid" : "6c9828e27fd2b3ccd1d7aa81818969e5"
+    }, {
+      "name" : "Speech exercises EN.",
+      "children" : [ {
+        "name" : "TestCardsEN",
+        "children" : [ {
+          "name" : "Select random card from \"Word\" group and compare UI vs BACKEND data",
+          "uid" : "34726c5e2f372efd",
+          "parentUid" : "85fce5b3bfd4401c9957159132f6b30f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605741690,
+            "stop" : 1717605757341,
+            "duration" : 15651
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Check progres-bar and buttons.",
+          "uid" : "30715fe255463331",
+          "parentUid" : "85fce5b3bfd4401c9957159132f6b30f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605763111,
+            "stop" : 1717605774054,
+            "duration" : 10943
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select a random card from \"Similar phrases\" group and compare UI vs BACKEND data",
+          "uid" : "65ad967a5d502f40",
+          "parentUid" : "85fce5b3bfd4401c9957159132f6b30f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605779969,
+            "stop" : 1717605795862,
+            "duration" : 15893
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "85fce5b3bfd4401c9957159132f6b30f"
+      } ],
+      "uid" : "03065c5980b4335e361fce6e9484ceec"
+    }, {
+      "name" : "Речевые упражнения.",
+      "children" : [ {
+        "name" : "TestCardsRU",
+        "children" : [ {
+          "name" : "Select random card from group \"Слова\" and compare UI vs BACKEND data.",
+          "uid" : "5a332e9f2fe85d28",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605801789,
+            "stop" : 1717605819602,
+            "duration" : 17813
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select random card from group \"Слова Королёвой\" and compare UI vs BACKEND data.",
+          "uid" : "28c5e94c08415e70",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605825696,
+            "stop" : 1717605835549,
+            "duration" : 9853
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select a random card from \"Похожие фразы\" group and compare UI vs BACKEND data.",
+          "uid" : "f9fe28f59adbc87e",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605841411,
+            "stop" : 1717605861316,
+            "duration" : 19905
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select a random card from \"Группа слов\" group and compare UI vs BACKEND data.",
+          "uid" : "1e825a2447686c6a",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1717605867030,
+            "stop" : 1717605888297,
+            "duration" : 21267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select a random card from \"Предложения\" group and compare UI vs BACKEND data.",
+          "uid" : "6eb17d4d7ebd1ba8",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605895673,
+            "stop" : 1717605911667,
+            "duration" : 15994
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Select a random card from \"Слова с частотной группировкой\" group and compare UI vs BACKEND data.",
+          "uid" : "bb4556b8b2bc52e1",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717605918316,
+            "stop" : 1717605929859,
+            "duration" : 11543
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Solutions to a random task in the \"Слова\" .",
+          "uid" : "30d9b86e750dc8de",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1717605935817,
+            "stop" : 1717606011479,
+            "duration" : 75662
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Solutions to a random task in the \"Слова Королёвой\" .",
+          "uid" : "8bdb1d187b71ec22",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1717606017590,
+            "stop" : 1717606089455,
+            "duration" : 71865
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Solutions to a random task in the \"Слова\" group and comparison of statics.",
+          "uid" : "64297ad6dd45c867",
+          "parentUid" : "d4a7edde9ccf6d452b2714ba838241af",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1717606095482,
+            "stop" : 1717606104543,
+            "duration" : 9061
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d4a7edde9ccf6d452b2714ba838241af"
+      } ],
+      "uid" : "7254951f73a372f8d9c51d328a82a2ca"
+    }, {
+      "name" : "Statistic.",
+      "children" : [ {
+        "name" : "TestCardsRU",
+        "children" : [ {
+          "name" : "Check statistic table.",
+          "uid" : "1b3e4a80c50c23a3",
+          "parentUid" : "33ff8e0570c13c5aa0056836cd8ed9ab",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606110725,
+            "stop" : 1717606112082,
+            "duration" : 1357
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "33ff8e0570c13c5aa0056836cd8ed9ab"
+      } ],
+      "uid" : "4dbb07091b7fa07c187a886f79ad1b9b"
+    }, {
+      "name" : "used_resources_page_test",
+      "children" : [ {
+        "name" : "TestUsedResourcesPage",
+        "children" : [ {
+          "name" : "Verify presence, visibility and text accuracy of the title on the page",
+          "uid" : "ba2fc4acc2254c07",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606119386,
+            "stop" : 1717606120207,
+            "duration" : 821
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and content accuracy of the text on the page",
+          "uid" : "a0f13fc065f0d5f3",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606126105,
+            "stop" : 1717606126913,
+            "duration" : 808
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of the section with links on the page",
+          "uid" : "5f559dcd4d355235",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606133271,
+            "stop" : 1717606134052,
+            "duration" : 781
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of the section with the freepik.com link on the page",
+          "uid" : "bc9e79f5f5e64108",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606139940,
+            "stop" : 1717606140720,
+            "duration" : 780
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, status code, text of the freepik.com link",
+          "uid" : "e7f5c465365982f7",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606146794,
+            "stop" : 1717606147758,
+            "duration" : 964
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the freepik.com link leads to the correct page after click",
+          "uid" : "fb37eb9488ff292e",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1717606153748,
+            "stop" : 1717606175259,
+            "duration" : 21511
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the icon in the freepik.com link's section",
+          "uid" : "bde7ea6f5d9cf978",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606180929,
+            "stop" : 1717606181726,
+            "duration" : 797
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify sizes of the icon in the freepik.com link's section",
+          "uid" : "74ac8c17c3356d91",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606187377,
+            "stop" : 1717606188160,
+            "duration" : 783
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of the section with the 'Plants' link on the page",
+          "uid" : "63bb3c0e790f8361",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606193757,
+            "stop" : 1717606194542,
+            "duration" : 785
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, status code, text of the 'Plants' link",
+          "uid" : "7eee47a3c7b06ffa",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606200450,
+            "stop" : 1717606201748,
+            "duration" : 1298
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the 'Plants' link leads to the correct page after click",
+          "uid" : "db9d165712ba355",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606207750,
+            "stop" : 1717606209718,
+            "duration" : 1968
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the icon in the 'Plants' link's section",
+          "uid" : "345ce2f484c27dc2",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606216365,
+            "stop" : 1717606217159,
+            "duration" : 794
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify sizes of the icon in the 'Plants' link's section",
+          "uid" : "26395bb7a7fa07c5",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606222874,
+            "stop" : 1717606223657,
+            "duration" : 783
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence and visibility of the section with the 'Flora' link on the page",
+          "uid" : "36bf5c5562b1df1",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606229453,
+            "stop" : 1717606230234,
+            "duration" : 781
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility, clickability, href, status code, text of the 'Flora' link",
+          "uid" : "c180c81cd5b123ce",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1717606235922,
+            "stop" : 1717606302266,
+            "duration" : 66344
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify that the 'Flora' link leads to the correct page after click",
+          "uid" : "33c086cec08f42e9",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1717606308340,
+            "stop" : 1717606464309,
+            "duration" : 155969
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify presence, visibility and accuracy of the icon in the 'Flora' link's section",
+          "uid" : "4baf0a4847ff2fdb",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606470464,
+            "stop" : 1717606471261,
+            "duration" : 797
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify sizes of the icon in the 'Flora' link's section",
+          "uid" : "44a6665fc9fb2b28",
+          "parentUid" : "e9a6d00dcf0c33e9d06ee246e8bb558c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1717606477015,
+            "stop" : 1717606477799,
+            "duration" : 784
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e9a6d00dcf0c33e9d06ee246e8bb558c"
+      } ],
+      "uid" : "1b498a1987a9c7a0a67bc01f517ce0b4"
     } ],
     "uid" : "e387fa4bb326b54ea8c19c2822aba374"
   } ],
