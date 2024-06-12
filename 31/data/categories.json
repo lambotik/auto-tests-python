@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: The subtitles on the 'Contributors' page do match the valid values\nassert ['Developers in test', 'Developers', 'Quality Assurance'] in [['Разработчики', 'Тестировщики автоматизаторы', 'Тестировщики'], ['Developers', 'Developers in test', 'Quality Assurance']]\n +  where [['Разработчики', 'Тестировщики автоматизаторы', 'Тестировщики'], ['Developers', 'Developers in test', 'Quality Assurance']] = ContributorsPageData.page_subtitles",
+      "children" : [ {
+        "name" : "Verify values of subtitles with tag 'h3' on the page",
+        "uid" : "aa1035289e735a5d",
+        "parentUid" : "7070c9b1b0b9b4b09001886291b0824f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1718152168673,
+          "stop" : 1718152168702,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7070c9b1b0b9b4b09001886291b0824f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//main//h1')\nStacktrace:\n#0 0x562baf978e3a <unknown>\n#1 0x562baf66245c <unknown>\n#2 0x562baf6ae5b5 <unknown>\n#3 0x562baf6ae671 <unknown>\n#4 0x562baf6f2f14 <unknown>\n#5 0x562baf6d14dd <unknown>\n#6 0x562baf6f02cc <unknown>\n#7 0x562baf6d1253 <unknown>\n#8 0x562baf6a11c7 <unknown>\n#9 0x562baf6a1b3e <unknown>\n#10 0x562baf93f27b <unknown>\n#11 0x562baf943327 <unknown>\n#12 0x562baf92bdae <unknown>\n#13 0x562baf943df2 <unknown>\n#14 0x562baf91074f <unknown>\n#15 0x562baf968128 <unknown>\n#16 0x562baf9682fb <unknown>\n#17 0x562baf977f6c <unknown>\n#18 0x7fe64b894ac3 <unknown>",
+      "children" : [ {
+        "name" : "Verify that the freepik.com link leads to the correct page after click",
+        "uid" : "82e2850bc44c36a1",
+        "parentUid" : "00bf8661d17eafd95095fc065e9108d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1718153168974,
+          "stop" : 1718153190505,
+          "duration" : 21531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "00bf8661d17eafd95095fc065e9108d1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
