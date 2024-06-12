@@ -1,0 +1,500 @@
+{
+  "uid" : "dfb5e48fd0632343",
+  "name" : "Verify presence, visibility and accuracy of the REG.RU link's image in Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_10_verify_reg_link_image",
+  "historyId" : "466c293ded874cd07f32d47c6d90cc15",
+  "time" : {
+    "start" : 1718214858280,
+    "stop" : 1718214858345,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1718214854776,
+      "stop" : 1718214855462,
+      "duration" : 686
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1718214855463,
+      "stop" : 1718214858279,
+      "duration" : 2816
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1718214855463,
+        "stop" : 1718214858279,
+        "duration" : 2816
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"1bce3a353b036b2696c2a64bcb689d23\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1718214515875,
+      "stop" : 1718214515875,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check the REG.RU image is present in Footer",
+      "time" : {
+        "start" : 1718214858280,
+        "stop" : 1718214858288,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is present: ('xpath', '(//footer//li)[2]//img')",
+        "time" : {
+          "start" : 1718214858280,
+          "stop" : 1718214858288,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the REG.RU image is visible in Footer",
+      "time" : {
+        "start" : 1718214858288,
+        "stop" : 1718214858318,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is visible: ('xpath', '(//footer//li)[2]//img')",
+        "time" : {
+          "start" : 1718214858289,
+          "stop" : 1718214858318,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check element is present: ('xpath', '(//footer//li)[2]//img')",
+          "time" : {
+            "start" : 1718214858289,
+            "stop" : 1718214858293,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Go to element: <selenium.webdriver.remote.webelement.WebElement (session=\"1bce3a353b036b2696c2a64bcb689d23\", element=\"f.E3D7A47B45552FB7A66BFD34A2E16395.d.58E88F9031442C57E01293B0B1270246.e.12\")>",
+          "time" : {
+            "start" : 1718214858293,
+            "stop" : 1718214858301,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'src' of the REG.RU image in Footer",
+      "time" : {
+        "start" : 1718214858318,
+        "stop" : 1718214858331,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'src' of an element's image",
+        "time" : {
+          "start" : 1718214858318,
+          "stop" : 1718214858331,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'alt' of the REG.RU image in Footer",
+      "time" : {
+        "start" : 1718214858331,
+        "stop" : 1718214858345,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'alt' of an element's image",
+        "time" : {
+          "start" : 1718214858332,
+          "stop" : 1718214858345,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '(//footer//li)[2]//img')"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1718214858345,
+      "stop" : 1718214858644,
+      "duration" : 299
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "931309dc7a12276c",
+      "name" : "Screenshot 2024-06-12 17:54:18.583991",
+      "source" : "931309dc7a12276c.png",
+      "type" : "image/png",
+      "size" : 365187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az847-226"
+  }, {
+    "name" : "thread",
+    "value" : "2279-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 35,
+        "unknown" : 0,
+        "total" : 35
+      },
+      "items" : [ {
+        "uid" : "779d0edc50a14ac",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/779d0edc50a14ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214867216,
+          "stop" : 1718214867288,
+          "duration" : 72
+        }
+      }, {
+        "uid" : "84bef8416555871c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/3//#testresult/84bef8416555871c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214565774,
+          "stop" : 1718214565845,
+          "duration" : 71
+        }
+      }, {
+        "uid" : "18cf7e6fd49aff93",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/31//#testresult/18cf7e6fd49aff93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718152432729,
+          "stop" : 1718152432795,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "541f501c6e679fa7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/30//#testresult/541f501c6e679fa7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718066079095,
+          "stop" : 1718066079160,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "e45acd1260220bd6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/29//#testresult/e45acd1260220bd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717979711490,
+          "stop" : 1717979711555,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "f991e2d5037d8ccc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/28//#testresult/f991e2d5037d8ccc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717893505864,
+          "stop" : 1717893505929,
+          "duration" : 65
+        }
+      }, {
+        "uid" : "522a0947585cd05c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/27//#testresult/522a0947585cd05c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717806853451,
+          "stop" : 1717806853518,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "3e1d2e907722869c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/26//#testresult/3e1d2e907722869c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717720551747,
+          "stop" : 1717720551813,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "c04f6f9e8ae41ab3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/25//#testresult/c04f6f9e8ae41ab3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717634140031,
+          "stop" : 1717634140099,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "1a094852b0bd64c0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/2//#testresult/1a094852b0bd64c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717605452964,
+          "stop" : 1717605453032,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "436210397dbcf800",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/3//#testresult/436210397dbcf800",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717605456736,
+          "stop" : 1717605456804,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "edb309e8547accd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/24//#testresult/edb309e8547accd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717547636491,
+          "stop" : 1717547636557,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "540a0df01df81779",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/23//#testresult/540a0df01df81779",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717461309288,
+          "stop" : 1717461309358,
+          "duration" : 70
+        }
+      }, {
+        "uid" : "5a1015b841af8a2d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/22//#testresult/5a1015b841af8a2d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717374833265,
+          "stop" : 1717374833332,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "b6a5d9f78f49d49f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/21//#testresult/b6a5d9f78f49d49f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717288592742,
+          "stop" : 1717288592808,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "e0fe33a2a2734b78",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/20//#testresult/e0fe33a2a2734b78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717202153571,
+          "stop" : 1717202153645,
+          "duration" : 74
+        }
+      }, {
+        "uid" : "e00119b95b0338ff",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/19//#testresult/e00119b95b0338ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717115532287,
+          "stop" : 1717115532354,
+          "duration" : 67
+        }
+      }, {
+        "uid" : "2dd1e9ba972d3e90",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/18//#testresult/2dd1e9ba972d3e90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717029207476,
+          "stop" : 1717029207546,
+          "duration" : 70
+        }
+      }, {
+        "uid" : "d0337849d1364525",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/17//#testresult/d0337849d1364525",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716942862437,
+          "stop" : 1716942862505,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "cc0cc560930fb0a0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/16//#testresult/cc0cc560930fb0a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1716856354632,
+          "stop" : 1716856354701,
+          "duration" : 69
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dfb5e48fd0632343.json",
+  "parameterValues" : [ ]
+}
