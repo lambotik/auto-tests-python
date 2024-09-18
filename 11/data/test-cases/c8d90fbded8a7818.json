@@ -1,0 +1,254 @@
+{
+  "uid" : "c8d90fbded8a7818",
+  "name" : "Verify sizes of images in contributor cards in grids",
+  "fullName" : "tests.contributors_page_test.TestContributorCardImages#test_cnp_04_02_verify_images_sizes_in_cards",
+  "historyId" : "77bc5d9c5052de5e9564db64c06c3e71",
+  "time" : {
+    "start" : 1726647643593,
+    "stop" : 1726647644729,
+    "duration" : 1136
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1726647638812,
+      "stop" : 1726647639583,
+      "duration" : 771
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1726647498797,
+      "stop" : 1726647498797,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1726647639583,
+      "stop" : 1726647643592,
+      "duration" : 4009
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1726647639583,
+        "stop" : 1726647643592,
+        "duration" : 4009
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"faf288d2320df123bfdc9372d220e84c\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get the list of sizes of images in contributor cards",
+      "time" : {
+        "start" : 1726647643593,
+        "stop" : 1726647644000,
+        "duration" : 407
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of images in cards on the 5th level of nesting on the page",
+        "time" : {
+          "start" : 1726647643593,
+          "stop" : 1726647643606,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Check changes of images sizes after resizing",
+      "time" : {
+        "start" : 1726647644000,
+        "stop" : 1726647644729,
+        "duration" : 729
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of images in cards on the 5th level of nesting on the page",
+        "time" : {
+          "start" : 1726647644000,
+          "stop" : 1726647644009,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1726647644730,
+      "stop" : 1726647644797,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az585-877"
+  }, {
+    "name" : "thread",
+    "value" : "2260-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "f64a2ddae8c38335",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/f64a2ddae8c38335",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726623578967,
+          "stop" : 1726623580088,
+          "duration" : 1121
+        }
+      }, {
+        "uid" : "83f59d03cd98258b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/83f59d03cd98258b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572629802,
+          "stop" : 1726572630881,
+          "duration" : 1079
+        }
+      }, {
+        "uid" : "3de99100f8355a50",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/3de99100f8355a50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726571951670,
+          "stop" : 1726571952756,
+          "duration" : 1086
+        }
+      }, {
+        "uid" : "ed2a4be5208fdc78",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/ed2a4be5208fdc78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726568270357,
+          "stop" : 1726568271446,
+          "duration" : 1089
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c8d90fbded8a7818.json",
+  "parameterValues" : [ ]
+}

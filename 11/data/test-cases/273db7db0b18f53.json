@@ -1,0 +1,320 @@
+{
+  "uid" : "273db7db0b18f53",
+  "name" : "Verify that the 'All Specialists' link leads an authorized user \n                         to the correct page after clicking",
+  "fullName" : "tests.specialists_page_test.TestSpecialistPageLinks#test_sp_03_03_verify_all_specialists_link_leads_authorized_user_to_the_correct_page",
+  "historyId" : "a700a0fce4c3e2666e471508243072ed",
+  "time" : {
+    "start" : 1726648094768,
+    "stop" : 1726648096911,
+    "duration" : 2143
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1726648088781,
+      "stop" : 1726648092376,
+      "duration" : 3595
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1726648088781,
+        "stop" : 1726648092376,
+        "duration" : 3595
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"8cb67d945b731cb9db09937beeaf26d0\")>"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1726647498797,
+      "stop" : 1726647498797,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1726648088013,
+      "stop" : 1726648088781,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "auto_test_user_authorized",
+    "time" : {
+      "start" : 1726648092376,
+      "stop" : 1726648094768,
+      "duration" : 2392
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Auto test user authorized",
+      "time" : {
+        "start" : 1726648092376,
+        "stop" : 1726648094768,
+        "duration" : 2392
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1726648092727,
+          "stop" : 1726648094746,
+          "duration" : 2019
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Loader checking",
+        "time" : {
+          "start" : 1726648094746,
+          "stop" : 1726648094767,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"8cb67d945b731cb9db09937beeaf26d0\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open the 'Specialists' page",
+      "time" : {
+        "start" : 1726648094768,
+        "stop" : 1726648095050,
+        "duration" : 282
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on the 'All Specialists' link and thereby open the corresponding web page in a new tab",
+      "time" : {
+        "start" : 1726648095050,
+        "stop" : 1726648095849,
+        "duration" : 799
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Get value of the title with tag 'h2' on the page",
+      "time" : {
+        "start" : 1726648095849,
+        "stop" : 1726648096911,
+        "duration" : 1062
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text in the element: ('tag name', 'h2')",
+        "time" : {
+          "start" : 1726648095849,
+          "stop" : 1726648096911,
+          "duration" : 1062
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1726648096912,
+      "stop" : 1726648096979,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Specialists Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "specialists_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSpecialistsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az585-877"
+  }, {
+    "name" : "thread",
+    "value" : "2260-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.specialists_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "cdfa8274799ac992",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/cdfa8274799ac992",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726623947849,
+          "stop" : 1726623949476,
+          "duration" : 1627
+        }
+      }, {
+        "uid" : "986323b372022fc7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/986323b372022fc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726573004405,
+          "stop" : 1726573006107,
+          "duration" : 1702
+        }
+      }, {
+        "uid" : "1fc67492a8d99464",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/1fc67492a8d99464",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572320986,
+          "stop" : 1726572322555,
+          "duration" : 1569
+        }
+      }, {
+        "uid" : "4ac3599e599818b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/4ac3599e599818b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726568676362,
+          "stop" : 1726568677967,
+          "duration" : 1605
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "273db7db0b18f53.json",
+  "parameterValues" : [ ]
+}
