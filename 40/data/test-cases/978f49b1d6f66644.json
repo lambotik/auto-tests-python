@@ -1,0 +1,359 @@
+{
+  "uid" : "978f49b1d6f66644",
+  "name" : "Verify clickability, href, prefix and subject, status code of links in the Footer",
+  "fullName" : "tests.footer_test.TestFooterLinks#test_fp_03_01_verify_footer_links",
+  "historyId" : "328a9da7df0c577faae83b223049d946",
+  "time" : {
+    "start" : 1726969819560,
+    "stop" : 1726969822334,
+    "duration" : 2774
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1726969815859,
+      "stop" : 1726969816611,
+      "duration" : 752
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1726969816611,
+      "stop" : 1726969819560,
+      "duration" : 2949
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1726969816611,
+        "stop" : 1726969819560,
+        "duration" : 2949
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"1f4040618374451db863805e0f677303\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1726969633606,
+      "stop" : 1726969633607,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check if links are clickable in the Footer",
+      "time" : {
+        "start" : 1726969819561,
+        "stop" : 1726969819600,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links on the 6th level of nesting in the Footer",
+        "time" : {
+          "start" : 1726969819561,
+          "stop" : 1726969819571,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of links in the Footer",
+      "time" : {
+        "start" : 1726969819600,
+        "stop" : 1726969819645,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links on the 6th level of nesting in the Footer",
+        "time" : {
+          "start" : 1726969819600,
+          "stop" : 1726969819605,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check the prefix and the subject in the attribute 'href' of the 'Contact us' link",
+      "time" : {
+        "start" : 1726969819645,
+        "stop" : 1726969819659,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of the 'Contact us' link",
+        "time" : {
+          "start" : 1726969819645,
+          "stop" : 1726969819659,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get status code of links to supporters",
+      "time" : {
+        "start" : 1726969819659,
+        "stop" : 1726969822334,
+        "duration" : 2675
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links to supporters",
+        "time" : {
+          "start" : 1726969819659,
+          "stop" : 1726969819667,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1726969822335,
+      "stop" : 1726969822400,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1215-481"
+  }, {
+    "name" : "thread",
+    "value" : "2334-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "3dc1cfd71d373b4b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/3dc1cfd71d373b4b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726882824017,
+          "stop" : 1726882826393,
+          "duration" : 2376
+        }
+      }, {
+        "uid" : "8f7a9df54c81a059",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/8f7a9df54c81a059",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726796546084,
+          "stop" : 1726796549775,
+          "duration" : 3691
+        }
+      }, {
+        "uid" : "7d382ca8e50bf861",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/7d382ca8e50bf861",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726710148927,
+          "stop" : 1726710151799,
+          "duration" : 2872
+        }
+      }, {
+        "uid" : "87b09b5911c76273",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/87b09b5911c76273",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726650079808,
+          "stop" : 1726650082591,
+          "duration" : 2783
+        }
+      }, {
+        "uid" : "460279364ac3b9f3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/460279364ac3b9f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726647718766,
+          "stop" : 1726647722773,
+          "duration" : 4007
+        }
+      }, {
+        "uid" : "6e3ac9e4de6ab5b2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/6e3ac9e4de6ab5b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726623636279,
+          "stop" : 1726623638530,
+          "duration" : 2251
+        }
+      }, {
+        "uid" : "fcfc51358bcb9cb8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/fcfc51358bcb9cb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572689141,
+          "stop" : 1726572692015,
+          "duration" : 2874
+        }
+      }, {
+        "uid" : "cb2df5883c9b038b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/cb2df5883c9b038b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572009686,
+          "stop" : 1726572012900,
+          "duration" : 3214
+        }
+      }, {
+        "uid" : "67a4b53351c50a53",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/67a4b53351c50a53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726568335714,
+          "stop" : 1726568339507,
+          "duration" : 3793
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "978f49b1d6f66644.json",
+  "parameterValues" : [ ]
+}
