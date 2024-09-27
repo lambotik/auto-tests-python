@@ -1,0 +1,98 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "9bdc94113203c85e",
+        "parentUid" : "4cc9d52bbc4d22f9d5d28b5c715d031d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727401468768,
+          "stop" : 1727401469195,
+          "duration" : 427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc9d52bbc4d22f9d5d28b5c715d031d"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "a3c2233ca8a12991",
+        "parentUid" : "30efe62bc72b330c0e963ba321801669",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727401474285,
+          "stop" : 1727401474748,
+          "duration" : 463
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30efe62bc72b330c0e963ba321801669"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://github.com/ElenaSpb' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/ElenaSpb",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "30254398a88529ed",
+        "parentUid" : "a35e80aba4a62f6270359ded2599728e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727401485631,
+          "stop" : 1727401486089,
+          "duration" : 458
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a35e80aba4a62f6270359ded2599728e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.team-member img')",
+      "children" : [ {
+        "name" : "Verify sizes of images in contributor cards in grids",
+        "uid" : "c2de24da2a0477e7",
+        "parentUid" : "eac1a7aa04bc226bcb740b3ac78bdb0a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727401496869,
+          "stop" : 1727401517185,
+          "duration" : 20316
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "eac1a7aa04bc226bcb740b3ac78bdb0a"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups",
+      "children" : [ {
+        "name" : "Verify presence and visibility of content on the page",
+        "uid" : "21627741e0f4ead4",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727402626427,
+          "stop" : 1727402626427,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "08f88d8105f4f1fd2c8efe924373d439"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
