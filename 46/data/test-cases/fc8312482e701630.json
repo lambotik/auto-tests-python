@@ -1,0 +1,399 @@
+{
+  "uid" : "fc8312482e701630",
+  "name" : "Verify text in card links and the 'All Team' link",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageText#test_cnp_02_05_verify_text_in_card_links",
+  "historyId" : "9150555d641b04e0f158b79bfaae40fd",
+  "time" : {
+    "start" : 1727487892357,
+    "stop" : 1727487892823,
+    "duration" : 466
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+  "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f62cce03bc0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"99ee963ae8a6f17ac6c96feda8b61a9a\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify text in card links and the 'All Team' link\")\n    def test_cnp_02_05_verify_text_in_card_links(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        card_links_text = page.check_text_in_card_links()\n        link_text = page.get_text_in_all_team_link()\n>       assert card_links_text == ContributorsPageData.link_count, \\\n            \"Text in card links is absent or mismatch valid count\"\nE       AssertionError: Text in card links is absent or mismatch valid count\nE       assert 67 == 66\nE        +  where 66 = ContributorsPageData.link_count\n\ntests/contributors_page_test.py:108: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1727487888936,
+      "stop" : 1727487889693,
+      "duration" : 757
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1727487889694,
+      "stop" : 1727487892356,
+      "duration" : 2662
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1727487889694,
+        "stop" : 1727487892356,
+        "duration" : 2662
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"99ee963ae8a6f17ac6c96feda8b61a9a\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1727487788881,
+      "stop" : 1727487788881,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+    "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f62cce03bc0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"99ee963ae8a6f17ac6c96feda8b61a9a\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify text in card links and the 'All Team' link\")\n    def test_cnp_02_05_verify_text_in_card_links(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        card_links_text = page.check_text_in_card_links()\n        link_text = page.get_text_in_all_team_link()\n>       assert card_links_text == ContributorsPageData.link_count, \\\n            \"Text in card links is absent or mismatch valid count\"\nE       AssertionError: Text in card links is absent or mismatch valid count\nE       assert 67 == 66\nE        +  where 66 = ContributorsPageData.link_count\n\ntests/contributors_page_test.py:108: AssertionError",
+    "steps" : [ {
+      "name" : "Check text in links in cards",
+      "time" : {
+        "start" : 1727487892357,
+        "stop" : 1727487892777,
+        "duration" : 420
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get text in the 'All Team' link",
+      "time" : {
+        "start" : 1727487892777,
+        "stop" : 1727487892823,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text in the element: ('xpath', '(//section//a)[67]')",
+        "time" : {
+          "start" : 1727487892777,
+          "stop" : 1727487892823,
+          "duration" : 46
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "7cd976bf6c117f25",
+      "name" : "Screenshot 2024-09-28 01:44:53.003182",
+      "source" : "7cd976bf6c117f25.png",
+      "type" : "image/png",
+      "size" : 302114
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1727487893004,
+      "stop" : 1727487893070,
+      "duration" : 66
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1382-173"
+  }, {
+    "name" : "thread",
+    "value" : "2259-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "a3c2233ca8a12991",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/a3c2233ca8a12991",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+        "time" : {
+          "start" : 1727401474285,
+          "stop" : 1727401474748,
+          "duration" : 463
+        }
+      }, {
+        "uid" : "b2ffa2d6a13b478a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/b2ffa2d6a13b478a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+        "time" : {
+          "start" : 1727315020726,
+          "stop" : 1727315021154,
+          "duration" : 428
+        }
+      }, {
+        "uid" : "9a582e46565540c5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/9a582e46565540c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727228713530,
+          "stop" : 1727228714005,
+          "duration" : 475
+        }
+      }, {
+        "uid" : "346b7f09484df46b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/346b7f09484df46b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727142266313,
+          "stop" : 1727142266782,
+          "duration" : 469
+        }
+      }, {
+        "uid" : "7d2b4aabed9f2b69",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/7d2b4aabed9f2b69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727055817961,
+          "stop" : 1727055818418,
+          "duration" : 457
+        }
+      }, {
+        "uid" : "148302d397dd6920",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/148302d397dd6920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726969743982,
+          "stop" : 1726969744439,
+          "duration" : 457
+        }
+      }, {
+        "uid" : "26b7b5ec38aca83",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/26b7b5ec38aca83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726882750726,
+          "stop" : 1726882751169,
+          "duration" : 443
+        }
+      }, {
+        "uid" : "5fa4e0c350d86ce6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/5fa4e0c350d86ce6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726796466006,
+          "stop" : 1726796466466,
+          "duration" : 460
+        }
+      }, {
+        "uid" : "485c19dc94e483c3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/485c19dc94e483c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726710073048,
+          "stop" : 1726710073500,
+          "duration" : 452
+        }
+      }, {
+        "uid" : "f1d27273e69e209a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/f1d27273e69e209a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726650002746,
+          "stop" : 1726650003190,
+          "duration" : 444
+        }
+      }, {
+        "uid" : "722d8874dc1d3f0b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/722d8874dc1d3f0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726647622028,
+          "stop" : 1726647622458,
+          "duration" : 430
+        }
+      }, {
+        "uid" : "b02d60988200f851",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/b02d60988200f851",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726623562137,
+          "stop" : 1726623562585,
+          "duration" : 448
+        }
+      }, {
+        "uid" : "75daa51ffe085e98",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/75daa51ffe085e98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572612769,
+          "stop" : 1726572613214,
+          "duration" : 445
+        }
+      }, {
+        "uid" : "dd10d97db3f22943",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/dd10d97db3f22943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726571934851,
+          "stop" : 1726571935295,
+          "duration" : 444
+        }
+      }, {
+        "uid" : "1e0c147877df1215",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/1e0c147877df1215",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726568251373,
+          "stop" : 1726568251817,
+          "duration" : 444
+        }
+      }, {
+        "uid" : "b3fa6f7a8288a9f8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/32//#testresult/b3fa6f7a8288a9f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214618218,
+          "stop" : 1718214618614,
+          "duration" : 396
+        }
+      }, {
+        "uid" : "84e9a8bd1c1fd3a2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/84e9a8bd1c1fd3a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214629837,
+          "stop" : 1718214630257,
+          "duration" : 420
+        }
+      }, {
+        "uid" : "b712ce4eb67980df",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/3//#testresult/b712ce4eb67980df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214323699,
+          "stop" : 1718214324134,
+          "duration" : 435
+        }
+      }, {
+        "uid" : "43a1455c893c9e8d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/31//#testresult/43a1455c893c9e8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718152181351,
+          "stop" : 1718152181724,
+          "duration" : 373
+        }
+      }, {
+        "uid" : "a7c063cb5c98d71b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/30//#testresult/a7c063cb5c98d71b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718065793782,
+          "stop" : 1718065794136,
+          "duration" : 354
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fc8312482e701630.json",
+  "parameterValues" : [ ]
+}

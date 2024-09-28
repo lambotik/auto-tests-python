@@ -1,0 +1,384 @@
+{
+  "uid" : "7510591ff8329977",
+  "name" : "Verify values of the text in card descriptions",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageText#test_cnp_02_04_verify_text_of_card_descriptions",
+  "historyId" : "5d4e7ac22a6f34d3c7b45f7b2c907a8b",
+  "time" : {
+    "start" : 1727487888232,
+    "stop" : 1727487888659,
+    "duration" : 427
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+  "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f62ccc540b0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"38075492a8836ebede7e51e303d12c3e\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify values of the text in card descriptions\")\n    def test_cnp_02_04_verify_text_of_card_descriptions(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        description_values = page.check_values_of_card_descriptions()\n>       assert description_values == ContributorsPageData.description_count, \\\n            \"Text in descriptions is absent or mismatches valid count\"\nE       AssertionError: Text in descriptions is absent or mismatches valid count\nE       assert 68 == 67\nE        +  where 67 = ContributorsPageData.description_count\n\ntests/contributors_page_test.py:100: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1727487885466,
+      "stop" : 1727487888232,
+      "duration" : 2766
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1727487885466,
+        "stop" : 1727487888232,
+        "duration" : 2766
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"38075492a8836ebede7e51e303d12c3e\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1727487884715,
+      "stop" : 1727487885466,
+      "duration" : 751
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1727487788881,
+      "stop" : 1727487788881,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+    "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f62ccc540b0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"38075492a8836ebede7e51e303d12c3e\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify values of the text in card descriptions\")\n    def test_cnp_02_04_verify_text_of_card_descriptions(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        description_values = page.check_values_of_card_descriptions()\n>       assert description_values == ContributorsPageData.description_count, \\\n            \"Text in descriptions is absent or mismatches valid count\"\nE       AssertionError: Text in descriptions is absent or mismatches valid count\nE       assert 68 == 67\nE        +  where 67 = ContributorsPageData.description_count\n\ntests/contributors_page_test.py:100: AssertionError",
+    "steps" : [ {
+      "name" : "Check the content of descriptions in cards",
+      "time" : {
+        "start" : 1727487888233,
+        "stop" : 1727487888659,
+        "duration" : 426
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of descriptions in cards on the 4th level of nesting on the page",
+        "time" : {
+          "start" : 1727487888233,
+          "stop" : 1727487888244,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e22b47e3a03e9cba",
+      "name" : "Screenshot 2024-09-28 01:44:48.867702",
+      "source" : "e22b47e3a03e9cba.png",
+      "type" : "image/png",
+      "size" : 309064
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1727487888869,
+      "stop" : 1727487888934,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1382-173"
+  }, {
+    "name" : "thread",
+    "value" : "2259-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 46
+      },
+      "items" : [ {
+        "uid" : "9bdc94113203c85e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/9bdc94113203c85e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727401468768,
+          "stop" : 1727401469195,
+          "duration" : 427
+        }
+      }, {
+        "uid" : "b1742e019389d78a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/b1742e019389d78a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727315015495,
+          "stop" : 1727315015918,
+          "duration" : 423
+        }
+      }, {
+        "uid" : "c33420124b748f7d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/c33420124b748f7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727228709237,
+          "stop" : 1727228709626,
+          "duration" : 389
+        }
+      }, {
+        "uid" : "dd4a20a84c544acb",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/dd4a20a84c544acb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727142262001,
+          "stop" : 1727142262442,
+          "duration" : 441
+        }
+      }, {
+        "uid" : "916f9953f1d3b2fd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/916f9953f1d3b2fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727055813778,
+          "stop" : 1727055814209,
+          "duration" : 431
+        }
+      }, {
+        "uid" : "e330f4d28a56c041",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/e330f4d28a56c041",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726969739771,
+          "stop" : 1726969740186,
+          "duration" : 415
+        }
+      }, {
+        "uid" : "e9e684d26fb4187a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/e9e684d26fb4187a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726882746907,
+          "stop" : 1726882747324,
+          "duration" : 417
+        }
+      }, {
+        "uid" : "fd61e04260718b80",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/fd61e04260718b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726796461828,
+          "stop" : 1726796462252,
+          "duration" : 424
+        }
+      }, {
+        "uid" : "ca8e70e9a06d8f51",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/ca8e70e9a06d8f51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726710066462,
+          "stop" : 1726710066879,
+          "duration" : 417
+        }
+      }, {
+        "uid" : "813289882374f840",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/813289882374f840",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726649998776,
+          "stop" : 1726649999145,
+          "duration" : 369
+        }
+      }, {
+        "uid" : "3185ac9e17e339d2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/3185ac9e17e339d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726647616068,
+          "stop" : 1726647616501,
+          "duration" : 433
+        }
+      }, {
+        "uid" : "832b314e2419688c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/832b314e2419688c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726623558149,
+          "stop" : 1726623558592,
+          "duration" : 443
+        }
+      }, {
+        "uid" : "2c56e9deb87dde88",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/2c56e9deb87dde88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726572608361,
+          "stop" : 1726572608734,
+          "duration" : 373
+        }
+      }, {
+        "uid" : "f4fd1bcb749268fc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/f4fd1bcb749268fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726571930743,
+          "stop" : 1726571931154,
+          "duration" : 411
+        }
+      }, {
+        "uid" : "e7c23e60b88735ae",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/e7c23e60b88735ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726568246872,
+          "stop" : 1726568247284,
+          "duration" : 412
+        }
+      }, {
+        "uid" : "2965e0905492c5e8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/32//#testresult/2965e0905492c5e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214614092,
+          "stop" : 1718214614496,
+          "duration" : 404
+        }
+      }, {
+        "uid" : "15b01abde4bd09a6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/15b01abde4bd09a6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214625816,
+          "stop" : 1718214626280,
+          "duration" : 464
+        }
+      }, {
+        "uid" : "dde62f3fc7457c4d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/3//#testresult/dde62f3fc7457c4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718214319651,
+          "stop" : 1718214320080,
+          "duration" : 429
+        }
+      }, {
+        "uid" : "8de25edbf2c285d3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/31//#testresult/8de25edbf2c285d3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718152176838,
+          "stop" : 1718152177212,
+          "duration" : 374
+        }
+      }, {
+        "uid" : "1e43b9a189bd0899",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/30//#testresult/1e43b9a189bd0899",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718065788600,
+          "stop" : 1718065788960,
+          "duration" : 360
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7510591ff8329977.json",
+  "parameterValues" : [ ]
+}
