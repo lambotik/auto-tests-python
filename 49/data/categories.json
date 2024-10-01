@@ -1,0 +1,98 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "fc470e568dd3497d",
+        "parentUid" : "4cc9d52bbc4d22f9d5d28b5c715d031d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727747552970,
+          "stop" : 1727747553418,
+          "duration" : 448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc9d52bbc4d22f9d5d28b5c715d031d"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "6bb59df81ec76009",
+        "parentUid" : "30efe62bc72b330c0e963ba321801669",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727747557401,
+          "stop" : 1727747557880,
+          "duration" : 479
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30efe62bc72b330c0e963ba321801669"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://github.com/ElenaSpb' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/ElenaSpb",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "8c54fbb83eb5f2fd",
+        "parentUid" : "a35e80aba4a62f6270359ded2599728e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727747566007,
+          "stop" : 1727747566256,
+          "duration" : 249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a35e80aba4a62f6270359ded2599728e"
+    }, {
+      "name" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fecf1cc7e00>)",
+      "children" : [ {
+        "name" : "Verify that links in the Footer lead to correct pages after clicking",
+        "uid" : "e7f8dcc328631e1f",
+        "parentUid" : "605d7f95d21cd1291bc0b6b6eff4d0cc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727747638717,
+          "stop" : 1727747647279,
+          "duration" : 8562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "605d7f95d21cd1291bc0b6b6eff4d0cc"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('tag name', 'h2')\nStacktrace:\n#0 0x55816d4a113a <unknown>\n#1 0x55816d1875e0 <unknown>\n#2 0x55816d1d6be8 <unknown>\n#3 0x55816d1d6e81 <unknown>\n#4 0x55816d21d8c4 <unknown>\n#5 0x55816d1fbb4d <unknown>\n#6 0x55816d21ad7d <unknown>\n#7 0x55816d1fb8c3 <unknown>\n#8 0x55816d1c96b3 <unknown>\n#9 0x55816d1ca68e <unknown>\n#10 0x55816d46bb3b <unknown>\n#11 0x55816d46fac1 <unknown>\n#12 0x55816d458335 <unknown>\n#13 0x55816d470642 <unknown>\n#14 0x55816d43d49f <unknown>\n#15 0x55816d490038 <unknown>\n#16 0x55816d490203 <unknown>\n#17 0x55816d49ff8c <unknown>\n#18 0x7f58bd694ac3 <unknown>",
+      "children" : [ {
+        "name" : "Verify that the 'All Specialists' link leads an authorized user \n                         to the correct page after clicking",
+        "uid" : "4bb95a61f1a986ab",
+        "parentUid" : "6d41f788de647b06a8a464e1464659a9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727747959526,
+          "stop" : 1727747981109,
+          "duration" : 21583
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d41f788de647b06a8a464e1464659a9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

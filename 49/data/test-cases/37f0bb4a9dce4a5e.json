@@ -1,0 +1,801 @@
+{
+  "uid" : "37f0bb4a9dce4a5e",
+  "name" : "Select random card from group \"Слова Королёвой\" and compare UI vs BACKEND data.",
+  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_random_word_by_koroleva_cards_ru",
+  "historyId" : "719ec095fba3c0668a1a244a8c64916e",
+  "time" : {
+    "start" : 1727748180495,
+    "stop" : 1727748193418,
+    "duration" : 12923
+  },
+  "status" : "passed",
+  "statusMessage" : "XPASS",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1727747451257,
+      "stop" : 1727747451257,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1727748175197,
+      "stop" : 1727748178066,
+      "duration" : 2869
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1727748175197,
+        "stop" : 1727748178066,
+        "duration" : 2869
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"df98d47349e560116ce88ff4cb0427e7\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "specialist_user_authorized",
+    "time" : {
+      "start" : 1727748178066,
+      "stop" : 1727748180494,
+      "duration" : 2428
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "USER specialist authorized",
+      "time" : {
+        "start" : 1727748178067,
+        "stop" : 1727748180494,
+        "duration" : 2427
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1727748178453,
+          "stop" : 1727748180471,
+          "duration" : 2018
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Loader checking",
+        "time" : {
+          "start" : 1727748180472,
+          "stop" : 1727748180494,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"df98d47349e560116ce88ff4cb0427e7\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1727748174432,
+      "stop" : 1727748175197,
+      "duration" : 765
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusMessage" : "XPASS",
+    "steps" : [ {
+      "name" : "select_group",
+      "time" : {
+        "start" : 1727748180495,
+        "stop" : 1727748185375,
+        "duration" : 4880
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Select Russian language. Click \"RU\" button.",
+        "time" : {
+          "start" : 1727748180495,
+          "stop" : 1727748180563,
+          "duration" : 68
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click button \"Речевые упражнения\".",
+        "time" : {
+          "start" : 1727748180563,
+          "stop" : 1727748182683,
+          "duration" : 2120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click button \"СЛОВА КОРОЛЁВОЙ\".",
+        "time" : {
+          "start" : 1727748185306,
+          "stop" : 1727748185375,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "selector_for_sub_group",
+        "value" : "('xpath', '//button[@data-test-active-link=\"Слова Королёвой\"]')"
+      } ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get seria ID from URL: https://brainup.site/groups/2/series/17",
+      "time" : {
+        "start" : 1727748185376,
+        "stop" : 1727748186056,
+        "duration" : 680
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Wait until url to be: https://brainup.site/groups/2/series/17.",
+        "time" : {
+          "start" : 1727748185376,
+          "stop" : 1727748186053,
+          "duration" : 677
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "click_random_card",
+      "time" : {
+        "start" : 1727748186056,
+        "stop" : 1727748186198,
+        "duration" : 142
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Getting list cards: ['1 слово из 2..4 (1)', '1 слово из 2..4 (2)', '1 слово из 2..4 (3)', '1 слово из 2..4 (4)', '1 слово из 2..4 (5)', '1 слово из 2..4 (6)', '1 слово из 6', '2 слова из 4', '3 слова из 6', '2 слова из 6']",
+        "time" : {
+          "start" : 1727748186138,
+          "stop" : 1727748186138,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select random id from list of cards. \nCard ID in list is:, 5",
+        "time" : {
+          "start" : 1727748186138,
+          "stop" : 1727748186138,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Selected card is: 1 слово из 2..4 (5)",
+        "time" : {
+          "start" : 1727748186149,
+          "stop" : 1727748186191,
+          "duration" : 42
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get_random_id_from_list_sub_group",
+      "time" : {
+        "start" : 1727748186198,
+        "stop" : 1727748187130,
+        "duration" : 932
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Status code is: 200",
+        "time" : {
+          "start" : 1727748187129,
+          "stop" : 1727748187129,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Send GET request with params: https://brainup.site/api/subgroups?seriesId=17 headers=\"Content-Type\": \"application/json\",\"Authorization\": \"Bearer\": \"{id_token}\"",
+        "time" : {
+          "start" : 1727748187129,
+          "stop" : 1727748187129,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Getting list of cards id: {'data': [{'seriesId': 17, 'id': 115, 'level': 1, 'name': '1 слово из 2..4 (1)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_1.svg', 'description': '1я группа слов: по одному', 'withPictures': False, 'exercises': [1905, 1906, 1907, 1908, 1909]}, {'seriesId': 17, 'id': 116, 'level': 2, 'name': '1 слово из 2..4 (2)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_2.svg', 'description': '2я группа слов: по одному', 'withPictures': False, 'exercises': [1910, 1911, 1912, 1913, 1914]}, {'seriesId': 17, 'id': 117, 'level': 3, 'name': '1 слово из 2..4 (3)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_3.svg', 'description': '3я группа слов: по одному', 'withPictures': False, 'exercises': [1915, 1916, 1917, 1918, 1919]}, {'seriesId': 17, 'id': 118, 'level': 4, 'name': '1 слово из 2..4 (4)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_4.svg', 'description': '4я группа слов: по одному', 'withPictures': False, 'exercises': [1920, 1921, 1922, 1923, 1924]}, {'seriesId': 17, 'id': 119, 'level': 5, 'name': '1 слово из 2..4 (5)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_5.svg', 'description': '5я группа слов: по одному', 'withPictures': False, 'exercises': [1925, 1926, 1927, 1928, 1929]}, {'seriesId': 17, 'id': 120, 'level': 6, 'name': '1 слово из 2..4 (6)', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_first_6.svg', 'description': '6я группа слов: по одному', 'withPictures': False, 'exercises': [1930, 1931, 1932, 1933, 1934]}, {'seriesId': 17, 'id': 121, 'level': 20, 'name': '1 слово из 6', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_second_1_4.svg', 'description': 'Одно слово из 6', 'withPictures': False, 'exercises': [1935, 1936, 1937, 1938, 1939, 1940]}, {'seriesId': 17, 'id': 122, 'level': 21, 'name': '2 слова из 4', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_second_2_4.svg', 'description': 'Два слово из 4', 'withPictures': False, 'exercises': [1941, 1942, 1943, 1944, 1945, 1946]}, {'seriesId': 17, 'id': 124, 'level': 21, 'name': '3 слова из 6', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_second_3_6.svg', 'description': 'Три слово из 6', 'withPictures': False, 'exercises': [1954, 1958, 1953, 1956, 1957, 1955, 1974, 1975, 1976, 1977]}, {'seriesId': 17, 'id': 123, 'level': 21, 'name': '2 слова из 6', 'pictureUrl': 'https://brnup.s3.eu-north-1.amazonaws.com/pictures/theme/koroleva_words_second_2_6.svg', 'description': 'Два слово из 6', 'withPictures': False, 'exercises': [1947, 1948, 1949, 1950, 1951, 1952, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973]}], 'errors': [], 'meta': []}",
+        "time" : {
+          "start" : 1727748187129,
+          "stop" : 1727748187129,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select random id from list: 1927",
+        "time" : {
+          "start" : 1727748187129,
+          "stop" : 1727748187129,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card_id",
+        "value" : "4"
+      }, {
+        "name" : "seria_id",
+        "value" : "'17'"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Wait until url: https://brainup.site/groups/2/series/17/subgroup/119/exercise/1927 will be changed.",
+      "time" : {
+        "start" : 1727748187392,
+        "stop" : 1727748190974,
+        "duration" : 3582
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click_start_and_get_list_words_ru",
+      "time" : {
+        "start" : 1727748190979,
+        "stop" : 1727748191344,
+        "duration" : 365
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click button \"Start\".",
+        "time" : {
+          "start" : 1727748190979,
+          "stop" : 1727748191127,
+          "duration" : 148
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Getting a list of exercise words from the front: ['хорошо', 'рисовать']",
+        "time" : {
+          "start" : 1727748191194,
+          "stop" : 1727748191194,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click button \"Повторить\".",
+        "time" : {
+          "start" : 1727748191194,
+          "stop" : 1727748191274,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click button \"Решать\".",
+        "time" : {
+          "start" : 1727748191274,
+          "stop" : 1727748191344,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get_list_of_words_from_card",
+      "time" : {
+        "start" : 1727748191344,
+        "stop" : 1727748193418,
+        "duration" : 2074
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Status code is: 200",
+        "time" : {
+          "start" : 1727748193417,
+          "stop" : 1727748193417,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Getting a list of exercise words from the backend: ['хорошо', 'рисовать'].",
+        "time" : {
+          "start" : 1727748193417,
+          "stop" : 1727748193417,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card_id",
+        "value" : "'1915'"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 24,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1727748193419,
+      "stop" : 1727748193509,
+      "duration" : 90
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Speech exercises."
+  }, {
+    "name" : "suite",
+    "value" : "Речевые упражнения."
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCardsRU"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1016-985"
+  }, {
+    "name" : "thread",
+    "value" : "2288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_speech_exercises_ru"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 46,
+        "unknown" : 0,
+        "total" : 49
+      },
+      "items" : [ {
+        "uid" : "cb6a4651e975bc67",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/cb6a4651e975bc67",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727661458248,
+          "stop" : 1727661470525,
+          "duration" : 12277
+        }
+      }, {
+        "uid" : "e79babdb8f8b4cc2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/e79babdb8f8b4cc2",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//button[@data-test-active-link=\"Слова Королёвой\"]')\nStacktrace:\n#0 0x55f2a060513a <unknown>\n#1 0x55f2a02eb5e0 <unknown>\n#2 0x55f2a033abe8 <unknown>\n#3 0x55f2a033ae81 <unknown>\n#4 0x55f2a03818c4 <unknown>\n#5 0x55f2a035fb4d <unknown>\n#6 0x55f2a037ed7d <unknown>\n#7 0x55f2a035f8c3 <unknown>\n#8 0x55f2a032d6b3 <unknown>\n#9 0x55f2a032e68e <unknown>\n#10 0x55f2a05cfb3b <unknown>\n#11 0x55f2a05d3ac1 <unknown>\n#12 0x55f2a05bc335 <unknown>\n#13 0x55f2a05d4642 <unknown>\n#14 0x55f2a05a149f <unknown>\n#15 0x55f2a05f4038 <unknown>\n#16 0x55f2a05f4203 <unknown>\n#17 0x55f2a0603f8c <unknown>\n#18 0x7fe9e8494ac3 <unknown>",
+        "time" : {
+          "start" : 1727575292226,
+          "stop" : 1727575314410,
+          "duration" : 22184
+        }
+      }, {
+        "uid" : "63abf525fd4a09b7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/63abf525fd4a09b7",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727488560856,
+          "stop" : 1727488573805,
+          "duration" : 12949
+        }
+      }, {
+        "uid" : "9050a35f793db73f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/9050a35f793db73f",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727402307930,
+          "stop" : 1727402321874,
+          "duration" : 13944
+        }
+      }, {
+        "uid" : "f569cf6b5879b941",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/f569cf6b5879b941",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727315786583,
+          "stop" : 1727315801010,
+          "duration" : 14427
+        }
+      }, {
+        "uid" : "83fe0da653fcb0a9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/83fe0da653fcb0a9",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//button[@data-test-active-link=\"Слова Королёвой\"]')\nStacktrace:\n#0 0x5564c3bad13a <unknown>\n#1 0x5564c38935e0 <unknown>\n#2 0x5564c38e2be8 <unknown>\n#3 0x5564c38e2e81 <unknown>\n#4 0x5564c39298c4 <unknown>\n#5 0x5564c3907b4d <unknown>\n#6 0x5564c3926d7d <unknown>\n#7 0x5564c39078c3 <unknown>\n#8 0x5564c38d56b3 <unknown>\n#9 0x5564c38d668e <unknown>\n#10 0x5564c3b77b3b <unknown>\n#11 0x5564c3b7bac1 <unknown>\n#12 0x5564c3b64335 <unknown>\n#13 0x5564c3b7c642 <unknown>\n#14 0x5564c3b4949f <unknown>\n#15 0x5564c3b9c038 <unknown>\n#16 0x5564c3b9c203 <unknown>\n#17 0x5564c3babf8c <unknown>\n#18 0x7f8b3e494ac3 <unknown>",
+        "time" : {
+          "start" : 1727229441220,
+          "stop" : 1727229462517,
+          "duration" : 21297
+        }
+      }, {
+        "uid" : "9409662679f57b52",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/9409662679f57b52",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727142932095,
+          "stop" : 1727142943207,
+          "duration" : 11112
+        }
+      }, {
+        "uid" : "f4dac55a3757ee97",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/f4dac55a3757ee97",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727056328488,
+          "stop" : 1727056337705,
+          "duration" : 9217
+        }
+      }, {
+        "uid" : "700382d7fba28fa",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/700382d7fba28fa",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726970259318,
+          "stop" : 1726970267103,
+          "duration" : 7785
+        }
+      }, {
+        "uid" : "9427db6793fad9ae",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/9427db6793fad9ae",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726883255288,
+          "stop" : 1726883263406,
+          "duration" : 8118
+        }
+      }, {
+        "uid" : "919379e40209ceda",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/919379e40209ceda",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726797005707,
+          "stop" : 1726797014774,
+          "duration" : 9067
+        }
+      }, {
+        "uid" : "c4fcbd87f2f16a9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/c4fcbd87f2f16a9",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726710638798,
+          "stop" : 1726710649317,
+          "duration" : 10519
+        }
+      }, {
+        "uid" : "fc23814aa1e0d043",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/fc23814aa1e0d043",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726650530006,
+          "stop" : 1726650539281,
+          "duration" : 9275
+        }
+      }, {
+        "uid" : "2c9ef7beeff3fdfb",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/2c9ef7beeff3fdfb",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726648252465,
+          "stop" : 1726648262033,
+          "duration" : 9568
+        }
+      }, {
+        "uid" : "bb5d24fe99f1ae87",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/36//#testresult/bb5d24fe99f1ae87",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726624071870,
+          "stop" : 1726624079580,
+          "duration" : 7710
+        }
+      }, {
+        "uid" : "4c1d821195e73b46",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/10//#testresult/4c1d821195e73b46",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726573176254,
+          "stop" : 1726573184862,
+          "duration" : 8608
+        }
+      }, {
+        "uid" : "4086ee2c14d5b347",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/9//#testresult/4086ee2c14d5b347",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726572453183,
+          "stop" : 1726572461805,
+          "duration" : 8622
+        }
+      }, {
+        "uid" : "c0b46bf33ba8d812",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/8//#testresult/c0b46bf33ba8d812",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726568809570,
+          "stop" : 1726568818192,
+          "duration" : 8622
+        }
+      }, {
+        "uid" : "e2ea51d3dccf667b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/32//#testresult/e2ea51d3dccf667b",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1718215236699,
+          "stop" : 1718215246830,
+          "duration" : 10131
+        }
+      }, {
+        "uid" : "311ed02b6cfc6af7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/4//#testresult/311ed02b6cfc6af7",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1718215246695,
+          "stop" : 1718215256857,
+          "duration" : 10162
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "37f0bb4a9dce4a5e.json",
+  "parameterValues" : [ ]
+}
