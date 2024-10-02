@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "66bd36f5aced5058",
+        "parentUid" : "4cc9d52bbc4d22f9d5d28b5c715d031d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727833416518,
+          "stop" : 1727833416918,
+          "duration" : 400
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc9d52bbc4d22f9d5d28b5c715d031d"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "7834f0eb4a00a5bb",
+        "parentUid" : "30efe62bc72b330c0e963ba321801669",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727833420818,
+          "stop" : 1727833421288,
+          "duration" : 470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30efe62bc72b330c0e963ba321801669"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://github.com/ElenaSpb' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/ElenaSpb",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "72fb0c36705569f7",
+        "parentUid" : "a35e80aba4a62f6270359ded2599728e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1727833429588,
+          "stop" : 1727833429814,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a35e80aba4a62f6270359ded2599728e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
