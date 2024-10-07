@@ -1,0 +1,397 @@
+{
+  "uid" : "ff966c27e4cc3591",
+  "name" : "Verify values of the text in card descriptions",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageText#test_cnp_02_04_verify_text_of_card_descriptions",
+  "historyId" : "5d4e7ac22a6f34d3c7b45f7b2c907a8b",
+  "time" : {
+    "start" : 1728265723825,
+    "stop" : 1728265744064,
+    "duration" : 20239
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')",
+  "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f0ad3ea7c20>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"fe123ff56feec26d7499676fd4c1e730\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify values of the text in card descriptions\")\n    def test_cnp_02_04_verify_text_of_card_descriptions(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n>       description_values = page.check_values_of_card_descriptions()\n\ntests/contributors_page_test.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/contributors_page.py:132: in check_values_of_card_descriptions\n    values = [element.text for element in self.get_list_of_card_descriptions()]\npages/contributors_page.py:91: in get_list_of_card_descriptions\n    return self.elements_are_present(self.locators.CARD_DESCRIPTIONS)\npages/base_page.py:55: in elements_are_present\n    return Wait(self.driver, self.timeout).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"fe123ff56feec26d7499676fd4c1e730\")>\nmethod = <function presence_of_all_elements_located.<locals>._predicate at 0x7f0ad3aadee0>\nmessage = \"Can't find elements by locator ('css selector', '.leading-5')\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')\n\n/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728265719103,
+      "stop" : 1728265719860,
+      "duration" : 757
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728265527027,
+      "stop" : 1728265527027,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1728265719860,
+      "stop" : 1728265723824,
+      "duration" : 3964
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1728265719860,
+        "stop" : 1728265723824,
+        "duration" : 3964
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"fe123ff56feec26d7499676fd4c1e730\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')",
+    "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f0ad3ea7c20>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"fe123ff56feec26d7499676fd4c1e730\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify values of the text in card descriptions\")\n    def test_cnp_02_04_verify_text_of_card_descriptions(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n>       description_values = page.check_values_of_card_descriptions()\n\ntests/contributors_page_test.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/contributors_page.py:132: in check_values_of_card_descriptions\n    values = [element.text for element in self.get_list_of_card_descriptions()]\npages/contributors_page.py:91: in get_list_of_card_descriptions\n    return self.elements_are_present(self.locators.CARD_DESCRIPTIONS)\npages/base_page.py:55: in elements_are_present\n    return Wait(self.driver, self.timeout).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"fe123ff56feec26d7499676fd4c1e730\")>\nmethod = <function presence_of_all_elements_located.<locals>._predicate at 0x7f0ad3aadee0>\nmessage = \"Can't find elements by locator ('css selector', '.leading-5')\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')\n\n/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ {
+      "name" : "Check the content of descriptions in cards",
+      "time" : {
+        "start" : 1728265723825,
+        "stop" : 1728265744063,
+        "duration" : 20238
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/contributors_page.py\", line 132, in check_values_of_card_descriptions\n    values = [element.text for element in self.get_list_of_card_descriptions()]\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/contributors_page.py\", line 91, in get_list_of_card_descriptions\n    return self.elements_are_present(self.locators.CARD_DESCRIPTIONS)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in elements_are_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Get the list of descriptions in cards on the 4th level of nesting on the page",
+        "time" : {
+          "start" : 1728265723825,
+          "stop" : 1728265744063,
+          "duration" : 20238
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find elements by locator ('css selector', '.leading-5')\n\n",
+        "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/contributors_page.py\", line 91, in get_list_of_card_descriptions\n    return self.elements_are_present(self.locators.CARD_DESCRIPTIONS)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 55, in elements_are_present\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "78038cdd06a16bbc",
+      "name" : "Screenshot 2024-10-07 01:49:04.165722",
+      "source" : "78038cdd06a16bbc.png",
+      "type" : "image/png",
+      "size" : 46511
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728265744167,
+      "stop" : 1728265744253,
+      "duration" : 86
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1429-774"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 11,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 43,
+        "unknown" : 0,
+        "total" : 55
+      },
+      "items" : [ {
+        "uid" : "21e3dc7c1542e280",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/21e3dc7c1542e280",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1728179409164,
+          "stop" : 1728179409556,
+          "duration" : 392
+        }
+      }, {
+        "uid" : "17203f326bb745bc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/17203f326bb745bc",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1728092580953,
+          "stop" : 1728092581379,
+          "duration" : 426
+        }
+      }, {
+        "uid" : "b6d999cc1a711c3d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/b6d999cc1a711c3d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1728006286136,
+          "stop" : 1728006286617,
+          "duration" : 481
+        }
+      }, {
+        "uid" : "1a015099890d7046",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/1a015099890d7046",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727919874781,
+          "stop" : 1727919875252,
+          "duration" : 471
+        }
+      }, {
+        "uid" : "66bd36f5aced5058",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/66bd36f5aced5058",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727833416518,
+          "stop" : 1727833416918,
+          "duration" : 400
+        }
+      }, {
+        "uid" : "fc470e568dd3497d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/fc470e568dd3497d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727747552970,
+          "stop" : 1727747553418,
+          "duration" : 448
+        }
+      }, {
+        "uid" : "d034841d81739fce",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/d034841d81739fce",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727660834388,
+          "stop" : 1727660834788,
+          "duration" : 400
+        }
+      }, {
+        "uid" : "6c96f56cf7e8a67a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/6c96f56cf7e8a67a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727574640774,
+          "stop" : 1727574641201,
+          "duration" : 427
+        }
+      }, {
+        "uid" : "7510591ff8329977",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/7510591ff8329977",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727487888232,
+          "stop" : 1727487888659,
+          "duration" : 427
+        }
+      }, {
+        "uid" : "9bdc94113203c85e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/9bdc94113203c85e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727401468768,
+          "stop" : 1727401469195,
+          "duration" : 427
+        }
+      }, {
+        "uid" : "b1742e019389d78a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/b1742e019389d78a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+        "time" : {
+          "start" : 1727315015495,
+          "stop" : 1727315015918,
+          "duration" : 423
+        }
+      }, {
+        "uid" : "c33420124b748f7d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/c33420124b748f7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727228709237,
+          "stop" : 1727228709626,
+          "duration" : 389
+        }
+      }, {
+        "uid" : "dd4a20a84c544acb",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/dd4a20a84c544acb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727142262001,
+          "stop" : 1727142262442,
+          "duration" : 441
+        }
+      }, {
+        "uid" : "916f9953f1d3b2fd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/916f9953f1d3b2fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727055813778,
+          "stop" : 1727055814209,
+          "duration" : 431
+        }
+      }, {
+        "uid" : "e330f4d28a56c041",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/e330f4d28a56c041",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726969739771,
+          "stop" : 1726969740186,
+          "duration" : 415
+        }
+      }, {
+        "uid" : "e9e684d26fb4187a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/e9e684d26fb4187a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726882746907,
+          "stop" : 1726882747324,
+          "duration" : 417
+        }
+      }, {
+        "uid" : "fd61e04260718b80",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/fd61e04260718b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726796461828,
+          "stop" : 1726796462252,
+          "duration" : 424
+        }
+      }, {
+        "uid" : "ca8e70e9a06d8f51",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/ca8e70e9a06d8f51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726710066462,
+          "stop" : 1726710066879,
+          "duration" : 417
+        }
+      }, {
+        "uid" : "813289882374f840",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/813289882374f840",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726649998776,
+          "stop" : 1726649999145,
+          "duration" : 369
+        }
+      }, {
+        "uid" : "3185ac9e17e339d2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/3185ac9e17e339d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726647616068,
+          "stop" : 1726647616501,
+          "duration" : 433
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ff966c27e4cc3591.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,367 @@
+{
+  "uid" : "9ea41331bf454735",
+  "name" : "Verify value of the title of the tab",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageText#test_cnp_02_01_verify_tab_title",
+  "historyId" : "4645df0b4dcf02e2e0de7317f6971701",
+  "time" : {
+    "start" : 1728265668614,
+    "stop" : 1728265668627,
+    "duration" : 13
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The title value of the tab mismatches the valid value\nassert 'Brn' in ['Наша команда | BrainUp', 'Contributors | BrainUp']\n +  where ['Наша команда | BrainUp', 'Contributors | BrainUp'] = ContributorsPageData.tab_title",
+  "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f0ad3ea77a0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"1bfbb0027a9018f022d8bdc6044c08a5\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify value of the title of the tab\")\n    def test_cnp_02_01_verify_tab_title(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        tab_title_value = page.get_value_of_tab_title()\n        assert tab_title_value, \"The title value of the tab is empty\"\n>       assert tab_title_value in ContributorsPageData.tab_title, \\\n            \"The title value of the tab mismatches the valid value\"\nE       AssertionError: The title value of the tab mismatches the valid value\nE       assert 'Brn' in ['Наша команда | BrainUp', 'Contributors | BrainUp']\nE        +  where ['Наша команда | BrainUp', 'Contributors | BrainUp'] = ContributorsPageData.tab_title\n\ntests/contributors_page_test.py:76: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1728265664838,
+      "stop" : 1728265668614,
+      "duration" : 3776
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1728265664838,
+        "stop" : 1728265668614,
+        "duration" : 3776
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"1bfbb0027a9018f022d8bdc6044c08a5\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728265527027,
+      "stop" : 1728265527027,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728265664088,
+      "stop" : 1728265664838,
+      "duration" : 750
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The title value of the tab mismatches the valid value\nassert 'Brn' in ['Наша команда | BrainUp', 'Contributors | BrainUp']\n +  where ['Наша команда | BrainUp', 'Contributors | BrainUp'] = ContributorsPageData.tab_title",
+    "statusTrace" : "self = <tests.contributors_page_test.TestContributorsPage.TestContributorsPageText object at 0x7f0ad3ea77a0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"1bfbb0027a9018f022d8bdc6044c08a5\")>\ncontributors_page_open = None\n\n    @allure.title(\"Verify value of the title of the tab\")\n    def test_cnp_02_01_verify_tab_title(self, driver, contributors_page_open):\n        page = ContributorsPage(driver)\n        tab_title_value = page.get_value_of_tab_title()\n        assert tab_title_value, \"The title value of the tab is empty\"\n>       assert tab_title_value in ContributorsPageData.tab_title, \\\n            \"The title value of the tab mismatches the valid value\"\nE       AssertionError: The title value of the tab mismatches the valid value\nE       assert 'Brn' in ['Наша команда | BrainUp', 'Contributors | BrainUp']\nE        +  where ['Наша команда | BrainUp', 'Contributors | BrainUp'] = ContributorsPageData.tab_title\n\ntests/contributors_page_test.py:76: AssertionError",
+    "steps" : [ {
+      "name" : "Get value of the title of the tab",
+      "time" : {
+        "start" : 1728265668614,
+        "stop" : 1728265668626,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "61d3eed4d6f82d73",
+      "name" : "Screenshot 2024-10-07 01:47:48.731539",
+      "source" : "61d3eed4d6f82d73.png",
+      "type" : "image/png",
+      "size" : 7498
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728265668732,
+      "stop" : 1728265668796,
+      "duration" : 64
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1429-774"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 24,
+        "unknown" : 0,
+        "total" : 25
+      },
+      "items" : [ {
+        "uid" : "2bc5f4a1a3a14d38",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/2bc5f4a1a3a14d38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728179398124,
+          "stop" : 1728179398137,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "94d9c560238d98c2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/94d9c560238d98c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728092566787,
+          "stop" : 1728092566800,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "3e899de658136b8c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/3e899de658136b8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728006272011,
+          "stop" : 1728006272024,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "4d84b9eb2e669f95",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/4d84b9eb2e669f95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727919860234,
+          "stop" : 1727919860248,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "c4e3004147516a74",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/c4e3004147516a74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727833405824,
+          "stop" : 1727833405837,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "3b9d66c5ba87d946",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/3b9d66c5ba87d946",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727747542108,
+          "stop" : 1727747542121,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "21c72efe7095ade0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/21c72efe7095ade0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727660823273,
+          "stop" : 1727660823286,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "1b59bbcc02ca94b5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/1b59bbcc02ca94b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727574628611,
+          "stop" : 1727574628624,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "95bdb4754a8470ca",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/95bdb4754a8470ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727487877448,
+          "stop" : 1727487877461,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "1af663d84ebcee4c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/1af663d84ebcee4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727401454180,
+          "stop" : 1727401454194,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "42d1ebef6892d50c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/42d1ebef6892d50c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727315000851,
+          "stop" : 1727315000864,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "9c6dd18c9cbcc960",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/9c6dd18c9cbcc960",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727228697565,
+          "stop" : 1727228697578,
+          "duration" : 13
+        }
+      }, {
+        "uid" : "4ad87005a817733c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/4ad87005a817733c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727142250177,
+          "stop" : 1727142250189,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "3ed0219e5cf5c25b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/3ed0219e5cf5c25b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727055803053,
+          "stop" : 1727055803065,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "98917ee50f4a6a62",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/98917ee50f4a6a62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726969728874,
+          "stop" : 1726969728886,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "375e0e55d8f356db",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/375e0e55d8f356db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726882736465,
+          "stop" : 1726882736476,
+          "duration" : 11
+        }
+      }, {
+        "uid" : "7a03b14c42de2089",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/7a03b14c42de2089",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726796450260,
+          "stop" : 1726796450272,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "ee75e2b144721835",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/ee75e2b144721835",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726710055906,
+          "stop" : 1726710055953,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "b9f1bf84eb589a27",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/b9f1bf84eb589a27",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726649987567,
+          "stop" : 1726649987579,
+          "duration" : 12
+        }
+      }, {
+        "uid" : "8401522ab9cccbee",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/8401522ab9cccbee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726647601845,
+          "stop" : 1726647601858,
+          "duration" : 13
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9ea41331bf454735.json",
+  "parameterValues" : [ ]
+}

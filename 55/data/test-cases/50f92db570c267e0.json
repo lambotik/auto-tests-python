@@ -1,0 +1,410 @@
+{
+  "uid" : "50f92db570c267e0",
+  "name" : "Solutions to a random task in the \"Слова Королёвой\" .",
+  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_solve_koroleva_cards_ru",
+  "historyId" : "c9fe4fbd9394e2fb5a6898be66ba433b",
+  "time" : {
+    "start" : 1728267401924,
+    "stop" : 1728267401924,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups",
+  "statusTrace" : "self = <pages.base_page.BasePage object at 0x7f0ad3761760>\nurl = 'https://brainup.site/groups'\n\n    def check_expected_link(self, url):\n        with allure.step(f'Check url is present: {url}'):\n            try:\n>               return Wait(self.driver, self.timeout).until(\n                    ec.url_to_be(url), message=f\"Can't find element by locator {url}\")\n\npages/base_page.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"80e38fbd217857d0cadadbf168dd88fa\")>\nmethod = <function url_to_be.<locals>._predicate at 0x7f0ad37bd6c0>\nmessage = \"Can't find element by locator https://brainup.site/groups\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups\n\n/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"80e38fbd217857d0cadadbf168dd88fa\")>\nmain_page_open = None\n\n    @pytest.fixture()\n    @allure.step('DEFAULT user authorized')\n    def default_user_authorized(driver, main_page_open):\n        page = BasePage(driver)\n        page.element_is_present_and_clickable(MainPageLocators.LOGIN_BUTTON).click()\n        page.element_is_visible(LoginPageLocators.INPUT_LOGIN).send_keys(os.environ[\"DEFAULT_LOGIN\"])\n        page.element_is_visible(LoginPageLocators.INPUT_PASSWORD).send_keys(os.environ[\"PASSWORD\"])\n        page.element_is_present_and_clickable(LoginPageLocators.SIGN_IN_BUTTON).click()\n>       page.check_expected_link(MainPageLinks.URL_GROUPS_PAGE)\n\ntests/conftest.py:97: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/base_page.py:72: in check_expected_link\n    return Wait(self.driver, self.timeout).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"80e38fbd217857d0cadadbf168dd88fa\")>\nmethod = <function url_to_be.<locals>._predicate at 0x7f0ad37bd800>\nmessage = \"Can't find element by locator https://brainup.site/groups\"\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups\n\n/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728267401924,
+      "stop" : 1728267402681,
+      "duration" : 757
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728265527027,
+      "stop" : 1728265527027,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1728267402681,
+      "stop" : 1728267406636,
+      "duration" : 3955
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1728267402681,
+        "stop" : 1728267406636,
+        "duration" : 3955
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"80e38fbd217857d0cadadbf168dd88fa\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "default_user_authorized",
+    "time" : {
+      "start" : 1728267406636,
+      "stop" : 1728267447255,
+      "duration" : 40619
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 103, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 902, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/tests/conftest.py\", line 97, in default_user_authorized\n    page.check_expected_link(MainPageLinks.URL_GROUPS_PAGE)\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 72, in check_expected_link\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "DEFAULT user authorized",
+      "time" : {
+        "start" : 1728267406636,
+        "stop" : 1728267447254,
+        "duration" : 40618
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/tests/conftest.py\", line 97, in default_user_authorized\n    page.check_expected_link(MainPageLinks.URL_GROUPS_PAGE)\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 72, in check_expected_link\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1728267406974,
+          "stop" : 1728267447254,
+          "duration" : 40280
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups\n\n",
+        "statusTrace" : "  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/base_page.py\", line 72, in check_expected_link\n    return Wait(self.driver, self.timeout).until(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"80e38fbd217857d0cadadbf168dd88fa\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728267447270,
+      "stop" : 1728267447357,
+      "duration" : 87
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Speech exercises."
+  }, {
+    "name" : "suite",
+    "value" : "Речевые упражнения."
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCardsRU"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1429-774"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_speech_exercises_ru"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 24,
+        "passed" : 31,
+        "unknown" : 0,
+        "total" : 55
+      },
+      "items" : [ {
+        "uid" : "6966f38b4f37507b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/6966f38b4f37507b",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728180095443,
+          "stop" : 1728180119494,
+          "duration" : 24051
+        }
+      }, {
+        "uid" : "48caad9d20516a32",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/48caad9d20516a32",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728093377462,
+          "stop" : 1728093404677,
+          "duration" : 27215
+        }
+      }, {
+        "uid" : "e4cec06af8e06734",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/e4cec06af8e06734",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728007083744,
+          "stop" : 1728007109922,
+          "duration" : 26178
+        }
+      }, {
+        "uid" : "5e6be232a037e07",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/5e6be232a037e07",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727920840825,
+          "stop" : 1727920869774,
+          "duration" : 28949
+        }
+      }, {
+        "uid" : "a433fbab3fb6741b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/a433fbab3fb6741b",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727834219012,
+          "stop" : 1727834243207,
+          "duration" : 24195
+        }
+      }, {
+        "uid" : "812a5c3d54d5da9b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/812a5c3d54d5da9b",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727748332637,
+          "stop" : 1727748380111,
+          "duration" : 47474
+        }
+      }, {
+        "uid" : "5851e885e69f30ae",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/5851e885e69f30ae",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727661608622,
+          "stop" : 1727661632716,
+          "duration" : 24094
+        }
+      }, {
+        "uid" : "e884681b59255f7d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/e884681b59255f7d",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727575519792,
+          "stop" : 1727575546303,
+          "duration" : 26511
+        }
+      }, {
+        "uid" : "c3e3ffdf72ed1d73",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/c3e3ffdf72ed1d73",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//h3[@class=\"mt-6 mb-6 text-2xl font-semibold\"]')\nStacktrace:\n#0 0x55d3b5e7213a <unknown>\n#1 0x55d3b5b585e0 <unknown>\n#2 0x55d3b5ba7be8 <unknown>\n#3 0x55d3b5ba7e81 <unknown>\n#4 0x55d3b5bee8c4 <unknown>\n#5 0x55d3b5bccb4d <unknown>\n#6 0x55d3b5bebd7d <unknown>\n#7 0x55d3b5bcc8c3 <unknown>\n#8 0x55d3b5b9a6b3 <unknown>\n#9 0x55d3b5b9b68e <unknown>\n#10 0x55d3b5e3cb3b <unknown>\n#11 0x55d3b5e40ac1 <unknown>\n#12 0x55d3b5e29335 <unknown>\n#13 0x55d3b5e41642 <unknown>\n#14 0x55d3b5e0e49f <unknown>\n#15 0x55d3b5e61038 <unknown>\n#16 0x55d3b5e61203 <unknown>\n#17 0x55d3b5e70f8c <unknown>\n#18 0x7efdd2c94ac3 <unknown>",
+        "time" : {
+          "start" : 1727488735143,
+          "stop" : 1727488950004,
+          "duration" : 214861
+        }
+      }, {
+        "uid" : "9a87f620fcd4d7df",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/9a87f620fcd4d7df",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727402480074,
+          "stop" : 1727402525194,
+          "duration" : 45120
+        }
+      }, {
+        "uid" : "63e714799ca482f0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/63e714799ca482f0",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//h3[@class=\"mt-6 mb-6 text-2xl font-semibold\"]')\nStacktrace:\n#0 0x56440807613a <unknown>\n#1 0x564407d5c5e0 <unknown>\n#2 0x564407dabbe8 <unknown>\n#3 0x564407dabe81 <unknown>\n#4 0x564407df28c4 <unknown>\n#5 0x564407dd0b4d <unknown>\n#6 0x564407defd7d <unknown>\n#7 0x564407dd08c3 <unknown>\n#8 0x564407d9e6b3 <unknown>\n#9 0x564407d9f68e <unknown>\n#10 0x564408040b3b <unknown>\n#11 0x564408044ac1 <unknown>\n#12 0x56440802d335 <unknown>\n#13 0x564408045642 <unknown>\n#14 0x56440801249f <unknown>\n#15 0x564408065038 <unknown>\n#16 0x564408065203 <unknown>\n#17 0x564408074f8c <unknown>\n#18 0x7f566ee94ac3 <unknown>",
+        "time" : {
+          "start" : 1727316011318,
+          "stop" : 1727316164821,
+          "duration" : 153503
+        }
+      }, {
+        "uid" : "f75cac843ac224c9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/f75cac843ac224c9",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727229682412,
+          "stop" : 1727229710324,
+          "duration" : 27912
+        }
+      }, {
+        "uid" : "7a507b512d31a6f4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/7a507b512d31a6f4",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nKeyError: 3",
+        "time" : {
+          "start" : 1727143082369,
+          "stop" : 1727143114272,
+          "duration" : 31903
+        }
+      }, {
+        "uid" : "473e5114d0ceac3d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/473e5114d0ceac3d",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//button[@aria-label=\"Начать выполнение упражнения\"]')\nStacktrace:\n#0 0x55b46bfbb2da <unknown>\n#1 0x55b46bc89200 <unknown>\n#2 0x55b46bcd8aa2 <unknown>\n#3 0x55b46bcd8d41 <unknown>\n#4 0x55b46bd1e964 <unknown>\n#5 0x55b46bcfd8fd <unknown>\n#6 0x55b46bd1bdfd <unknown>\n#7 0x55b46bcfd673 <unknown>\n#8 0x55b46bccb473 <unknown>\n#9 0x55b46bccc47e <unknown>\n#10 0x55b46bf820db <unknown>\n#11 0x55b46bf86071 <unknown>\n#12 0x55b46bf6e9d5 <unknown>\n#13 0x55b46bf86bf2 <unknown>\n#14 0x55b46bf53b6f <unknown>\n#15 0x55b46bfaa248 <unknown>\n#16 0x55b46bfaa417 <unknown>\n#17 0x55b46bfba0cc <unknown>\n#18 0x7fb35a894ac3 <unknown>",
+        "time" : {
+          "start" : 1727056547742,
+          "stop" : 1727056574373,
+          "duration" : 26631
+        }
+      }, {
+        "uid" : "6bc9fe694b8ef338",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/40//#testresult/6bc9fe694b8ef338",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726970368328,
+          "stop" : 1726970400989,
+          "duration" : 32661
+        }
+      }, {
+        "uid" : "fccf95aabe1595f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/39//#testresult/fccf95aabe1595f",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726883383638,
+          "stop" : 1726883581713,
+          "duration" : 198075
+        }
+      }, {
+        "uid" : "51176a35b6be16d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/38//#testresult/51176a35b6be16d",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726797140969,
+          "stop" : 1726797186527,
+          "duration" : 45558
+        }
+      }, {
+        "uid" : "780e4b06156063cf",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/37//#testresult/780e4b06156063cf",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726710758697,
+          "stop" : 1726710781801,
+          "duration" : 23104
+        }
+      }, {
+        "uid" : "5905be86b7541bd0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/12//#testresult/5905be86b7541bd0",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726650664556,
+          "stop" : 1726650698985,
+          "duration" : 34429
+        }
+      }, {
+        "uid" : "b9a42ca585c5238d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/11//#testresult/b9a42ca585c5238d",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1726648380429,
+          "stop" : 1726648430448,
+          "duration" : 50019
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "50f92db570c267e0.json",
+  "parameterValues" : [ ]
+}
