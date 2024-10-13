@@ -1,0 +1,357 @@
+{
+  "uid" : "6e1b99c7ed200367",
+  "name" : "Select random card from group \"Слова Королёвой\" and compare UI vs BACKEND data.",
+  "fullName" : "tests.test_speech_exercises_ru.TestCardsRU#test_random_word_by_koroleva_cards_ru",
+  "historyId" : "719ec095fba3c0668a1a244a8c64916e",
+  "time" : {
+    "start" : 1728784238334,
+    "stop" : 1728784238334,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nselenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x563ae359b02a <unknown>\n#1 0x563ae32815e0 <unknown>\n#2 0x563ae32797eb <unknown>\n#3 0x563ae3269a09 <unknown>\n#4 0x563ae326b744 <unknown>\n#5 0x563ae3269cbd <unknown>\n#6 0x563ae326952f <unknown>\n#7 0x563ae3269422 <unknown>\n#8 0x563ae3267493 <unknown>\n#9 0x563ae3267ada <unknown>\n#10 0x563ae3283f41 <unknown>\n#11 0x563ae33158c5 <unknown>\n#12 0x563ae32f5b22 <unknown>\n#13 0x563ae3314d7d <unknown>\n#14 0x563ae32f58c3 <unknown>\n#15 0x563ae32c36b3 <unknown>\n#16 0x563ae32c468e <unknown>\n#17 0x563ae3565a2b <unknown>\n#18 0x563ae35699b1 <unknown>\n#19 0x563ae3552225 <unknown>\n#20 0x563ae356a532 <unknown>\n#21 0x563ae353738f <unknown>\n#22 0x563ae3589f28 <unknown>\n#23 0x563ae358a0f3 <unknown>\n#24 0x563ae3599e7c <unknown>\n#25 0x7fc011694ac3 <unknown>",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d44d0504a01a41a9944d98b6c469ee6e\")>\n\n    @pytest.fixture()\n    @allure.step(f'Open page: {MainPageLinks.URL_MAIN_PAGE}')\n    def main_page_open(driver):\n>       driver.get(MainPageLinks.URL_MAIN_PAGE)\n\ntests/conftest.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:353: in get\n    self.execute(Command.GET, {\"url\": url})\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7faf1f710e00>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"unknown error\",\"message\":\"unknown error: net::ERR_CONNECTION_REFUSED\\\\n  ...\\\\n#23 0x563ae358a0f3 \\\\u003Cunknown>\\\\n#24 0x563ae3599e7c \\\\u003Cunknown>\\\\n#25 0x7fc011694ac3 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\nE         (Session info: chrome=129.0.6668.89)\nE       Stacktrace:\nE       #0 0x563ae359b02a <unknown>\nE       #1 0x563ae32815e0 <unknown>\nE       #2 0x563ae32797eb <unknown>\nE       #3 0x563ae3269a09 <unknown>\nE       #4 0x563ae326b744 <unknown>\nE       #5 0x563ae3269cbd <unknown>\nE       #6 0x563ae326952f <unknown>\nE       #7 0x563ae3269422 <unknown>\nE       #8 0x563ae3267493 <unknown>\nE       #9 0x563ae3267ada <unknown>\nE       #10 0x563ae3283f41 <unknown>\nE       #11 0x563ae33158c5 <unknown>\nE       #12 0x563ae32f5b22 <unknown>\nE       #13 0x563ae3314d7d <unknown>\nE       #14 0x563ae32f58c3 <unknown>\nE       #15 0x563ae32c36b3 <unknown>\nE       #16 0x563ae32c468e <unknown>\nE       #17 0x563ae3565a2b <unknown>\nE       #18 0x563ae35699b1 <unknown>\nE       #19 0x563ae3552225 <unknown>\nE       #20 0x563ae356a532 <unknown>\nE       #21 0x563ae353738f <unknown>\nE       #22 0x563ae3589f28 <unknown>\nE       #23 0x563ae358a0f3 <unknown>\nE       #24 0x563ae3599e7c <unknown>\nE       #25 0x7fc011694ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: WebDriverException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728784238335,
+      "stop" : 1728784239108,
+      "duration" : 773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728784074935,
+      "stop" : 1728784074936,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1728784239108,
+      "stop" : 1728784239531,
+      "duration" : 423
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x563ae359b02a <unknown>\n#1 0x563ae32815e0 <unknown>\n#2 0x563ae32797eb <unknown>\n#3 0x563ae3269a09 <unknown>\n#4 0x563ae326b744 <unknown>\n#5 0x563ae3269cbd <unknown>\n#6 0x563ae326952f <unknown>\n#7 0x563ae3269422 <unknown>\n#8 0x563ae3267493 <unknown>\n#9 0x563ae3267ada <unknown>\n#10 0x563ae3283f41 <unknown>\n#11 0x563ae33158c5 <unknown>\n#12 0x563ae32f5b22 <unknown>\n#13 0x563ae3314d7d <unknown>\n#14 0x563ae32f58c3 <unknown>\n#15 0x563ae32c36b3 <unknown>\n#16 0x563ae32c468e <unknown>\n#17 0x563ae3565a2b <unknown>\n#18 0x563ae35699b1 <unknown>\n#19 0x563ae3552225 <unknown>\n#20 0x563ae356a532 <unknown>\n#21 0x563ae353738f <unknown>\n#22 0x563ae3589f28 <unknown>\n#23 0x563ae358a0f3 <unknown>\n#24 0x563ae3599e7c <unknown>\n#25 0x7fc011694ac3 <unknown>\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 103, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 902, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/tests/conftest.py\", line 22, in main_page_open\n    driver.get(MainPageLinks.URL_MAIN_PAGE)\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 353, in get\n    self.execute(Command.GET, {\"url\": url})\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1728784239109,
+        "stop" : 1728784239530,
+        "duration" : 421
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x563ae359b02a <unknown>\n#1 0x563ae32815e0 <unknown>\n#2 0x563ae32797eb <unknown>\n#3 0x563ae3269a09 <unknown>\n#4 0x563ae326b744 <unknown>\n#5 0x563ae3269cbd <unknown>\n#6 0x563ae326952f <unknown>\n#7 0x563ae3269422 <unknown>\n#8 0x563ae3267493 <unknown>\n#9 0x563ae3267ada <unknown>\n#10 0x563ae3283f41 <unknown>\n#11 0x563ae33158c5 <unknown>\n#12 0x563ae32f5b22 <unknown>\n#13 0x563ae3314d7d <unknown>\n#14 0x563ae32f58c3 <unknown>\n#15 0x563ae32c36b3 <unknown>\n#16 0x563ae32c468e <unknown>\n#17 0x563ae3565a2b <unknown>\n#18 0x563ae35699b1 <unknown>\n#19 0x563ae3552225 <unknown>\n#20 0x563ae356a532 <unknown>\n#21 0x563ae353738f <unknown>\n#22 0x563ae3589f28 <unknown>\n#23 0x563ae358a0f3 <unknown>\n#24 0x563ae3599e7c <unknown>\n#25 0x7fc011694ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/tests/conftest.py\", line 22, in main_page_open\n    driver.get(MainPageLinks.URL_MAIN_PAGE)\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 353, in get\n    self.execute(Command.GET, {\"url\": url})\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"d44d0504a01a41a9944d98b6c469ee6e\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728784239562,
+      "stop" : 1728784239624,
+      "duration" : 62
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Speech exercises."
+  }, {
+    "name" : "suite",
+    "value" : "Речевые упражнения."
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCardsRU"
+  }, {
+    "name" : "host",
+    "value" : "fv-az891-551"
+  }, {
+    "name" : "thread",
+    "value" : "2367-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_speech_exercises_ru"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 7,
+        "passed" : 54,
+        "unknown" : 0,
+        "total" : 61
+      },
+      "items" : [ {
+        "uid" : "6f5788af726a6e42",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/60//#testresult/6f5788af726a6e42",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x557b6cfa802a <unknown>\n#1 0x557b6cc8e5e0 <unknown>\n#2 0x557b6cc867eb <unknown>\n#3 0x557b6cc76a09 <unknown>\n#4 0x557b6cc78744 <unknown>\n#5 0x557b6cc76cbd <unknown>\n#6 0x557b6cc7652f <unknown>\n#7 0x557b6cc76422 <unknown>\n#8 0x557b6cc74493 <unknown>\n#9 0x557b6cc74ada <unknown>\n#10 0x557b6cc90f41 <unknown>\n#11 0x557b6cd228c5 <unknown>\n#12 0x557b6cd02b22 <unknown>\n#13 0x557b6cd21d7d <unknown>\n#14 0x557b6cd028c3 <unknown>\n#15 0x557b6ccd06b3 <unknown>\n#16 0x557b6ccd168e <unknown>\n#17 0x557b6cf72a2b <unknown>\n#18 0x557b6cf769b1 <unknown>\n#19 0x557b6cf5f225 <unknown>\n#20 0x557b6cf77532 <unknown>\n#21 0x557b6cf4438f <unknown>\n#22 0x557b6cf96f28 <unknown>\n#23 0x557b6cf970f3 <unknown>\n#24 0x557b6cfa6e7c <unknown>\n#25 0x7fb8a7894ac3 <unknown>",
+        "time" : {
+          "start" : 1728697352305,
+          "stop" : 1728697352305,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "549c8b435999468d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/59//#testresult/549c8b435999468d",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x558a2e57b02a <unknown>\n#1 0x558a2e2615e0 <unknown>\n#2 0x558a2e2597eb <unknown>\n#3 0x558a2e249a09 <unknown>\n#4 0x558a2e24b744 <unknown>\n#5 0x558a2e249cbd <unknown>\n#6 0x558a2e24952f <unknown>\n#7 0x558a2e249422 <unknown>\n#8 0x558a2e247493 <unknown>\n#9 0x558a2e247ada <unknown>\n#10 0x558a2e263f41 <unknown>\n#11 0x558a2e2f58c5 <unknown>\n#12 0x558a2e2d5b22 <unknown>\n#13 0x558a2e2f4d7d <unknown>\n#14 0x558a2e2d58c3 <unknown>\n#15 0x558a2e2a36b3 <unknown>\n#16 0x558a2e2a468e <unknown>\n#17 0x558a2e545a2b <unknown>\n#18 0x558a2e5499b1 <unknown>\n#19 0x558a2e532225 <unknown>\n#20 0x558a2e54a532 <unknown>\n#21 0x558a2e51738f <unknown>\n#22 0x558a2e569f28 <unknown>\n#23 0x558a2e56a0f3 <unknown>\n#24 0x558a2e579e7c <unknown>\n#25 0x7fe2e1294ac3 <unknown>",
+        "time" : {
+          "start" : 1728611043529,
+          "stop" : 1728611043529,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "21a00f2362765fe4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/58//#testresult/21a00f2362765fe4",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728525148438,
+          "stop" : 1728525157340,
+          "duration" : 8902
+        }
+      }, {
+        "uid" : "52ed67b082c8fe4e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/57//#testresult/52ed67b082c8fe4e",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728438818725,
+          "stop" : 1728438827718,
+          "duration" : 8993
+        }
+      }, {
+        "uid" : "ac24df959ded36f4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/56//#testresult/ac24df959ded36f4",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728352416846,
+          "stop" : 1728352426049,
+          "duration" : 9203
+        }
+      }, {
+        "uid" : "cadd861658d49146",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/55//#testresult/cadd861658d49146",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups",
+        "time" : {
+          "start" : 1728267129682,
+          "stop" : 1728267129682,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a892074097ea5555",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/a892074097ea5555",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728179956352,
+          "stop" : 1728179966079,
+          "duration" : 9727
+        }
+      }, {
+        "uid" : "18bd593d43f9132d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/18bd593d43f9132d",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728093223289,
+          "stop" : 1728093234286,
+          "duration" : 10997
+        }
+      }, {
+        "uid" : "ef4442c8b6fe6d95",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/ef4442c8b6fe6d95",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1728006927703,
+          "stop" : 1728006938838,
+          "duration" : 11135
+        }
+      }, {
+        "uid" : "5beade8fd15e2e72",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/5beade8fd15e2e72",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727920678849,
+          "stop" : 1727920692726,
+          "duration" : 13877
+        }
+      }, {
+        "uid" : "df85787c32439db1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/df85787c32439db1",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727834034256,
+          "stop" : 1727834046668,
+          "duration" : 12412
+        }
+      }, {
+        "uid" : "37f0bb4a9dce4a5e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/37f0bb4a9dce4a5e",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727748180495,
+          "stop" : 1727748193418,
+          "duration" : 12923
+        }
+      }, {
+        "uid" : "cb6a4651e975bc67",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/cb6a4651e975bc67",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727661458248,
+          "stop" : 1727661470525,
+          "duration" : 12277
+        }
+      }, {
+        "uid" : "e79babdb8f8b4cc2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/e79babdb8f8b4cc2",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//button[@data-test-active-link=\"Слова Королёвой\"]')\nStacktrace:\n#0 0x55f2a060513a <unknown>\n#1 0x55f2a02eb5e0 <unknown>\n#2 0x55f2a033abe8 <unknown>\n#3 0x55f2a033ae81 <unknown>\n#4 0x55f2a03818c4 <unknown>\n#5 0x55f2a035fb4d <unknown>\n#6 0x55f2a037ed7d <unknown>\n#7 0x55f2a035f8c3 <unknown>\n#8 0x55f2a032d6b3 <unknown>\n#9 0x55f2a032e68e <unknown>\n#10 0x55f2a05cfb3b <unknown>\n#11 0x55f2a05d3ac1 <unknown>\n#12 0x55f2a05bc335 <unknown>\n#13 0x55f2a05d4642 <unknown>\n#14 0x55f2a05a149f <unknown>\n#15 0x55f2a05f4038 <unknown>\n#16 0x55f2a05f4203 <unknown>\n#17 0x55f2a0603f8c <unknown>\n#18 0x7fe9e8494ac3 <unknown>",
+        "time" : {
+          "start" : 1727575292226,
+          "stop" : 1727575314410,
+          "duration" : 22184
+        }
+      }, {
+        "uid" : "63abf525fd4a09b7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/63abf525fd4a09b7",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727488560856,
+          "stop" : 1727488573805,
+          "duration" : 12949
+        }
+      }, {
+        "uid" : "9050a35f793db73f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/9050a35f793db73f",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727402307930,
+          "stop" : 1727402321874,
+          "duration" : 13944
+        }
+      }, {
+        "uid" : "f569cf6b5879b941",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/f569cf6b5879b941",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727315786583,
+          "stop" : 1727315801010,
+          "duration" : 14427
+        }
+      }, {
+        "uid" : "83fe0da653fcb0a9",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/83fe0da653fcb0a9",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nselenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//button[@data-test-active-link=\"Слова Королёвой\"]')\nStacktrace:\n#0 0x5564c3bad13a <unknown>\n#1 0x5564c38935e0 <unknown>\n#2 0x5564c38e2be8 <unknown>\n#3 0x5564c38e2e81 <unknown>\n#4 0x5564c39298c4 <unknown>\n#5 0x5564c3907b4d <unknown>\n#6 0x5564c3926d7d <unknown>\n#7 0x5564c39078c3 <unknown>\n#8 0x5564c38d56b3 <unknown>\n#9 0x5564c38d668e <unknown>\n#10 0x5564c3b77b3b <unknown>\n#11 0x5564c3b7bac1 <unknown>\n#12 0x5564c3b64335 <unknown>\n#13 0x5564c3b7c642 <unknown>\n#14 0x5564c3b4949f <unknown>\n#15 0x5564c3b9c038 <unknown>\n#16 0x5564c3b9c203 <unknown>\n#17 0x5564c3babf8c <unknown>\n#18 0x7f8b3e494ac3 <unknown>",
+        "time" : {
+          "start" : 1727229441220,
+          "stop" : 1727229462517,
+          "duration" : 21297
+        }
+      }, {
+        "uid" : "9409662679f57b52",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/9409662679f57b52",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727142932095,
+          "stop" : 1727142943207,
+          "duration" : 11112
+        }
+      }, {
+        "uid" : "f4dac55a3757ee97",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/41//#testresult/f4dac55a3757ee97",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1727056328488,
+          "stop" : 1727056337705,
+          "duration" : 9217
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "6e1b99c7ed200367.json",
+  "parameterValues" : [ ]
+}
