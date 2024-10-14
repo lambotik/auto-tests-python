@@ -1,0 +1,589 @@
+{
+  "uid" : "29503d224aa5642e",
+  "name" : "Verify presence, visibility, clickability, href, status code of links in sections",
+  "fullName" : "tests.used_resources_page_test.TestUsedResourcesPageForAuthorizedUserLinks#test_ur_03_01_verify_links_in_sections",
+  "historyId" : "e81f1089a6a1fbd12d91fa249d1a3eef",
+  "time" : {
+    "start" : 1728871128247,
+    "stop" : 1728871266011,
+    "duration" : 137764
+  },
+  "status" : "broken",
+  "statusMessage" : "requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))",
+  "statusTrace" : "self = <urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>\n\n    def _new_conn(self) -> socket.socket:\n        \"\"\"Establish a socket connection and set nodelay settings on it.\n    \n        :return: New socket connection.\n        \"\"\"\n        try:\n>           sock = connection.create_connection(\n                (self._dns_host, self.port),\n                self.timeout,\n                source_address=self.source_address,\n                socket_options=self.socket_options,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/connection.py:85: in create_connection\n    raise err\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\naddress = ('web.archive.org', 443), timeout = None, source_address = None\nsocket_options = [(6, 1, 1)]\n\n    def create_connection(\n        address: tuple[str, int],\n        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,\n        source_address: tuple[str, int] | None = None,\n        socket_options: _TYPE_SOCKET_OPTIONS | None = None,\n    ) -> socket.socket:\n        \"\"\"Connect to *address* and return the socket object.\n    \n        Convenience function.  Connect to *address* (a 2-tuple ``(host,\n        port)``) and return the socket object.  Passing the optional\n        *timeout* parameter will set the timeout on the socket instance\n        before attempting to connect.  If no *timeout* is supplied, the\n        global default timeout setting returned by :func:`socket.getdefaulttimeout`\n        is used.  If *source_address* is set it must be a tuple of (host, port)\n        for the socket to bind as a source address before making the connection.\n        An host of '' or port 0 tells the OS to use the default.\n        \"\"\"\n    \n        host, port = address\n        if host.startswith(\"[\"):\n            host = host.strip(\"[]\")\n        err = None\n    \n        # Using the value from allowed_gai_family() in the context of getaddrinfo lets\n        # us select whether to work with IPv4 DNS records, IPv6 records, or both.\n        # The original create_connection function always returns all records.\n        family = allowed_gai_family()\n    \n        try:\n            host.encode(\"idna\")\n        except UnicodeError:\n            raise LocationParseError(f\"'{host}', label empty or too long\") from None\n    \n        for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):\n            af, socktype, proto, canonname, sa = res\n            sock = None\n            try:\n                sock = socket.socket(af, socktype, proto)\n    \n                # If provided, set socket level options before connecting.\n                _set_socket_options(sock, socket_options)\n    \n                if timeout is not _DEFAULT_TIMEOUT:\n                    sock.settimeout(timeout)\n                if source_address:\n                    sock.bind(source_address)\n>               sock.connect(sa)\nE               TimeoutError: [Errno 110] Connection timed out\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/connection.py:73: TimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nself = <urllib3.connectionpool.HTTPSConnectionPool object at 0x7fe8faeb2060>\nmethod = 'HEAD'\nurl = '/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html'\nbody = None\nheaders = {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}\nretries = Retry(total=0, connect=None, read=False, redirect=None, status=None)\nredirect = False, assert_same_host = False\ntimeout = Timeout(connect=None, read=None, total=None), pool_timeout = None\nrelease_conn = False, chunked = False, body_pos = None, preload_content = False\ndecode_content = False, response_kw = {}\nparsed_url = Url(scheme=None, auth=None, host=None, port=None, path='/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html', query=None, fragment=None)\ndestination_scheme = None, conn = None, release_this_conn = True\nhttp_tunnel_required = False, err = None, clean_exit = False\n\n    def urlopen(  # type: ignore[override]\n        self,\n        method: str,\n        url: str,\n        body: _TYPE_BODY | None = None,\n        headers: typing.Mapping[str, str] | None = None,\n        retries: Retry | bool | int | None = None,\n        redirect: bool = True,\n        assert_same_host: bool = True,\n        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,\n        pool_timeout: int | None = None,\n        release_conn: bool | None = None,\n        chunked: bool = False,\n        body_pos: _TYPE_BODY_POSITION | None = None,\n        preload_content: bool = True,\n        decode_content: bool = True,\n        **response_kw: typing.Any,\n    ) -> BaseHTTPResponse:\n        \"\"\"\n        Get a connection from the pool and perform an HTTP request. This is the\n        lowest level call for making a request, so you'll need to specify all\n        the raw details.\n    \n        .. note::\n    \n           More commonly, it's appropriate to use a convenience method\n           such as :meth:`request`.\n    \n        .. note::\n    \n           `release_conn` will only behave as expected if\n           `preload_content=False` because we want to make\n           `preload_content=False` the default behaviour someday soon without\n           breaking backwards compatibility.\n    \n        :param method:\n            HTTP request method (such as GET, POST, PUT, etc.)\n    \n        :param url:\n            The URL to perform the request on.\n    \n        :param body:\n            Data to send in the request body, either :class:`str`, :class:`bytes`,\n            an iterable of :class:`str`/:class:`bytes`, or a file-like object.\n    \n        :param headers:\n            Dictionary of custom headers to send, such as User-Agent,\n            If-None-Match, etc. If None, pool headers are used. If provided,\n            these headers completely replace any pool-specific headers.\n    \n        :param retries:\n            Configure the number of retries to allow before raising a\n            :class:`~urllib3.exceptions.MaxRetryError` exception.\n    \n            If ``None`` (default) will retry 3 times, see ``Retry.DEFAULT``. Pass a\n            :class:`~urllib3.util.retry.Retry` object for fine-grained control\n            over different types of retries.\n            Pass an integer number to retry connection errors that many times,\n            but no other types of errors. Pass zero to never retry.\n    \n            If ``False``, then retries are disabled and any exception is raised\n            immediately. Also, instead of raising a MaxRetryError on redirects,\n            the redirect response will be returned.\n    \n        :type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.\n    \n        :param redirect:\n            If True, automatically handle redirects (status codes 301, 302,\n            303, 307, 308). Each redirect counts as a retry. Disabling retries\n            will disable redirect, too.\n    \n        :param assert_same_host:\n            If ``True``, will make sure that the host of the pool requests is\n            consistent else will raise HostChangedError. When ``False``, you can\n            use the pool on an HTTP proxy and request foreign hosts.\n    \n        :param timeout:\n            If specified, overrides the default timeout for this one\n            request. It may be a float (in seconds) or an instance of\n            :class:`urllib3.util.Timeout`.\n    \n        :param pool_timeout:\n            If set and the pool is set to block=True, then this method will\n            block for ``pool_timeout`` seconds and raise EmptyPoolError if no\n            connection is available within the time period.\n    \n        :param bool preload_content:\n            If True, the response's body will be preloaded into memory.\n    \n        :param bool decode_content:\n            If True, will attempt to decode the body based on the\n            'content-encoding' header.\n    \n        :param release_conn:\n            If False, then the urlopen call will not release the connection\n            back into the pool once a response is received (but will release if\n            you read the entire contents of the response such as when\n            `preload_content=True`). This is useful if you're not preloading\n            the response's content immediately. You will need to call\n            ``r.release_conn()`` on the response ``r`` to return the connection\n            back into the pool. If None, it takes the value of ``preload_content``\n            which defaults to ``True``.\n    \n        :param bool chunked:\n            If True, urllib3 will send the body using chunked transfer\n            encoding. Otherwise, urllib3 will send the body using the standard\n            content-length form. Defaults to False.\n    \n        :param int body_pos:\n            Position to seek to in file-like body in the event of a retry or\n            redirect. Typically this won't need to be set because urllib3 will\n            auto-populate the value when needed.\n        \"\"\"\n        parsed_url = parse_url(url)\n        destination_scheme = parsed_url.scheme\n    \n        if headers is None:\n            headers = self.headers\n    \n        if not isinstance(retries, Retry):\n            retries = Retry.from_int(retries, redirect=redirect, default=self.retries)\n    \n        if release_conn is None:\n            release_conn = preload_content\n    \n        # Check host\n        if assert_same_host and not self.is_same_host(url):\n            raise HostChangedError(self, url, retries)\n    \n        # Ensure that the URL we're connecting to is properly encoded\n        if url.startswith(\"/\"):\n            url = to_str(_encode_target(url))\n        else:\n            url = to_str(parsed_url.url)\n    \n        conn = None\n    \n        # Track whether `conn` needs to be released before\n        # returning/raising/recursing. Update this variable if necessary, and\n        # leave `release_conn` constant throughout the function. That way, if\n        # the function recurses, the original value of `release_conn` will be\n        # passed down into the recursive call, and its value will be respected.\n        #\n        # See issue #651 [1] for details.\n        #\n        # [1] <https://github.com/urllib3/urllib3/issues/651>\n        release_this_conn = release_conn\n    \n        http_tunnel_required = connection_requires_http_tunnel(\n            self.proxy, self.proxy_config, destination_scheme\n        )\n    \n        # Merge the proxy headers. Only done when not using HTTP CONNECT. We\n        # have to copy the headers dict so we can safely change it without those\n        # changes being reflected in anyone else's copy.\n        if not http_tunnel_required:\n            headers = headers.copy()  # type: ignore[attr-defined]\n            headers.update(self.proxy_headers)  # type: ignore[union-attr]\n    \n        # Must keep the exception bound to a separate variable or else Python 3\n        # complains about UnboundLocalError.\n        err = None\n    \n        # Keep track of whether we cleanly exited the except block. This\n        # ensures we do proper cleanup in finally.\n        clean_exit = False\n    \n        # Rewind body position, if needed. Record current position\n        # for future rewinds in the event of a redirect/retry.\n        body_pos = set_file_position(body, body_pos)\n    \n        try:\n            # Request a connection from the queue.\n            timeout_obj = self._get_timeout(timeout)\n            conn = self._get_conn(timeout=pool_timeout)\n    \n            conn.timeout = timeout_obj.connect_timeout  # type: ignore[assignment]\n    \n            # Is this a closed/new connection that requires CONNECT tunnelling?\n            if self.proxy is not None and http_tunnel_required and conn.is_closed:\n                try:\n                    self._prepare_proxy(conn)\n                except (BaseSSLError, OSError, SocketTimeout) as e:\n                    self._raise_timeout(\n                        err=e, url=self.proxy.url, timeout_value=conn.timeout\n                    )\n                    raise\n    \n            # If we're going to release the connection in ``finally:``, then\n            # the response doesn't need to know about the connection. Otherwise\n            # it will also try to release it and we'll have a double-release\n            # mess.\n            response_conn = conn if not release_conn else None\n    \n            # Make the request on the HTTPConnection object\n>           response = self._make_request(\n                conn,\n                method,\n                url,\n                timeout=timeout_obj,\n                body=body,\n                headers=headers,\n                chunked=chunked,\n                retries=retries,\n                response_conn=response_conn,\n                preload_content=preload_content,\n                decode_content=decode_content,\n                **response_kw,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:789: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:490: in _make_request\n    raise new_e\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:466: in _make_request\n    self._validate_conn(conn)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:1095: in _validate_conn\n    conn.connect()\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:693: in connect\n    self.sock = sock = self._new_conn()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>\n\n    def _new_conn(self) -> socket.socket:\n        \"\"\"Establish a socket connection and set nodelay settings on it.\n    \n        :return: New socket connection.\n        \"\"\"\n        try:\n            sock = connection.create_connection(\n                (self._dns_host, self.port),\n                self.timeout,\n                source_address=self.source_address,\n                socket_options=self.socket_options,\n            )\n        except socket.gaierror as e:\n            raise NameResolutionError(self.host, self, e) from e\n        except SocketTimeout as e:\n>           raise ConnectTimeoutError(\n                self,\n                f\"Connection to {self.host} timed out. (connect timeout={self.timeout})\",\n            ) from e\nE           urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)')\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:208: ConnectTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nself = <requests.adapters.HTTPAdapter object at 0x7fe8faeb0ce0>\nrequest = <PreparedRequest [HEAD]>, stream = False\ntimeout = Timeout(connect=None, read=None, total=None), verify = True\ncert = None, proxies = OrderedDict()\n\n    def send(\n        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None\n    ):\n        \"\"\"Sends PreparedRequest object. Returns Response object.\n    \n        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.\n        :param stream: (optional) Whether to stream the request content.\n        :param timeout: (optional) How long to wait for the server to send\n            data before giving up, as a float, or a :ref:`(connect timeout,\n            read timeout) <timeouts>` tuple.\n        :type timeout: float or tuple or urllib3 Timeout object\n        :param verify: (optional) Either a boolean, in which case it controls whether\n            we verify the server's TLS certificate, or a string, in which case it\n            must be a path to a CA bundle to use\n        :param cert: (optional) Any user-provided SSL certificate to be trusted.\n        :param proxies: (optional) The proxies dictionary to apply to the request.\n        :rtype: requests.Response\n        \"\"\"\n    \n        try:\n            conn = self.get_connection(request.url, proxies)\n        except LocationValueError as e:\n            raise InvalidURL(e, request=request)\n    \n        self.cert_verify(conn, request.url, verify, cert)\n        url = self.request_url(request, proxies)\n        self.add_headers(\n            request,\n            stream=stream,\n            timeout=timeout,\n            verify=verify,\n            cert=cert,\n            proxies=proxies,\n        )\n    \n        chunked = not (request.body is None or \"Content-Length\" in request.headers)\n    \n        if isinstance(timeout, tuple):\n            try:\n                connect, read = timeout\n                timeout = TimeoutSauce(connect=connect, read=read)\n            except ValueError:\n                raise ValueError(\n                    f\"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, \"\n                    f\"or a single float to set both timeouts to the same value.\"\n                )\n        elif isinstance(timeout, TimeoutSauce):\n            pass\n        else:\n            timeout = TimeoutSauce(connect=timeout, read=timeout)\n    \n        try:\n>           resp = conn.urlopen(\n                method=request.method,\n                url=url,\n                body=request.body,\n                headers=request.headers,\n                redirect=False,\n                assert_same_host=False,\n                preload_content=False,\n                decode_content=False,\n                retries=self.max_retries,\n                timeout=timeout,\n                chunked=chunked,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/adapters.py:486: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:843: in urlopen\n    retries = retries.increment(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = Retry(total=0, connect=None, read=False, redirect=None, status=None)\nmethod = 'HEAD'\nurl = '/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html'\nresponse = None\nerror = ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)')\n_pool = <urllib3.connectionpool.HTTPSConnectionPool object at 0x7fe8faeb2060>\n_stacktrace = <traceback object at 0x7fe8fb0e3940>\n\n    def increment(\n        self,\n        method: str | None = None,\n        url: str | None = None,\n        response: BaseHTTPResponse | None = None,\n        error: Exception | None = None,\n        _pool: ConnectionPool | None = None,\n        _stacktrace: TracebackType | None = None,\n    ) -> Self:\n        \"\"\"Return a new Retry object with incremented retry counters.\n    \n        :param response: A response object, or None, if the server did not\n            return a response.\n        :type response: :class:`~urllib3.response.BaseHTTPResponse`\n        :param Exception error: An error encountered during the request, or\n            None if the response was received successfully.\n    \n        :return: A new ``Retry`` object.\n        \"\"\"\n        if self.total is False and error:\n            # Disabled, indicate to re-raise the error.\n            raise reraise(type(error), error, _stacktrace)\n    \n        total = self.total\n        if total is not None:\n            total -= 1\n    \n        connect = self.connect\n        read = self.read\n        redirect = self.redirect\n        status_count = self.status\n        other = self.other\n        cause = \"unknown\"\n        status = None\n        redirect_location = None\n    \n        if error and self._is_connection_error(error):\n            # Connect retry?\n            if connect is False:\n                raise reraise(type(error), error, _stacktrace)\n            elif connect is not None:\n                connect -= 1\n    \n        elif error and self._is_read_error(error):\n            # Read retry?\n            if read is False or method is None or not self._is_method_retryable(method):\n                raise reraise(type(error), error, _stacktrace)\n            elif read is not None:\n                read -= 1\n    \n        elif error:\n            # Other retry?\n            if other is not None:\n                other -= 1\n    \n        elif response and response.get_redirect_location():\n            # Redirect retry?\n            if redirect is not None:\n                redirect -= 1\n            cause = \"too many redirects\"\n            response_redirect_location = response.get_redirect_location()\n            if response_redirect_location:\n                redirect_location = response_redirect_location\n            status = response.status\n    \n        else:\n            # Incrementing because of a server error like a 500 in\n            # status_forcelist and the given method is in the allowed_methods\n            cause = ResponseError.GENERIC_ERROR\n            if response and response.status:\n                if status_count is not None:\n                    status_count -= 1\n                cause = ResponseError.SPECIFIC_ERROR.format(status_code=response.status)\n                status = response.status\n    \n        history = self.history + (\n            RequestHistory(method, url, error, status, redirect_location),\n        )\n    \n        new_retry = self.new(\n            total=total,\n            connect=connect,\n            read=read,\n            redirect=redirect,\n            status=status_count,\n            other=other,\n            history=history,\n        )\n    \n        if new_retry.is_exhausted():\n            reason = error or ResponseError(cause)\n>           raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\nE           urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/retry.py:519: MaxRetryError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <tests.used_resources_page_test.TestUsedResourcesPage.TestUsedResourcesPageForAuthorizedUser.TestUsedResourcesPageForAuthorizedUserLinks object at 0x7fe8fb093e90>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"dc76ca5365c622a2dbac222077f3cd00\")>\nauto_test_user_authorized = None\n\n    @allure.title(\"\"\"Verify presence, visibility, clickability, href, status code of links in sections\"\"\")\n    def test_ur_03_01_verify_links_in_sections(self, driver, auto_test_user_authorized):\n        page = UsedResourcesPage(driver)\n        page.open_used_resources_page()\n        links_presence = page.get_list_of_links()\n        links_visibility = page.check_links_visibility()\n        links_clickability = page.check_links_clickability()\n        links_href = page.get_links_href()\n>       link_status_codes = page.get_links_status_codes()\n\ntests/used_resources_page_test.py:90: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/used_resources_page.py:97: in get_links_status_codes\n    return [requests.head(link_href).status_code for link_href in self.get_links_href()]\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py:100: in head\n    return request(\"head\", url, **kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py:59: in request\n    return session.request(method=method, url=url, **kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py:589: in request\n    resp = self.send(prep, **send_kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py:703: in send\n    r = adapter.send(request, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <requests.adapters.HTTPAdapter object at 0x7fe8faeb0ce0>\nrequest = <PreparedRequest [HEAD]>, stream = False\ntimeout = Timeout(connect=None, read=None, total=None), verify = True\ncert = None, proxies = OrderedDict()\n\n    def send(\n        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None\n    ):\n        \"\"\"Sends PreparedRequest object. Returns Response object.\n    \n        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.\n        :param stream: (optional) Whether to stream the request content.\n        :param timeout: (optional) How long to wait for the server to send\n            data before giving up, as a float, or a :ref:`(connect timeout,\n            read timeout) <timeouts>` tuple.\n        :type timeout: float or tuple or urllib3 Timeout object\n        :param verify: (optional) Either a boolean, in which case it controls whether\n            we verify the server's TLS certificate, or a string, in which case it\n            must be a path to a CA bundle to use\n        :param cert: (optional) Any user-provided SSL certificate to be trusted.\n        :param proxies: (optional) The proxies dictionary to apply to the request.\n        :rtype: requests.Response\n        \"\"\"\n    \n        try:\n            conn = self.get_connection(request.url, proxies)\n        except LocationValueError as e:\n            raise InvalidURL(e, request=request)\n    \n        self.cert_verify(conn, request.url, verify, cert)\n        url = self.request_url(request, proxies)\n        self.add_headers(\n            request,\n            stream=stream,\n            timeout=timeout,\n            verify=verify,\n            cert=cert,\n            proxies=proxies,\n        )\n    \n        chunked = not (request.body is None or \"Content-Length\" in request.headers)\n    \n        if isinstance(timeout, tuple):\n            try:\n                connect, read = timeout\n                timeout = TimeoutSauce(connect=connect, read=read)\n            except ValueError:\n                raise ValueError(\n                    f\"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, \"\n                    f\"or a single float to set both timeouts to the same value.\"\n                )\n        elif isinstance(timeout, TimeoutSauce):\n            pass\n        else:\n            timeout = TimeoutSauce(connect=timeout, read=timeout)\n    \n        try:\n            resp = conn.urlopen(\n                method=request.method,\n                url=url,\n                body=request.body,\n                headers=request.headers,\n                redirect=False,\n                assert_same_host=False,\n                preload_content=False,\n                decode_content=False,\n                retries=self.max_retries,\n                timeout=timeout,\n                chunked=chunked,\n            )\n    \n        except (ProtocolError, OSError) as err:\n            raise ConnectionError(err, request=request)\n    \n        except MaxRetryError as e:\n            if isinstance(e.reason, ConnectTimeoutError):\n                # TODO: Remove this in 3.0.0: see #2811\n                if not isinstance(e.reason, NewConnectionError):\n>                   raise ConnectTimeout(e, request=request)\nE                   requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/adapters.py:507: ConnectTimeout",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728870295069,
+      "stop" : 1728870295069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728871122447,
+      "stop" : 1728871123204,
+      "duration" : 757
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "auto_test_user_authorized",
+    "time" : {
+      "start" : 1728871125859,
+      "stop" : 1728871128247,
+      "duration" : 2388
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Auto test user authorized",
+      "time" : {
+        "start" : 1728871125859,
+        "stop" : 1728871128247,
+        "duration" : 2388
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check url is present: https://brainup.site/groups",
+        "time" : {
+          "start" : 1728871126209,
+          "stop" : 1728871128225,
+          "duration" : 2016
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Loader checking",
+        "time" : {
+          "start" : 1728871128226,
+          "stop" : 1728871128247,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"dc76ca5365c622a2dbac222077f3cd00\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1728871123204,
+      "stop" : 1728871125858,
+      "duration" : 2654
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1728871123205,
+        "stop" : 1728871125858,
+        "duration" : 2653
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"dc76ca5365c622a2dbac222077f3cd00\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))",
+    "statusTrace" : "self = <urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>\n\n    def _new_conn(self) -> socket.socket:\n        \"\"\"Establish a socket connection and set nodelay settings on it.\n    \n        :return: New socket connection.\n        \"\"\"\n        try:\n>           sock = connection.create_connection(\n                (self._dns_host, self.port),\n                self.timeout,\n                source_address=self.source_address,\n                socket_options=self.socket_options,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/connection.py:85: in create_connection\n    raise err\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\naddress = ('web.archive.org', 443), timeout = None, source_address = None\nsocket_options = [(6, 1, 1)]\n\n    def create_connection(\n        address: tuple[str, int],\n        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,\n        source_address: tuple[str, int] | None = None,\n        socket_options: _TYPE_SOCKET_OPTIONS | None = None,\n    ) -> socket.socket:\n        \"\"\"Connect to *address* and return the socket object.\n    \n        Convenience function.  Connect to *address* (a 2-tuple ``(host,\n        port)``) and return the socket object.  Passing the optional\n        *timeout* parameter will set the timeout on the socket instance\n        before attempting to connect.  If no *timeout* is supplied, the\n        global default timeout setting returned by :func:`socket.getdefaulttimeout`\n        is used.  If *source_address* is set it must be a tuple of (host, port)\n        for the socket to bind as a source address before making the connection.\n        An host of '' or port 0 tells the OS to use the default.\n        \"\"\"\n    \n        host, port = address\n        if host.startswith(\"[\"):\n            host = host.strip(\"[]\")\n        err = None\n    \n        # Using the value from allowed_gai_family() in the context of getaddrinfo lets\n        # us select whether to work with IPv4 DNS records, IPv6 records, or both.\n        # The original create_connection function always returns all records.\n        family = allowed_gai_family()\n    \n        try:\n            host.encode(\"idna\")\n        except UnicodeError:\n            raise LocationParseError(f\"'{host}', label empty or too long\") from None\n    \n        for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):\n            af, socktype, proto, canonname, sa = res\n            sock = None\n            try:\n                sock = socket.socket(af, socktype, proto)\n    \n                # If provided, set socket level options before connecting.\n                _set_socket_options(sock, socket_options)\n    \n                if timeout is not _DEFAULT_TIMEOUT:\n                    sock.settimeout(timeout)\n                if source_address:\n                    sock.bind(source_address)\n>               sock.connect(sa)\nE               TimeoutError: [Errno 110] Connection timed out\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/connection.py:73: TimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nself = <urllib3.connectionpool.HTTPSConnectionPool object at 0x7fe8faeb2060>\nmethod = 'HEAD'\nurl = '/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html'\nbody = None\nheaders = {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}\nretries = Retry(total=0, connect=None, read=False, redirect=None, status=None)\nredirect = False, assert_same_host = False\ntimeout = Timeout(connect=None, read=None, total=None), pool_timeout = None\nrelease_conn = False, chunked = False, body_pos = None, preload_content = False\ndecode_content = False, response_kw = {}\nparsed_url = Url(scheme=None, auth=None, host=None, port=None, path='/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html', query=None, fragment=None)\ndestination_scheme = None, conn = None, release_this_conn = True\nhttp_tunnel_required = False, err = None, clean_exit = False\n\n    def urlopen(  # type: ignore[override]\n        self,\n        method: str,\n        url: str,\n        body: _TYPE_BODY | None = None,\n        headers: typing.Mapping[str, str] | None = None,\n        retries: Retry | bool | int | None = None,\n        redirect: bool = True,\n        assert_same_host: bool = True,\n        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,\n        pool_timeout: int | None = None,\n        release_conn: bool | None = None,\n        chunked: bool = False,\n        body_pos: _TYPE_BODY_POSITION | None = None,\n        preload_content: bool = True,\n        decode_content: bool = True,\n        **response_kw: typing.Any,\n    ) -> BaseHTTPResponse:\n        \"\"\"\n        Get a connection from the pool and perform an HTTP request. This is the\n        lowest level call for making a request, so you'll need to specify all\n        the raw details.\n    \n        .. note::\n    \n           More commonly, it's appropriate to use a convenience method\n           such as :meth:`request`.\n    \n        .. note::\n    \n           `release_conn` will only behave as expected if\n           `preload_content=False` because we want to make\n           `preload_content=False` the default behaviour someday soon without\n           breaking backwards compatibility.\n    \n        :param method:\n            HTTP request method (such as GET, POST, PUT, etc.)\n    \n        :param url:\n            The URL to perform the request on.\n    \n        :param body:\n            Data to send in the request body, either :class:`str`, :class:`bytes`,\n            an iterable of :class:`str`/:class:`bytes`, or a file-like object.\n    \n        :param headers:\n            Dictionary of custom headers to send, such as User-Agent,\n            If-None-Match, etc. If None, pool headers are used. If provided,\n            these headers completely replace any pool-specific headers.\n    \n        :param retries:\n            Configure the number of retries to allow before raising a\n            :class:`~urllib3.exceptions.MaxRetryError` exception.\n    \n            If ``None`` (default) will retry 3 times, see ``Retry.DEFAULT``. Pass a\n            :class:`~urllib3.util.retry.Retry` object for fine-grained control\n            over different types of retries.\n            Pass an integer number to retry connection errors that many times,\n            but no other types of errors. Pass zero to never retry.\n    \n            If ``False``, then retries are disabled and any exception is raised\n            immediately. Also, instead of raising a MaxRetryError on redirects,\n            the redirect response will be returned.\n    \n        :type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.\n    \n        :param redirect:\n            If True, automatically handle redirects (status codes 301, 302,\n            303, 307, 308). Each redirect counts as a retry. Disabling retries\n            will disable redirect, too.\n    \n        :param assert_same_host:\n            If ``True``, will make sure that the host of the pool requests is\n            consistent else will raise HostChangedError. When ``False``, you can\n            use the pool on an HTTP proxy and request foreign hosts.\n    \n        :param timeout:\n            If specified, overrides the default timeout for this one\n            request. It may be a float (in seconds) or an instance of\n            :class:`urllib3.util.Timeout`.\n    \n        :param pool_timeout:\n            If set and the pool is set to block=True, then this method will\n            block for ``pool_timeout`` seconds and raise EmptyPoolError if no\n            connection is available within the time period.\n    \n        :param bool preload_content:\n            If True, the response's body will be preloaded into memory.\n    \n        :param bool decode_content:\n            If True, will attempt to decode the body based on the\n            'content-encoding' header.\n    \n        :param release_conn:\n            If False, then the urlopen call will not release the connection\n            back into the pool once a response is received (but will release if\n            you read the entire contents of the response such as when\n            `preload_content=True`). This is useful if you're not preloading\n            the response's content immediately. You will need to call\n            ``r.release_conn()`` on the response ``r`` to return the connection\n            back into the pool. If None, it takes the value of ``preload_content``\n            which defaults to ``True``.\n    \n        :param bool chunked:\n            If True, urllib3 will send the body using chunked transfer\n            encoding. Otherwise, urllib3 will send the body using the standard\n            content-length form. Defaults to False.\n    \n        :param int body_pos:\n            Position to seek to in file-like body in the event of a retry or\n            redirect. Typically this won't need to be set because urllib3 will\n            auto-populate the value when needed.\n        \"\"\"\n        parsed_url = parse_url(url)\n        destination_scheme = parsed_url.scheme\n    \n        if headers is None:\n            headers = self.headers\n    \n        if not isinstance(retries, Retry):\n            retries = Retry.from_int(retries, redirect=redirect, default=self.retries)\n    \n        if release_conn is None:\n            release_conn = preload_content\n    \n        # Check host\n        if assert_same_host and not self.is_same_host(url):\n            raise HostChangedError(self, url, retries)\n    \n        # Ensure that the URL we're connecting to is properly encoded\n        if url.startswith(\"/\"):\n            url = to_str(_encode_target(url))\n        else:\n            url = to_str(parsed_url.url)\n    \n        conn = None\n    \n        # Track whether `conn` needs to be released before\n        # returning/raising/recursing. Update this variable if necessary, and\n        # leave `release_conn` constant throughout the function. That way, if\n        # the function recurses, the original value of `release_conn` will be\n        # passed down into the recursive call, and its value will be respected.\n        #\n        # See issue #651 [1] for details.\n        #\n        # [1] <https://github.com/urllib3/urllib3/issues/651>\n        release_this_conn = release_conn\n    \n        http_tunnel_required = connection_requires_http_tunnel(\n            self.proxy, self.proxy_config, destination_scheme\n        )\n    \n        # Merge the proxy headers. Only done when not using HTTP CONNECT. We\n        # have to copy the headers dict so we can safely change it without those\n        # changes being reflected in anyone else's copy.\n        if not http_tunnel_required:\n            headers = headers.copy()  # type: ignore[attr-defined]\n            headers.update(self.proxy_headers)  # type: ignore[union-attr]\n    \n        # Must keep the exception bound to a separate variable or else Python 3\n        # complains about UnboundLocalError.\n        err = None\n    \n        # Keep track of whether we cleanly exited the except block. This\n        # ensures we do proper cleanup in finally.\n        clean_exit = False\n    \n        # Rewind body position, if needed. Record current position\n        # for future rewinds in the event of a redirect/retry.\n        body_pos = set_file_position(body, body_pos)\n    \n        try:\n            # Request a connection from the queue.\n            timeout_obj = self._get_timeout(timeout)\n            conn = self._get_conn(timeout=pool_timeout)\n    \n            conn.timeout = timeout_obj.connect_timeout  # type: ignore[assignment]\n    \n            # Is this a closed/new connection that requires CONNECT tunnelling?\n            if self.proxy is not None and http_tunnel_required and conn.is_closed:\n                try:\n                    self._prepare_proxy(conn)\n                except (BaseSSLError, OSError, SocketTimeout) as e:\n                    self._raise_timeout(\n                        err=e, url=self.proxy.url, timeout_value=conn.timeout\n                    )\n                    raise\n    \n            # If we're going to release the connection in ``finally:``, then\n            # the response doesn't need to know about the connection. Otherwise\n            # it will also try to release it and we'll have a double-release\n            # mess.\n            response_conn = conn if not release_conn else None\n    \n            # Make the request on the HTTPConnection object\n>           response = self._make_request(\n                conn,\n                method,\n                url,\n                timeout=timeout_obj,\n                body=body,\n                headers=headers,\n                chunked=chunked,\n                retries=retries,\n                response_conn=response_conn,\n                preload_content=preload_content,\n                decode_content=decode_content,\n                **response_kw,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:789: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:490: in _make_request\n    raise new_e\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:466: in _make_request\n    self._validate_conn(conn)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:1095: in _validate_conn\n    conn.connect()\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:693: in connect\n    self.sock = sock = self._new_conn()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>\n\n    def _new_conn(self) -> socket.socket:\n        \"\"\"Establish a socket connection and set nodelay settings on it.\n    \n        :return: New socket connection.\n        \"\"\"\n        try:\n            sock = connection.create_connection(\n                (self._dns_host, self.port),\n                self.timeout,\n                source_address=self.source_address,\n                socket_options=self.socket_options,\n            )\n        except socket.gaierror as e:\n            raise NameResolutionError(self.host, self, e) from e\n        except SocketTimeout as e:\n>           raise ConnectTimeoutError(\n                self,\n                f\"Connection to {self.host} timed out. (connect timeout={self.timeout})\",\n            ) from e\nE           urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)')\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connection.py:208: ConnectTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nself = <requests.adapters.HTTPAdapter object at 0x7fe8faeb0ce0>\nrequest = <PreparedRequest [HEAD]>, stream = False\ntimeout = Timeout(connect=None, read=None, total=None), verify = True\ncert = None, proxies = OrderedDict()\n\n    def send(\n        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None\n    ):\n        \"\"\"Sends PreparedRequest object. Returns Response object.\n    \n        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.\n        :param stream: (optional) Whether to stream the request content.\n        :param timeout: (optional) How long to wait for the server to send\n            data before giving up, as a float, or a :ref:`(connect timeout,\n            read timeout) <timeouts>` tuple.\n        :type timeout: float or tuple or urllib3 Timeout object\n        :param verify: (optional) Either a boolean, in which case it controls whether\n            we verify the server's TLS certificate, or a string, in which case it\n            must be a path to a CA bundle to use\n        :param cert: (optional) Any user-provided SSL certificate to be trusted.\n        :param proxies: (optional) The proxies dictionary to apply to the request.\n        :rtype: requests.Response\n        \"\"\"\n    \n        try:\n            conn = self.get_connection(request.url, proxies)\n        except LocationValueError as e:\n            raise InvalidURL(e, request=request)\n    \n        self.cert_verify(conn, request.url, verify, cert)\n        url = self.request_url(request, proxies)\n        self.add_headers(\n            request,\n            stream=stream,\n            timeout=timeout,\n            verify=verify,\n            cert=cert,\n            proxies=proxies,\n        )\n    \n        chunked = not (request.body is None or \"Content-Length\" in request.headers)\n    \n        if isinstance(timeout, tuple):\n            try:\n                connect, read = timeout\n                timeout = TimeoutSauce(connect=connect, read=read)\n            except ValueError:\n                raise ValueError(\n                    f\"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, \"\n                    f\"or a single float to set both timeouts to the same value.\"\n                )\n        elif isinstance(timeout, TimeoutSauce):\n            pass\n        else:\n            timeout = TimeoutSauce(connect=timeout, read=timeout)\n    \n        try:\n>           resp = conn.urlopen(\n                method=request.method,\n                url=url,\n                body=request.body,\n                headers=request.headers,\n                redirect=False,\n                assert_same_host=False,\n                preload_content=False,\n                decode_content=False,\n                retries=self.max_retries,\n                timeout=timeout,\n                chunked=chunked,\n            )\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/adapters.py:486: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/connectionpool.py:843: in urlopen\n    retries = retries.increment(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = Retry(total=0, connect=None, read=False, redirect=None, status=None)\nmethod = 'HEAD'\nurl = '/web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html'\nresponse = None\nerror = ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)')\n_pool = <urllib3.connectionpool.HTTPSConnectionPool object at 0x7fe8faeb2060>\n_stacktrace = <traceback object at 0x7fe8fb0e3940>\n\n    def increment(\n        self,\n        method: str | None = None,\n        url: str | None = None,\n        response: BaseHTTPResponse | None = None,\n        error: Exception | None = None,\n        _pool: ConnectionPool | None = None,\n        _stacktrace: TracebackType | None = None,\n    ) -> Self:\n        \"\"\"Return a new Retry object with incremented retry counters.\n    \n        :param response: A response object, or None, if the server did not\n            return a response.\n        :type response: :class:`~urllib3.response.BaseHTTPResponse`\n        :param Exception error: An error encountered during the request, or\n            None if the response was received successfully.\n    \n        :return: A new ``Retry`` object.\n        \"\"\"\n        if self.total is False and error:\n            # Disabled, indicate to re-raise the error.\n            raise reraise(type(error), error, _stacktrace)\n    \n        total = self.total\n        if total is not None:\n            total -= 1\n    \n        connect = self.connect\n        read = self.read\n        redirect = self.redirect\n        status_count = self.status\n        other = self.other\n        cause = \"unknown\"\n        status = None\n        redirect_location = None\n    \n        if error and self._is_connection_error(error):\n            # Connect retry?\n            if connect is False:\n                raise reraise(type(error), error, _stacktrace)\n            elif connect is not None:\n                connect -= 1\n    \n        elif error and self._is_read_error(error):\n            # Read retry?\n            if read is False or method is None or not self._is_method_retryable(method):\n                raise reraise(type(error), error, _stacktrace)\n            elif read is not None:\n                read -= 1\n    \n        elif error:\n            # Other retry?\n            if other is not None:\n                other -= 1\n    \n        elif response and response.get_redirect_location():\n            # Redirect retry?\n            if redirect is not None:\n                redirect -= 1\n            cause = \"too many redirects\"\n            response_redirect_location = response.get_redirect_location()\n            if response_redirect_location:\n                redirect_location = response_redirect_location\n            status = response.status\n    \n        else:\n            # Incrementing because of a server error like a 500 in\n            # status_forcelist and the given method is in the allowed_methods\n            cause = ResponseError.GENERIC_ERROR\n            if response and response.status:\n                if status_count is not None:\n                    status_count -= 1\n                cause = ResponseError.SPECIFIC_ERROR.format(status_code=response.status)\n                status = response.status\n    \n        history = self.history + (\n            RequestHistory(method, url, error, status, redirect_location),\n        )\n    \n        new_retry = self.new(\n            total=total,\n            connect=connect,\n            read=read,\n            redirect=redirect,\n            status=status_count,\n            other=other,\n            history=history,\n        )\n    \n        if new_retry.is_exhausted():\n            reason = error or ResponseError(cause)\n>           raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\nE           urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/urllib3/util/retry.py:519: MaxRetryError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <tests.used_resources_page_test.TestUsedResourcesPage.TestUsedResourcesPageForAuthorizedUser.TestUsedResourcesPageForAuthorizedUserLinks object at 0x7fe8fb093e90>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"dc76ca5365c622a2dbac222077f3cd00\")>\nauto_test_user_authorized = None\n\n    @allure.title(\"\"\"Verify presence, visibility, clickability, href, status code of links in sections\"\"\")\n    def test_ur_03_01_verify_links_in_sections(self, driver, auto_test_user_authorized):\n        page = UsedResourcesPage(driver)\n        page.open_used_resources_page()\n        links_presence = page.get_list_of_links()\n        links_visibility = page.check_links_visibility()\n        links_clickability = page.check_links_clickability()\n        links_href = page.get_links_href()\n>       link_status_codes = page.get_links_status_codes()\n\ntests/used_resources_page_test.py:90: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/used_resources_page.py:97: in get_links_status_codes\n    return [requests.head(link_href).status_code for link_href in self.get_links_href()]\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py:100: in head\n    return request(\"head\", url, **kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py:59: in request\n    return session.request(method=method, url=url, **kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py:589: in request\n    resp = self.send(prep, **send_kwargs)\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py:703: in send\n    r = adapter.send(request, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <requests.adapters.HTTPAdapter object at 0x7fe8faeb0ce0>\nrequest = <PreparedRequest [HEAD]>, stream = False\ntimeout = Timeout(connect=None, read=None, total=None), verify = True\ncert = None, proxies = OrderedDict()\n\n    def send(\n        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None\n    ):\n        \"\"\"Sends PreparedRequest object. Returns Response object.\n    \n        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.\n        :param stream: (optional) Whether to stream the request content.\n        :param timeout: (optional) How long to wait for the server to send\n            data before giving up, as a float, or a :ref:`(connect timeout,\n            read timeout) <timeouts>` tuple.\n        :type timeout: float or tuple or urllib3 Timeout object\n        :param verify: (optional) Either a boolean, in which case it controls whether\n            we verify the server's TLS certificate, or a string, in which case it\n            must be a path to a CA bundle to use\n        :param cert: (optional) Any user-provided SSL certificate to be trusted.\n        :param proxies: (optional) The proxies dictionary to apply to the request.\n        :rtype: requests.Response\n        \"\"\"\n    \n        try:\n            conn = self.get_connection(request.url, proxies)\n        except LocationValueError as e:\n            raise InvalidURL(e, request=request)\n    \n        self.cert_verify(conn, request.url, verify, cert)\n        url = self.request_url(request, proxies)\n        self.add_headers(\n            request,\n            stream=stream,\n            timeout=timeout,\n            verify=verify,\n            cert=cert,\n            proxies=proxies,\n        )\n    \n        chunked = not (request.body is None or \"Content-Length\" in request.headers)\n    \n        if isinstance(timeout, tuple):\n            try:\n                connect, read = timeout\n                timeout = TimeoutSauce(connect=connect, read=read)\n            except ValueError:\n                raise ValueError(\n                    f\"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, \"\n                    f\"or a single float to set both timeouts to the same value.\"\n                )\n        elif isinstance(timeout, TimeoutSauce):\n            pass\n        else:\n            timeout = TimeoutSauce(connect=timeout, read=timeout)\n    \n        try:\n            resp = conn.urlopen(\n                method=request.method,\n                url=url,\n                body=request.body,\n                headers=request.headers,\n                redirect=False,\n                assert_same_host=False,\n                preload_content=False,\n                decode_content=False,\n                retries=self.max_retries,\n                timeout=timeout,\n                chunked=chunked,\n            )\n    \n        except (ProtocolError, OSError) as err:\n            raise ConnectionError(err, request=request)\n    \n        except MaxRetryError as e:\n            if isinstance(e.reason, ConnectTimeoutError):\n                # TODO: Remove this in 3.0.0: see #2811\n                if not isinstance(e.reason, NewConnectionError):\n>                   raise ConnectTimeout(e, request=request)\nE                   requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))\n\n/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/adapters.py:507: ConnectTimeout",
+    "steps" : [ {
+      "name" : "Open the 'Used resources' page",
+      "time" : {
+        "start" : 1728871128247,
+        "stop" : 1728871128472,
+        "duration" : 225
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get the list of links in sections on the page",
+      "time" : {
+        "start" : 1728871128472,
+        "stop" : 1728871128990,
+        "duration" : 518
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check all links in sections are visible",
+      "time" : {
+        "start" : 1728871128990,
+        "stop" : 1728871129011,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links in sections on the page",
+        "time" : {
+          "start" : 1728871128990,
+          "stop" : 1728871128994,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check all links in sections are clickable",
+      "time" : {
+        "start" : 1728871129011,
+        "stop" : 1728871129028,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links in sections on the page",
+        "time" : {
+          "start" : 1728871129011,
+          "stop" : 1728871129016,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of links in sections",
+      "time" : {
+        "start" : 1728871129028,
+        "stop" : 1728871129055,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links in sections on the page",
+        "time" : {
+          "start" : 1728871129029,
+          "stop" : 1728871129033,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get status code of links in sections",
+      "time" : {
+        "start" : 1728871129055,
+        "stop" : 1728871266009,
+        "duration" : 136954
+      },
+      "status" : "broken",
+      "statusMessage" : "requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/runner/work/auto-tests-python/auto-tests-python/pages/used_resources_page.py\", line 97, in get_links_status_codes\n    return [requests.head(link_href).status_code for link_href in self.get_links_href()]\n            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py\", line 100, in head\n    return request(\"head\", url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py\", line 589, in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/sessions.py\", line 703, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/requests/adapters.py\", line 507, in send\n    raise ConnectTimeout(e, request=request)\n",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of links in sections",
+        "time" : {
+          "start" : 1728871129055,
+          "stop" : 1728871129076,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get the list of links in sections on the page",
+          "time" : {
+            "start" : 1728871129055,
+            "stop" : 1728871129060,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2bf4a243d41858a8",
+      "name" : "Screenshot 2024-10-14 02:01:06.170373",
+      "source" : "2bf4a243d41858a8.png",
+      "type" : "image/png",
+      "size" : 64083
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728871266172,
+      "stop" : 1728871266271,
+      "duration" : 99
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Used Resources Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "used_resources_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUsedResourcesPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1341-231"
+  }, {
+    "name" : "thread",
+    "value" : "2414-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.used_resources_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 30,
+        "unknown" : 0,
+        "total" : 35
+      },
+      "items" : [ {
+        "uid" : "d06cb251ecce3e0f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/61//#testresult/d06cb251ecce3e0f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x55f49a10302a <unknown>\n#1 0x55f499de95e0 <unknown>\n#2 0x55f499de17eb <unknown>\n#3 0x55f499dd1a09 <unknown>\n#4 0x55f499dd3744 <unknown>\n#5 0x55f499dd1cbd <unknown>\n#6 0x55f499dd152f <unknown>\n#7 0x55f499dd1422 <unknown>\n#8 0x55f499dcf493 <unknown>\n#9 0x55f499dcfada <unknown>\n#10 0x55f499debf41 <unknown>\n#11 0x55f499e7d8c5 <unknown>\n#12 0x55f499e5db22 <unknown>\n#13 0x55f499e7cd7d <unknown>\n#14 0x55f499e5d8c3 <unknown>\n#15 0x55f499e2b6b3 <unknown>\n#16 0x55f499e2c68e <unknown>\n#17 0x55f49a0cda2b <unknown>\n#18 0x55f49a0d19b1 <unknown>\n#19 0x55f49a0ba225 <unknown>\n#20 0x55f49a0d2532 <unknown>\n#21 0x55f49a09f38f <unknown>\n#22 0x55f49a0f1f28 <unknown>\n#23 0x55f49a0f20f3 <unknown>\n#24 0x55f49a101e7c <unknown>\n#25 0x7f72c6094ac3 <unknown>",
+        "time" : {
+          "start" : 1728784257700,
+          "stop" : 1728784257700,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1d92c2efe0e96b26",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/60//#testresult/1d92c2efe0e96b26",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x5617c798a02a <unknown>\n#1 0x5617c76705e0 <unknown>\n#2 0x5617c76687eb <unknown>\n#3 0x5617c7658a09 <unknown>\n#4 0x5617c765a744 <unknown>\n#5 0x5617c7658cbd <unknown>\n#6 0x5617c765852f <unknown>\n#7 0x5617c7658422 <unknown>\n#8 0x5617c7656493 <unknown>\n#9 0x5617c7656ada <unknown>\n#10 0x5617c7672f41 <unknown>\n#11 0x5617c77048c5 <unknown>\n#12 0x5617c76e4b22 <unknown>\n#13 0x5617c7703d7d <unknown>\n#14 0x5617c76e48c3 <unknown>\n#15 0x5617c76b26b3 <unknown>\n#16 0x5617c76b368e <unknown>\n#17 0x5617c7954a2b <unknown>\n#18 0x5617c79589b1 <unknown>\n#19 0x5617c7941225 <unknown>\n#20 0x5617c7959532 <unknown>\n#21 0x5617c792638f <unknown>\n#22 0x5617c7978f28 <unknown>\n#23 0x5617c79790f3 <unknown>\n#24 0x5617c7988e7c <unknown>\n#25 0x7f7238494ac3 <unknown>",
+        "time" : {
+          "start" : 1728697371719,
+          "stop" : 1728697371719,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4759e099a89fa68f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/59//#testresult/4759e099a89fa68f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x564ca123b02a <unknown>\n#1 0x564ca0f215e0 <unknown>\n#2 0x564ca0f197eb <unknown>\n#3 0x564ca0f09a09 <unknown>\n#4 0x564ca0f0b744 <unknown>\n#5 0x564ca0f09cbd <unknown>\n#6 0x564ca0f0952f <unknown>\n#7 0x564ca0f09422 <unknown>\n#8 0x564ca0f07493 <unknown>\n#9 0x564ca0f07ada <unknown>\n#10 0x564ca0f23f41 <unknown>\n#11 0x564ca0fb58c5 <unknown>\n#12 0x564ca0f95b22 <unknown>\n#13 0x564ca0fb4d7d <unknown>\n#14 0x564ca0f958c3 <unknown>\n#15 0x564ca0f636b3 <unknown>\n#16 0x564ca0f6468e <unknown>\n#17 0x564ca1205a2b <unknown>\n#18 0x564ca12099b1 <unknown>\n#19 0x564ca11f2225 <unknown>\n#20 0x564ca120a532 <unknown>\n#21 0x564ca11d738f <unknown>\n#22 0x564ca1229f28 <unknown>\n#23 0x564ca122a0f3 <unknown>\n#24 0x564ca1239e7c <unknown>\n#25 0x7f7992294ac3 <unknown>",
+        "time" : {
+          "start" : 1728611062944,
+          "stop" : 1728611062944,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "54fdabc34de79f43",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/58//#testresult/54fdabc34de79f43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728525377381,
+          "stop" : 1728525380814,
+          "duration" : 3433
+        }
+      }, {
+        "uid" : "6b217205dca88839",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/57//#testresult/6b217205dca88839",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728439207152,
+          "stop" : 1728439218533,
+          "duration" : 11381
+        }
+      }, {
+        "uid" : "40997ed30e11f00",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/56//#testresult/40997ed30e11f00",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728352651376,
+          "stop" : 1728352654690,
+          "duration" : 3314
+        }
+      }, {
+        "uid" : "ee0b111d6a786f9d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/55//#testresult/ee0b111d6a786f9d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups",
+        "time" : {
+          "start" : 1728267811356,
+          "stop" : 1728267811356,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e11d5e60610b317b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/e11d5e60610b317b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728180186609,
+          "stop" : 1728180188782,
+          "duration" : 2173
+        }
+      }, {
+        "uid" : "f6194f6d18f087f1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/f6194f6d18f087f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728093487082,
+          "stop" : 1728093489129,
+          "duration" : 2047
+        }
+      }, {
+        "uid" : "58f0f0d2bd14e2ae",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/58f0f0d2bd14e2ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728007192662,
+          "stop" : 1728007194747,
+          "duration" : 2085
+        }
+      }, {
+        "uid" : "a693f187384c7ce3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/a693f187384c7ce3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727921058958,
+          "stop" : 1727921060730,
+          "duration" : 1772
+        }
+      }, {
+        "uid" : "65b1432cb09547b8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/65b1432cb09547b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727834360183,
+          "stop" : 1727834364879,
+          "duration" : 4696
+        }
+      }, {
+        "uid" : "8b4c07cb81556b83",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/8b4c07cb81556b83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727748515404,
+          "stop" : 1727748519176,
+          "duration" : 3772
+        }
+      }, {
+        "uid" : "36e07e1cdf13b0b7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/36e07e1cdf13b0b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727661768721,
+          "stop" : 1727661770918,
+          "duration" : 2197
+        }
+      }, {
+        "uid" : "10eeb396e673e416",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/10eeb396e673e416",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727575689128,
+          "stop" : 1727575700999,
+          "duration" : 11871
+        }
+      }, {
+        "uid" : "1ca3132c810c3d55",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/1ca3132c810c3d55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727489023313,
+          "stop" : 1727489026119,
+          "duration" : 2806
+        }
+      }, {
+        "uid" : "93945595740eccd8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/93945595740eccd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727402727408,
+          "stop" : 1727402730241,
+          "duration" : 2833
+        }
+      }, {
+        "uid" : "fc47a8c501689f0a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/fc47a8c501689f0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727316282454,
+          "stop" : 1727316288337,
+          "duration" : 5883
+        }
+      }, {
+        "uid" : "66a47bc51a41157",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/66a47bc51a41157",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727229889614,
+          "stop" : 1727229891730,
+          "duration" : 2116
+        }
+      }, {
+        "uid" : "eb8394803cfabb2f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/42//#testresult/eb8394803cfabb2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727143214894,
+          "stop" : 1727143217137,
+          "duration" : 2243
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "29503d224aa5642e.json",
+  "parameterValues" : [ ]
+}

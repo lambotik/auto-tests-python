@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "e8b57d719359b71a",
+        "parentUid" : "4cc9d52bbc4d22f9d5d28b5c715d031d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1728870394249,
+          "stop" : 1728870394651,
+          "duration" : 402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc9d52bbc4d22f9d5d28b5c715d031d"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "873d4301fd3daeb5",
+        "parentUid" : "30efe62bc72b330c0e963ba321801669",
+        "status" : "failed",
+        "time" : {
+          "start" : 1728870398345,
+          "stop" : 1728870398790,
+          "duration" : 445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30efe62bc72b330c0e963ba321801669"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://github.com/ElenaSpb' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/ElenaSpb",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "a01818405b3f563a",
+        "parentUid" : "a35e80aba4a62f6270359ded2599728e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1728870406425,
+          "stop" : 1728870406665,
+          "duration" : 240
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a35e80aba4a62f6270359ded2599728e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20090601012031/http://caliban.mpiz-koeln.mpg.de/~stueber/thome/Alphabetical_list.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8faeb0830>, 'Connection to web.archive.org timed out. (connect timeout=None)'))",
+      "children" : [ {
+        "name" : "Verify presence, visibility, clickability, href, status code of links in sections",
+        "uid" : "29503d224aa5642e",
+        "parentUid" : "bf5cafe44c3f192e1bafa7b52b207025",
+        "status" : "broken",
+        "time" : {
+          "start" : 1728871128247,
+          "stop" : 1728871266011,
+          "duration" : 137764
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf5cafe44c3f192e1bafa7b52b207025"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
