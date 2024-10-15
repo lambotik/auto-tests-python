@@ -1,0 +1,357 @@
+{
+  "uid" : "c8c39e65e4c4dc03",
+  "name" : "Verify content of the text on the page",
+  "fullName" : "tests.contributors_page_test.TestContributorsPageText#test_cnp_02_03_verify_page_text",
+  "historyId" : "fb3765b3b9cbccc8d3b872d250e108b4",
+  "time" : {
+    "start" : 1728956697272,
+    "stop" : 1728956697292,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1728956693915,
+      "stop" : 1728956694674,
+      "duration" : 759
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1728956608063,
+      "stop" : 1728956608063,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "contributors_page_open",
+    "time" : {
+      "start" : 1728956694675,
+      "stop" : 1728956697272,
+      "duration" : 2597
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/contributors",
+      "time" : {
+        "start" : 1728956694675,
+        "stop" : 1728956697272,
+        "duration" : 2597
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"eae378099f1a6ff77819e8afb00f10c6\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get content of the text on the page",
+      "time" : {
+        "start" : 1728956697272,
+        "stop" : 1728956697292,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1728956697293,
+      "stop" : 1728956697358,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "The Contributors Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "contributors_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContributorsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az816-776"
+  }, {
+    "name" : "thread",
+    "value" : "2524-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.contributors_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 29,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "a2c20659eca76ced",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/62//#testresult/a2c20659eca76ced",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728870390801,
+          "stop" : 1728870390852,
+          "duration" : 51
+        }
+      }, {
+        "uid" : "ddaf6a9db2b50074",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/61//#testresult/ddaf6a9db2b50074",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x55d7a098402a <unknown>\n#1 0x55d7a066a5e0 <unknown>\n#2 0x55d7a06627eb <unknown>\n#3 0x55d7a0652a09 <unknown>\n#4 0x55d7a0654744 <unknown>\n#5 0x55d7a0652cbd <unknown>\n#6 0x55d7a065252f <unknown>\n#7 0x55d7a0652422 <unknown>\n#8 0x55d7a0650493 <unknown>\n#9 0x55d7a0650ada <unknown>\n#10 0x55d7a066cf41 <unknown>\n#11 0x55d7a06fe8c5 <unknown>\n#12 0x55d7a06deb22 <unknown>\n#13 0x55d7a06fdd7d <unknown>\n#14 0x55d7a06de8c3 <unknown>\n#15 0x55d7a06ac6b3 <unknown>\n#16 0x55d7a06ad68e <unknown>\n#17 0x55d7a094ea2b <unknown>\n#18 0x55d7a09529b1 <unknown>\n#19 0x55d7a093b225 <unknown>\n#20 0x55d7a0953532 <unknown>\n#21 0x55d7a092038f <unknown>\n#22 0x55d7a0972f28 <unknown>\n#23 0x55d7a09730f3 <unknown>\n#24 0x55d7a0982e7c <unknown>\n#25 0x7f2e4e694ac3 <unknown>",
+        "time" : {
+          "start" : 1728784120601,
+          "stop" : 1728784120601,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "fcd8d23bfe0845d7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/60//#testresult/fcd8d23bfe0845d7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x55bf0f6f402a <unknown>\n#1 0x55bf0f3da5e0 <unknown>\n#2 0x55bf0f3d27eb <unknown>\n#3 0x55bf0f3c2a09 <unknown>\n#4 0x55bf0f3c4744 <unknown>\n#5 0x55bf0f3c2cbd <unknown>\n#6 0x55bf0f3c252f <unknown>\n#7 0x55bf0f3c2422 <unknown>\n#8 0x55bf0f3c0493 <unknown>\n#9 0x55bf0f3c0ada <unknown>\n#10 0x55bf0f3dcf41 <unknown>\n#11 0x55bf0f46e8c5 <unknown>\n#12 0x55bf0f44eb22 <unknown>\n#13 0x55bf0f46dd7d <unknown>\n#14 0x55bf0f44e8c3 <unknown>\n#15 0x55bf0f41c6b3 <unknown>\n#16 0x55bf0f41d68e <unknown>\n#17 0x55bf0f6bea2b <unknown>\n#18 0x55bf0f6c29b1 <unknown>\n#19 0x55bf0f6ab225 <unknown>\n#20 0x55bf0f6c3532 <unknown>\n#21 0x55bf0f69038f <unknown>\n#22 0x55bf0f6e2f28 <unknown>\n#23 0x55bf0f6e30f3 <unknown>\n#24 0x55bf0f6f2e7c <unknown>\n#25 0x7fd03cc94ac3 <unknown>",
+        "time" : {
+          "start" : 1728697234583,
+          "stop" : 1728697234583,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3b6e558a8138252d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/59//#testresult/3b6e558a8138252d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=129.0.6668.89)\nStacktrace:\n#0 0x560a1c41b02a <unknown>\n#1 0x560a1c1015e0 <unknown>\n#2 0x560a1c0f97eb <unknown>\n#3 0x560a1c0e9a09 <unknown>\n#4 0x560a1c0eb744 <unknown>\n#5 0x560a1c0e9cbd <unknown>\n#6 0x560a1c0e952f <unknown>\n#7 0x560a1c0e9422 <unknown>\n#8 0x560a1c0e7493 <unknown>\n#9 0x560a1c0e7ada <unknown>\n#10 0x560a1c103f41 <unknown>\n#11 0x560a1c1958c5 <unknown>\n#12 0x560a1c175b22 <unknown>\n#13 0x560a1c194d7d <unknown>\n#14 0x560a1c1758c3 <unknown>\n#15 0x560a1c1436b3 <unknown>\n#16 0x560a1c14468e <unknown>\n#17 0x560a1c3e5a2b <unknown>\n#18 0x560a1c3e99b1 <unknown>\n#19 0x560a1c3d2225 <unknown>\n#20 0x560a1c3ea532 <unknown>\n#21 0x560a1c3b738f <unknown>\n#22 0x560a1c409f28 <unknown>\n#23 0x560a1c40a0f3 <unknown>\n#24 0x560a1c419e7c <unknown>\n#25 0x7f2391a94ac3 <unknown>",
+        "time" : {
+          "start" : 1728610925912,
+          "stop" : 1728610925912,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3454828df4aff5d0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/58//#testresult/3454828df4aff5d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728524616187,
+          "stop" : 1728524616207,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "61fbc2cd517c7bcd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/57//#testresult/61fbc2cd517c7bcd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728438187994,
+          "stop" : 1728438188014,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "e5024d0ba1c3ea2c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/56//#testresult/e5024d0ba1c3ea2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728351848536,
+          "stop" : 1728351848556,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "2880b32e3b09db05",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/55//#testresult/2880b32e3b09db05",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('css selector', '.mb-16')\nStacktrace:\n#0 0x55dd6804913a <unknown>\n#1 0x55dd67d2f5e0 <unknown>\n#2 0x55dd67d7ebe8 <unknown>\n#3 0x55dd67d7ee81 <unknown>\n#4 0x55dd67dc58c4 <unknown>\n#5 0x55dd67da3b4d <unknown>\n#6 0x55dd67dc2d7d <unknown>\n#7 0x55dd67da38c3 <unknown>\n#8 0x55dd67d716b3 <unknown>\n#9 0x55dd67d7268e <unknown>\n#10 0x55dd68013b3b <unknown>\n#11 0x55dd68017ac1 <unknown>\n#12 0x55dd68000335 <unknown>\n#13 0x55dd68018642 <unknown>\n#14 0x55dd67fe549f <unknown>\n#15 0x55dd68038038 <unknown>\n#16 0x55dd68038203 <unknown>\n#17 0x55dd68047f8c <unknown>\n#18 0x7fc756e94ac3 <unknown>",
+        "time" : {
+          "start" : 1728265698472,
+          "stop" : 1728265718918,
+          "duration" : 20446
+        }
+      }, {
+        "uid" : "588f1de78acca2ec",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/54//#testresult/588f1de78acca2ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728179405606,
+          "stop" : 1728179405625,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "8dc50d5a2ae2097e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/53//#testresult/8dc50d5a2ae2097e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728092576282,
+          "stop" : 1728092576302,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "17902209cd6b1a4a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/52//#testresult/17902209cd6b1a4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1728006281454,
+          "stop" : 1728006281474,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "d544a85694052dbb",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/51//#testresult/d544a85694052dbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727919870066,
+          "stop" : 1727919870087,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "8d984f408553d68e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/50//#testresult/8d984f408553d68e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727833413191,
+          "stop" : 1727833413211,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "6db148cb31c0f3fd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/49//#testresult/6db148cb31c0f3fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727747549345,
+          "stop" : 1727747549365,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "38dbca0439f6ef26",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/48//#testresult/38dbca0439f6ef26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727660830522,
+          "stop" : 1727660830542,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "4c9df0dba1fdbc51",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/47//#testresult/4c9df0dba1fdbc51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727574636861,
+          "stop" : 1727574636882,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "db4e9814efb9fe63",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/46//#testresult/db4e9814efb9fe63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727487884627,
+          "stop" : 1727487884647,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "933d8045966c24cc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/45//#testresult/933d8045966c24cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727401463988,
+          "stop" : 1727401464009,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "f654a0d862fc78f5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/44//#testresult/f654a0d862fc78f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727315010724,
+          "stop" : 1727315010743,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "9fc6c6cd1ad940ed",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/43//#testresult/9fc6c6cd1ad940ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727228705266,
+          "stop" : 1727228705286,
+          "duration" : 20
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c8c39e65e4c4dc03.json",
+  "parameterValues" : [ ]
+}
