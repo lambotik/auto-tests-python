@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 68 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "5991d86109be19d6",
+        "parentUid" : "4cc9d52bbc4d22f9d5d28b5c715d031d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1729043111331,
+          "stop" : 1729043111736,
+          "duration" : 405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc9d52bbc4d22f9d5d28b5c715d031d"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 67 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "cd7e13def7573445",
+        "parentUid" : "30efe62bc72b330c0e963ba321801669",
+        "status" : "failed",
+        "time" : {
+          "start" : 1729043115261,
+          "stop" : 1729043115701,
+          "duration" : 440
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30efe62bc72b330c0e963ba321801669"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://github.com/ElenaSpb' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/ElenaSpb",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "e43037c7ab888956",
+        "parentUid" : "a35e80aba4a62f6270359ded2599728e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1729043123318,
+          "stop" : 1729043123906,
+          "duration" : 588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a35e80aba4a62f6270359ded2599728e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//input[@name=\"newPassword\"]')\nStacktrace:\n#0 0x558236bae02a <unknown>\n#1 0x5582368945e0 <unknown>\n#2 0x5582368e3be8 <unknown>\n#3 0x5582368e3e81 <unknown>\n#4 0x55823692a8c4 <unknown>\n#5 0x558236908b4d <unknown>\n#6 0x558236927d7d <unknown>\n#7 0x5582369088c3 <unknown>\n#8 0x5582368d66b3 <unknown>\n#9 0x5582368d768e <unknown>\n#10 0x558236b78a2b <unknown>\n#11 0x558236b7c9b1 <unknown>\n#12 0x558236b65225 <unknown>\n#13 0x558236b7d532 <unknown>\n#14 0x558236b4a38f <unknown>\n#15 0x558236b9cf28 <unknown>\n#16 0x558236b9d0f3 <unknown>\n#17 0x558236bace7c <unknown>\n#18 0x7f963d49ca94 <unknown>\n#19 0x7f963d529c3c <unknown>",
+      "children" : [ {
+        "name" : "Change the password by receiving an email link",
+        "uid" : "8ade49aa11ebe86c",
+        "parentUid" : "4b8e8111c71a9917fbfda6b6720c1e42",
+        "status" : "broken",
+        "time" : {
+          "start" : 1729043375953,
+          "stop" : 1729043436969,
+          "duration" : 61016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b8e8111c71a9917fbfda6b6720c1e42"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
