@@ -1,0 +1,389 @@
+{
+  "uid" : "e46ab90d16ee77d",
+  "name" : "Verify that links in the Footer lead to correct pages after clicking",
+  "fullName" : "tests.footer_test.TestFooterLinks#test_fp_03_02_verify_links_lead_to_the_correct_pages",
+  "historyId" : "cf018cf2afd91eeaeb2abb69b7259d6a",
+  "time" : {
+    "start" : 1735868990449,
+    "stop" : 1735869000327,
+    "duration" : 9878
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fdad5846e90>)",
+  "statusTrace" : "self = <tests.footer_test.TestFooter.TestFooterLinks object at 0x7fdad5d44050>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ca79f248100e7e602b18fbb082216fe2\")>\nmain_page_open = None\n\n    @allure.title(\"Verify that links in the Footer lead to correct pages after clicking\")\n    def test_fp_03_02_verify_links_lead_to_the_correct_pages(self, driver, main_page_open):\n        page = FooterPage(driver)\n        new_tabs_urls = page.click_on_links()\n>       assert all(tab_url in FooterData.pages_urls for tab_url in new_tabs_urls), \\\n            \"Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\"\nE       AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nE       assert False\nE        +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fdad5846e90>)\n\ntests/footer_test.py:103: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1735868986125,
+      "stop" : 1735868986906,
+      "duration" : 781
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1735868986906,
+      "stop" : 1735868990448,
+      "duration" : 3542
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1735868986906,
+        "stop" : 1735868990448,
+        "duration" : 3542
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"ca79f248100e7e602b18fbb082216fe2\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1735868562174,
+      "stop" : 1735868562174,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fdad5846e90>)",
+    "statusTrace" : "self = <tests.footer_test.TestFooter.TestFooterLinks object at 0x7fdad5d44050>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ca79f248100e7e602b18fbb082216fe2\")>\nmain_page_open = None\n\n    @allure.title(\"Verify that links in the Footer lead to correct pages after clicking\")\n    def test_fp_03_02_verify_links_lead_to_the_correct_pages(self, driver, main_page_open):\n        page = FooterPage(driver)\n        new_tabs_urls = page.click_on_links()\n>       assert all(tab_url in FooterData.pages_urls for tab_url in new_tabs_urls), \\\n            \"Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\"\nE       AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nE       assert False\nE        +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fdad5846e90>)\n\ntests/footer_test.py:103: AssertionError",
+    "steps" : [ {
+      "name" : "Click on links in the Footer and thereby open corresponding web pages on new tabs",
+      "time" : {
+        "start" : 1735868990449,
+        "stop" : 1735869000327,
+        "duration" : 9878
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links to supporters",
+        "time" : {
+          "start" : 1735868990449,
+          "stop" : 1735868990460,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4a4f0dff232dccb1",
+      "name" : "Screenshot 2025-01-03 01:50:00.880852",
+      "source" : "4a4f0dff232dccb1.png",
+      "type" : "image/png",
+      "size" : 1628438
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1735869000883,
+      "stop" : 1735869000993,
+      "duration" : 110
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1276-778"
+  }, {
+    "name" : "thread",
+    "value" : "2420-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 10,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 46,
+        "unknown" : 0,
+        "total" : 59
+      },
+      "items" : [ {
+        "uid" : "1d8e19afa02710ce",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/142//#testresult/1d8e19afa02710ce",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7f4af9a1ee90>)",
+        "time" : {
+          "start" : 1735782538512,
+          "stop" : 1735782548209,
+          "duration" : 9697
+        }
+      }, {
+        "uid" : "9b3399f7751714f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/141//#testresult/9b3399f7751714f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fe8602afe00>)",
+        "time" : {
+          "start" : 1735696600334,
+          "stop" : 1735696609018,
+          "duration" : 8684
+        }
+      }, {
+        "uid" : "f89f74eea8f34ca8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/140//#testresult/f89f74eea8f34ca8",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7f4dd2eb4520>)",
+        "time" : {
+          "start" : 1735609784744,
+          "stop" : 1735609796965,
+          "duration" : 12221
+        }
+      }, {
+        "uid" : "95ba8ec4792d1e8d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/139//#testresult/95ba8ec4792d1e8d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fc07fbc3e00>)",
+        "time" : {
+          "start" : 1735523558250,
+          "stop" : 1735523569696,
+          "duration" : 11446
+        }
+      }, {
+        "uid" : "bb066892adfa9318",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/138//#testresult/bb066892adfa9318",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fa07fbb3c60>)",
+        "time" : {
+          "start" : 1735437442686,
+          "stop" : 1735437452638,
+          "duration" : 9952
+        }
+      }, {
+        "uid" : "b72889db553ce9a6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/137//#testresult/b72889db553ce9a6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7fa127982e90>)",
+        "time" : {
+          "start" : 1735350423511,
+          "stop" : 1735350431691,
+          "duration" : 8180
+        }
+      }, {
+        "uid" : "d345a1dcb1aae0cd",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/136//#testresult/d345a1dcb1aae0cd",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Links in the Footer lead to incorrect pages after clicking or did not loaded during the allotted time\nassert False\n +  where False = all(<generator object TestFooter.TestFooterLinks.test_fp_03_02_verify_links_lead_to_the_correct_pages.<locals>.<genexpr> at 0x7ff74c12e0c0>)",
+        "time" : {
+          "start" : 1735264222763,
+          "stop" : 1735264230993,
+          "duration" : 8230
+        }
+      }, {
+        "uid" : "de66a1f454f50b8b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/81//#testresult/de66a1f454f50b8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730511857293,
+          "stop" : 1730511868560,
+          "duration" : 11267
+        }
+      }, {
+        "uid" : "77fbfe3f5dc2939a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/80//#testresult/77fbfe3f5dc2939a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730426033878,
+          "stop" : 1730426043783,
+          "duration" : 9905
+        }
+      }, {
+        "uid" : "8cf31a827313b267",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/79//#testresult/8cf31a827313b267",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730339290644,
+          "stop" : 1730339298098,
+          "duration" : 7454
+        }
+      }, {
+        "uid" : "edef5f85e144f593",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/78//#testresult/edef5f85e144f593",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730252797462,
+          "stop" : 1730252805157,
+          "duration" : 7695
+        }
+      }, {
+        "uid" : "60f40f81a7e9a4db",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/77//#testresult/60f40f81a7e9a4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730166478901,
+          "stop" : 1730166489991,
+          "duration" : 11090
+        }
+      }, {
+        "uid" : "fa9e59f22b78ed29",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/76//#testresult/fa9e59f22b78ed29",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730080215597,
+          "stop" : 1730080224882,
+          "duration" : 9285
+        }
+      }, {
+        "uid" : "be214b153a6fedf",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/75//#testresult/be214b153a6fedf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729993972411,
+          "stop" : 1729993980738,
+          "duration" : 8327
+        }
+      }, {
+        "uid" : "d6d0bee02c9ad1a7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/74//#testresult/d6d0bee02c9ad1a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729906968877,
+          "stop" : 1729906976235,
+          "duration" : 7358
+        }
+      }, {
+        "uid" : "fb6584ffaed84954",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/73//#testresult/fb6584ffaed84954",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729820781006,
+          "stop" : 1729820788836,
+          "duration" : 7830
+        }
+      }, {
+        "uid" : "25c1c690ea6f5459",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/72//#testresult/25c1c690ea6f5459",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729734315312,
+          "stop" : 1729734323159,
+          "duration" : 7847
+        }
+      }, {
+        "uid" : "8f7471650cb243db",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/71//#testresult/8f7471650cb243db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729647962490,
+          "stop" : 1729647973399,
+          "duration" : 10909
+        }
+      }, {
+        "uid" : "745175ccffa5d6f4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/70//#testresult/745175ccffa5d6f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729561654978,
+          "stop" : 1729561665671,
+          "duration" : 10693
+        }
+      }, {
+        "uid" : "2fdfe58a209afd51",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/69//#testresult/2fdfe58a209afd51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729475334804,
+          "stop" : 1729475346139,
+          "duration" : 11335
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e46ab90d16ee77d.json",
+  "parameterValues" : [ ]
+}
