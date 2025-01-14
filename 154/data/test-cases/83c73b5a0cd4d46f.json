@@ -1,0 +1,466 @@
+{
+  "uid" : "83c73b5a0cd4d46f",
+  "name" : "Verify clickability, href, status code of the 'All Specialists' link",
+  "fullName" : "tests.specialists_page_test.TestSpecialistPageLinks#test_sp_03_01_verify_all_specialists_link",
+  "historyId" : "3fa72a6bf2761433141dd14ecb9f0653",
+  "time" : {
+    "start" : 1736820032822,
+    "stop" : 1736820033649,
+    "duration" : 827
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+  "statusTrace" : "self = <tests.specialists_page_test.TestSpecialistsPage.TestSpecialistPageLinks object at 0x7fd738063140>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a3144b9f2328d61bd18413b88d2279e\")>\nspecialists_page_open = None\n\n    @allure.title(\"Verify clickability, href, status code of the 'All Specialists' link\")\n    def test_sp_03_01_verify_all_specialists_link(self, driver, specialists_page_open):\n        page = SpecialistsPage(driver)\n        link_clickability = page.check_all_specialists_link_clickability()\n        link_href = page.get_all_specialists_link_href()\n        link_status_code = page.get_all_specialists_link_status_code()\n        assert link_clickability, \"The 'All Specialists' link is unclickable\"\n        assert link_href, \"Link href is empty\"\n>       assert link_href == SpecialistsPageData.all_specialists_link_href, \\\n            \"The attribute 'href' of the link mismatches the valid value\"\nE       AssertionError: The attribute 'href' of the link mismatches the valid value\nE       assert 'https://www..../specialists#' == 'https://brai.../specialists#'\nE         - https://brainup.site/specialists#\nE         + https://www.brainup.site/specialists#\nE         ?         ++++\n\ntests/specialists_page_test.py:135: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "specialists_page_open",
+    "time" : {
+      "start" : 1736820031652,
+      "stop" : 1736820032821,
+      "duration" : 1169
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/specialists",
+      "time" : {
+        "start" : 1736820031653,
+        "stop" : 1736820032821,
+        "duration" : 1168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a3144b9f2328d61bd18413b88d2279e\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1736818705994,
+      "stop" : 1736818705994,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1736820026677,
+      "stop" : 1736820031652,
+      "duration" : 4975
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1736820026677,
+        "stop" : 1736820031652,
+        "duration" : 4975
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a3144b9f2328d61bd18413b88d2279e\")>"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1736820025907,
+      "stop" : 1736820026676,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+    "statusTrace" : "self = <tests.specialists_page_test.TestSpecialistsPage.TestSpecialistPageLinks object at 0x7fd738063140>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a3144b9f2328d61bd18413b88d2279e\")>\nspecialists_page_open = None\n\n    @allure.title(\"Verify clickability, href, status code of the 'All Specialists' link\")\n    def test_sp_03_01_verify_all_specialists_link(self, driver, specialists_page_open):\n        page = SpecialistsPage(driver)\n        link_clickability = page.check_all_specialists_link_clickability()\n        link_href = page.get_all_specialists_link_href()\n        link_status_code = page.get_all_specialists_link_status_code()\n        assert link_clickability, \"The 'All Specialists' link is unclickable\"\n        assert link_href, \"Link href is empty\"\n>       assert link_href == SpecialistsPageData.all_specialists_link_href, \\\n            \"The attribute 'href' of the link mismatches the valid value\"\nE       AssertionError: The attribute 'href' of the link mismatches the valid value\nE       assert 'https://www..../specialists#' == 'https://brai.../specialists#'\nE         - https://brainup.site/specialists#\nE         + https://www.brainup.site/specialists#\nE         ?         ++++\n\ntests/specialists_page_test.py:135: AssertionError",
+    "steps" : [ {
+      "name" : "Check the 'All Specialists' link is clickable",
+      "time" : {
+        "start" : 1736820032822,
+        "stop" : 1736820032844,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get attribute 'href' of the 'All Specialists' link",
+      "time" : {
+        "start" : 1736820032844,
+        "stop" : 1736820032858,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Get status code of the 'All Specialists' link",
+      "time" : {
+        "start" : 1736820032858,
+        "stop" : 1736820033649,
+        "duration" : 791
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of the 'All Specialists' link",
+        "time" : {
+          "start" : 1736820032858,
+          "stop" : 1736820032870,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "45b468f2e3e9e7f4",
+      "name" : "Screenshot 2025-01-14 02:00:33.748655",
+      "source" : "45b468f2e3e9e7f4.png",
+      "type" : "image/png",
+      "size" : 185193
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1736820033750,
+      "stop" : 1736820033817,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Specialists Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "specialists_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSpecialistsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1947-686"
+  }, {
+    "name" : "thread",
+    "value" : "2394-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.specialists_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 19,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 47,
+        "unknown" : 0,
+        "total" : 70
+      },
+      "items" : [ {
+        "uid" : "f4fc44b48172acf3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/153//#testresult/f4fc44b48172acf3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736734036267,
+          "stop" : 1736734036821,
+          "duration" : 554
+        }
+      }, {
+        "uid" : "ed0969cb14263e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/152//#testresult/ed0969cb14263e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736647982117,
+          "stop" : 1736647982961,
+          "duration" : 844
+        }
+      }, {
+        "uid" : "7b6cb4e7934bf3a3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/151//#testresult/7b6cb4e7934bf3a3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736560979973,
+          "stop" : 1736560980610,
+          "duration" : 637
+        }
+      }, {
+        "uid" : "9a4ccb041949ff89",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/150//#testresult/9a4ccb041949ff89",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736474683899,
+          "stop" : 1736474684448,
+          "duration" : 549
+        }
+      }, {
+        "uid" : "1f35bb1499cc052e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/149//#testresult/1f35bb1499cc052e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736389758844,
+          "stop" : 1736389759390,
+          "duration" : 546
+        }
+      }, {
+        "uid" : "78326cac1e269204",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/148//#testresult/78326cac1e269204",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736301791683,
+          "stop" : 1736301792312,
+          "duration" : 629
+        }
+      }, {
+        "uid" : "a03fb7a2aac6619c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/147//#testresult/a03fb7a2aac6619c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736215379380,
+          "stop" : 1736215379926,
+          "duration" : 546
+        }
+      }, {
+        "uid" : "ea86d8c9679004ca",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/146//#testresult/ea86d8c9679004ca",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736129203999,
+          "stop" : 1736129204544,
+          "duration" : 545
+        }
+      }, {
+        "uid" : "4d2debabc083972d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/145//#testresult/4d2debabc083972d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1736042962802,
+          "stop" : 1736042963439,
+          "duration" : 637
+        }
+      }, {
+        "uid" : "fcffd418ace71192",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/144//#testresult/fcffd418ace71192",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735956123923,
+          "stop" : 1735956124686,
+          "duration" : 763
+        }
+      }, {
+        "uid" : "5610a44bc8407474",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/143//#testresult/5610a44bc8407474",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735869775651,
+          "stop" : 1735869776290,
+          "duration" : 639
+        }
+      }, {
+        "uid" : "dd73723e0c2427d5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/142//#testresult/dd73723e0c2427d5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735783322107,
+          "stop" : 1735783322743,
+          "duration" : 636
+        }
+      }, {
+        "uid" : "7eaf827cbb0b80d4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/141//#testresult/7eaf827cbb0b80d4",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735697365834,
+          "stop" : 1735697366382,
+          "duration" : 548
+        }
+      }, {
+        "uid" : "19fb37f7ba90d4d7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/140//#testresult/19fb37f7ba90d4d7",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735610630228,
+          "stop" : 1735610631061,
+          "duration" : 833
+        }
+      }, {
+        "uid" : "108ceb6b6c599c65",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/139//#testresult/108ceb6b6c599c65",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735524344381,
+          "stop" : 1735524345019,
+          "duration" : 638
+        }
+      }, {
+        "uid" : "10281339dad00b7d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/138//#testresult/10281339dad00b7d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735438212379,
+          "stop" : 1735438212945,
+          "duration" : 566
+        }
+      }, {
+        "uid" : "1bb396d87005a04f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/137//#testresult/1bb396d87005a04f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735351184961,
+          "stop" : 1735351185515,
+          "duration" : 554
+        }
+      }, {
+        "uid" : "be9d0585ac33369e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/136//#testresult/be9d0585ac33369e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+        "time" : {
+          "start" : 1735265064231,
+          "stop" : 1735265065063,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "3ac742076e8fbbce",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/81//#testresult/3ac742076e8fbbce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730512172501,
+          "stop" : 1730512173141,
+          "duration" : 640
+        }
+      }, {
+        "uid" : "e326acc79f26221f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/80//#testresult/e326acc79f26221f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1730426348337,
+          "stop" : 1730426348822,
+          "duration" : 485
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "83c73b5a0cd4d46f.json",
+  "parameterValues" : [ ]
+}
