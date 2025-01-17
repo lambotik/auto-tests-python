@@ -1,0 +1,453 @@
+{
+  "uid" : "192515ecc35e9db4",
+  "name" : "Verify that the 'All Specialists' link leads an unauthorized user \n                         to the correct page after clicking",
+  "fullName" : "tests.specialists_page_test.TestSpecialistPageLinks#test_sp_03_02_verify_all_specialists_link_leads_unauthorized_user_to_the_correct_page",
+  "historyId" : "5deb7e28776a121f643ca52df99c3119",
+  "time" : {
+    "start" : 1737079122420,
+    "stop" : 1737079123041,
+    "duration" : 621
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+  "statusTrace" : "self = <tests.specialists_page_test.TestSpecialistsPage.TestSpecialistPageLinks object at 0x7fb4c15dbf80>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"04e3baf9ea6b1a75169c78854cac34e5\")>\nspecialists_page_open = None\n\n    @allure.title(\"\"\"Verify that the 'All Specialists' link leads an unauthorized user\n                     to the correct page after clicking\"\"\")\n    def test_sp_03_02_verify_all_specialists_link_leads_unauthorized_user_to_the_correct_page(\n            self, driver, specialists_page_open):\n        page = SpecialistsPage(driver)\n        new_tab_url = page.click_all_specialists_link()\n        text_on_new_tab = page.get_element_text_on_new_tab()\n>       assert new_tab_url == StartUnauthorizedPageData.page_url, \\\n            \"The 'All Specialists' link leads to an incorrect page after clicking\"\nE       AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nE       assert 'https://www.brainup.site/' == 'https://brainup.site/'\nE         - https://brainup.site/\nE         + https://www.brainup.site/\nE         ?         ++++\n\ntests/specialists_page_test.py:147: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1737077946258,
+      "stop" : 1737077946258,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "specialists_page_open",
+    "time" : {
+      "start" : 1737079121246,
+      "stop" : 1737079122419,
+      "duration" : 1173
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/specialists",
+      "time" : {
+        "start" : 1737079121246,
+        "stop" : 1737079122419,
+        "duration" : 1173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"04e3baf9ea6b1a75169c78854cac34e5\")>"
+      }, {
+        "name" : "main_page_open",
+        "value" : "None"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1737079117195,
+      "stop" : 1737079117963,
+      "duration" : 768
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1737079117963,
+      "stop" : 1737079121246,
+      "duration" : 3283
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1737079117963,
+        "stop" : 1737079121246,
+        "duration" : 3283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"04e3baf9ea6b1a75169c78854cac34e5\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+    "statusTrace" : "self = <tests.specialists_page_test.TestSpecialistsPage.TestSpecialistPageLinks object at 0x7fb4c15dbf80>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"04e3baf9ea6b1a75169c78854cac34e5\")>\nspecialists_page_open = None\n\n    @allure.title(\"\"\"Verify that the 'All Specialists' link leads an unauthorized user\n                     to the correct page after clicking\"\"\")\n    def test_sp_03_02_verify_all_specialists_link_leads_unauthorized_user_to_the_correct_page(\n            self, driver, specialists_page_open):\n        page = SpecialistsPage(driver)\n        new_tab_url = page.click_all_specialists_link()\n        text_on_new_tab = page.get_element_text_on_new_tab()\n>       assert new_tab_url == StartUnauthorizedPageData.page_url, \\\n            \"The 'All Specialists' link leads to an incorrect page after clicking\"\nE       AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nE       assert 'https://www.brainup.site/' == 'https://brainup.site/'\nE         - https://brainup.site/\nE         + https://www.brainup.site/\nE         ?         ++++\n\ntests/specialists_page_test.py:147: AssertionError",
+    "steps" : [ {
+      "name" : "Click on the 'All Specialists' link and thereby open the corresponding web page in a new tab",
+      "time" : {
+        "start" : 1737079122420,
+        "stop" : 1737079123000,
+        "duration" : 580
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get text of the element on the Start Unauthorized page",
+      "time" : {
+        "start" : 1737079123000,
+        "stop" : 1737079123041,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text in the element: ('xpath', \"//p[contains(@class, 'text')]\")",
+        "time" : {
+          "start" : 1737079123000,
+          "stop" : 1737079123041,
+          "duration" : 41
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e76c80344bb23868",
+      "name" : "Screenshot 2025-01-17 01:58:43.171068",
+      "source" : "e76c80344bb23868.png",
+      "type" : "image/png",
+      "size" : 153352
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1737079123172,
+      "stop" : 1737079123240,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Specialists Page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "specialists_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSpecialistsPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1719-900"
+  }, {
+    "name" : "thread",
+    "value" : "2467-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.specialists_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 22,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 47,
+        "unknown" : 0,
+        "total" : 73
+      },
+      "items" : [ {
+        "uid" : "1e91a2c91d1a2542",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/156//#testresult/1e91a2c91d1a2542",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736992870495,
+          "stop" : 1736992871152,
+          "duration" : 657
+        }
+      }, {
+        "uid" : "e98fff51becb4201",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/155//#testresult/e98fff51becb4201",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736906429080,
+          "stop" : 1736906429701,
+          "duration" : 621
+        }
+      }, {
+        "uid" : "5844b957a2378139",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/154//#testresult/5844b957a2378139",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736820040472,
+          "stop" : 1736820041156,
+          "duration" : 684
+        }
+      }, {
+        "uid" : "51ba702ed7b93fe",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/153//#testresult/51ba702ed7b93fe",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736734042123,
+          "stop" : 1736734042727,
+          "duration" : 604
+        }
+      }, {
+        "uid" : "6d8abd864e0c6d36",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/152//#testresult/6d8abd864e0c6d36",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736647989808,
+          "stop" : 1736647990483,
+          "duration" : 675
+        }
+      }, {
+        "uid" : "fcfcf9d164266011",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/151//#testresult/fcfcf9d164266011",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736560986430,
+          "stop" : 1736560987072,
+          "duration" : 642
+        }
+      }, {
+        "uid" : "24bc4558a76f5c51",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/150//#testresult/24bc4558a76f5c51",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736474689854,
+          "stop" : 1736474690455,
+          "duration" : 601
+        }
+      }, {
+        "uid" : "35493ae75c32a62",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/149//#testresult/35493ae75c32a62",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736389764670,
+          "stop" : 1736389765272,
+          "duration" : 602
+        }
+      }, {
+        "uid" : "460ed49a33d0a364",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/148//#testresult/460ed49a33d0a364",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736301798074,
+          "stop" : 1736301798688,
+          "duration" : 614
+        }
+      }, {
+        "uid" : "994a79d3e6538f19",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/147//#testresult/994a79d3e6538f19",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736215385346,
+          "stop" : 1736215385955,
+          "duration" : 609
+        }
+      }, {
+        "uid" : "5948702806e25db4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/146//#testresult/5948702806e25db4",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736129209866,
+          "stop" : 1736129210471,
+          "duration" : 605
+        }
+      }, {
+        "uid" : "fea7b4606905ab9a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/145//#testresult/fea7b4606905ab9a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1736042969387,
+          "stop" : 1736042970014,
+          "duration" : 627
+        }
+      }, {
+        "uid" : "b7efdad10a604cc3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/144//#testresult/b7efdad10a604cc3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735956131269,
+          "stop" : 1735956131920,
+          "duration" : 651
+        }
+      }, {
+        "uid" : "2b7aae1e773b8ed5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/143//#testresult/2b7aae1e773b8ed5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735869782039,
+          "stop" : 1735869782678,
+          "duration" : 639
+        }
+      }, {
+        "uid" : "549eb614463c7cd6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/142//#testresult/549eb614463c7cd6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735783328500,
+          "stop" : 1735783329115,
+          "duration" : 615
+        }
+      }, {
+        "uid" : "1726ab30972329d5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/141//#testresult/1726ab30972329d5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735697371746,
+          "stop" : 1735697372356,
+          "duration" : 610
+        }
+      }, {
+        "uid" : "6a74b08bf83adf1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/140//#testresult/6a74b08bf83adf1",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735610637894,
+          "stop" : 1735610638568,
+          "duration" : 674
+        }
+      }, {
+        "uid" : "7af08b45bdecef6d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/139//#testresult/7af08b45bdecef6d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735524350680,
+          "stop" : 1735524351317,
+          "duration" : 637
+        }
+      }, {
+        "uid" : "4fda282ab4e80097",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/138//#testresult/4fda282ab4e80097",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735438218451,
+          "stop" : 1735438219053,
+          "duration" : 602
+        }
+      }, {
+        "uid" : "d13f2f3c21cdc8b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/137//#testresult/d13f2f3c21cdc8b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+        "time" : {
+          "start" : 1735351190779,
+          "stop" : 1735351191384,
+          "duration" : 605
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "192515ecc35e9db4.json",
+  "parameterValues" : [ ]
+}
