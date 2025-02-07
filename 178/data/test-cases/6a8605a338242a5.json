@@ -1,0 +1,537 @@
+{
+  "uid" : "6a8605a338242a5",
+  "name" : "Verify if internal links in the Header lead to correct pages after click",
+  "fullName" : "tests.header_test.TestHeaderPageLinks#test_hp_03_02_verify_internal_links_lead_to_correct_pages",
+  "historyId" : "ca8701167b64a3f890d32c46d5b7acce",
+  "time" : {
+    "start" : 1738893047147,
+    "stop" : 1738893052064,
+    "duration" : 4917
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f6ab63ce400>)",
+  "statusTrace" : "self = <tests.header_test.TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks object at 0x7f6ab66397c0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f4618f781d97965c727ee6b777ee2506\")>\nmain_page_open = None\n\n    @allure.title(\"Verify if internal links in the Header lead to correct pages after click\")\n    def test_hp_03_02_verify_internal_links_lead_to_correct_pages(self, driver, main_page_open):\n        page = HeaderPage(driver)\n        internal_links_in_more = page.get_list_of_internal_links_in_more()\n        opened_pages = page.click_on_internal_links_in_header()\n        assert internal_links_in_more, \"Internal links are not collected in the list\"\n>       assert all(page in HeaderData.pages_urls for page in opened_pages), \\\n            \"Some of internal links lead to incorrect pages after clicking\"\nE       AssertionError: Some of internal links lead to incorrect pages after clicking\nE       assert False\nE        +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f6ab63ce400>)\n\ntests/header_test.py:121: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1738893043916,
+      "stop" : 1738893047147,
+      "duration" : 3231
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1738893043916,
+        "stop" : 1738893047147,
+        "duration" : 3231
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"f4618f781d97965c727ee6b777ee2506\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1738893043096,
+      "stop" : 1738893043916,
+      "duration" : 820
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1738892532134,
+      "stop" : 1738892532134,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f6ab63ce400>)",
+    "statusTrace" : "self = <tests.header_test.TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks object at 0x7f6ab66397c0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"f4618f781d97965c727ee6b777ee2506\")>\nmain_page_open = None\n\n    @allure.title(\"Verify if internal links in the Header lead to correct pages after click\")\n    def test_hp_03_02_verify_internal_links_lead_to_correct_pages(self, driver, main_page_open):\n        page = HeaderPage(driver)\n        internal_links_in_more = page.get_list_of_internal_links_in_more()\n        opened_pages = page.click_on_internal_links_in_header()\n        assert internal_links_in_more, \"Internal links are not collected in the list\"\n>       assert all(page in HeaderData.pages_urls for page in opened_pages), \\\n            \"Some of internal links lead to incorrect pages after clicking\"\nE       AssertionError: Some of internal links lead to incorrect pages after clicking\nE       assert False\nE        +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f6ab63ce400>)\n\ntests/header_test.py:121: AssertionError",
+    "steps" : [ {
+      "name" : "Get the list of the 'Contacts', 'Specialists', 'Contributors', 'Used Resources' links \"\n                 (internal links) in the 'More' dropdown for an unauthorized user",
+      "time" : {
+        "start" : 1738893047147,
+        "stop" : 1738893047157,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+        "time" : {
+          "start" : 1738893047147,
+          "stop" : 1738893047157,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on internal links in the Header and thereby open corresponding web pages in the same tab",
+      "time" : {
+        "start" : 1738893047157,
+        "stop" : 1738893052064,
+        "duration" : 4907
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of the 'About', 'Registration', 'Logo' links (direct internal links) in the Header\n                    for an unauthorized user",
+        "time" : {
+          "start" : 1738893047157,
+          "stop" : 1738893047163,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+          "time" : {
+            "start" : 1738893047157,
+            "stop" : 1738893047163,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Get the list of the 'Contacts', 'Specialists', 'Contributors', 'Used Resources' links \"\n                 (internal links) in the 'More' dropdown for an unauthorized user",
+        "time" : {
+          "start" : 1738893047409,
+          "stop" : 1738893047415,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+          "time" : {
+            "start" : 1738893047409,
+            "stop" : 1738893047415,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Click on the 'More' button",
+        "time" : {
+          "start" : 1738893047415,
+          "stop" : 1738893047530,
+          "duration" : 115
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on the 'More' button",
+        "time" : {
+          "start" : 1738893048594,
+          "stop" : 1738893048658,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on the 'More' button",
+        "time" : {
+          "start" : 1738893049712,
+          "stop" : 1738893049785,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click on the 'More' button",
+        "time" : {
+          "start" : 1738893050942,
+          "stop" : 1738893051003,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "fb22036d18fe0fc5",
+      "name" : "Screenshot 2025-02-07 01:50:52.153274",
+      "source" : "fb22036d18fe0fc5.png",
+      "type" : "image/png",
+      "size" : 58734
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1738893052154,
+      "stop" : 1738893052223,
+      "duration" : 69
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Header"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "header_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHeaderPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1441-498"
+  }, {
+    "name" : "thread",
+    "value" : "2428-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.header_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 42,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 48,
+        "unknown" : 0,
+        "total" : 93
+      },
+      "items" : [ {
+        "uid" : "e995eed8ac63a335",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/177//#testresult/e995eed8ac63a335",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f61de549490>)",
+        "time" : {
+          "start" : 1738806638890,
+          "stop" : 1738806643921,
+          "duration" : 5031
+        }
+      }, {
+        "uid" : "139384e0cbf84b91",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/176//#testresult/139384e0cbf84b91",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fb7d8964110>)",
+        "time" : {
+          "start" : 1738720307485,
+          "stop" : 1738720312402,
+          "duration" : 4917
+        }
+      }, {
+        "uid" : "2eb08787be4a6abc",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/175//#testresult/2eb08787be4a6abc",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fc5b2fca810>)",
+        "time" : {
+          "start" : 1738633767678,
+          "stop" : 1738633772742,
+          "duration" : 5064
+        }
+      }, {
+        "uid" : "bf5a31ea610a76f0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/174//#testresult/bf5a31ea610a76f0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f76aaf14ee0>)",
+        "time" : {
+          "start" : 1738547507707,
+          "stop" : 1738547512647,
+          "duration" : 4940
+        }
+      }, {
+        "uid" : "15e1e301926a2450",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/173//#testresult/15e1e301926a2450",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f67d1eb52f0>)",
+        "time" : {
+          "start" : 1738461197374,
+          "stop" : 1738461202425,
+          "duration" : 5051
+        }
+      }, {
+        "uid" : "1c1a9c35b7f2690f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/172//#testresult/1c1a9c35b7f2690f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fa507633d30>)",
+        "time" : {
+          "start" : 1738374908448,
+          "stop" : 1738374913381,
+          "duration" : 4933
+        }
+      }, {
+        "uid" : "5db49de31e515ca8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/170//#testresult/5db49de31e515ca8",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fcaf9345630>)",
+        "time" : {
+          "start" : 1738201710866,
+          "stop" : 1738201715903,
+          "duration" : 5037
+        }
+      }, {
+        "uid" : "950bbfc2f4af655e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/169//#testresult/950bbfc2f4af655e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fe38087d630>)",
+        "time" : {
+          "start" : 1738115310998,
+          "stop" : 1738115316056,
+          "duration" : 5058
+        }
+      }, {
+        "uid" : "e432055b4530adca",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/168//#testresult/e432055b4530adca",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f8f5416cee0>)",
+        "time" : {
+          "start" : 1738028976669,
+          "stop" : 1738028981529,
+          "duration" : 4860
+        }
+      }, {
+        "uid" : "147e34c6b216c81d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/167//#testresult/147e34c6b216c81d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f746bbb8fb0>)",
+        "time" : {
+          "start" : 1737942628874,
+          "stop" : 1737942633820,
+          "duration" : 4946
+        }
+      }, {
+        "uid" : "7a696bf694a86e93",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/166//#testresult/7a696bf694a86e93",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f1a056a9630>)",
+        "time" : {
+          "start" : 1737856274084,
+          "stop" : 1737856279220,
+          "duration" : 5136
+        }
+      }, {
+        "uid" : "dd1df5b7e4e22ced",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/165//#testresult/dd1df5b7e4e22ced",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f84068f5a40>)",
+        "time" : {
+          "start" : 1737769509872,
+          "stop" : 1737769514885,
+          "duration" : 5013
+        }
+      }, {
+        "uid" : "a13a87c45e825cd7",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/164//#testresult/a13a87c45e825cd7",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f261946c520>)",
+        "time" : {
+          "start" : 1737683339379,
+          "stop" : 1737683344276,
+          "duration" : 4897
+        }
+      }, {
+        "uid" : "c1fe3ffeb71829c5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/163//#testresult/c1fe3ffeb71829c5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fcd4cafe9b0>)",
+        "time" : {
+          "start" : 1737596955318,
+          "stop" : 1737596960230,
+          "duration" : 4912
+        }
+      }, {
+        "uid" : "a6e344e37e53061c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/162//#testresult/a6e344e37e53061c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f6b5ff6f1d0>)",
+        "time" : {
+          "start" : 1737510619410,
+          "stop" : 1737510624346,
+          "duration" : 4936
+        }
+      }, {
+        "uid" : "6cdbf6271b28abe",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/161//#testresult/6cdbf6271b28abe",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f362d23d630>)",
+        "time" : {
+          "start" : 1737424185486,
+          "stop" : 1737424190431,
+          "duration" : 4945
+        }
+      }, {
+        "uid" : "4613495e0b5d48a2",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/160//#testresult/4613495e0b5d48a2",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fc20f66e9b0>)",
+        "time" : {
+          "start" : 1737337861662,
+          "stop" : 1737337866558,
+          "duration" : 4896
+        }
+      }, {
+        "uid" : "5c5010f316e20999",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/159//#testresult/5c5010f316e20999",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7f397ba74380>)",
+        "time" : {
+          "start" : 1737251718724,
+          "stop" : 1737251723651,
+          "duration" : 4927
+        }
+      }, {
+        "uid" : "9880b16802b66038",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/158//#testresult/9880b16802b66038",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fdca043a9b0>)",
+        "time" : {
+          "start" : 1737164719440,
+          "stop" : 1737164724357,
+          "duration" : 4917
+        }
+      }, {
+        "uid" : "f5d568c28d568ff0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/157//#testresult/f5d568c28d568ff0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fb4c1414ad0>)",
+        "time" : {
+          "start" : 1737078457086,
+          "stop" : 1737078462076,
+          "duration" : 4990
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6a8605a338242a5.json",
+  "parameterValues" : [ ]
+}
