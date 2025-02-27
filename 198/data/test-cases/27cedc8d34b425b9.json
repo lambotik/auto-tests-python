@@ -1,0 +1,432 @@
+{
+  "uid" : "27cedc8d34b425b9",
+  "name" : "Verify attributes of images in links in the Footer",
+  "fullName" : "tests.footer_test.TestFooterImages#test_fp_04_01_verify_images_attributes_in_links",
+  "historyId" : "396e8077c3b066d0eb51962244c68670",
+  "time" : {
+    "start" : 1740621158263,
+    "stop" : 1740621158338,
+    "duration" : 75
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbe5d2c1b10>)",
+  "statusTrace" : "self = <tests.footer_test.TestFooter.TestFooterImages object at 0x7fbe5d4e85f0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"75b2207eb3e813ef5e17622f4b3c4e99\")>\nmain_page_open = None\n\n    @allure.title(\"Verify attributes of images in links in the Footer\")\n    def test_fp_04_01_verify_images_attributes_in_links(self, driver, main_page_open):\n        page = FooterPage(driver)\n        images_src = page.get_images_src()\n        images_alt = page.get_images_alt()\n        assert images_src, \"The 'src' attribute value of images is empty\"\n>       assert all(image_src in FooterData.images_src for image_src in images_src), \\\n            \"The 'src' attribute of some images mismatches valid values\"\nE       AssertionError: The 'src' attribute of some images mismatches valid values\nE       assert False\nE        +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbe5d2c1b10>)\n\ntests/footer_test.py:119: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1740621154901,
+      "stop" : 1740621158262,
+      "duration" : 3361
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1740621154901,
+        "stop" : 1740621158262,
+        "duration" : 3361
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"75b2207eb3e813ef5e17622f4b3c4e99\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1740620728689,
+      "stop" : 1740620728689,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1740621154078,
+      "stop" : 1740621154901,
+      "duration" : 823
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbe5d2c1b10>)",
+    "statusTrace" : "self = <tests.footer_test.TestFooter.TestFooterImages object at 0x7fbe5d4e85f0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"75b2207eb3e813ef5e17622f4b3c4e99\")>\nmain_page_open = None\n\n    @allure.title(\"Verify attributes of images in links in the Footer\")\n    def test_fp_04_01_verify_images_attributes_in_links(self, driver, main_page_open):\n        page = FooterPage(driver)\n        images_src = page.get_images_src()\n        images_alt = page.get_images_alt()\n        assert images_src, \"The 'src' attribute value of images is empty\"\n>       assert all(image_src in FooterData.images_src for image_src in images_src), \\\n            \"The 'src' attribute of some images mismatches valid values\"\nE       AssertionError: The 'src' attribute of some images mismatches valid values\nE       assert False\nE        +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbe5d2c1b10>)\n\ntests/footer_test.py:119: AssertionError",
+    "steps" : [ {
+      "name" : "Get the list of attribute 'src' values of images in links",
+      "time" : {
+        "start" : 1740621158263,
+        "stop" : 1740621158306,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of images on the 7th level of nesting in the Footer",
+        "time" : {
+          "start" : 1740621158263,
+          "stop" : 1740621158273,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get the list of attribute 'alt' values of images in links",
+      "time" : {
+        "start" : 1740621158306,
+        "stop" : 1740621158338,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of images on the 7th level of nesting in the Footer",
+        "time" : {
+          "start" : 1740621158306,
+          "stop" : 1740621158311,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "88f503f37806f0c",
+      "name" : "Screenshot 2025-02-27 01:52:38.457627",
+      "source" : "88f503f37806f0c.png",
+      "type" : "image/png",
+      "size" : 124214
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1740621158459,
+      "stop" : 1740621158518,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Footer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "footer_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFooter"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1782-330"
+  }, {
+    "name" : "thread",
+    "value" : "2390-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.footer_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 62,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 48,
+        "unknown" : 0,
+        "total" : 113
+      },
+      "items" : [ {
+        "uid" : "ac954dd8d7d8fef0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/197//#testresult/ac954dd8d7d8fef0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f4925db4e10>)",
+        "time" : {
+          "start" : 1740534705397,
+          "stop" : 1740534705484,
+          "duration" : 87
+        }
+      }, {
+        "uid" : "55135a04e9ba66d6",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/196//#testresult/55135a04e9ba66d6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fd0558bb1d0>)",
+        "time" : {
+          "start" : 1740448351805,
+          "stop" : 1740448351881,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "9c66f95592c5f60a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/195//#testresult/9c66f95592c5f60a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f9c13852cf0>)",
+        "time" : {
+          "start" : 1740361990880,
+          "stop" : 1740361990970,
+          "duration" : 90
+        }
+      }, {
+        "uid" : "6a975425b5541689",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/194//#testresult/6a975425b5541689",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f3d8937b920>)",
+        "time" : {
+          "start" : 1740275769266,
+          "stop" : 1740275769354,
+          "duration" : 88
+        }
+      }, {
+        "uid" : "d1eb62e2889fc2ee",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/193//#testresult/d1eb62e2889fc2ee",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7ff316904fb0>)",
+        "time" : {
+          "start" : 1740188930727,
+          "stop" : 1740188930802,
+          "duration" : 75
+        }
+      }, {
+        "uid" : "538af1351cc0832e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/192//#testresult/538af1351cc0832e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fe167b879f0>)",
+        "time" : {
+          "start" : 1740102654288,
+          "stop" : 1740102654364,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "41f16327ccf6d315",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/191//#testresult/41f16327ccf6d315",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7ffaa7632dc0>)",
+        "time" : {
+          "start" : 1740016298804,
+          "stop" : 1740016298880,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "9134feebcbb61923",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/190//#testresult/9134feebcbb61923",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbc10476810>)",
+        "time" : {
+          "start" : 1739929807617,
+          "stop" : 1739929807694,
+          "duration" : 77
+        }
+      }, {
+        "uid" : "c147c6c2f7385fc5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/189//#testresult/c147c6c2f7385fc5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbf38a34e10>)",
+        "time" : {
+          "start" : 1739843398676,
+          "stop" : 1739843398755,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "1bd0dba335989eef",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/188//#testresult/1bd0dba335989eef",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f8536b86dc0>)",
+        "time" : {
+          "start" : 1739757159833,
+          "stop" : 1739757159909,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "9e5438f74ee598c8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/187//#testresult/9e5438f74ee598c8",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f1a487ae810>)",
+        "time" : {
+          "start" : 1739670978860,
+          "stop" : 1739670978938,
+          "duration" : 78
+        }
+      }, {
+        "uid" : "66cbfb6abcb4d9ce",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/186//#testresult/66cbfb6abcb4d9ce",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f3c0d941cb0>)",
+        "time" : {
+          "start" : 1739584095675,
+          "stop" : 1739584095750,
+          "duration" : 75
+        }
+      }, {
+        "uid" : "ba4991173bbf68b3",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/185//#testresult/ba4991173bbf68b3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fbaef0bd8a0>)",
+        "time" : {
+          "start" : 1739497804093,
+          "stop" : 1739497804169,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "6f3fb792cb60ffa5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/184//#testresult/6f3fb792cb60ffa5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f6f9a7bec20>)",
+        "time" : {
+          "start" : 1739411411743,
+          "stop" : 1739411411819,
+          "duration" : 76
+        }
+      }, {
+        "uid" : "e5be04c7c32cbe59",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/183//#testresult/e5be04c7c32cbe59",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7feef2fb7920>)",
+        "time" : {
+          "start" : 1739325011898,
+          "stop" : 1739325011973,
+          "duration" : 75
+        }
+      }, {
+        "uid" : "82d20cb63daf33da",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/182//#testresult/82d20cb63daf33da",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fea20e81cb0>)",
+        "time" : {
+          "start" : 1739238557383,
+          "stop" : 1739238557457,
+          "duration" : 74
+        }
+      }, {
+        "uid" : "726222f4c2ca01e8",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/181//#testresult/726222f4c2ca01e8",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f8d59ac7c60>)",
+        "time" : {
+          "start" : 1739152316070,
+          "stop" : 1739152316149,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "96f695b1367ff8a1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/180//#testresult/96f695b1367ff8a1",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7ff79764f510>)",
+        "time" : {
+          "start" : 1739066003326,
+          "stop" : 1739066003401,
+          "duration" : 75
+        }
+      }, {
+        "uid" : "80a9200b924496c4",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/179//#testresult/80a9200b924496c4",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f45629c60c0>)",
+        "time" : {
+          "start" : 1738979158011,
+          "stop" : 1738979158095,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "ff091e8dec199db5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/178//#testresult/ff091e8dec199db5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7f6ab63cdb10>)",
+        "time" : {
+          "start" : 1738892956124,
+          "stop" : 1738892956199,
+          "duration" : 75
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "27cedc8d34b425b9.json",
+  "parameterValues" : [ ]
+}
