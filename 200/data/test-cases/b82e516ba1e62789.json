@@ -1,0 +1,477 @@
+{
+  "uid" : "b82e516ba1e62789",
+  "name" : "Verify clickability, href, status code of links in the Header",
+  "fullName" : "tests.header_test.TestHeaderPageLinks#test_hp_03_01_verify_header_links",
+  "historyId" : "7643734b6f216b2663aac888858c5ac2",
+  "time" : {
+    "start" : 1740794403305,
+    "stop" : 1740794408741,
+    "duration" : 5436
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f88f8ad05f0>)",
+  "statusTrace" : "self = <tests.header_test.TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks object at 0x7f88f8b55df0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0870c680f89fa7d0ba0fa0b123a3f6b8\")>\nmain_page_open = None\n\n    @allure.title(\"Verify clickability, href, status code of links in the Header\")\n    def test_hp_03_01_verify_header_links(self, driver, main_page_open):\n        page = HeaderPage(driver)\n        links_clickability = page.check_links_clickability()\n        links_href = page.get_links_href()\n        link_status_codes = page.get_links_status_codes()\n        assert links_clickability, \"Links are unclickable\"\n        assert links_href, \"Links href are empty\"\n>       assert all(link_href in HeaderData.links_href for link_href in links_href), \\\n            \"Attributes 'href' of links mismatch valid values\"\nE       AssertionError: Attributes 'href' of links mismatch valid values\nE       assert False\nE        +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f88f8ad05f0>)\n\ntests/header_test.py:110: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_allure_results_folder",
+    "time" : {
+      "start" : 1740793887016,
+      "stop" : 1740793887016,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1740794399056,
+      "stop" : 1740794399883,
+      "duration" : 827
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "main_page_open",
+    "time" : {
+      "start" : 1740794399884,
+      "stop" : 1740794403305,
+      "duration" : 3421
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://brainup.site/",
+      "time" : {
+        "start" : 1740794399884,
+        "stop" : 1740794403305,
+        "duration" : 3421
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "<selenium.webdriver.chrome.webdriver.WebDriver (session=\"0870c680f89fa7d0ba0fa0b123a3f6b8\")>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f88f8ad05f0>)",
+    "statusTrace" : "self = <tests.header_test.TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks object at 0x7f88f8b55df0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"0870c680f89fa7d0ba0fa0b123a3f6b8\")>\nmain_page_open = None\n\n    @allure.title(\"Verify clickability, href, status code of links in the Header\")\n    def test_hp_03_01_verify_header_links(self, driver, main_page_open):\n        page = HeaderPage(driver)\n        links_clickability = page.check_links_clickability()\n        links_href = page.get_links_href()\n        link_status_codes = page.get_links_status_codes()\n        assert links_clickability, \"Links are unclickable\"\n        assert links_href, \"Links href are empty\"\n>       assert all(link_href in HeaderData.links_href for link_href in links_href), \\\n            \"Attributes 'href' of links mismatch valid values\"\nE       AssertionError: Attributes 'href' of links mismatch valid values\nE       assert False\nE        +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f88f8ad05f0>)\n\ntests/header_test.py:110: AssertionError",
+    "steps" : [ {
+      "name" : "Check if links are clickable in the Header",
+      "time" : {
+        "start" : 1740794403305,
+        "stop" : 1740794403361,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+        "time" : {
+          "start" : 1740794403306,
+          "stop" : 1740794403317,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get attribute 'href' of links in the Header",
+      "time" : {
+        "start" : 1740794403361,
+        "stop" : 1740794403427,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+        "time" : {
+          "start" : 1740794403361,
+          "stop" : 1740794403366,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Get status codes of links in the Header",
+      "time" : {
+        "start" : 1740794403428,
+        "stop" : 1740794408741,
+        "duration" : 5313
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get attribute 'href' of links in the Header",
+        "time" : {
+          "start" : 1740794403428,
+          "stop" : 1740794403498,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get the list of links on different levels of nesting in the Header for an unauthorized user",
+          "time" : {
+            "start" : 1740794403428,
+            "stop" : 1740794403433,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "fd61f64f8afb3e09",
+      "name" : "Screenshot 2025-03-01 02:00:08.839915",
+      "source" : "fd61f64f8afb3e09.png",
+      "type" : "image/png",
+      "size" : 124214
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1740794408841,
+      "stop" : 1740794408902,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test Header"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "header_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHeaderPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1673-683"
+  }, {
+    "name" : "thread",
+    "value" : "2407-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.header_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 64,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 48,
+        "unknown" : 0,
+        "total" : 115
+      },
+      "items" : [ {
+        "uid" : "fa4453074b630a2c",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/199//#testresult/fa4453074b630a2c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7ff726341490>)",
+        "time" : {
+          "start" : 1740707673644,
+          "stop" : 1740707679354,
+          "duration" : 5710
+        }
+      }, {
+        "uid" : "5450185fd89ed26d",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/198//#testresult/5450185fd89ed26d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fbe5d26d080>)",
+        "time" : {
+          "start" : 1740621240185,
+          "stop" : 1740621245070,
+          "duration" : 4885
+        }
+      }, {
+        "uid" : "ff6974823282129f",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/197//#testresult/ff6974823282129f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f4925f5f5e0>)",
+        "time" : {
+          "start" : 1740534786588,
+          "stop" : 1740534791097,
+          "duration" : 4509
+        }
+      }, {
+        "uid" : "48b79d13a2bc68e1",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/196//#testresult/48b79d13a2bc68e1",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fd055b179f0>)",
+        "time" : {
+          "start" : 1740448433710,
+          "stop" : 1740448438476,
+          "duration" : 4766
+        }
+      }, {
+        "uid" : "fbdd34930cf94f9e",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/195//#testresult/fbdd34930cf94f9e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f9c139c86c0>)",
+        "time" : {
+          "start" : 1740362072173,
+          "stop" : 1740362076913,
+          "duration" : 4740
+        }
+      }, {
+        "uid" : "9f2f18484aea9aff",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/194//#testresult/9f2f18484aea9aff",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f3d895cce10>)",
+        "time" : {
+          "start" : 1740275851493,
+          "stop" : 1740275856362,
+          "duration" : 4869
+        }
+      }, {
+        "uid" : "e628cb6e75a0c06a",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/193//#testresult/e628cb6e75a0c06a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7ff316a8a670>)",
+        "time" : {
+          "start" : 1740189022580,
+          "stop" : 1740189029378,
+          "duration" : 6798
+        }
+      }, {
+        "uid" : "5cdf9e61685e3876",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/192//#testresult/5cdf9e61685e3876",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fe167ddb2a0>)",
+        "time" : {
+          "start" : 1740102735347,
+          "stop" : 1740102740200,
+          "duration" : 4853
+        }
+      }, {
+        "uid" : "16305f86f8c73fb0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/191//#testresult/16305f86f8c73fb0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7ffaa77a8450>)",
+        "time" : {
+          "start" : 1740016390904,
+          "stop" : 1740016397899,
+          "duration" : 6995
+        }
+      }, {
+        "uid" : "2089d7d1d8ed1c93",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/190//#testresult/2089d7d1d8ed1c93",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fbc10628110>)",
+        "time" : {
+          "start" : 1739929889536,
+          "stop" : 1739929894571,
+          "duration" : 5035
+        }
+      }, {
+        "uid" : "1c514b16196a24f5",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/189//#testresult/1c514b16196a24f5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fbf38be5560>)",
+        "time" : {
+          "start" : 1739843482475,
+          "stop" : 1739843488439,
+          "duration" : 5964
+        }
+      }, {
+        "uid" : "4fef8755dec678ac",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/188//#testresult/4fef8755dec678ac",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f8536cf5b10>)",
+        "time" : {
+          "start" : 1739757240644,
+          "stop" : 1739757245386,
+          "duration" : 4742
+        }
+      }, {
+        "uid" : "2d296296cfaf4f91",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/187//#testresult/2d296296cfaf4f91",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f1a48a13780>)",
+        "time" : {
+          "start" : 1739671060801,
+          "stop" : 1739671065727,
+          "duration" : 4926
+        }
+      }, {
+        "uid" : "776f0e3c9c2753f0",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/186//#testresult/776f0e3c9c2753f0",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f3c0dae8450>)",
+        "time" : {
+          "start" : 1739584177255,
+          "stop" : 1739584182272,
+          "duration" : 5017
+        }
+      }, {
+        "uid" : "5d91eee7a3750051",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/185//#testresult/5d91eee7a3750051",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fbaef315560>)",
+        "time" : {
+          "start" : 1739497893921,
+          "stop" : 1739497900939,
+          "duration" : 7018
+        }
+      }, {
+        "uid" : "6faa51c4bdce7341",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/184//#testresult/6faa51c4bdce7341",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f6f9a93d490>)",
+        "time" : {
+          "start" : 1739411495820,
+          "stop" : 1739411502557,
+          "duration" : 6737
+        }
+      }, {
+        "uid" : "5c056eb7fb916148",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/183//#testresult/5c056eb7fb916148",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7feef315ecf0>)",
+        "time" : {
+          "start" : 1739325101485,
+          "stop" : 1739325107936,
+          "duration" : 6451
+        }
+      }, {
+        "uid" : "5983495757902366",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/182//#testresult/5983495757902366",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fea210d71d0>)",
+        "time" : {
+          "start" : 1739238638841,
+          "stop" : 1739238643926,
+          "duration" : 5085
+        }
+      }, {
+        "uid" : "4b978be57400c686",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/181//#testresult/4b978be57400c686",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7f8d59d13ac0>)",
+        "time" : {
+          "start" : 1739152408283,
+          "stop" : 1739152415477,
+          "duration" : 7194
+        }
+      }, {
+        "uid" : "addf485fc5af300b",
+        "reportUrl" : "https://lambotik.github.io/auto-tests-python/180//#testresult/addf485fc5af300b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7ff7975642b0>)",
+        "time" : {
+          "start" : 1739066087259,
+          "stop" : 1739066092637,
+          "duration" : 5378
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b82e516ba1e62789.json",
+  "parameterValues" : [ ]
+}
