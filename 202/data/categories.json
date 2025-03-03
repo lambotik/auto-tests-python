@@ -1,0 +1,566 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Text in descriptions is absent or mismatches valid count\nassert 70 == 67\n +  where 67 = ContributorsPageData.description_count",
+      "children" : [ {
+        "name" : "Verify values of the text in card descriptions",
+        "uid" : "66223ba90302b04d",
+        "parentUid" : "5039dc0cdcccfe8a038ed912823b9625",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740966656929,
+          "stop" : 1740966657350,
+          "duration" : 421
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5039dc0cdcccfe8a038ed912823b9625"
+    }, {
+      "name" : "AssertionError: Text in card links is absent or mismatch valid count\nassert 69 == 66\n +  where 66 = ContributorsPageData.link_count",
+      "children" : [ {
+        "name" : "Verify text in card links and the 'All Team' link",
+        "uid" : "8b4b985f6534bc08",
+        "parentUid" : "ae52d53f84136876e17e60cf98632f2b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740966663308,
+          "stop" : 1740966663763,
+          "duration" : 455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ae52d53f84136876e17e60cf98632f2b"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://gith...natolVoluznev' == 'https://brai...contributors#'\n  - https://brainup.site/contributors#\n  + https://github.com/AnatolVoluznev",
+      "children" : [ {
+        "name" : "Verify href, status code of the 'All Team' link",
+        "uid" : "5a35b32df12a1164",
+        "parentUid" : "ea3f877fdfb5ddbc73cefa768eb6c580",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740966675896,
+          "stop" : 1740966676304,
+          "duration" : 408
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ea3f877fdfb5ddbc73cefa768eb6c580"
+    }, {
+      "name" : "AssertionError: The 'src' attribute of some images mismatches valid values\nassert False\n +  where False = all(<generator object TestFooter.TestFooterImages.test_fp_04_01_verify_images_attributes_in_links.<locals>.<genexpr> at 0x7fc947bf6cf0>)",
+      "children" : [ {
+        "name" : "Verify attributes of images in links in the Footer",
+        "uid" : "30e34b4e8341eebc",
+        "parentUid" : "9b91332d4eb10e69b28ef4fabe5ee6cc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967016104,
+          "stop" : 1740967016179,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9b91332d4eb10e69b28ef4fabe5ee6cc"
+    }, {
+      "name" : "AssertionError: Attributes 'href' of links mismatch valid values\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_01_verify_header_links.<locals>.<genexpr> at 0x7fc947d746c0>)",
+      "children" : [ {
+        "name" : "Verify clickability, href, status code of links in the Header",
+        "uid" : "d3a100510aff499f",
+        "parentUid" : "33efa8f67bbccbc9ba9827020d1be9cb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967107556,
+          "stop" : 1740967114787,
+          "duration" : 7231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "33efa8f67bbccbc9ba9827020d1be9cb"
+    }, {
+      "name" : "AssertionError: Some of internal links lead to incorrect pages after clicking\nassert False\n +  where False = all(<generator object TestHeaderPage.TestUnauthorizedHeaderPage.TestHeaderPageLinks.test_hp_03_02_verify_internal_links_lead_to_correct_pages.<locals>.<genexpr> at 0x7fc947cdaf60>)",
+      "children" : [ {
+        "name" : "Verify if internal links in the Header lead to correct pages after click",
+        "uid" : "9d4f89b6e603742f",
+        "parentUid" : "5e10006de0cc7aa3f8d1216cab5e7e52",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967120619,
+          "stop" : 1740967125486,
+          "duration" : 4867
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5e10006de0cc7aa3f8d1216cab5e7e52"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www..../specialists#' == 'https://brai.../specialists#'\n  - https://brainup.site/specialists#\n  + https://www.brainup.site/specialists#\n  ?         ++++",
+      "children" : [ {
+        "name" : "Verify clickability, href, status code of the 'All Specialists' link",
+        "uid" : "6a7456574017decb",
+        "parentUid" : "85d709c82603c6497002e77ab24582f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967849429,
+          "stop" : 1740967850276,
+          "duration" : 847
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "85d709c82603c6497002e77ab24582f9"
+    }, {
+      "name" : "AssertionError: The 'All Specialists' link leads to an incorrect page after clicking\nassert 'https://www.brainup.site/' == 'https://brainup.site/'\n  - https://brainup.site/\n  + https://www.brainup.site/\n  ?         ++++",
+      "children" : [ {
+        "name" : "Verify that the 'All Specialists' link leads an unauthorized user \n                         to the correct page after clicking",
+        "uid" : "db6156da20d19873",
+        "parentUid" : "32eb339525cf895a0cda226a04f46b54",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967857217,
+          "stop" : 1740967857890,
+          "duration" : 673
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "32eb339525cf895a0cda226a04f46b54"
+    }, {
+      "name" : "AssertionError: The attribute 'href' of the link mismatches the valid value\nassert 'https://www....up.site/login' == 'https://brainup.site/login'\n  - https://brainup.site/login\n  + https://www.brainup.site/login\n  ?         ++++",
+      "children" : [ {
+        "name" : "Verify presence, visibility, clickability, href, status code \n                         of the 'Login' link in the section 1",
+        "uid" : "83f15c44302fb61c",
+        "parentUid" : "07323f5bf601b79b403ae18128b975e2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1740967970753,
+          "stop" : 1740967971643,
+          "duration" : 890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "07323f5bf601b79b403ae18128b975e2"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/",
+      "children" : [ {
+        "name" : "Verify return main page from description page.",
+        "uid" : "38bbad0f2e34e987",
+        "parentUid" : "e73d7af9621effae8820bfb7a902211a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740966696011,
+          "stop" : 1740966736423,
+          "duration" : 40412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e73d7af9621effae8820bfb7a902211a"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/contact",
+      "children" : [ {
+        "name" : "Verify redirection to contacts page not authorized user.",
+        "uid" : "e109a39d04d208f1",
+        "parentUid" : "6cfd8ac9322ca8fee72e036e063ba456",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740966758168,
+          "stop" : 1740966798590,
+          "duration" : 40422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to contacts page not authorized user.",
+        "uid" : "9c0d23ce70b3ffc3",
+        "parentUid" : "6cfd8ac9322ca8fee72e036e063ba456",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967418691,
+          "stop" : 1740967459132,
+          "duration" : 40441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6cfd8ac9322ca8fee72e036e063ba456"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/specialists",
+      "children" : [ {
+        "name" : "Verify redirection to specialists page not authorized user.",
+        "uid" : "2d6da9c2850c1027",
+        "parentUid" : "4ea51f3f7a1ba3569a4cd81957c4ad69",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740966804351,
+          "stop" : 1740966844757,
+          "duration" : 40406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to specialists page not authorized user.",
+        "uid" : "61f5b85f59227158",
+        "parentUid" : "4ea51f3f7a1ba3569a4cd81957c4ad69",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967464979,
+          "stop" : 1740967505387,
+          "duration" : 40408
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ea51f3f7a1ba3569a4cd81957c4ad69"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/contributors",
+      "children" : [ {
+        "name" : "Verify redirection to contributors page not authorized user.",
+        "uid" : "d755dae5061d52a1",
+        "parentUid" : "1e69196373e37a1d0bddde50b8de1bf2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740966858104,
+          "stop" : 1740966898512,
+          "duration" : 40408
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to contributors page not authorized user.",
+        "uid" : "7eec44267c0e2ac5",
+        "parentUid" : "1e69196373e37a1d0bddde50b8de1bf2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967518250,
+          "stop" : 1740967558698,
+          "duration" : 40448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1e69196373e37a1d0bddde50b8de1bf2"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/used-resources",
+      "children" : [ {
+        "name" : "Verify redirection to used resources page not authorized user.",
+        "uid" : "92786fd539b2d151",
+        "parentUid" : "b80497551ec86a4ff31e5d59b4142f4c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740966904413,
+          "stop" : 1740966944834,
+          "duration" : 40421
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify redirection to used resources page not authorized user.",
+        "uid" : "ea908ea58c015d8b",
+        "parentUid" : "b80497551ec86a4ff31e5d59b4142f4c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967564560,
+          "stop" : 1740967604966,
+          "duration" : 40406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b80497551ec86a4ff31e5d59b4142f4c"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/groups",
+      "children" : [ {
+        "name" : "Verify Footer invisibility through the modal window with the exercise",
+        "uid" : "844cc0e747915009",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967022204,
+          "stop" : 1740967022204,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of the Header for an authorized user",
+        "uid" : "c55d42a7ac20e773",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967162816,
+          "stop" : 1740967162816,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify composition, visibility of elements on the 1st-6th levels of nesting in the Header\n            for an authorized user",
+        "uid" : "41b1dda91dc09243",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967209140,
+          "stop" : 1740967209140,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility of links, buttons in the Header for an authorized user",
+        "uid" : "9f07d4e8d43d04aa",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967256106,
+          "stop" : 1740967256106,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test for authorization customer.",
+        "uid" : "ee3af027daa262ce",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967302410,
+          "stop" : 1740967302410,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify that the 'All Specialists' link leads an authorized user \n                         to the correct page after clicking",
+        "uid" : "166ff5d1d6d41796",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967858096,
+          "stop" : 1740967858096,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence and visibility of content on the page",
+        "uid" : "c89c81abe1cda100",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968593512,
+          "stop" : 1740968593512,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify the composition and visibility of elements \n            on the 1st-4th levels of nesting on the page",
+        "uid" : "fde5c70f92b4b72b",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968639844,
+          "stop" : 1740968639844,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify value of the title of the tab",
+        "uid" : "1c8a24d38a2b1106",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968686272,
+          "stop" : 1740968686272,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify value of title with tag 'h1' on the page",
+        "uid" : "d79bec1e65e1f611",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968732696,
+          "stop" : 1740968732696,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify content of the text on the page",
+        "uid" : "1631a56140945134",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968779066,
+          "stop" : 1740968779066,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify text in links in sections",
+        "uid" : "6a92d3c8fe630311",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968825884,
+          "stop" : 1740968825884,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility, clickability, href, status code of links in sections",
+        "uid" : "bf424021b987e9e2",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968872299,
+          "stop" : 1740968872299,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify that links in the sections lead to the correct pages after clicking",
+        "uid" : "42bc3c0269b211c7",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968918795,
+          "stop" : 1740968918795,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify presence, visibility and attributes of icons in sections",
+        "uid" : "d364e2cc9c985e2f",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740968965260,
+          "stop" : 1740968965260,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify sizes of icons in sections",
+        "uid" : "83fc5dea11409588",
+        "parentUid" : "08f88d8105f4f1fd2c8efe924373d439",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740969011671,
+          "stop" : 1740969011671,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "08f88d8105f4f1fd2c8efe924373d439"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/description",
+      "children" : [ {
+        "name" : "Verify redirection to description page not authorized user.",
+        "uid" : "4f38a671dc60965f",
+        "parentUid" : "e9d8a6518adf986f0c6c0b674a737291",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967354463,
+          "stop" : 1740967394836,
+          "duration" : 40373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e9d8a6518adf986f0c6c0b674a737291"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/login",
+      "children" : [ {
+        "name" : "Checking the clickability of the Start button.",
+        "uid" : "fb5fbd9971b9d0ec",
+        "parentUid" : "c4b60e0c59ed7f97b58ff5551679c42c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967611139,
+          "stop" : 1740967651468,
+          "duration" : 40329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4b60e0c59ed7f97b58ff5551679c42c"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator https://brainup.site/registration",
+      "children" : [ {
+        "name" : "Checking the clickability of the Registration button.",
+        "uid" : "7ff14f66f6189b88",
+        "parentUid" : "d0059d2718e0c9f3b5e10f5695c6d222",
+        "status" : "broken",
+        "time" : {
+          "start" : 1740967657158,
+          "stop" : 1740967697510,
+          "duration" : 40352
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0059d2718e0c9f3b5e10f5695c6d222"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
