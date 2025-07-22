@@ -1,11 +1,10 @@
 name: Test-pull_requests
 
 on:
- push:
-# workflow_dispatch
-# schedule:
-#   - cron: '0 0 * * *'
-
+  push:
+  # workflow_dispatch
+  # schedule:
+  #   - cron: '0 0 * * *'
 
 permissions:
   contents: read
@@ -24,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip install flake8 pytest pytest-xdist
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Lint with flake8
@@ -45,9 +44,8 @@ jobs:
           AUTH_URL: ${{ secrets.AUTH_URL }}
           DELETE_USER: ${{ secrets.DELETE_USER }}
         run: |
-          pytest -s -v --alluredir=allure-results
+          pytest -n auto -s -v --alluredir=allure-results
         continue-on-error: true
-
 
       - name: Add allure information
         working-directory: allure-results
@@ -87,7 +85,6 @@ jobs:
           PUBLISH_DIR: allure-history
         continue-on-error: true
 
-
   messsage:
     needs: build
     runs-on: ubuntu-latest
@@ -96,7 +93,7 @@ jobs:
       - name: Send message to Telegram
         uses: "appleboy/telegram-action@master"
         with:
-          to: ${{secrets.CHAT_ID}}
-          token: ${{secrets.TELEGRAM_TOKEN}}
+          to: ${{ secrets.CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
           args: Last pull request report https://brain-up.github.io/auto-tests-python/
         continue-on-error: true
